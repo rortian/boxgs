@@ -1,0 +1,1826 @@
+# Logfile created on Sun Jan 01 18:40:06 -0500 2012 by logger.rb/1.2.6
+D, [2012-01-01T18:40:06.598094 #14272] DEBUG -- : Launching new build...
+T, [2012-01-01T18:40:06.599583 #14272] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:log_level: :info
+:additional_plugins: []
+
+:uid: 1000
+:gid: 1000
+:delivery: :vbox
+:backtrace: false
+:os_config: {}
+
+:dir: 
+  :cache: /var/cache/boxgrinder
+  :build: build
+  :tmp: /tmp
+  :root: /home/rortian/git/boxgs/phantomjs
+:name: BoxGrinder Build
+:platform_config: {}
+
+:platform: :none
+:force: false
+:delivery_config: {}
+
+
+D, [2012-01-01T18:40:06.599706 #14272] DEBUG -- : Loading os plugins...
+D, [2012-01-01T18:40:06.599772 #14272] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-01-01T18:40:06.599836 #14272] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-01-01T18:40:06.599896 #14272] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-01-01T18:40:06.599976 #14272] DEBUG -- : - centos plugin for CentOS.
+D, [2012-01-01T18:40:06.600046 #14272] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-01-01T18:40:06.600082 #14272] DEBUG -- : Plugins loaded.
+D, [2012-01-01T18:40:06.600139 #14272] DEBUG -- : Loading platform plugins...
+D, [2012-01-01T18:40:06.600178 #14272] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-01-01T18:40:06.600218 #14272] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-01-01T18:40:06.600258 #14272] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-01-01T18:40:06.600298 #14272] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-01-01T18:40:06.600338 #14272] DEBUG -- : - vmware plugin for VMware.
+D, [2012-01-01T18:40:06.600374 #14272] DEBUG -- : Plugins loaded.
+D, [2012-01-01T18:40:06.600411 #14272] DEBUG -- : Loading delivery plugins...
+D, [2012-01-01T18:40:06.600467 #14272] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-01-01T18:40:06.600518 #14272] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-01-01T18:40:06.600559 #14272] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-01-01T18:40:06.600599 #14272] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-01-01T18:40:06.600638 #14272] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-01-01T18:40:06.600677 #14272] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-01T18:40:06.600717 #14272] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-01-01T18:40:06.600755 #14272] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-01T18:40:06.600794 #14272] DEBUG -- : - local plugin for Local file system.
+D, [2012-01-01T18:40:06.600833 #14272] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-01T18:40:06.600869 #14272] DEBUG -- : Plugins loaded.
+I, [2012-01-01T18:40:06.603784 #14272]  INFO -- : Validating appliance definition from phantomjs-f16.appl file...
+I, [2012-01-01T18:40:06.606865 #14272]  INFO -- : Appliance definition is valid.
+D, [2012-01-01T18:40:06.607160 #14272] DEBUG -- : Adding packages to appliance...
+D, [2012-01-01T18:40:06.607219 #14272] DEBUG -- : 2 package(s) added to appliance.
+F, [2012-01-01T18:40:06.615489 #14272] FATAL -- : RuntimeError: There is no delivery plugin registered for 'vbox' type/name.
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/managers/plugin-manager.rb:69:in `initialize_plugin'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:74:in `initialize_plugins'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:150:in `create'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/bin/boxgrinder-build:189
+/usr/bin/boxgrinder-build:19:in `load'
+/usr/bin/boxgrinder-build:19
+D, [2012-01-01T18:41:07.673056 #14283] DEBUG -- : Launching new build...
+T, [2012-01-01T18:41:07.674974 #14283] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:log_level: :info
+:additional_plugins: []
+
+:uid: 1000
+:gid: 1000
+:delivery: :none
+:backtrace: false
+:os_config: {}
+
+:dir: 
+  :cache: /var/cache/boxgrinder
+  :build: build
+  :tmp: /tmp
+  :root: /home/rortian/git/boxgs/phantomjs
+:name: BoxGrinder Build
+:platform_config: {}
+
+:platform: :vbox
+:force: false
+:delivery_config: {}
+
+
+D, [2012-01-01T18:41:07.675098 #14283] DEBUG -- : Loading os plugins...
+D, [2012-01-01T18:41:07.675183 #14283] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-01-01T18:41:07.675230 #14283] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-01-01T18:41:07.675270 #14283] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-01-01T18:41:07.675309 #14283] DEBUG -- : - centos plugin for CentOS.
+D, [2012-01-01T18:41:07.675347 #14283] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-01-01T18:41:07.675382 #14283] DEBUG -- : Plugins loaded.
+D, [2012-01-01T18:41:07.675420 #14283] DEBUG -- : Loading platform plugins...
+D, [2012-01-01T18:41:07.675457 #14283] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-01-01T18:41:07.675497 #14283] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-01-01T18:41:07.675536 #14283] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-01-01T18:41:07.675576 #14283] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-01-01T18:41:07.675615 #14283] DEBUG -- : - vmware plugin for VMware.
+D, [2012-01-01T18:41:07.675686 #14283] DEBUG -- : Plugins loaded.
+D, [2012-01-01T18:41:07.675730 #14283] DEBUG -- : Loading delivery plugins...
+D, [2012-01-01T18:41:07.675768 #14283] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-01-01T18:41:07.675808 #14283] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-01-01T18:41:07.675848 #14283] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-01-01T18:41:07.675888 #14283] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-01-01T18:41:07.675927 #14283] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-01-01T18:41:07.675966 #14283] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-01T18:41:07.676005 #14283] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-01-01T18:41:07.676057 #14283] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-01T18:41:07.676135 #14283] DEBUG -- : - local plugin for Local file system.
+D, [2012-01-01T18:41:07.676184 #14283] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-01T18:41:07.676220 #14283] DEBUG -- : Plugins loaded.
+I, [2012-01-01T18:41:07.677650 #14283]  INFO -- : Validating appliance definition from phantomjs-f16.appl file...
+I, [2012-01-01T18:41:07.680813 #14283]  INFO -- : Appliance definition is valid.
+D, [2012-01-01T18:41:07.681147 #14283] DEBUG -- : Adding packages to appliance...
+D, [2012-01-01T18:41:07.681204 #14283] DEBUG -- : 2 package(s) added to appliance.
+F, [2012-01-01T18:41:07.690212 #14283] FATAL -- : RuntimeError: There is no platform plugin registered for 'vbox' type/name.
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/managers/plugin-manager.rb:69:in `initialize_plugin'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:69:in `initialize_plugins'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:150:in `create'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/bin/boxgrinder-build:189
+/usr/bin/boxgrinder-build:19:in `load'
+/usr/bin/boxgrinder-build:19
+D, [2012-01-01T18:42:03.115377 #14332] DEBUG -- : Launching new build...
+T, [2012-01-01T18:42:03.116965 #14332] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:log_level: :info
+:additional_plugins: []
+
+:uid: 1000
+:gid: 1000
+:delivery: :none
+:backtrace: false
+:os_config: {}
+
+:dir: 
+  :cache: /var/cache/boxgrinder
+  :build: build
+  :tmp: /tmp
+  :root: /home/rortian/git/boxgs/phantomjs
+:name: BoxGrinder Build
+:platform_config: {}
+
+:platform: :virtualbox
+:force: false
+:delivery_config: {}
+
+
+D, [2012-01-01T18:42:03.117122 #14332] DEBUG -- : Loading os plugins...
+D, [2012-01-01T18:42:03.117184 #14332] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-01-01T18:42:03.117227 #14332] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-01-01T18:42:03.117267 #14332] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-01-01T18:42:03.117307 #14332] DEBUG -- : - centos plugin for CentOS.
+D, [2012-01-01T18:42:03.117346 #14332] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-01-01T18:42:03.117383 #14332] DEBUG -- : Plugins loaded.
+D, [2012-01-01T18:42:03.117420 #14332] DEBUG -- : Loading platform plugins...
+D, [2012-01-01T18:42:03.117458 #14332] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-01-01T18:42:03.117498 #14332] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-01-01T18:42:03.117668 #14332] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-01-01T18:42:03.117713 #14332] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-01-01T18:42:03.117753 #14332] DEBUG -- : - vmware plugin for VMware.
+D, [2012-01-01T18:42:03.117789 #14332] DEBUG -- : Plugins loaded.
+D, [2012-01-01T18:42:03.117827 #14332] DEBUG -- : Loading delivery plugins...
+D, [2012-01-01T18:42:03.117864 #14332] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-01-01T18:42:03.117905 #14332] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-01-01T18:42:03.117945 #14332] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-01-01T18:42:03.117984 #14332] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-01-01T18:42:03.118024 #14332] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-01-01T18:42:03.118064 #14332] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-01T18:42:03.118145 #14332] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-01-01T18:42:03.118187 #14332] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-01T18:42:03.118227 #14332] DEBUG -- : - local plugin for Local file system.
+D, [2012-01-01T18:42:03.118265 #14332] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-01T18:42:03.118302 #14332] DEBUG -- : Plugins loaded.
+I, [2012-01-01T18:42:03.119790 #14332]  INFO -- : Validating appliance definition from phantomjs-f16.appl file...
+I, [2012-01-01T18:42:03.122969 #14332]  INFO -- : Appliance definition is valid.
+D, [2012-01-01T18:42:03.123220 #14332] DEBUG -- : Adding packages to appliance...
+D, [2012-01-01T18:42:03.123278 #14332] DEBUG -- : 2 package(s) added to appliance.
+I, [2012-01-01T18:42:03.130921 #14332]  INFO -- : Building 'phantomjs-f16' appliance for x86_64 architecture.
+D, [2012-01-01T18:42:03.131088 #14332] DEBUG -- : Executing os plugin...
+I, [2012-01-01T18:42:03.135711 #14332]  INFO -- : Resolving packages added to phantomjs-f16 appliance definition file...
+D, [2012-01-01T18:42:03.136008 #14332] DEBUG -- : Querying package database...
+D, [2012-01-01T18:42:03.136122 #14332] DEBUG -- : Executing command: 'repoquery --quiet --disablerepo=* --enablerepo=boxgrinder-updates,boxgrinder-base -c '/home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/yum.conf' list available qt qt-webkit system-config-firewall-base dhclient kernel grub2 --nevra --archlist=x86_64,noarch'
+D, [2012-01-01T18:42:18.962151 #14332] DEBUG -- : dhclient-12:4.2.3-4.P1.fc16.x86_64
+D, [2012-01-01T18:42:18.962370 #14332] DEBUG -- : grub2-1:1.99-13.fc16.x86_64
+D, [2012-01-01T18:42:18.962433 #14332] DEBUG -- : kernel-0:3.1.6-1.fc16.x86_64
+D, [2012-01-01T18:42:18.962477 #14332] DEBUG -- : qt-1:4.8.0-0.29.rc1.fc16.x86_64
+D, [2012-01-01T18:42:18.962694 #14332] DEBUG -- : system-config-firewall-base-0:1.2.29-4.fc16.noarch
+I, [2012-01-01T18:42:18.979318 #14332]  INFO -- : All additional packages for phantomjs-f16 appliance successfully resolved.
+I, [2012-01-01T18:42:18.979456 #14332]  INFO -- : Building phantomjs-f16 appliance...
+D, [2012-01-01T18:42:18.979671 #14332] DEBUG -- : Executing command: 'appliance-creator -d -v -t 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp' --cache=/var/cache/boxgrinder/rpms-cache/x86_64/fedora/16 --config 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/phantomjs-f16.ks' -o 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp' --name 'phantomjs-f16' --vmem 256 --vcpu 1 --format raw'
+D, [2012-01-01T18:42:19.233456 #14332] DEBUG -- : Adding disk sda as /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/tmp-_fIYFP/phantomjs-f16-sda.raw
+D, [2012-01-01T18:42:19.233682 #14332] DEBUG -- : Extending sparse file /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/tmp-_fIYFP/phantomjs-f16-sda.raw to 3226468352
+D, [2012-01-01T18:42:19.239191 #14332] DEBUG -- : Losetup add /dev/loop0 mapping to /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/tmp-_fIYFP/phantomjs-f16-sda.raw
+D, [2012-01-01T18:42:19.245778 #14332] DEBUG -- : Formatting disks
+D, [2012-01-01T18:42:19.245882 #14332] DEBUG -- : Initializing partition table for /dev/loop0 with gpt layout
+D, [2012-01-01T18:42:19.318573 #14332] DEBUG -- : Assigning partitions to disks
+D, [2012-01-01T18:42:19.319541 #14332] DEBUG -- : Assigned biosboot to sda1 at 0 at size 5
+D, [2012-01-01T18:42:19.320210 #14332] DEBUG -- : Assigned / to sda2 at 5 at size 3072
+D, [2012-01-01T18:42:19.320795 #14332] DEBUG -- : Creating partitions
+D, [2012-01-01T18:42:19.321429 #14332] DEBUG -- : Add primary part at 0 of size 5
+D, [2012-01-01T18:42:19.339848 #14332] DEBUG -- : Add primary part at 5 of size 3072
+D, [2012-01-01T18:42:19.366418 #14332] DEBUG -- : Dev loop0p1: /dev/loop01 -> /dev/mapper/loop0p1
+D, [2012-01-01T18:42:19.366770 #14332] DEBUG -- : Dev loop0p2: /dev/loop02 -> /dev/mapper/loop0p2
+D, [2012-01-01T18:42:19.366843 #14332] DEBUG -- : Adding partx mapping for /dev/loop0
+D, [2012-01-01T18:42:19.417889 #14332] DEBUG -- : Formating ext4 filesystem on /dev/loop02
+D, [2012-01-01T18:42:20.515568 #14332] DEBUG -- : mke2fs 1.41.14 (22-Dec-2010)
+D, [2012-01-01T18:42:20.515747 #14332] DEBUG -- : Filesystem label=_/
+D, [2012-01-01T18:42:20.515821 #14332] DEBUG -- : OS type: Linux
+D, [2012-01-01T18:42:20.515891 #14332] DEBUG -- : Block size=4096 (log=2)
+D, [2012-01-01T18:42:20.515974 #14332] DEBUG -- : Fragment size=4096 (log=2)
+D, [2012-01-01T18:42:20.516200 #14332] DEBUG -- : Stride=0 blocks, Stripe width=0 blocks
+D, [2012-01-01T18:42:20.516277 #14332] DEBUG -- : 187680 inodes, 750000 blocks
+D, [2012-01-01T18:42:20.516345 #14332] DEBUG -- : 7500 blocks (1.00%) reserved for the super user
+D, [2012-01-01T18:42:20.516439 #14332] DEBUG -- : First data block=0
+D, [2012-01-01T18:42:20.516546 #14332] DEBUG -- : Maximum filesystem blocks=771751936
+D, [2012-01-01T18:42:20.516630 #14332] DEBUG -- : 23 block groups
+D, [2012-01-01T18:42:20.516708 #14332] DEBUG -- : 32768 blocks per group, 32768 fragments per group
+D, [2012-01-01T18:42:20.516807 #14332] DEBUG -- : 8160 inodes per group
+D, [2012-01-01T18:42:20.516875 #14332] DEBUG -- : Superblock backups stored on blocks:
+D, [2012-01-01T18:42:20.516943 #14332] DEBUG -- : 32768, 98304, 163840, 229376, 294912
+D, [2012-01-01T18:42:20.517212 #14332] DEBUG -- : 
+D, [2012-01-01T18:42:20.517581 #14332] DEBUG -- : Writing inode tables:  0/23 1/23 2/23 3/23 4/23 5/23 6/23 7/23 8/23 9/2310/2311/2312/2313/2314/2315/2316/2317/2318/2319/2320/2321/2322/23done
+D, [2012-01-01T18:42:20.517755 #14332] DEBUG -- : Creating journal (16384 blocks): done
+D, [2012-01-01T18:42:20.517883 #14332] DEBUG -- : Writing superblocks and filesystem accounting information: done
+D, [2012-01-01T18:42:20.517956 #14332] DEBUG -- : 
+D, [2012-01-01T18:42:20.518210 #14332] DEBUG -- : This filesystem will be automatically checked every 35 mounts or
+D, [2012-01-01T18:42:20.518363 #14332] DEBUG -- : 180 days, whichever comes first.  Use tune2fs -c or -i to override.
+D, [2012-01-01T18:42:20.518556 #14332] DEBUG -- : 
+D, [2012-01-01T18:42:20.518744 #14332] DEBUG -- : Tuning filesystem on /dev/loop02
+D, [2012-01-01T18:42:20.542811 #14332] DEBUG -- : tune2fs 1.41.14 (22-Dec-2010)
+D, [2012-01-01T18:42:20.543097 #14332] DEBUG -- : Setting maximal mount count to -1
+D, [2012-01-01T18:42:20.543172 #14332] DEBUG -- : Setting interval between checks to 0 seconds
+D, [2012-01-01T18:42:20.543225 #14332] DEBUG -- : 
+D, [2012-01-01T18:42:20.543269 #14332] DEBUG -- : Mounting /dev/loop02 at /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/install_root/
+D, [2012-01-01T18:42:20.575000 #14332] DEBUG -- : Writing mkinitrd config /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/install_root/etc/sysconfig/mkinitrd
+D, [2012-01-01T18:42:21.816778 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/repodata/repomd.xml ...OK
+D, [2012-01-01T18:42:23.462771 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/repodata/repomd.xml ...OK
+D, [2012-01-01T18:42:25.793135 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/repodata/c4689c358776fef3c47adc7b464d4e716ef7514b869a654d6206bf7bd4a99aa4-primary.sqlite.bz2 ...OK
+D, [2012-01-01T18:42:28.256653 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/repodata/02b5a62be2c7c7e7a65f8f26c961924202f43f8f47e4ec47feeed9acbd32d77d-comps-f16.xml.gz ...OK
+D, [2012-01-01T18:42:33.932486 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/alsa-lib-1.0.24-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:42:35.248196 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/atk-2.2.0-2.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:36.153926 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/avahi-libs-0.6.30-4.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:37.272163 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/bash-4.2.20-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:38.819788 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/cairo-1.10.2-4.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:39.617609 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/cdparanoia-libs-10.2-10.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:42:40.522462 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/celt-0.11.1-2.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:41.188437 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/cups-libs-1.5.0-22.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:41.365478 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/dash-0.5.6-6.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:41.640694 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/dhclient-4.2.3-4.P1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:41.887247 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/dhcp-common-4.2.3-4.P1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:42.050225 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/dhcp-libs-4.2.3-4.P1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:42.255564 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/diffutils-3.2-5.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:43.591528 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/dirac-libs-1.0.2-6.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:44.069900 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/dracut-013-20.fc16.noarch.rpm ...OK
+D, [2012-01-01T18:42:45.075762 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/enca-1.13-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:42:47.417255 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/fftw-libs-3.3-3.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:48.725434 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/flac-1.2.1-6.fc12.x86_64.rpm ...OK
+D, [2012-01-01T18:42:49.979690 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/fontconfig-2.8.0-4.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:50.839394 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/fribidi-0.19.2-3.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:42:51.736875 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/gdk-pixbuf2-2.24.1-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:42:53.326170 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/glibc-2.14.90-24.fc16.4.x86_64.rpm ...OK
+D, [2012-01-01T18:42:57.647983 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/glibc-common-2.14.90-24.fc16.4.x86_64.rpm ...OK
+D, [2012-01-01T18:42:59.209914 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/glibmm24-2.30.0-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:00.749789 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/gnutls-2.12.7-2.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:01.918254 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/grub2-1.99-13.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:02.023995 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/grubby-8.3-2.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:02.685814 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/gsm-1.0.13-2.fc12.x86_64.rpm ...OK
+D, [2012-01-01T18:43:04.594885 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/gstreamer-0.10.35-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:06.803130 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/gstreamer-plugins-bad-free-0.10.22-2.fc16.1.x86_64.rpm ...OK
+D, [2012-01-01T18:43:07.899653 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/gstreamer-plugins-base-0.10.35-3.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:08.566023 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/gstreamer-tools-0.10.35-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:10.594522 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/gtk2-2.24.8-3.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:11.373307 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/hicolor-icon-theme-0.12-3.fc16.noarch.rpm ...OK
+D, [2012-01-01T18:43:11.948343 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/iproute-2.6.39-4.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:14.611795 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/iso-codes-3.29-1.fc16.noarch.rpm ...OK
+D, [2012-01-01T18:43:16.197935 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/jack-audio-connection-kit-1.9.7-2.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:16.617579 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/jasper-libs-1.900.1-18.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:28.633578 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/kernel-3.1.6-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:28.972718 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/krb5-libs-1.9.2-4.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:29.994630 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/lcms-libs-1.19-4.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:30.874325 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libICE-1.0.7-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:31.555432 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libSM-1.2.0-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:33.234520 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libX11-1.4.3-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:34.441927 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libX11-common-1.4.3-1.fc16.noarch.rpm ...OK
+D, [2012-01-01T18:43:35.117989 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXau-1.0.6-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:35.703379 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXcomposite-0.4.3-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:36.472281 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXcursor-1.1.11-3.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:37.041046 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXdamage-1.1.3-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:37.507473 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/libXext-1.3.0-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:38.176291 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXfixes-5.0-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:39.049676 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXft-2.2.0-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:39.722751 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXi-1.4.3-3.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:40.288348 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXinerama-1.1.1-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:40.960402 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXrandr-1.3.1-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:41.628177 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXrender-0.9.6-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:42.308880 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXtst-1.2.0-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:42.958988 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXv-1.0.6-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:43.534489 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXxf86vm-1.1.1-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:43.933333 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/libass-0.10.0-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:44.613562 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libasyncns-0.8-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:45.428704 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libavc1394-0.5.3-10.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:45.837403 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/libblkid-2.20.1-2.1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:46.673845 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libcdaudio-0.99.12p2-14.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:46.988213 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/libconfig-1.4.8-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:47.998502 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libdc1394-2.1.2-3.fc12.x86_64.rpm ...OK
+D, [2012-01-01T18:43:48.890800 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libdvdnav-4.1.4-0.3.svn1226.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:49.781822 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libdvdread-4.1.4-0.4.svn1226.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:50.606776 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/libffado-2.1.0-0.4.20111030.svn2000.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:51.715017 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libfreebob-1.0.11-8.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:52.480815 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libiec61883-1.2.0-6.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:52.897438 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/libjpeg-turbo-1.1.1-3.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:53.684673 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libkate-0.3.8-3.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:54.879829 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libmng-1.0.10-5.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:56.024411 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libmodplug-0.8.8.4-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:56.439833 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/libmount-2.20.1-2.1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:43:57.095438 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libmpcdec-1.2.6-7.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:57.980367 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libofa-0.9.3-17.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:58.651867 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libogg-1.2.2-3.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:43:59.877363 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libpng-1.2.46-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:01.109803 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libquadmath-4.6.2-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:01.996022 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libraw1394-2.0.7-1.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:44:02.490359 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/librsvg2-2.34.2-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:04.528235 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libsamplerate-0.1.8-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:04.936246 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/libselinux-2.1.6-5.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:05.124369 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/libselinux-utils-2.1.6-5.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:06.002989 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libsigc++20-2.2.10-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:07.127401 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libsndfile-1.0.25-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:08.565853 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libtasn1-2.7-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:44:09.791717 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libthai-0.1.14-4.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:44:10.877631 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libtheora-1.1.1-1.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:44:11.972460 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libtiff-3.9.5-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:12.756164 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libtool-ltdl-2.4-7.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:13.741432 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libusb1-1.0.9-0.3.rc1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:14.139481 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/libuuid-2.20.1-2.1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:15.260381 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libvisual-0.4.0-10.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:44:16.495430 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libvorbis-1.3.2-1.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:44:17.714890 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libvpx-0.9.7.1-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:18.710208 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libxcb-1.7-3.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:19.713530 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libxml++-2.34.2-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:21.038953 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/libxslt-1.1.26-8.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:25.113222 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/llvm-libs-2.9-4.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:29.992122 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/mesa-dri-drivers-7.11.2-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:30.082338 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/mesa-dri-filesystem-7.11.2-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:30.226876 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/mesa-libGL-7.11.2-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:30.516837 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/module-init-tools-3.16-5.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:31.799808 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/mpfr-3.0.0-4.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:44:32.580296 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/nss-3.13.1-9.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:32.745745 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/nss-softokn-3.13.1-14.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:32.911185 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/nss-softokn-freebl-3.13.1-14.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:33.007848 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/nss-sysinit-3.13.1-9.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:33.124432 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/nss-util-3.13.1-3.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:33.325175 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/openssh-5.8p2-23.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:33.546194 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/openssh-server-5.8p2-23.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:34.667180 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/orc-0.4.16-4.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:35.506635 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/pam-1.1.5-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:37.028647 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/pango-1.29.4-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:37.586859 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/pcre-8.12-6.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:38.796978 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/pixman-0.22.2-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:39.198994 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/plymouth-0.8.4-0.20110822.3.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:39.449940 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/plymouth-core-libs-0.8.4-0.20110822.3.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:39.544565 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/plymouth-scripts-0.8.4-0.20110822.3.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:40.216194 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/policycoreutils-2.1.4-13.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:40.403221 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/procmail-3.22-27.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:41.935796 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/pulseaudio-libs-0.9.23-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:44.770258 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/qt-4.8.0-0.29.rc1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:47.637168 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/qt-mobility-1.2.0-5.20110922.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:44:55.090820 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/qt-x11-4.8.0-0.29.rc1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:45:00.345620 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/qtwebkit-2.2.0-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:45:01.571517 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/raptor2-2.0.4-2.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:45:02.905470 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/rasqal-0.9.27-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:45:04.028047 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/redland-1.0.14-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:45:05.354897 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/schroedinger-1.0.10-2.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:45:06.447522 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/selinux-policy-3.10.0-69.fc16.noarch.rpm ...OK
+D, [2012-01-01T18:45:07.944501 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/selinux-policy-targeted-3.10.0-69.fc16.noarch.rpm ...OK
+D, [2012-01-01T18:45:08.297502 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/sendmail-8.14.5-11.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:45:08.731298 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/shadow-utils-4.1.4.3-11.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:45:08.915545 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/shared-mime-info-0.91-5.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:45:09.794847 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/slv2-0.6.6-7.fc15.x86_64.rpm ...OK
+D, [2012-01-01T18:45:10.904327 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/util-linux-2.20.1-2.1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:45:11.458189 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/xml-common-0.6.3-34.fc15.noarch.rpm ...OK
+D, [2012-01-01T18:45:12.137436 #14332] DEBUG -- : Retrieving http://mirrors.usc.edu/pub/linux/distributions/fedora/linux/releases/16/Everything/x86_64/os/Packages/yajl-1.0.12-1.fc16.x86_64.rpm ...OK
+D, [2012-01-01T18:45:13.425688 #14332] DEBUG -- : Retrieving http://mirrors.kernel.org/fedora/updates/16/x86_64/yum-3.4.3-7.fc16.noarch.rpm ...OK
+D, [2012-01-01T18:45:14.804977 #14332] DEBUG -- : warning: libgcc-4.6.2-1.fc16.x86_64: Header V3 RSA/SHA256 Signature, key ID a82ba4b7: NOKEY
+D, [2012-01-01T18:45:14.865485 #14332] DEBUG -- : ['/', 'biosboot']
+D, [2012-01-01T18:45:14.930131 #14332] DEBUG -- : Installing: libgcc                       ##################### [  1/304]
+D, [2012-01-01T18:45:15.440378 #14332] DEBUG -- : Installing: setup                        ##################### [  2/304]
+D, [2012-01-01T18:45:15.828771 #14332] DEBUG -- : Installing: filesystem                   ##################### [  3/304]
+D, [2012-01-01T18:45:15.831019 #14332] DEBUG -- : Installing: ca-certificates              ##################### [  4/304]
+D, [2012-01-01T18:45:16.067203 #14332] DEBUG -- : Installing: basesystem                   ##################### [  5/304]
+D, [2012-01-01T18:45:16.224374 #14332] DEBUG -- : Installing: libX11-common                ##################### [  6/304]
+D, [2012-01-01T18:45:16.512737 #14332] DEBUG -- : Installing: ncurses-base                 ##################### [  7/304]
+D, [2012-01-01T18:45:16.543233 #14332] DEBUG -- : Installing: kbd-misc                     ##################### [  8/304]
+D, [2012-01-01T18:45:16.550880 #14332] DEBUG -- : Installing: fedora-release               ##################### [  9/304]
+D, [2012-01-01T18:45:18.259819 #14332] DEBUG -- : Installing: bind-license                 ##################### [ 10/304]
+D, [2012-01-01T18:45:18.313918 #14332] DEBUG -- : Installing: tzdata                       ##################### [ 11/304]
+D, [2012-01-01T18:45:22.564539 #14332] DEBUG -- : Installing: nss-softokn-freebl           ##################### [ 12/304]
+D, [2012-01-01T18:45:23.533176 #14332] DEBUG -- : Installing: glibc-common                 ##################### [ 13/304]
+D, [2012-01-01T18:45:23.557673 #14332] DEBUG -- : Installing: glibc                        ##################### [ 14/304]/usr/sbin/glibc_post_upgrade: While trying to execute /sbin/ldconfig exec failed with errno 13
+D, [2012-01-01T18:45:23.557848 #14332] DEBUG -- : /usr/sbin/glibc_post_upgrade: While trying to execute /sbin/ldconfig child exited with exit code 110
+D, [2012-01-01T18:45:23.558660 #14332] DEBUG -- : warning: %post(glibc-2.14.90-24.fc16.4.x86_64) scriptlet failed, exit status 110
+D, [2012-01-01T18:45:25.467915 #14332] DEBUG -- : 
+D, [2012-01-01T18:45:25.759072 #14332] DEBUG -- : Installing: ncurses-libs                 ##################### [ 15/304]
+D, [2012-01-01T18:45:25.885729 #14332] DEBUG -- : Installing: bash                         ##################### [ 16/304]
+D, [2012-01-01T18:45:25.903284 #14332] DEBUG -- : /var/tmp/rpm-tmp.zXKYVw: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:25.929842 #14332] DEBUG -- : Installing: libsepol                     ##################### [ 17/304]
+D, [2012-01-01T18:45:26.024030 #14332] DEBUG -- : Installing: libselinux                   ##################### [ 18/304]
+D, [2012-01-01T18:45:26.334714 #14332] DEBUG -- : Installing: libattr                      ##################### [ 19/304]
+D, [2012-01-01T18:45:26.383832 #14332] DEBUG -- : Installing: libcap                       ##################### [ 20/304]
+D, [2012-01-01T18:45:26.494029 #14332] DEBUG -- : Installing: zlib                         ##################### [ 21/304]
+D, [2012-01-01T18:45:26.554486 #14332] DEBUG -- : Installing: libstdc++                    ##################### [ 22/304]
+D, [2012-01-01T18:45:26.692482 #14332] DEBUG -- : Installing: info                         ##################### [ 23/304]
+D, [2012-01-01T18:45:26.731046 #14332] DEBUG -- : Installing: libxml2                      ##################### [ 24/304]
+D, [2012-01-01T18:45:26.790643 #14332] DEBUG -- : Installing: audit-libs                   ##################### [ 25/304]
+D, [2012-01-01T18:45:26.810957 #14332] DEBUG -- : Installing: popt                         ##################### [ 26/304]
+D, [2012-01-01T18:45:26.839691 #14332] DEBUG -- : Installing: libacl                       ##################### [ 27/304]
+D, [2012-01-01T18:45:26.978239 #14332] DEBUG -- : Installing: libcom_err                   ##################### [ 28/304]
+D, [2012-01-01T18:45:27.046551 #14332] DEBUG -- : Installing: chkconfig                    ##################### [ 29/304]
+D, [2012-01-01T18:45:27.077502 #14332] DEBUG -- : Installing: freetype                     ##################### [ 30/304]
+D, [2012-01-01T18:45:27.186478 #14332] DEBUG -- : Installing: bzip2-libs                   ##################### [ 31/304]
+D, [2012-01-01T18:45:27.285465 #14332] DEBUG -- : Installing: db4                          ##################### [ 32/304]
+D, [2012-01-01T18:45:27.348486 #14332] DEBUG -- : Installing: sed                          ##################### [ 33/304]
+D, [2012-01-01T18:45:27.380656 #14332] DEBUG -- : Installing: libgpg-error                 ##################### [ 34/304]
+D, [2012-01-01T18:45:27.415702 #14332] DEBUG -- : Installing: libudev                      ##################### [ 35/304]
+D, [2012-01-01T18:45:27.481559 #14332] DEBUG -- : Installing: dbus-libs                    ##################### [ 36/304]
+D, [2012-01-01T18:45:27.513571 #14332] DEBUG -- : Installing: libpng                       ##################### [ 37/304]
+D, [2012-01-01T18:45:27.547801 #14332] DEBUG -- : Installing: libogg                       ##################### [ 38/304]
+D, [2012-01-01T18:45:27.574940 #14332] DEBUG -- : Installing: nspr                         ##################### [ 39/304]
+D, [2012-01-01T18:45:27.625612 #14332] DEBUG -- : Installing: libuuid                      ##################### [ 40/304]
+D, [2012-01-01T18:45:27.666474 #14332] DEBUG -- : Installing: libjpeg-turbo                ##################### [ 41/304]
+D, [2012-01-01T18:45:27.682891 #14332] DEBUG -- : /var/tmp/rpm-tmp.SX2sWG: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:27.701150 #14332] DEBUG -- : Installing: libblkid                     ##################### [ 42/304]
+D, [2012-01-01T18:45:27.764488 #14332] DEBUG -- : Installing: nss-util                     ##################### [ 43/304]
+D, [2012-01-01T18:45:27.826463 #14332] DEBUG -- : Installing: libgcrypt                    ##################### [ 44/304]
+D, [2012-01-01T18:45:27.841799 #14332] DEBUG -- : /var/tmp/rpm-tmp.bkygW6: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:27.905242 #14332] DEBUG -- : Installing: readline                     ##################### [ 45/304]
+D, [2012-01-01T18:45:27.949270 #14332] DEBUG -- : Installing: sqlite                       ##################### [ 46/304]
+D, [2012-01-01T18:45:27.993776 #14332] DEBUG -- : Installing: tcp_wrappers-libs            ##################### [ 47/304]
+D, [2012-01-01T18:45:28.037861 #14332] DEBUG -- : Installing: xz-libs                      ##################### [ 48/304]
+D, [2012-01-01T18:45:28.115101 #14332] DEBUG -- : Installing: libraw1394                   ##################### [ 49/304]
+D, [2012-01-01T18:45:28.147147 #14332] DEBUG -- : Installing: lua                          ##################### [ 50/304]
+D, [2012-01-01T18:45:28.321601 #14332] DEBUG -- : Installing: libtiff                      ##################### [ 51/304]
+D, [2012-01-01T18:45:28.403459 #14332] DEBUG -- : Installing: gawk                         ##################### [ 52/304]
+D, [2012-01-01T18:45:28.435440 #14332] DEBUG -- : Installing: elfutils-libelf              ##################### [ 53/304]
+D, [2012-01-01T18:45:28.518173 #14332] DEBUG -- : Installing: libffi                       ##################### [ 54/304]
+D, [2012-01-01T18:45:28.559930 #14332] DEBUG -- : Installing: gamin                        ##################### [ 55/304]
+D, [2012-01-01T18:45:29.686762 #14332] DEBUG -- : Installing: pkgconfig                    ##################### [ 56/304]
+D, [2012-01-01T18:45:29.709969 #14332] DEBUG -- : /var/tmp/rpm-tmp.r7tQ63: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:29.799626 #14332] DEBUG -- : Installing: glib2                        ##################### [ 57/304]
+D, [2012-01-01T18:45:30.227474 #14332] DEBUG -- : Installing: shared-mime-info             ##################### [ 58/304]
+D, [2012-01-01T18:45:30.278438 #14332] DEBUG -- : Installing: expat                        ##################### [ 59/304]
+D, [2012-01-01T18:45:30.368101 #14332] DEBUG -- : Installing: libcroco                     ##################### [ 60/304]
+D, [2012-01-01T18:45:30.530494 #14332] DEBUG -- : Installing: cpio                         ##################### [ 61/304]
+D, [2012-01-01T18:45:30.575646 #14332] DEBUG -- : Installing: findutils                    ##################### [ 62/304]
+D, [2012-01-01T18:45:30.701118 #14332] DEBUG -- : Installing: libsigc++20                  ##################### [ 63/304]
+D, [2012-01-01T18:45:30.823873 #14332] DEBUG -- : Installing: file-libs                    ##################### [ 64/304]
+D, [2012-01-01T18:45:30.901203 #14332] DEBUG -- : Installing: libdb                        ##################### [ 65/304]
+D, [2012-01-01T18:45:30.937770 #14332] DEBUG -- : Installing: cyrus-sasl-lib               ##################### [ 66/304]
+D, [2012-01-01T18:45:30.994806 #14332] DEBUG -- : Installing: libICE                       ##################### [ 67/304]
+D, [2012-01-01T18:45:31.027948 #14332] DEBUG -- : Installing: orc                          ##################### [ 68/304]
+D, [2012-01-01T18:45:31.143175 #14332] DEBUG -- : Installing: libSM                        ##################### [ 69/304]
+D, [2012-01-01T18:45:31.315471 #14332] DEBUG -- : Installing: glibmm24                     ##################### [ 70/304]
+D, [2012-01-01T18:45:31.353579 #14332] DEBUG -- : Installing: atk                          ##################### [ 71/304]
+D, [2012-01-01T18:45:31.403622 #14332] DEBUG -- : Installing: libiec61883                  ##################### [ 72/304]
+D, [2012-01-01T18:45:31.517036 #14332] DEBUG -- : Installing: jasper-libs                  ##################### [ 73/304]
+D, [2012-01-01T18:45:31.559021 #14332] DEBUG -- : Installing: libvorbis                    ##################### [ 74/304]
+D, [2012-01-01T18:45:31.604165 #14332] DEBUG -- : Installing: celt                         ##################### [ 75/304]
+D, [2012-01-01T18:45:31.650590 #14332] DEBUG -- : Installing: libassuan                    ##################### [ 76/304]
+D, [2012-01-01T18:45:31.713356 #14332] DEBUG -- : Installing: bzip2                        ##################### [ 77/304]
+D, [2012-01-01T18:45:31.755620 #14332] DEBUG -- : Installing: libunistring                 ##################### [ 78/304]
+D, [2012-01-01T18:45:31.843188 #14332] DEBUG -- : Installing: which                        ##################### [ 79/304]
+D, [2012-01-01T18:45:31.863807 #14332] DEBUG -- : /var/tmp/rpm-tmp.NDSy8T: line 2: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:31.864294 #14332] DEBUG -- : warning: %post(libidn-1.22-3.fc16.x86_64) scriptlet failed, exit status 126
+D, [2012-01-01T18:45:31.915210 #14332] DEBUG -- : Installing: libidn                       ##################### [ 80/304]
+D, [2012-01-01T18:45:31.971744 #14332] DEBUG -- : Installing: gmp                          ##################### [ 81/304]
+D, [2012-01-01T18:45:32.020791 #14332] DEBUG -- : Installing: libselinux-utils             ##################### [ 82/304]
+D, [2012-01-01T18:45:32.040132 #14332] DEBUG -- : Installing: checkpolicy                  ##################### [ 83/304]
+D, [2012-01-01T18:45:32.157185 #14332] DEBUG -- : Installing: libdvdread                   ##################### [ 84/304]
+D, [2012-01-01T18:45:32.211768 #14332] DEBUG -- : Installing: slang                        ##################### [ 85/304]
+D, [2012-01-01T18:45:32.240195 #14332] DEBUG -- : Installing: pth                          ##################### [ 86/304]
+D, [2012-01-01T18:45:32.387656 #14332] DEBUG -- : Installing: keyutils-libs                ##################### [ 87/304]
+D, [2012-01-01T18:45:32.419764 #14332] DEBUG -- : Installing: krb5-libs                    ##################### [ 88/304]
+D, [2012-01-01T18:45:32.533195 #14332] DEBUG -- : Installing: libcap-ng                    ##################### [ 89/304]
+D, [2012-01-01T18:45:32.578799 #14332] DEBUG -- : Installing: newt                         ##################### [ 90/304]
+D, [2012-01-01T18:45:32.633101 #14332] DEBUG -- : Installing: libdvdnav                    ##################### [ 91/304]
+D, [2012-01-01T18:45:32.666551 #14332] DEBUG -- : Installing: mpfr                         ##################### [ 92/304]
+D, [2012-01-01T18:45:32.898006 #14332] DEBUG -- : Installing: gstreamer-tools              ##################### [ 93/304]
+D, [2012-01-01T18:45:32.968183 #14332] DEBUG -- : Installing: gstreamer                    ##################### [ 94/304]
+D, [2012-01-01T18:45:33.013192 #14332] DEBUG -- : Installing: gettext-libs                 ##################### [ 95/304]
+D, [2012-01-01T18:45:33.089901 #14332] DEBUG -- : Installing: libxml++                     ##################### [ 96/304]
+D, [2012-01-01T18:45:33.125751 #14332] DEBUG -- : Installing: schroedinger                 ##################### [ 97/304]
+D, [2012-01-01T18:45:34.053578 #14332] DEBUG -- : Installing: grubby                       ##################### [ 98/304]
+D, [2012-01-01T18:45:34.101955 #14332] DEBUG -- : Installing: llvm-libs                    ##################### [ 99/304]
+D, [2012-01-01T18:45:34.155454 #14332] DEBUG -- : Installing: libavc1394                   ##################### [100/304]
+D, [2012-01-01T18:45:34.213191 #14332] DEBUG -- : Installing: libfreebob                   ##################### [101/304]
+D, [2012-01-01T18:45:34.281478 #14332] DEBUG -- : Installing: nss-softokn                  ##################### [102/304]
+D, [2012-01-01T18:45:34.321165 #14332] DEBUG -- : Installing: libxslt                      ##################### [103/304]
+D, [2012-01-01T18:45:34.373964 #14332] DEBUG -- : Installing: libmount                     ##################### [104/304]
+D, [2012-01-01T18:45:34.450544 #14332] DEBUG -- : Installing: libtheora                    ##################### [105/304]
+D, [2012-01-01T18:45:34.505196 #14332] DEBUG -- : Installing: flac                         ##################### [106/304]
+D, [2012-01-01T18:45:34.694079 #14332] DEBUG -- : Installing: libsndfile                   ##################### [107/304]
+D, [2012-01-01T18:45:34.732854 #14332] DEBUG -- : Installing: libsamplerate                ##################### [108/304]
+D, [2012-01-01T18:45:34.763142 #14332] DEBUG -- : Installing: avahi-libs                   ##################### [109/304]
+D, [2012-01-01T18:45:34.779933 #14332] DEBUG -- : /var/tmp/rpm-tmp.czSecF: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:34.829514 #14332] DEBUG -- : Installing: nss-myhostname               ##################### [110/304]
+D, [2012-01-01T18:45:34.880168 #14332] DEBUG -- : Installing: db4-utils                    ##################### [111/304]
+D, [2012-01-01T18:45:34.925187 #14332] DEBUG -- : Installing: pinentry                     ##################### [112/304]
+D, [2012-01-01T18:45:34.955750 #14332] DEBUG -- : Installing: e2fsprogs-libs               ##################### [113/304]
+D, [2012-01-01T18:45:35.152944 #14332] DEBUG -- : Installing: libss                        ##################### [114/304]
+D, [2012-01-01T18:45:35.227093 #14332] DEBUG -- : Installing: tar                          ##################### [115/304]
+D, [2012-01-01T18:45:35.258014 #14332] DEBUG -- : Installing: vim-minimal                  ##################### [116/304]
+D, [2012-01-01T18:45:35.273108 #14332] DEBUG -- : /var/tmp/rpm-tmp.3kyHGK: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:35.560668 #14332] DEBUG -- : Installing: libquadmath                  ##################### [117/304]
+D, [2012-01-01T18:45:35.599519 #14332] DEBUG -- : Installing: fftw-libs                    ##################### [118/304]
+D, [2012-01-01T18:45:35.667465 #14332] DEBUG -- : Installing: libofa                       ##################### [119/304]
+D, [2012-01-01T18:45:35.784910 #14332] DEBUG -- : Installing: m4                           ##################### [120/304]
+D, [2012-01-01T18:45:35.830220 #14332] DEBUG -- : Installing: diffutils                    ##################### [121/304]
+D, [2012-01-01T18:45:35.846128 #14332] DEBUG -- : /var/tmp/rpm-tmp.eWSBXa: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:35.904119 #14332] DEBUG -- : Installing: libgomp                      ##################### [122/304]
+D, [2012-01-01T18:45:35.956680 #14332] DEBUG -- : Installing: dirac-libs                   ##################### [123/304]
+D, [2012-01-01T18:45:36.031235 #14332] DEBUG -- : Installing: libmodplug                   ##################### [124/304]
+D, [2012-01-01T18:45:36.167358 #14332] DEBUG -- : Installing: pcre                         ##################### [125/304]
+D, [2012-01-01T18:45:36.213230 #14332] DEBUG -- : Installing: grep                         ##################### [126/304]
+D, [2012-01-01T18:45:36.346182 #14332] DEBUG -- : Installing: libconfig                    ##################### [127/304]
+D, [2012-01-01T18:45:36.441093 #14332] DEBUG -- : Installing: libffado                     ##################### [128/304]
+D, [2012-01-01T18:45:36.528110 #14332] DEBUG -- : Installing: procps                       ##################### [129/304]
+D, [2012-01-01T18:45:36.547166 #14332] DEBUG -- : Installing: psmisc                       ##################### [130/304]
+D, [2012-01-01T18:45:36.635767 #14332] DEBUG -- : Installing: dash                         ##################### [131/304]
+D, [2012-01-01T18:45:36.695973 #14332] DEBUG -- : Installing: procmail                     ##################### [132/304]
+D, [2012-01-01T18:45:36.748279 #14332] DEBUG -- : Installing: ncurses                      ##################### [133/304]
+D, [2012-01-01T18:45:36.846477 #14332] DEBUG -- : Installing: gzip                         ##################### [134/304]
+D, [2012-01-01T18:45:37.384610 #14332] DEBUG -- : Installing: cracklib                     ##################### [135/304]
+D, [2012-01-01T18:45:37.392171 #14332] DEBUG -- : Installing: cracklib-dicts               ##################### [136/304]
+D, [2012-01-01T18:45:38.243496 #14332] DEBUG -- : Installing: coreutils-libs               ##################### [137/304]
+D, [2012-01-01T18:45:38.690209 #14332] DEBUG -- : Installing: coreutils                    ##################### [138/304]
+D, [2012-01-01T18:45:38.714818 #14332] DEBUG -- : /var/tmp/rpm-tmp.N6tnyt: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:39.142539 #14332] DEBUG -- : Installing: pam                          ##################### [139/304]
+D, [2012-01-01T18:45:39.244498 #14332] DEBUG -- : Installing: openssl                      ##################### [140/304]
+D, [2012-01-01T18:45:39.262875 #14332] DEBUG -- : /var/tmp/rpm-tmp.P6o2ds: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:40.415214 #14332] DEBUG -- : Installing: fontconfig                   ##################### [141/304]
+D, [2012-01-01T18:45:40.585821 #14332] DEBUG -- : Installing: module-init-tools            ##################### [142/304]
+D, [2012-01-01T18:45:41.457140 #14332] DEBUG -- : Installing: alsa-lib                     ##################### [143/304]
+D, [2012-01-01T18:45:41.674106 #14332] DEBUG -- : Installing: qt                           ##################### [144/304]
+D, [2012-01-01T18:45:41.779841 #14332] DEBUG -- : Installing: hwdata                       ##################### [145/304]
+D, [2012-01-01T18:45:41.814175 #14332] DEBUG -- : Installing: bind-libs-lite               ##################### [146/304]
+D, [2012-01-01T18:45:41.846344 #14332] DEBUG -- : Installing: libpciaccess                 ##################### [147/304]
+D, [2012-01-01T18:45:41.884634 #14332] DEBUG -- : Installing: fipscheck-lib                ##################### [148/304]
+D, [2012-01-01T18:45:41.909184 #14332] DEBUG -- : Installing: fipscheck                    ##################### [149/304]
+D, [2012-01-01T18:45:42.236094 #14332] DEBUG -- : Installing: libssh2                      ##################### [150/304]
+D, [2012-01-01T18:45:42.280866 #14332] DEBUG -- : Installing: fedora-logos                 ##################### [151/304]
+D, [2012-01-01T18:45:42.414918 #14332] DEBUG -- : Installing: nss-sysinit                  ##################### [152/304]
+D, [2012-01-01T18:45:42.498163 #14332] DEBUG -- : Installing: nss                          ##################### [153/304]
+D, [2012-01-01T18:45:42.548627 #14332] DEBUG -- : Installing: openldap                     ##################### [154/304]
+D, [2012-01-01T18:45:42.960168 #14332] DEBUG -- : Installing: libcurl                      ##################### [155/304]
+D, [2012-01-01T18:45:43.006516 #14332] DEBUG -- : Installing: gnupg2                       ##################### [156/304]
+D, [2012-01-01T18:45:43.072087 #14332] DEBUG -- : Installing: dhcp-libs                    ##################### [157/304]
+D, [2012-01-01T18:45:43.125175 #14332] DEBUG -- : Installing: dhcp-common                  ##################### [158/304]
+D, [2012-01-01T18:45:43.195967 #14332] DEBUG -- : Installing: gpgme                        ##################### [159/304]
+D, [2012-01-01T18:45:43.236387 #14332] DEBUG -- : Installing: curl                         ##################### [160/304]
+D, [2012-01-01T18:45:43.478643 #14332] DEBUG -- : Installing: rpm-libs                     ##################### [161/304]
+D, [2012-01-01T18:45:43.501784 #14332] DEBUG -- : Installing: rpm                          ##################### [162/304]
+D, [2012-01-01T18:45:43.710077 #14332] DEBUG -- : Installing: rpm-build-libs               ##################### [163/304]
+D, [2012-01-01T18:45:43.951207 #14332] DEBUG -- : Installing: libuser                      ##################### [164/304]
+D, [2012-01-01T18:45:44.003246 #14332] DEBUG -- : Installing: hicolor-icon-theme           ##################### [165/304]
+D, [2012-01-01T18:45:44.025392 #14332] DEBUG -- : Installing: logrotate                    ##################### [166/304]
+D, [2012-01-01T18:45:44.075903 #14332] DEBUG -- : Installing: libusb1                      ##################### [167/304]
+D, [2012-01-01T18:45:44.134542 #14332] DEBUG -- : Installing: libdc1394                    ##################### [168/304]
+D, [2012-01-01T18:45:44.175741 #14332] DEBUG -- : Installing: libvpx                       ##################### [169/304]
+D, [2012-01-01T18:45:44.207352 #14332] DEBUG -- : Installing: hostname                     ##################### [170/304]
+D, [2012-01-01T18:45:44.249196 #14332] DEBUG -- : Installing: ustr                         ##################### [171/304]
+D, [2012-01-01T18:45:44.837858 #14332] DEBUG -- : Installing: libsemanage                  ##################### [172/304]
+D, [2012-01-01T18:45:44.878442 #14332] DEBUG -- : /var/tmp/rpm-tmp.jhUlYH: line 1: /usr/sbin/groupadd: Permission denied
+D, [2012-01-01T18:45:45.011603 #14332] DEBUG -- : Installing: shadow-utils                 ##################### [173/304]
+D, [2012-01-01T18:45:45.046727 #14332] DEBUG -- : /var/tmp/rpm-tmp.X031cY: line 2: /usr/sbin/groupadd: Permission denied
+D, [2012-01-01T18:45:45.047535 #14332] DEBUG -- : /var/tmp/rpm-tmp.X031cY: line 3: /usr/sbin/groupadd: Permission denied
+D, [2012-01-01T18:45:45.057672 #14332] DEBUG -- : warning: group utempter does not exist - using root
+D, [2012-01-01T18:45:45.058215 #14332] DEBUG -- : warning: group utmp does not exist - using root
+D, [2012-01-01T18:45:45.065338 #14332] DEBUG -- : Installing: jack-audio-connection-kit    ##################### [174/304]
+D, [2012-01-01T18:45:45.554539 #14332] DEBUG -- : Installing: libutempter                  ##################### [175/304]
+D, [2012-01-01T18:45:45.604859 #14332] DEBUG -- : Installing: util-linux                   ##################### [176/304]
+D, [2012-01-01T18:45:45.638456 #14332] DEBUG -- : Installing: libasyncns                   ##################### [177/304]
+D, [2012-01-01T18:45:45.691545 #14332] DEBUG -- : Installing: libtool-ltdl                 ##################### [178/304]
+D, [2012-01-01T18:45:45.731979 #14332] DEBUG -- : Installing: pixman                       ##################### [179/304]
+D, [2012-01-01T18:45:45.800501 #14332] DEBUG -- : Installing: libkate                      ##################### [180/304]
+D, [2012-01-01T18:45:45.834595 #14332] DEBUG -- : Installing: libthai                      ##################### [181/304]
+D, [2012-01-01T18:45:45.880610 #14332] DEBUG -- : Installing: pciutils-libs                ##################### [182/304]
+D, [2012-01-01T18:45:45.918270 #14332] DEBUG -- : Installing: fribidi                      ##################### [183/304]
+D, [2012-01-01T18:45:45.949335 #14332] DEBUG -- : Installing: linux-atm-libs               ##################### [184/304]
+D, [2012-01-01T18:45:45.965591 #14332] DEBUG -- : Installing: sgpio                        ##################### [185/304]
+D, [2012-01-01T18:45:50.099193 #14332] DEBUG -- : Installing: gdbm                         ##################### [186/304]
+D, [2012-01-01T18:45:50.292237 #14332] DEBUG -- : Installing: python-libs                  ##################### [187/304]
+D, [2012-01-01T18:45:50.791273 #14332] DEBUG -- : Installing: python                       ##################### [188/304]
+D, [2012-01-01T18:45:50.820517 #14332] DEBUG -- : /var/tmp/rpm-tmp.yMWUNN: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:51.091703 #14332] DEBUG -- : Installing: gettext                      ##################### [189/304]
+D, [2012-01-01T18:45:51.904644 #14332] DEBUG -- : Installing: python-pycurl                ##################### [190/304]
+D, [2012-01-01T18:45:52.090126 #14332] DEBUG -- : Installing: python-urlgrabber            ##################### [191/304]
+D, [2012-01-01T18:45:52.262406 #14332] DEBUG -- : Installing: yum-metadata-parser          ##################### [192/304]
+D, [2012-01-01T18:45:52.281952 #14332] DEBUG -- : Installing: pygpgme                      ##################### [193/304]
+D, [2012-01-01T18:45:52.471905 #14332] DEBUG -- : Installing: newt-python                  ##################### [194/304]
+D, [2012-01-01T18:45:52.500727 #14332] DEBUG -- : Installing: authconfig                   ##################### [195/304]
+D, [2012-01-01T18:45:52.539968 #14332] DEBUG -- : Installing: rpm-python                   ##################### [196/304]
+D, [2012-01-01T18:45:52.575562 #14332] DEBUG -- : Installing: python-iniparse              ##################### [197/304]
+D, [2012-01-01T18:45:52.611488 #14332] DEBUG -- : Installing: libvisual                    ##################### [198/304]
+D, [2012-01-01T18:45:52.694189 #14332] DEBUG -- : Installing: libXau                       ##################### [199/304]
+D, [2012-01-01T18:45:52.805185 #14332] DEBUG -- : Installing: libxcb                       ##################### [200/304]
+D, [2012-01-01T18:45:52.840778 #14332] DEBUG -- : Installing: libX11                       ##################### [201/304]
+D, [2012-01-01T18:45:52.876315 #14332] DEBUG -- : Installing: libXext                      ##################### [202/304]
+D, [2012-01-01T18:45:52.976614 #14332] DEBUG -- : Installing: libXrender                   ##################### [203/304]
+D, [2012-01-01T18:45:53.020473 #14332] DEBUG -- : Installing: cairo                        ##################### [204/304]
+D, [2012-01-01T18:45:53.055941 #14332] DEBUG -- : Installing: libXfixes                    ##################### [205/304]
+D, [2012-01-01T18:45:53.090144 #14332] DEBUG -- : Installing: libXrandr                    ##################### [206/304]
+D, [2012-01-01T18:45:53.358181 #14332] DEBUG -- : Installing: libXi                        ##################### [207/304]
+D, [2012-01-01T18:45:53.379354 #14332] DEBUG -- : /var/tmp/rpm-tmp.KC5dlt: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:53.408193 #14332] DEBUG -- : Installing: gdk-pixbuf2                  ##################### [208/304]
+D, [2012-01-01T18:45:53.443492 #14332] DEBUG -- : Installing: libXcursor                   ##################### [209/304]
+D, [2012-01-01T18:45:53.477321 #14332] DEBUG -- : Installing: libXdamage                   ##################### [210/304]
+D, [2012-01-01T18:45:53.512601 #14332] DEBUG -- : Installing: libXinerama                  ##################### [211/304]
+D, [2012-01-01T18:45:53.546510 #14332] DEBUG -- : Installing: libXv                        ##################### [212/304]
+D, [2012-01-01T18:45:53.706218 #14332] DEBUG -- : Installing: libXtst                      ##################### [213/304]
+D, [2012-01-01T18:45:53.755317 #14332] DEBUG -- : Installing: pulseaudio-libs              ##################### [214/304]
+D, [2012-01-01T18:45:54.254716 #14332] DEBUG -- : Installing: libXft                       ##################### [215/304]
+D, [2012-01-01T18:45:54.275634 #14332] DEBUG -- : /var/tmp/rpm-tmp.CZt1Ab: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:54.814133 #14332] DEBUG -- : Installing: pango                        ##################### [216/304]
+D, [2012-01-01T18:45:54.854520 #14332] DEBUG -- : Installing: libXxf86vm                   ##################### [217/304]
+D, [2012-01-01T18:45:54.890915 #14332] DEBUG -- : Installing: libXcomposite                ##################### [218/304]
+D, [2012-01-01T18:45:54.932839 #14332] DEBUG -- : Installing: libcdaudio                   ##################### [219/304]
+D, [2012-01-01T18:45:55.002542 #14332] DEBUG -- : Installing: yajl                         ##################### [220/304]
+D, [2012-01-01T18:45:55.102024 #14332] DEBUG -- : Installing: raptor2                      ##################### [221/304]
+D, [2012-01-01T18:45:55.183094 #14332] DEBUG -- : Installing: rasqal                       ##################### [222/304]
+D, [2012-01-01T18:45:55.234999 #14332] DEBUG -- : Installing: redland                      ##################### [223/304]
+D, [2012-01-01T18:45:55.290923 #14332] DEBUG -- : Installing: slv2                         ##################### [224/304]
+D, [2012-01-01T18:45:55.332063 #14332] DEBUG -- : Installing: enca                         ##################### [225/304]
+D, [2012-01-01T18:45:55.368870 #14332] DEBUG -- : Installing: libass                       ##################### [226/304]
+D, [2012-01-01T18:45:55.406980 #14332] DEBUG -- : Installing: cdparanoia-libs              ##################### [227/304]
+D, [2012-01-01T18:45:55.443325 #14332] DEBUG -- : Installing: gsm                          ##################### [228/304]
+D, [2012-01-01T18:45:55.521481 #14332] DEBUG -- : Installing: hesiod                       ##################### [229/304]
+D, [2012-01-01T18:45:55.628466 #14332] DEBUG -- : Installing: libtasn1                     ##################### [230/304]
+D, [2012-01-01T18:45:55.708523 #14332] DEBUG -- : Installing: gnutls                       ##################### [231/304]
+D, [2012-01-01T18:45:56.447133 #14332] DEBUG -- : Installing: cups-libs                    ##################### [232/304]
+D, [2012-01-01T18:45:56.468987 #14332] DEBUG -- : /var/tmp/rpm-tmp.jmF7v0: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:56.534698 #14332] DEBUG -- : Installing: gtk2                         ##################### [233/304]
+D, [2012-01-01T18:45:56.551565 #14332] DEBUG -- : /var/tmp/rpm-tmp.htkUFP: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:56.703352 #14332] DEBUG -- : Installing: librsvg2                     ##################### [234/304]
+D, [2012-01-01T18:45:56.755338 #14332] DEBUG -- : Installing: libmpcdec                    ##################### [235/304]
+D, [2012-01-01T18:45:56.784130 #14332] DEBUG -- : Installing: mingetty                     ##################### [236/304]
+D, [2012-01-01T18:45:56.868703 #14332] DEBUG -- : Installing: plymouth-core-libs           ##################### [237/304]
+D, [2012-01-01T18:45:56.913003 #14332] DEBUG -- : Installing: sysvinit-tools               ##################### [238/304]
+D, [2012-01-01T18:45:56.931995 #14332] DEBUG -- : Installing: device-mapper                ##################### [239/304]
+D, [2012-01-01T18:45:56.960175 #14332] DEBUG -- : Installing: device-mapper-libs           ##################### [240/304]
+D, [2012-01-01T18:45:57.130477 #14332] DEBUG -- : Installing: cryptsetup-luks-libs         ##################### [241/304]
+D, [2012-01-01T18:45:57.245226 #14332] DEBUG -- : Installing: netxen-firmware              ##################### [242/304]
+D, [2012-01-01T18:45:57.414119 #14332] DEBUG -- : Installing: iproute                      ##################### [243/304]
+D, [2012-01-01T18:45:57.702691 #14332] DEBUG -- : Installing: kbd                          ##################### [244/304]
+D, [2012-01-01T18:45:58.260491 #14332] DEBUG -- : Installing: systemd                      ##################### [245/304]
+D, [2012-01-01T18:45:58.312216 #14332] DEBUG -- : /var/tmp/rpm-tmp.GeWYkx: line 1: /usr/sbin/groupadd: Permission denied
+D, [2012-01-01T18:45:58.314935 #14332] DEBUG -- : /var/tmp/rpm-tmp.GeWYkx: line 2: /usr/sbin/groupadd: Permission denied
+D, [2012-01-01T18:45:58.316939 #14332] DEBUG -- : /var/tmp/rpm-tmp.GeWYkx: line 3: /usr/sbin/groupadd: Permission denied
+D, [2012-01-01T18:45:58.319272 #14332] DEBUG -- : /var/tmp/rpm-tmp.GeWYkx: line 4: /usr/sbin/groupadd: Permission denied
+D, [2012-01-01T18:45:58.432249 #14332] DEBUG -- : Installing: systemd-units                ##################### [246/304]
+D, [2012-01-01T18:45:58.465147 #14332] DEBUG -- : Installing: udev                         ##################### [247/304]
+D, [2012-01-01T18:45:58.569931 #14332] DEBUG -- : Installing: systemd-sysv                 ##################### [248/304]
+D, [2012-01-01T18:45:58.591428 #14332] DEBUG -- : /var/tmp/rpm-tmp.DUk1Cn: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:45:58.654630 #14332] DEBUG -- : warning: group dbus does not exist - using root
+D, [2012-01-01T18:45:58.687705 #14332] DEBUG -- : Installing: iptables                     ##################### [249/304]
+D, [2012-01-01T18:46:00.180233 #14332] DEBUG -- : Installing: dbus                         ##################### [250/304]
+D, [2012-01-01T18:46:00.281241 #14332] DEBUG -- : Installing: linux-firmware               ##################### [251/304]
+D, [2012-01-01T18:46:00.353443 #14332] DEBUG -- : Installing: net-tools                    ##################### [252/304]
+D, [2012-01-01T18:46:00.391182 #14332] DEBUG -- : /var/tmp/rpm-tmp.0NJX9k: line 1: /usr/sbin/groupadd: Permission denied
+D, [2012-01-01T18:46:00.392167 #14332] DEBUG -- : error: %pre(initscripts-9.34-2.fc16.x86_64) scriptlet failed, exit status 126
+D, [2012-01-01T18:46:00.392760 #14332] DEBUG -- : error: initscripts-9.34-2.fc16.x86_64: install failed
+D, [2012-01-01T18:46:00.409790 #14332] DEBUG -- : Installing: iputils                      ##################### [253/304]
+D, [2012-01-01T18:46:00.664017 #14332] DEBUG -- : Installing: plymouth-scripts             ##################### [255/304]
+D, [2012-01-01T18:46:05.961714 #14332] DEBUG -- : Installing: dracut                       ##################### [256/304]
+D, [2012-01-01T18:46:06.102650 #14332] DEBUG -- : Installing: kernel                       ##################### [257/304]
+D, [2012-01-01T18:46:06.176471 #14332] DEBUG -- : Installing: libdrm                       ##################### [258/304]
+D, [2012-01-01T18:46:06.202272 #14332] DEBUG -- : Installing: plymouth                     ##################### [259/304]
+D, [2012-01-01T18:46:06.242526 #14332] DEBUG -- : Installing: device-mapper-event-libs     ##################### [260/304]
+D, [2012-01-01T18:46:06.529471 #14332] DEBUG -- : Installing: device-mapper-event          ##################### [261/304]
+D, [2012-01-01T18:46:07.352744 #14332] DEBUG -- : Installing: policycoreutils              ##################### [262/304]
+D, [2012-01-01T18:46:07.451444 #14332] DEBUG -- : Installing: selinux-policy               ##################### [263/304]
+D, [2012-01-01T18:46:07.631521 #14332] DEBUG -- : Installing: lvm2-libs                    ##################### [264/304]
+D, [2012-01-01T18:46:07.650631 #14332] DEBUG -- : /var/tmp/rpm-tmp.xc587W: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:46:07.677175 #14332] DEBUG -- : /var/tmp/rpm-tmp.9VzY3j: line 1: /usr/sbin/groupadd: Permission denied
+D, [2012-01-01T18:46:07.699784 #14332] DEBUG -- : warning: group ssh_keys does not exist - using root
+D, [2012-01-01T18:46:07.745604 #14332] DEBUG -- : Installing: lvm2                         ##################### [265/304]
+D, [2012-01-01T18:46:08.017426 #14332] DEBUG -- : Installing: openssh                      ##################### [266/304]
+D, [2012-01-01T18:46:08.066477 #14332] DEBUG -- : Installing: rsyslog                      ##################### [267/304]
+D, [2012-01-01T18:46:08.140873 #14332] DEBUG -- : Installing: cronie-anacron               ##################### [268/304]
+D, [2012-01-01T18:46:08.385139 #14332] DEBUG -- : Installing: cronie                       ##################### [269/304]
+D, [2012-01-01T18:46:08.403890 #14332] DEBUG -- : /var/tmp/rpm-tmp.B7R7Ri: line 1: /usr/sbin/groupadd: Permission denied
+D, [2012-01-01T18:46:08.410231 #14332] DEBUG -- : useradd: group 'saslauth' does not exist
+D, [2012-01-01T18:46:08.411125 #14332] DEBUG -- : error: %pre(cyrus-sasl-2.1.23-25.fc16.x86_64) scriptlet failed, exit status 6
+D, [2012-01-01T18:46:08.411727 #14332] DEBUG -- : error: cyrus-sasl-2.1.23-25.fc16.x86_64: install failed
+D, [2012-01-01T18:46:08.426577 #14332] DEBUG -- : Installing: crontabs                     ##################### [270/304]
+D, [2012-01-01T18:46:08.468080 #14332] DEBUG -- : Installing: kpartx                       ##################### [272/304]
+D, [2012-01-01T18:46:08.500944 #14332] DEBUG -- : Installing: dmraid                       ##################### [273/304]
+D, [2012-01-01T18:46:08.548107 #14332] DEBUG -- : Installing: dmraid-events                ##################### [274/304]
+D, [2012-01-01T18:46:08.572108 #14332] DEBUG -- : Installing: os-prober                    ##################### [275/304]
+D, [2012-01-01T18:46:08.649870 #14332] DEBUG -- : Installing: lcms-libs                    ##################### [276/304]
+D, [2012-01-01T18:46:08.681119 #14332] DEBUG -- : Installing: libmng                       ##################### [277/304]
+D, [2012-01-01T18:46:10.248199 #14332] DEBUG -- : Installing: mesa-dri-filesystem          ##################### [278/304]
+D, [2012-01-01T18:46:10.278109 #14332] DEBUG -- : Installing: mesa-dri-drivers             ##################### [279/304]
+D, [2012-01-01T18:46:12.610157 #14332] DEBUG -- : Installing: mesa-libGL                   ##################### [280/304]
+D, [2012-01-01T18:46:12.637171 #14332] DEBUG -- : /var/tmp/rpm-tmp.d8BZRU: line 1: /sbin/ldconfig: Permission denied
+D, [2012-01-01T18:46:12.662236 #14332] DEBUG -- : Installing: qt-x11                       ##################### [281/304]
+D, [2012-01-01T18:46:17.979987 #14332] DEBUG -- : Installing: xml-common                   ##################### [282/304]
+D, [2012-01-01T18:46:18.296086 #14332] DEBUG -- : Installing: iso-codes                    ##################### [283/304]
+D, [2012-01-01T18:46:18.691404 #14332] DEBUG -- : Installing: gstreamer-plugins-base       ##################### [284/304]
+D, [2012-01-01T18:46:19.348360 #14332] DEBUG -- : Installing: gstreamer-plugins-bad-free   ##################### [285/304]
+D, [2012-01-01T18:46:20.621738 #14332] DEBUG -- : Installing: qt-mobility                  ##################### [286/304]
+D, [2012-01-01T18:46:21.161490 #14332] DEBUG -- : Installing: qtwebkit                     ##################### [287/304]
+D, [2012-01-01T18:46:21.278308 #14332] DEBUG -- : warning: group smmsp does not exist - using root
+D, [2012-01-01T18:46:21.377336 #14332] DEBUG -- : warning: user smmsp does not exist - using root
+D, [2012-01-01T18:46:21.377678 #14332] DEBUG -- : Installing: grub2                        ##################### [288/304]
+D, [2012-01-01T18:46:21.378101 #14332] DEBUG -- : warning: group smmsp does not exist - using root
+D, [2012-01-01T18:46:21.628305 #14332] DEBUG -- : /var/tmp/rpm-tmp.lgvtK4: line 1: /usr/sbin/groupadd: Permission denied
+D, [2012-01-01T18:46:21.697586 #14332] DEBUG -- : Installing: sendmail                     ##################### [289/304]
+D, [2012-01-01T18:46:22.511692 #14332] DEBUG -- : Installing: openssh-server               ##################### [290/304]
+D, [2012-01-01T18:46:22.653660 #14332] DEBUG -- : Installing: selinux-policy-targeted      ##################### [291/304]
+D, [2012-01-01T18:46:22.914496 #14332] DEBUG -- : Installing: dhclient                     ##################### [292/304]
+D, [2012-01-01T18:46:23.005149 #14332] DEBUG -- : Installing: system-config-firewall-base  ##################### [293/304]
+D, [2012-01-01T18:46:23.045200 #14332] DEBUG -- : Installing: audit                        ##################### [294/304]
+D, [2012-01-01T18:46:23.475402 #14332] DEBUG -- : Installing: biosdevname                  ##################### [295/304]
+D, [2012-01-01T18:46:23.578248 #14332] DEBUG -- : Installing: yum                          ##################### [296/304]
+D, [2012-01-01T18:46:23.730187 #14332] DEBUG -- : Installing: passwd                       ##################### [297/304]
+D, [2012-01-01T18:46:23.913112 #14332] DEBUG -- : Installing: sudo                         ##################### [298/304]
+D, [2012-01-01T18:46:23.931178 #14332] DEBUG -- : Installing: e2fsprogs                    ##################### [299/304]
+D, [2012-01-01T18:46:23.966627 #14332] DEBUG -- : Installing: file                         ##################### [300/304]
+D, [2012-01-01T18:46:24.004353 #14332] DEBUG -- : Installing: acl                          ##################### [301/304]
+D, [2012-01-01T18:46:24.015546 #14332] DEBUG -- : Installing: attr                         ##################### [302/304]
+D, [2012-01-01T18:46:24.021142 #14332] DEBUG -- : Installing: setserial                    ##################### [303/304]
+D, [2012-01-01T18:46:24.390704 #14332] DEBUG -- : /sbin/new-kernel-pkg: line 481: /sbin/depmod: Permission denied
+D, [2012-01-01T18:46:37.413789 #14332] DEBUG -- : /sbin/dracut: line 562: /sbin/depmod: Permission denied
+D, [2012-01-01T18:46:37.415834 #14332] DEBUG -- : F: "depmod -a 3.1.6-1.fc16.x86_64" failed.
+D, [2012-01-01T18:46:37.445369 #14332] DEBUG -- : mkinitrd failed
+D, [2012-01-01T18:46:37.446104 #14332] DEBUG -- : warning: %posttrans(kernel-3.1.6-1.fc16.x86_64) scriptlet failed, exit status 1
+D, [2012-01-01T18:46:38.359182 #14332] DEBUG -- : 1228 blocks
+D, [2012-01-01T18:46:38.756853 #14332] DEBUG -- : initscripts-9.34-2.fc16.x86_64 was supposed to be installed but is not!
+D, [2012-01-01T18:46:38.924379 #14332] DEBUG -- : cyrus-sasl-2.1.23-25.fc16.x86_64 was supposed to be installed but is not!
+D, [2012-01-01T18:46:40.022522 #14332] DEBUG -- : pwconv: failed to change the mode of /etc/passwd- to 0600
+D, [2012-01-01T18:46:40.285180 #14332] DEBUG -- : error reading information on service network: No such file or directory
+D, [2012-01-01T18:46:40.287934 #14332] DEBUG -- : Found GRUB2 package.
+D, [2012-01-01T18:46:40.288218 #14332] DEBUG -- : Writing grub /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/install_root/boot/grub2/device.map
+D, [2012-01-01T18:46:40.288599 #14332] DEBUG -- : Installing grub2 to /dev/loop0
+D, [2012-01-01T18:46:45.339350 #14332] DEBUG -- : Installing: rootfiles                    ##################### [304/304]Installation finished. No error reported.
+D, [2012-01-01T18:46:45.340847 #14332] DEBUG -- : Grub2 installed.
+D, [2012-01-01T18:46:45.340995 #14332] DEBUG -- : Generating grub2 configuration file...
+D, [2012-01-01T18:46:54.432427 #14332] DEBUG -- : Generating grub.cfg ...
+D, [2012-01-01T18:46:57.426369 #14332] DEBUG -- : Found linux image: /boot/vmlinuz-3.1.6-1.fc16.x86_64
+D, [2012-01-01T18:47:07.696178 #14332] DEBUG -- : done
+D, [2012-01-01T18:47:07.715576 #14332] DEBUG -- : Grub2 configuration file generated.
+D, [2012-01-01T18:47:22.935192 #14332] DEBUG -- : *************************
+D, [2012-01-01T18:47:23.030038 #14332] DEBUG -- : Unmounting directory /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/install_root/
+D, [2012-01-01T18:47:23.214543 #14332] DEBUG -- : Removing compat symlinks
+D, [2012-01-01T18:47:23.214726 #14332] DEBUG -- : Unmapping /dev/loop0
+D, [2012-01-01T18:47:23.236929 #14332] DEBUG -- : Losetup remove /dev/loop0
+D, [2012-01-01T18:47:23.265832 #14332] DEBUG -- : moving disks to stage location
+D, [2012-01-01T18:47:23.266188 #14332] DEBUG -- : moving /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/tmp-_fIYFP/phantomjs-f16-sda.raw to /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/out/phantomjs-f16-sda.raw
+D, [2012-01-01T18:47:23.269205 #14332] DEBUG -- : writing image XML to /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/out/phantomjs-f16.xml
+D, [2012-01-01T18:47:23.269736 #14332] DEBUG -- : creating destination dir: build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/phantomjs-f16
+D, [2012-01-01T18:47:23.271284 #14332] DEBUG -- : moving /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/out/phantomjs-f16.xml to build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/phantomjs-f16/phantomjs-f16.xml
+D, [2012-01-01T18:47:23.271497 #14332] DEBUG -- : moving /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/out/phantomjs-f16-sda.raw to build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/phantomjs-f16/phantomjs-f16-sda.raw
+D, [2012-01-01T18:47:23.284748 #14332] DEBUG -- : umount: /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-_mgdTd/install_root/sys/fs/selinux/load: not found
+D, [2012-01-01T18:47:23.287224 #14332] DEBUG -- : 
+D, [2012-01-01T18:47:23.287310 #14332] DEBUG -- : 
+D, [2012-01-01T18:47:23.287355 #14332] DEBUG -- : Finished
+D, [2012-01-01T18:47:23.352907 #14332] DEBUG -- : Preparing guestfs...
+T, [2012-01-01T18:47:23.353238 #14332] TRACE -- : Setting libguestfs temporary directory to '/tmp'...
+T, [2012-01-01T18:47:23.355088 #14332] TRACE -- : We have event callbacks available!
+T, [2012-01-01T18:47:23.359304 #14332] TRACE -- : Setting debug + trace...
+D, [2012-01-01T18:47:23.359890 #14332] DEBUG -- : GFS: set_memsize 300
+D, [2012-01-01T18:47:23.360016 #14332] DEBUG -- : GFS: set_memsize = 0
+D, [2012-01-01T18:47:23.360810 #14332] DEBUG -- : GFS: set_append "noapic"
+D, [2012-01-01T18:47:23.360880 #14332] DEBUG -- : GFS: set_append = 0
+T, [2012-01-01T18:47:23.360921 #14332] TRACE -- : Enabling SElinux support in guestfs...
+D, [2012-01-01T18:47:23.360982 #14332] DEBUG -- : GFS: set_selinux true
+D, [2012-01-01T18:47:23.361027 #14332] DEBUG -- : GFS: set_selinux = 0
+T, [2012-01-01T18:47:23.361115 #14332] TRACE -- : Checking if HW virtualization is available...
+T, [2012-01-01T18:47:25.408945 #14332] TRACE -- : HW acceleration not available.
+T, [2012-01-01T18:47:25.409406 #14332] TRACE -- : Setting QEMU wrapper to /usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/qemu.wrapper...
+D, [2012-01-01T18:47:25.409649 #14332] DEBUG -- : GFS: set_qemu "/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/qemu.wrapper"
+D, [2012-01-01T18:47:25.409771 #14332] DEBUG -- : GFS: set_qemu = 0
+T, [2012-01-01T18:47:25.409842 #14332] TRACE -- : QEMU wrapper set.
+T, [2012-01-01T18:47:25.409909 #14332] TRACE -- : Adding drive 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/phantomjs-f16-sda.raw'...
+D, [2012-01-01T18:47:25.410012 #14332] DEBUG -- : GFS: add_drive "build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/phantomjs-f16-sda.raw"
+D, [2012-01-01T18:47:25.410358 #14332] DEBUG -- : GFS: add_drive = 0
+T, [2012-01-01T18:47:25.410445 #14332] TRACE -- : Drive added.
+D, [2012-01-01T18:47:25.410553 #14332] DEBUG -- : Enabling networking for GuestFS...
+D, [2012-01-01T18:47:25.410668 #14332] DEBUG -- : GFS: set_network true
+D, [2012-01-01T18:47:25.410761 #14332] DEBUG -- : GFS: set_network = 0
+D, [2012-01-01T18:47:25.410863 #14332] DEBUG -- : Launching guestfs...
+D, [2012-01-01T18:47:25.410968 #14332] DEBUG -- : GFS: launch
+T, [2012-01-01T18:47:25.418190 #14332] TRACE -- : GFS: [00005ms] febootstrap-supermin-helper --verbose -f checksum '/usr/lib64/guestfs/supermin.d' x86_64
+T, [2012-01-01T18:47:26.023665 #14332] TRACE -- : GFS: [00612ms] begin building supermin appliance
+T, [2012-01-01T18:47:26.023970 #14332] TRACE -- : GFS: [00612ms] run febootstrap-supermin-helper
+T, [2012-01-01T18:47:26.024142 #14332] TRACE -- : GFS: [00612ms] febootstrap-supermin-helper --verbose -f ext2 /usr/lib64/guestfs/supermin.d x86_64 /tmp/guestfs.whn5m0/kernel /tmp/guestfs.whn5m0/initrd /tmp/guestfs.whn5m0/root
+T, [2012-01-01T18:47:46.935106 #14332] TRACE -- : GFS: [21508ms] finished building supermin appliance
+T, [2012-01-01T18:47:46.963846 #14332] TRACE -- : GFS: [21545ms] begin testing qemu features
+T, [2012-01-01T18:47:47.198695 #14332] TRACE -- : GFS: [21783ms] finished testing qemu features
+T, [2012-01-01T18:47:47.216949 #14332] TRACE -- : GFS: accept_from_daemon: 0x4989010 g->state = 1
+T, [2012-01-01T18:47:47.233471 #14332] TRACE -- : GFS: [21796ms] /usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/qemu.wrapper \
+    -drive file=build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/phantomjs-f16-sda.raw,cache=off,if=virtio \
+    -nodefconfig \
+    -machine accel=kvm:tcg \
+    -nodefaults \
+    -nographic \
+    -m 300 \
+    -no-reboot \
+    -no-hpet \
+    -device virtio-serial \
+    -serial stdio \
+    -chardev socket,path=/tmp/libguestfs9CHGtN/guestfsd.sock,id=channel0 \
+    -device virtserialport,chardev=channel0,name=org.libguestfs.channel.0 \
+    -netdev user,id=usernet,net=169.254.0.0/16 \
+    -device virtio-net-pci,netdev=usernet \
+    -kernel /tmp/.guestfs-0/kernel.14332 \
+    -initrd /tmp/.guestfs-0/initrd.14332 \
+    -append 'panic=1 console=ttyS0 udevtimeout=300 no_timer_check acpi=off printk.time=1 cgroup_disable=memory selinux=1 enforcing=0 guestfs_verbose=1 TERM=xterm noapic' \
+    -drive file=/tmp/.guestfs-0/root.14332,snapshot=on,if=virtio,cache=unsafe
+T, [2012-01-01T18:47:47.329797 #14332] TRACE -- : GFS: Could not open option rom 'sgabios.bin': No such file or directory
+T, [2012-01-01T18:47:52.984227 #14332] TRACE -- : GFS: [    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.1.6-1.fc16.x86_64 (mockbuild@x86-18.phx2.fedoraproject.org) (gcc version 4.6.2 20111027 (Red Hat 4.6.2-1) (GCC) ) #1 SMP Wed Dec 21 22:41:17 UTC 2011
+[    0.000000]
+T, [2012-01-01T18:47:53.002777 #14332] TRACE -- : GFS:  Command line: panic=1 console=ttyS0 udevtimeout=300 no_timer_check acpi=off printk.time=1 cgroup_disable=memory selinux=1 enforcing=0 guestfs_verbose=1 TERM=xterm noapic
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000]  BIOS-e820: 0000000000000000 - 000000000009bc00 (usable)
+[    0.000000]  BIOS-e820: 000000000009bc00 - 00000000000a0000 (reserved)
+[    0.000000]  BIOS-e820: 00000000000f0000 - 0000000000100000 (reserved)
+[    0.000000]  BIOS-e820: 0000000000100000 - 0000000012bfd000 (usable)
+[    0.000000]  BIOS-e820: 0000000012bfd000 - 0000000012c00000 (reserved)
+[    0.000000]  BIOS-e820: 00000000fffc0000 - 0000000100000000 (reserved)
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] DMI 2.4 present.
+[    0.000000] No AGP bridge found
+[    0.000000] last_pfn = 0x12bfd max_arch_pfn = 0x400000000
+[    0.000000] x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+[    0.000000] found SMP MP-table at [ffff8800000fdaf0] fdaf0
+[    0.000000] init_memory_mapping: 0000000000000000-0000000012bfd000
+[    0.000000] RAMDISK: 12ae7000 - 12bf0000
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at 0000000000000000-0000000012bfd000
+[    0.000000] Initmem setup node 0 0000000000000000-0000000012bfd000
+[    0.000000]   NODE_DATA [0000000012ad3000 - 0000000012ae6fff]
+[    0.000000] Zone PFN ranges:
+[    0.000000]   DMA      0x00000010 -> 0x00001000
+[    0.000000]   DMA32    0x00001000 -> 0x00100000
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start PFN for each node
+[    0.000000] early_node_map[2] active PFN ranges
+[    0.000000]     0: 0x00000010 -> 0x0000009b
+[    0.000000]     0: 0x00000100 -> 0x00012bfd
+[    0.000000] SFI: Simple Firmware Interface v0.81 http://simplefirmware.org
+[    0.000000] Intel MultiProcessor Specification v1.4
+[    0.000000] MPTABLE: OEM ID: BOCHSCPU
+[    0.000000] MPTABLE: Product ID: 0.1         
+[    0.000000] MPTABLE: APIC at: 0xFEE00000
+[    0.000000] Processor #0 (Bootup-CPU)
+[    0.000000] IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-23
+[    0.000000] Processors: 1
+[    0.000000] SMP: Allowing 1 CPUs, 0 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: 000000000009b000 - 000000000009c000
+[    0.000000] PM: Registered nosave memory: 000000000009c000 - 00000000000a0000
+[    0.000000] PM: Registered nosave memory: 00000000000a0000 - 00000000000f0000
+[    0.000000] PM: Registered nosave memory: 00000000000f0000 - 0000000000100000
+[    0.000000] Allocating PCI resources starting at 12c00000 (gap: 12c00000:ed3c0000)
+T, [2012-01-01T18:47:53.013208 #14332] TRACE -- : GFS: 
+[    0.000000] Booting paravirtualized kernel on bare hardware
+[    0.000000] setup_percpu: NR_CPUS:256 nr_cpumask_bits:256 nr_cpu_ids:1 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 27 pages/cpu @ffff880012800000 s81536 r8192 d20864 u2097152
+[    0.000000] Built 1 zonelists in Node order, mobility grouping on.  Total pages: 75475
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel command line: panic=1 console=ttyS0 udevtimeout=300 no_timer_check acpi=off printk.time=1 cgroup_disable=memory selinux=1 enforcing=0 guestfs_verbose=1 TERM=xterm noapic
+[    0.000000] Disabling memory control group subsystem
+[    0.000000] PID hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.000000] Checking aperture...
+[    0.000000] No AGP bridge found
+[    0.000000] Memory: 284976k/307188k available (6022k kernel code, 468k absent, 21744k reserved, 5659k data, 964k init)
+[    0.000000] SLUB: Genslabs=15, HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] NR_IRQS:16640 nr_irqs:256 16
+[    0.000000] Console: colour dummy device 80x25
+[    0.000000] console [ttyS0] enabled
+[    0.000000] Fast TSC calibration failed
+T, [2012-01-01T18:47:53.057553 #14332] TRACE -- : GFS: [    0.000000] TSC: Unable to calibrate against PIT
+[    0.0
+T, [2012-01-01T18:47:53.071268 #14332] TRACE -- : GFS: 00000] TSC: No reference (HPET/PMTIMER) available
+[    0.000000] Marking TSC unstable due to could not calculate TSC khz
+[    0.009999] Calibrating delay loop... 
+T, [2012-01-01T18:47:53.088175 #14332] TRACE -- : GFS: 40.83 BogoMIPS (lpj=20416)
+[    0.020998] pid_max: default: 32768 minimum: 301
+[    0.029998] Security Framework initialized
+T, [2012-01-01T18:47:53.095314 #14332] TRACE -- : GFS: [    0.036997] SELinux:  Initializing.
+T, [2012-01-01T18:47:53.105462 #14332] TRACE -- : GFS: [    0.040997] Dentry cache hash table entries: 65536 (order: 7, 524288 bytes)
+T, [2012-01-01T18:47:53.124552 #14332] TRACE -- : GFS: [    0.045996] Inode-cache hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.049996] Mount-cache hash table entries: 256
+T, [2012-01-01T18:47:53.146390 #14332] TRACE -- : GFS: [    0.079993] Initializing cgroup subsys cpuacct
+[    0.08099
+T, [2012-01-01T18:47:53.163727 #14332] TRACE -- : GFS: 2] Initializing cgroup subsys memory
+[    0.081992] Initializing cgroup subsys devices
+[    0.082992] Initializing cgroup subsys freezer
+[    0.083992] Initializing cgroup subsys net_cls
+[    0.084992] Initializing cgroup subsys blkio
+[    0.086992] Initializing cgroup subsys perf_event
+T, [2012-01-01T18:47:53.183882 #14332] TRACE -- : GFS: [    0.091992] mce: CPU supports 10 MCE banks
+[    0.098991] SMP alternatives: switching to UP code
+T, [2012-01-01T18:47:53.468654 #14332] TRACE -- : GFS: [    0.317960] Freeing SMP alternatives: 24k freed
+[    0.319960] f
+T, [2012-01-01T18:47:53.485727 #14332] TRACE -- : GFS: trace: allocating 22693 entries in 89 pages
+T, [2012-01-01T18:47:53.598160 #14332] TRACE -- : GFS: [    0.349956] ------------[ cut here ]------------
+[    0.350955] WARNING: at arch/x86/kernel/a
+T, [2012-01-01T18:47:53.615335 #14332] TRACE -- : GFS: pic/apic.c:1299 setup_local_APIC+0x193/0x272()
+[    0.352955] Hardware name: Bochs
+[    0.352955] Modules linked in:
+[    0.353955] Pid: 1, comm: swapper Not tainted 3.1.6-1.fc16.x86_64 #1
+[    0.354955] Call Trace:
+[    0.355955]  [<ffffffff8106b73f>] warn_slowpath_common+0x7f/0xc0
+[    0.356955]  [<ffffffff8106b79a>] warn_slowpath_null+0x1a/0x20
+[    0.357954]  [<ffffffff815c1ccb>] setup_local_APIC+0x193/0x272
+[    0.358954]  [<ffffffff81035aa0>] ? flat_vector_allocation_domain+0x30/0x30
+[    0.360954]  [<ffffffff81b8bb93>] native_smp_prepare_cpus+0x308/0x3ce
+[    0.361954]  [<ffffffff81b7ec9a>] kernel_init+0x85/0
+T, [2012-01-01T18:47:53.633398 #14332] TRACE -- : GFS: x158
+[    0.362954]  [<ffffffff810636d7>] ? schedule_tail+0x27/0xb0
+[    0.363953]  [<ffffffff815dee34>] kernel_thread_helper+0x4/0x10
+[    0.364953]  [<ffffffff81b7ec15>] ? start_kernel+0x3c0/0x3c0
+[    0.365953]  [<ffffffff815dee30>] ? gs_change+0x13/0x13
+[    0.372952] ---[ end trace a7919e7f17c0a725 ]---
+[    0.375952] CPU0: AMD QEMU Virtual CPU version 0.15.1 stepping 03
+T, [2012-01-01T18:47:53.938135 #14332] TRACE -- : GFS: [    0.507931] APIC timer disabled due to verification failure
+[    0
+T, [2012-01-01T18:47:53.953909 #14332] TRACE -- : GFS: .508931] Performance Events: Broken PMU hardware detected, using software events only.
+T, [2012-01-01T18:47:53.975156 #14332] TRACE -- : GFS: [    0.526929] NMI watchdog disabled (cpu0): hardware events not enabled
+[    0.528928] Brought up 1 CPUs
+[    0.529928] Total of 1 processors activated (40.83 BogoMIPS).
+T, [2012-01-01T18:47:54.002336 #14332] TRACE -- : GFS: [    0.550925] devtmpfs: initialized
+T, [2012-01-01T18:47:54.052811 #14332] TRACE -- : GFS: [    0.595918] atomic64 test passed for x86-64 platform with CX8 and with SSE
+T, [2012-01-01T18:47:54.067636 #14332] TRACE -- : GFS: [    0.597918] RTC time: 23:47:52, date: 01/01/12
+[    0.602917] NET: Registered protocol family 16
+T, [2012-01-01T18:47:54.086460 #14332] TRACE -- : GFS: [    0.628913] PCI: Using configuration type 1 for base access
+T, [2012-01-01T18:47:54.125514 #14332] TRACE -- : GFS: [    0.660908] bio: create slab <bio-0> at 0
+T, [2012-01-01T18:47:54.140934 #14332] TRACE -- : GFS: [    0.666907] ACPI: Interpreter disabled.
+[    0.67
+T, [2012-01-01T18:47:54.160510 #14332] TRACE -- : GFS: 8905] vgaarb: loaded
+[    0.685904] SCSI subsystem initialized
+[    0.69590
+T, [2012-01-01T18:47:54.178332 #14332] TRACE -- : GFS: 3] usbcore: registered new interface driver usbfs
+[    0.698902] usbcore: registered new interface driver hub
+[    0.701902] usbcore: registered new device driver usb
+[    0.706901] PCI: Probing PCI hardware
+T, [2012-01-01T18:47:54.196219 #14332] TRACE -- : GFS: [    0.721899] pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+[    0.722899] pci 0000:00:01.3: quirk: [io  0xb100-0xb10f] claimed by PIIX4 SMB
+T, [2012-01-01T18:47:54.213109 #14332] TRACE -- : GFS: [    0.744895] pci 0000:00:01.0: PIIX/ICH IRQ router [8086:7000]
+T, [2012-01-01T18:47:54.233782 #14332] TRACE -- : GFS: [    0.764892] NetLabel: Initializing
+[    0.765892] NetLabel
+T, [2012-01-01T18:47:54.245177 #14332] TRACE -- : GFS: :  domain hash size = 128
+[    0.766892] NetLabel:  protocols = UNLABELED CIPSOv4
+[    0.768891] NetLabel:  unlabeled traffic allowed by default
+T, [2012-01-01T18:47:54.532735 #14332] TRACE -- : GFS: [    1.043849] pnp: PnP ACPI: disabled
+T, [2012-01-01T18:47:54.614529 #14332] TRACE -- : GFS: [    1.126837] NET: Registered protocol family 2
+T, [2012-01-01T18:47:54.630302 #14332] TRACE -- : GFS: [    1.129836] IP route cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    1.129836] TCP established hash table entries: 16384 (order: 6, 262144 bytes)
+[    1.132836] TCP bind hash table entries: 16384 (order: 6, 262144 bytes)
+T, [2012-01-01T18:47:54.650230 #14332] TRACE -- : GFS: [    1.134835] TCP: Hash tables configured (established 16384 bind 16384)
+[    1.135835] TCP reno registered
+[    1.136835] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    1.137835] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    1.143834] NET: Registered protocol family 1
+[    1.144834] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    1.145834] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[    1.146834] pci 0000:00:0
+T, [2012-01-01T18:47:54.668964 #14332] TRACE -- : GFS: 1.0: Activating ISA DMA hang workarounds
+T, [2012-01-01T18:47:54.686836 #14332] TRACE -- : GFS: [    1.158832] Unpacking initramfs...
+T, [2012-01-01T18:47:54.712256 #14332] TRACE -- : GFS: [    1.196826] Freeing initrd memory: 1060k freed
+T, [2012-01-01T18:47:54.729943 #14332] TRACE -- : GFS: [    1.206824] platform rtc_cmos: registered platform RTC device (no PNP device found)
+T, [2012-01-01T18:47:54.758248 #14332] TRACE -- : GFS: [    1.238820] Intel AES-NI instructions are not detected.
+T, [2012-01-01T18:47:54.778761 #14332] TRACE -- : GFS: [    1.253817] audit: initializing netlink socket (disabled)
+[    1.254817] type=2000 audit(13254
+T, [2012-01-01T18:47:54.801070 #14332] TRACE -- : GFS: 61672.254:1): initialized
+T, [2012-01-01T18:47:54.955410 #14332] TRACE -- : GFS: [    1.419792] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+T, [2012-01-01T18:47:55.010197 #14332] TRACE -- : GFS: [    1.469784] VFS: Disk quotas dquot_6.5.2
+T, [2012-01-01T18:47:55.028380 #14332] TRACE -- : GFS: [    1.474783] Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+T, [2012-01-01T18:47:55.050493 #14332] TRACE -- : GFS: [    1.504779] msgmni has been set to 558
+T, [2012-01-01T18:47:55.079221 #14332] TRACE -- : GFS: [    1.536774] alg: No test for stdrng (krng)
+[    1.537774] NET: Registered protocol family 38
+T, [2012-01-01T18:47:55.097294 #14332] TRACE -- : GFS: [    1.540773] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    1.546772] io scheduler noop registered
+[    1.548772] io scheduler deadline registered
+[    1.551772] io scheduler cfq registered (default)
+T, [2012-01-01T18:47:55.115716 #14332] TRACE -- : GFS: [    1.557771] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+[    1.563770] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+[    1.564770] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+T, [2012-01-01T18:47:55.126117 #14332] TRACE -- : GFS: [    1.577768] virtio-pci 0000:00:02.0: found PCI INT A -> IRQ 10
+T, [2012-01-01T18:47:55.146170 #14332] TRACE -- : GFS: [    1.581767] virtio-pci 0000:00:03.0: found PCI INT A -> IRQ 11
+[    1.584767] virtio-pci 0000:00:04.0: found PCI INT A -> IRQ 11
+[    1.586766] virtio-pci 0000:00:05.0: found PCI INT A -> IRQ 10
+[    1.592765] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+T, [2012-01-01T18:47:55.165757 #14332] TRACE -- : GFS: [    1.598764] serial8250: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+T, [2012-01-01T18:47:55.214634 #14332] TRACE -- : GFS: [    1.649757] Non-volatile memory driver v1.3
+[    1.650757] Linux agpgart interface 
+T, [2012-01-01T18:47:55.229722 #14332] TRACE -- : GFS: v0.103
+T, [2012-01-01T18:47:55.260911 #14332] TRACE -- : GFS: [    1.691750] loop: module loaded
+T, [2012-01-01T18:47:55.286623 #14332] TRACE -- : GFS: [    1.716746] scsi0 : ata_piix
+T, [2012-01-01T18:47:55.308903 #14332] TRACE -- : GFS: [    1.721746] scsi1 : ata_piix
+[    1.724745] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc000 irq 14
+[    1.725745] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc008 irq 15
+T, [2012-01-01T18:47:55.328084 #14332] TRACE -- : GFS: [    1.736743] Fixed MDIO Bus: probed
+[    1.742742] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.743742] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.744742] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.748742] usbcore: registered new interface driver usbserial
+T, [2012-01-01T18:47:55.350787 #14332] TRACE -- : GFS: [    1.749741] USB Serial support registered for generic
+[    1.752741] usbcore: registered new interface driver usbserial_generic
+[    1.754741] usbserial: USB Serial Driver core
+[    1.756740] i8042: PNP: No PS/2 controller found. Probing ports directly.
+[    1.763739] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    1.765739] serio: i8042 AUX port at 0x60,0x64 irq 12
+T, [2012-01-01T18:47:55.369547 #14332] TRACE -- : GFS: [    1.770738] mousedev: PS/2 mouse device common for all mice
+T, [2012-01-01T18:47:55.390972 #14332] TRACE -- : GFS: [    1.789735] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+[    1.794735] rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+[    1.795734] rtc0: alarms up to one day, 114 bytes nvram
+[    1.802733] device-mapper: uevent: version 1.0.3
+T, [2012-01-01T18:47:55.411101 #14332] TRACE -- : GFS: [    1.816731] device-mapper: ioctl: 4.21.0-ioctl (2011-07-06) initialised: dm-devel@redhat.com
+T, [2012-01-01T18:47:55.431540 #14332] TRACE -- : GFS: [    1.824730] cpuidle: using governor ladder
+[    1.826730] cpuidle: using governor menu
+[    1.833729] EFI Variables Facility v0.08 2004-May-17
+T, [2012-01-01T18:47:55.451327 #14332] TRACE -- : GFS: [    1.843727] usbcore: registered new interface driver usbhid
+[    1.844727] usbhid: USB HID core driver
+[    1.849726] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    1.854725] TCP cubic registered
+[    1.855725] Initializing XFRM netlink socket
+T, [2012-01-01T18:47:55.464910 #14332] TRACE -- : GFS: [    1.863724] NET: Registered protocol family 10
+T, [2012-01-01T18:47:55.482105 #14332] TRACE -- : GFS: [    1.878722] Mobile IPv6
+[    1.878722] NET: Registered protocol family 17
+[    1.880721] Registering the dns_resolver key type
+T, [2012-01-01T18:47:55.502441 #14332] TRACE -- : GFS: [    1.900718] registered taskstats version 1
+[    1.900718] IMA: No TPM chip found, activating TPM-bypass!
+T, [2012-01-01T18:47:55.519201 #14332] TRACE -- : GFS: [    1.910717]   Magic number: 12:718:806
+[    1.913716] rtc_cmos rtc_cmos: setting system clock to 2012-01-01 23:47:54 UTC (1325461674)
+[    1.914716] powernow-k8: Processor cpuid 
+T, [2012-01-01T18:47:55.534463 #14332] TRACE -- : GFS: 623 not supported
+[    1.917716] Initializing network drop monitor service
+T, [2012-01-01T18:47:55.576424 #14332] TRACE -- : GFS: [    1.958709] Freeing unused kernel memory: 964k freed
+T, [2012-01-01T18:47:55.611316 #14332] TRACE -- : GFS: [    1.984705] Write protecting the kernel read-only data: 10240k
+T, [2012-01-01T18:47:55.628570 #14332] TRACE -- : GFS: [    2.002703] Freeing unused kernel memory: 104k freed
+T, [2012-01-01T18:47:55.754066 #14332] TRACE -- : GFS: [    2.114686] Freeing unused kernel memory: 1552k freed
+T, [2012-01-01T18:47:55.830445 #14332] TRACE -- : GFS: febootstrap: mounting /proc
+T, [2012-01-01T18:47:55.844577 #14332] TRACE -- : GFS: 
+T, [2012-01-01T18:47:55.869360 #14332] TRACE -- : GFS: febootstrap: uptime: 2.20 0.33
+T, [2012-01-01T18:47:55.886775 #14332] TRACE -- : GFS: febootstrap: ext2 mini initrd starting up
+febootstrap: mounting /sys
+febootstrap: internal insmod libcrc32c.ko
+T, [2012-01-01T18:47:55.911751 #14332] TRACE -- : GFS: febootstrap: internal insmod crc32c-intel.ko
+T, [2012-01-01T18:47:55.934839 #14332] TRACE -- : GFS: insmod: init_module: crc32c-intel.ko: No such device
+febootstrap: internal insmod crc-itu-t.ko
+T, [2012-01-01T18:47:55.948574 #14332] TRACE -- : GFS: 
+febootstrap: internal insmod crc-ccitt.ko
+febootstrap: internal insmod crc7.ko
+febootstrap: internal insmod crc8.ko
+febootstrap: internal insmod scsi_transpor
+T, [2012-01-01T18:47:55.962022 #14332] TRACE -- : GFS: t_spi.ko
+febootstrap: internal insmod sym53c8xx.ko
+T, [2012-01-01T18:47:55.978105 #14332] TRACE -- : GFS: febootstrap: internal insmod rfkill.ko
+T, [2012-01-01T18:47:55.991980 #14332] TRACE -- : GFS: febootstrap: internal insmod sparse-keymap.ko
+febootstrap: internal insmod ideapad-laptop.ko
+T, [2012-01-01T18:47:56.010973 #14332] TRACE -- : GFS: insmod: init_module: ideapad-laptop.ko: No such device
+febootstrap: internal insmod virtio_balloon.ko
+febootstrap: internal insmod virtio-rng.ko
+T, [2012-01-01T18:47:56.025725 #14332] TRACE -- : GFS: febootstrap: internal insmod virtio_blk.ko
+T, [2012-01-01T18:47:56.099335 #14332] TRACE -- : GFS: [    2.407641]  vda: vda1 vda2
+T, [2012-01-01T18:47:56.123790 #14332] TRACE -- : GFS: [    2.427638]  vdb: unknown partition table
+T, [2012-01-01T18:47:56.141939 #14332] TRACE -- : GFS: febootstrap: internal insmod virtio_net.ko
+T, [2012-01-01T18:47:56.161474 #14332] TRACE -- : GFS: [    2.464632] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i80
+T, [2012-01-01T18:47:56.177084 #14332] TRACE -- : GFS: 42/serio1/input/input1
+T, [2012-01-01T18:47:56.190167 #14332] TRACE -- : GFS: febootstrap: picked /sys/block/vdb/dev as root device
+T, [2012-01-01T18:47:56.208195 #14332] TRACE -- : GFS: febootstrap: creating /dev/root as block special 252:16
+febootstrap: mounting new root on /root
+T, [2012-01-01T18:47:56.227075 #14332] TRACE -- : GFS: [    2.506626] EXT4-fs (vdb): mounting ext2 file system using the ext4 subsystem
+T, [2012-01-01T18:47:56.252740 #14332] TRACE -- : GFS: [    2.532622] EXT4-fs (vdb): mounted filesystem without journal. Opts: 
+T, [2012-01-01T18:47:56.268093 #14332] TRACE -- : GFS: febootstrap: chroot
+/proc/uptime: No such file or directory
+T, [2012-01-01T18:47:56.668404 #14332] TRACE -- : GFS: Starting /init script ...
+T, [2012-01-01T18:47:56.834928 #14332] TRACE -- : GFS: rm: cannot remove `/proc'
+T, [2012-01-01T18:47:56.852867 #14332] TRACE -- : GFS: : Is a directory
+T, [2012-01-01T18:47:56.897105 #14332] TRACE -- : GFS: mkdir: cannot create directory `/proc'
+T, [2012-01-01T18:47:56.913314 #14332] TRACE -- : GFS: : File exists
+T, [2012-01-01T18:47:57.133481 #14332] TRACE -- : GFS: rm: cannot remove `/sys': Is a directory
+T, [2012-01-01T18:47:57.180418 #14332] TRACE -- : GFS: mkdir: cannot create directory `/sys': File exists
+T, [2012-01-01T18:47:57.811255 #14332] TRACE -- : GFS: udevd[48]: specified group 'dialout' unknown
+T, [2012-01-01T18:47:57.826805 #14332] TRACE -- : GFS: 
+
+T, [2012-01-01T18:47:57.848015 #14332] TRACE -- : GFS: udevd[48]: specified group 'floppy' unknown
+
+T, [2012-01-01T18:47:57.864706 #14332] TRACE -- : GFS: udevd[48]: specified group 'cdrom' unknown
+
+T, [2012-01-01T18:47:57.882143 #14332] TRACE -- : GFS: udevd[48]: specified group 'tape' unknown
+
+T, [2012-01-01T18:48:00.350861 #14332] TRACE -- : GFS: [    6.302045] piix4_smbus 0000:00:01.3: SMBus Host Controller at 0xb100, revision 0
+T, [2012-01-01T18:48:06.809876 #14332] TRACE -- : GFS: mount: mount point /selinux does not exist
+T, [2012-01-01T18:48:06.825848 #14332] TRACE -- : GFS: 
+T, [2012-01-01T18:48:07.739921 #14332] TRACE -- : GFS: mdadm: No arrays found in config file or automatically
+T, [2012-01-01T18:48:08.062759 #14332] TRACE -- : GFS:   Reading all physical volumes.  This may take a while...
+T, [2012-01-01T18:48:08.140621 #14332] TRACE -- : GFS:   No volume groups found
+T, [2012-01-01T18:48:08.351263 #14332] TRACE -- : GFS:   No volume groups found
+T, [2012-01-01T18:48:08.503028 #14332] TRACE -- : GFS: /dev:
+T, [2012-01-01T18:48:08.554993 #14332] TRACE -- : GFS: total 64
+T, [2012-01-01T18:48:08.572002 #14332] TRACE -- : GFS: crw------- 1 root root  10, 235 Jan  1 18:48 autofs
+drwxr-xr-x 2 root root     4096 Jan  1 18:48 block
+crw------- 1 root root  10, 234 Jan  1 18:47 btrfs-control
+drwxr-xr-x 2 root root     4096 Jan  1 18:48 char
+crw------- 1 root root   5,   1 Jan  1 18:48 console
+lrwxrwxrwx 1 root root       11 Jan  1 18:47 core -> /proc/kcore
+drwxr-xr-x 3 root root     4096 Jan  1 18:47 cpu
+crw------- 1 root root  10,  62 Jan  1 18:48 cpu_dma_latency
+drwxr-xr-x 7 root root     4096 Jan  1 18:48 disk
+lrwxrwxrwx 1 root root       13 Jan  1 18:47 fd -> /proc/self/fd
+crw-rw-rw- 1 root root   1,   7 Jan  1 18:48 full
+crw-rw-
+T, [2012-01-01T18:48:08.588308 #14332] TRACE -- : GFS: rw- 1 root root  10, 229 Jan  1 18:47 fuse
+drwxr-xr-x 3 root root     4096 Jan  1 18:48 input
+crw------- 1 root root   1,  11 Jan  1 18:48 kmsg
+crw------- 1 root root  10, 237 Jan  1 18:48 loop-control
+brw-rw---- 1 root disk   7,   0 Jan  1 18:48 loop0
+brw-rw---- 1 root disk   7,   1 Jan  1 18:48 loop1
+brw-rw---- 1 root disk   7,   2 Jan  1 18:48 loop2
+T, [2012-01-01T18:48:08.599781 #14332] TRACE -- : GFS: brw-rw---- 1 root disk   7,   3 Jan  1 18:48 loop3
+brw-rw---- 1 root disk   7,   4 Jan  1 18:48 loop4
+brw-rw---- 1 root disk   7,   5 Jan  1 18:48 loop5
+brw-rw---- 1 root disk   7,   6 Jan  1 18:48 loop6
+brw-rw---- 1 root disk   7,   7 Jan  1 18:48 loop7
+drwxr-xr-x 2  497  497     4096 Jan  1 18:48 mapper
+T, [2012-01-01T18:48:08.614836 #14332] TRACE -- : GFS: crw------- 1 root root  10, 227 Jan  1 18:48 mcelog
+drwxr-xr-x 2 root root     4096 Jan  1 18:48 md
+crw-r----- 1 root kmem   1,   1 Jan  1 18:48 mem
+drwxr-xr-x 2 root root     4096 Jan  1 18:47 net
+crw------- 1 root root  10,  61 Jan  1 18:48 network_latency
+crw------- 1 root root  10,  60 Jan  1 18:48 network_throughput
+crw-rw-rw- 1 root root   1,   3 Jan  1 18:48 null
+crw-r----- 1 root kmem  10, 144 Jan  1 18:48 nvram
+crw------- 1 root root   1,  12 Jan  1 18:48 oldmem
+T, [2012-01-01T18:48:08.632395 #14332] TRACE -- : GFS: 
+crw-r----- 1 root kmem   1,   4 Jan  1 18:48 port
+crw------- 1 root root 108,   0 Jan  1 18:47 ppp
+crw-rw-rw- 1 root tty    5,   2 Jan  1 18:48 ptmx
+drwxr-xr-x 2  497  497     4096 Dec  9 13:59 pts
+crw-rw-rw- 1 root root   1,   8 Jan  1 18:48 random
+drwxr-xr-x 2 root root     4096 Jan  1 18:48 raw
+crw-r--r-- 1 root root  10,  59 Jan  1 18:48 rfkill
+lrwxrwxrwx 1 root
+T, [2012-01-01T18:48:08.650000 #14332] TRACE -- : GFS:  root        4 Jan  1 18:47 rtc -> rtc0
+crw------- 1 root root 254,   0 Jan  1 18:47 rtc0
+drwxr-xr-x 2  497  497     4096 Dec  9 13:59 shm
+crw------- 1 root root  10, 231 Jan  1 18:48 snapshot
+drwxr-xr-x 2 root root     4096 Jan  1 18:47 snd
+lrwxrwxrwx 1 root root       15 Jan  1 18:47 stderr -> /proc/self/fd/2
+lrwxrwxrwx 1 root root       15 Jan  1 18:47 stdin -> /proc/self/fd/0
+lrwxrwxrwx 1 root root       15 Jan  1 18:47 stdout -> /proc/self/fd/1
+crw-rw-rw- 1 root tty    5,   0 Jan  1 18:48 tty
+crw--w---- 1 root tty    4,   0 Jan  1 18:48 tty0
+crw--w---- 1 root tty    4,   1 Jan  1 18:48 tty1
+crw--w---- 1 root tty    4,  10 Jan  1 18:48 tty10
+T, [2012-01-01T18:48:08.667755 #14332] TRACE -- : GFS: crw--w---- 1 root tty    4,  11 Jan  1 18:48 tty11
+crw--w---- 1 root tty    4,  12 Jan  1 18:48 tty12
+crw--w---- 1 root tty    4,  13 Jan  1 18:48 tty13
+crw--w---- 1 root tty    4,  14 Jan  1 18:48 tty14
+crw--w---- 1 root tty    4,  15 Jan  1 18:48 tty15
+crw--w---- 1 root tty    4,  16 Jan  1 18:48 tty16
+crw--w---- 1 root tty    4,  17 Jan  1 18:48 tty17
+crw--w---- 1 root tty    4,  18 Jan  1 18:48 tty18
+crw--w---- 1 root tty    4,  19 Jan  1 18:48 tty19
+crw--w---- 1 root tty    4,   2 Jan  1 18:48 tty2
+crw--w---- 1 root tty    4,  20 Ja
+T, [2012-01-01T18:48:08.686841 #14332] TRACE -- : GFS: n  1 18:48 tty20
+crw--w---- 1 root tty    4,  21 Jan  1 18:48 tty21
+crw--w---- 1 root tty    4,  22 Jan  1 18:48 tty22
+crw--w---- 1 root tty    4,  23 Jan  1 18:48 tty23
+crw--w---- 1 root tty    4,  24 Jan  1 18:48 tty24
+crw--w---- 1 root tty    4,  25 Jan  1 18:48 tty25
+crw--w---- 1 root tty    4,  26 Jan  1 18:48 tty26
+crw--w---- 1 root tty    4,  27 Jan  1 18:48 tty27
+crw--w---- 1 root tty    4,  28 Jan  1 18:48 tty28
+crw--w---- 1 root tty    4,  29 Jan  1 18:48 tty29
+T, [2012-01-01T18:48:08.704408 #14332] TRACE -- : GFS: 
+crw--w---- 1 root tty    4,   3 Jan  1 18:48 tty3
+crw--w---- 1 root tty    4,  30 Jan  1 18:48 tty30
+crw--w---- 1 root tty    4,  31 Jan  1 18:48 tty31
+crw--w---- 1 root tty    4,  32 Jan  1 18:48 tty32
+crw--w---- 1 root tty    4,  33 Jan  1 18:48 tty33
+crw--w---- 1 root tty    4,  34 Jan  1 18:48 tty34
+crw--w---- 1 root tty    4,  35 Jan  1 18:48 tty35
+crw--w---- 1 root tty    4,  36 Jan  1 18:48 tty36
+crw--w---- 1 root tty    4,  37 Jan  1 18:48 tty37
+crw--w---- 1 root tty    4,  38 J
+T, [2012-01-01T18:48:08.722879 #14332] TRACE -- : GFS: an  1 18:48 tty38
+crw--w---- 1 root tty    4,  39 Jan  1 18:48 tty39
+crw--w---- 1 root tty    4,   4 Jan  1 18:48 tty4
+crw--w---- 1 root tty    4,  40 Jan  1 18:48 tty40
+crw--w---- 1 root tty    4,  41 Jan  1 18:48 tty41
+crw--w---- 1 root tty    4,  42 Jan  1 18:48 tty42
+crw--w---- 1 root tty    4,  43 Jan  1 18:48 tty43
+crw--w---- 1 root tty    4,  44 Jan  1 18:48 tty44
+crw--w---- 1 root tty    4,  45 Jan  1 18:48 tty45
+crw--w---- 1 root tty    4,  46 Jan  1 18:48 tty46
+crw--w---- 1 root tty    4,  47 J
+T, [2012-01-01T18:48:08.741549 #14332] TRACE -- : GFS: an  1 18:48 tty47
+crw--w---- 1 root tty    4,  48 Jan  1 18:48 tty48
+crw--w---- 1 root tty    4,  49 Jan  1 18:48 tty49
+crw--w---- 1 root tty    4,   5 Jan  1 18:48 tty5
+crw--w---- 1 root tty    4,  50 Jan  1 18:48 tty50
+crw--w---- 1 root tty    4,  51 Jan  1 18:48 tty51
+crw--w---- 1 root tty    4,  52 Jan  1 18:48 tty52
+crw--w---- 1 root tty    4,  53 Jan  1 18:48 tty53
+crw--w---- 1 root tty    4,  54 Jan  1 18:48 tty54
+crw--w---- 1 root tty    4,  55 Jan  1 18:48 tty55
+crw--w---- 1 root tty    4,  56 Jan  1 18:48 
+T, [2012-01-01T18:48:08.759701 #14332] TRACE -- : GFS: tty56
+crw--w---- 1 root tty    4,  57 Jan  1 18:48 tty57
+crw--w---- 1 root tty    4,  58 Jan  1 18:48 tty58
+crw--w---- 1 root tty    4,  59 Jan  1 18:48 tty59
+crw--w---- 1 root tty    4,   6 Jan  1 18:48 tty6
+crw--w---- 1 root tty    4,  60 Jan  1 18:48 tty60
+crw--w---- 1 root tty    4,  61 Jan  1 18:48 tty61
+crw--w---- 1 root tty    4,  62 Jan  1 18:48 tty62
+crw--w---- 1 root tty    4,  63 Jan  1 18:48 tty63
+crw--w---- 1 root tty    4,   7 Jan  1 18:48 tty7
+crw--w---- 1 root tty    4,   8 Jan  1 18:48 tty8
+crw--w---- 1 root tty    4,   9 Jan  1 18:48 tty9
+crw------- 1 root root   4,  64 Jan  1 18:47 ttyS0
+c
+T, [2012-01-01T18:48:08.778209 #14332] TRACE -- : GFS: rw------- 1 root root   4,  65 Jan  1 18:47 ttyS1
+crw------- 1 root root   4,  66 Jan  1 18:47 ttyS2
+crw------- 1 root root   4,  67 Jan  1 18:47 ttyS3
+crw------- 1 root root  10, 223 Jan  1 18:47 uinput
+crw-rw-rw- 1 root root   1,   9 Jan  1 18:48 urandom
+crw------- 1 root root 251,   0 Jan  1 18:48 usbmon0
+crw-rw---- 1 root tty    7,   0 Jan  1 18:48 vcs
+crw-rw---- 1 root tty    7,   1 Jan  1 18:48 vcs1
+crw-rw---- 1 root tty    7, 128 Jan  1 18:48 vcsa
+crw-rw---- 1 root tty    7, 129 Jan  1 18:48 vcsa1
+brw-rw---- 1 root disk 252,   0 Jan  1 18:48 vda
+T, [2012-01-01T18:48:08.798864 #14332] TRACE -- : GFS: brw-rw---- 1 root disk 252,   1 Jan  1 18:48 vda1
+brw-rw---- 1 root disk 252,   2 Jan  1 18:48 vda2
+brw-rw---- 1 root disk 252,  16 Jan  1 18:48 vdb
+crw------- 1 root root  10,  63 Jan  1 18:48 vga_arbiter
+drwxr-xr-x 2 root root     4096 Jan  1 18:47 virtio-ports
+crw------- 1 root root 252,   1 Jan  1 18:47 vport0p1
+crw-rw-rw- 1 root root   1,   5 Jan  1 18:48 zero
+
+/dev/block:
+total 0
+T, [2012-01-01T18:48:08.817490 #14332] TRACE -- : GFS: 
+lrwxrwxrwx 1 root root 6 Jan  1 18:48 252:0 -> ../vda
+lrwxrwxrwx 1 root root 7 Jan  1 18:48 252:1 -> ../vda1
+lrwxrwxrwx 1 root root 6 Jan  1 18:48 252:16 -> ../vdb
+lrwxrwxrwx 1 root root 7 Jan  1 18:48 252:2 -> ../vda2
+lrwxrwxrwx 1 root root 8 Jan  1 18:48 7:0 -> ../loop0
+lrwxrwxrwx 1 root root 8 Jan  1 18:48 7:1 -> ../loop1
+lrwxrwxrwx 1 root root 8 Jan  1 18:48 7:2 -> ../loop2
+lrwxrwxrwx 1 root root 8 Jan  1 18:48 7:3 -> ../loop3
+lrwxrwxrwx 1 root root 8 Jan  1 18:48 7:4 -> ../loop4
+T, [2012-01-01T18:48:08.837269 #14332] TRACE -- : GFS: lrwxrwxrwx 1 root root 8 Jan  1 18:48 7:5 -> ../loop5
+lrwxrwxrwx 1 root root 8 Jan  1 18:48 7:6 -> ../loop6
+lrwxrwxrwx 1 root root 8 Jan  1 18:48 7:7 -> ../loop7
+
+/dev/char:
+T, [2012-01-01T18:48:08.860600 #14332] TRACE -- : GFS: total 0
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 10:144 -> ../nvram
+T, [2012-01-01T18:48:08.880429 #14332] TRACE -- : GFS: lrwxrwxrwx 1 root root  9 Jan  1 18:48 10:227 -> ../mcelog
+lrwxrwxrwx 1 root root 11 Jan  1 18:48 10:231 -> ../snapshot
+lrwxrwxrwx 1 root root  9 Jan  1 18:48 10:235 -> ../autofs
+lrwxrwxrwx 1 root root 17 Jan  1 18:48 10:236 -> ../mapper/control
+lrwxrwxrwx 1 root root 15 Jan  1 18:48 10:237 -> ../loop-control
+lrwxrwxrwx 1 root root  9 Jan  1 18:48 
+T, [2012-01-01T18:48:08.901371 #14332] TRACE -- : GFS: 10:59 -> ../rfkill
+lrwxrwxrwx 1 root root 21 Jan  1 18:48 10:60 -> ../network_throughput
+lrwxrwxrwx 1 root root 18 Jan  1 18:48 10:61 -> ../network_latency
+lrwxrwxrwx 1 root root 18 Jan  1 18:48 10:62 -> ../cpu_dma_latency
+lrwxrwxrwx 1 root root 14 Jan  1 18:48 10:63 -> ../vga_arbiter
+lrwxrwxrwx 1 root root 15 Jan  1 18:48 13:32 -> ../input/mouse0
+lrwxrwxrwx 1 root root 13 Jan  1 18:48 13:63 -> ../input/mice
+lrwxrwxrwx 1 root root 15 Jan  1 18:48 13:64 -> ../input/event0
+lrwxrwxrwx 1 root root 15 Jan  1 18:48 13:65 -> ../input/event1
+lrwxrwxrwx 1 root root 13 Jan  1 18:48 162:0 -> ../raw/rawctl
+lrwxrwxrwx 1 root root 
+T, [2012-01-01T18:48:08.917473 #14332] TRACE -- : GFS:  6 Jan  1 18:48 1:1 -> ../mem
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 1:11 -> ../kmsg
+lrwxrwxrwx 1 root root  9 Jan  1 18:48 1:12 -> ../oldmem
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 1:3 -> ../null
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 1:4 -> ../port
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 1:5 -> ../zero
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 1:7 -> ../full
+lrwxrwxrwx 1 root root  9 Jan  1 18:48 1:8 -> ../random
+lrwxrwxrwx 1 root root 10 Jan  1 18:48 1:9 -> ../urandom
+lrwxrwxrwx 1 root root 12 Jan  1 18:48 202:0 -> ../cpu/0/msr
+lrwxrwxrwx 1 root root 14 Jan  1 18:47 203:0 -> ../cpu/0/cpuid
+lrwxrwxrwx 1 root root 10 Jan  1 18:48 251:0 -> ../usbmon0
+lrwxrwxrwx 1 root root 11 Jan  1 18:47 252:1 -> ../vport0p1
+lrwxrwxrwx 1 root root  7 Jan  1 18:47 254:0 -> ../rtc0
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 4:0 -> ../tty0
+T, [2012-01-01T18:48:08.934286 #14332] TRACE -- : GFS: lrwxrwxrwx 1 root root  7 Jan  1 18:48 4:1 -> ../tty1
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:10 -> ../tty10
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:11 -> ../tty11
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:12 -> ../tty12
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:13 -> ../tty13
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:14 -> ../tty14
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:15 -> ../tty15
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:16 -> ../tty16
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:17 -> ../tty17
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:18 -> ../tty18
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:19 -> ../tty19
+T, [2012-01-01T18:48:08.951790 #14332] TRACE -- : GFS: lrwxrwxrwx 1 root root  7 Jan  1 18:48 4:2 -> ../tty2
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:20 -> ../tty20
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:21 -> ../tty21
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:22 -> ../tty22
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:23 -> ../tty23
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:24 -> ../tty24
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:25 -> ../tty25
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:26 -> ../tty26
+l
+T, [2012-01-01T18:48:08.968627 #14332] TRACE -- : GFS: rwxrwxrwx 1 root root  8 Jan  1 18:48 4:27 -> ../tty27
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:28 -> ../tty28
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:29 -> ../tty29
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 4:3 -> ../tty3
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:30 -> ../tty30
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:31 -> ../tty31
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:32 -> ../tty32
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:33 -> ../tty33
+lrwxr
+T, [2012-01-01T18:48:08.986918 #14332] TRACE -- : GFS: wxrwx 1 root root  8 Jan  1 18:48 4:34 -> ../tty34
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:35 -> ../tty35
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:36 -> ../tty36
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:37 -> ../tty37
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:38 -> ../tty38
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:39 -> ../tty39
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 4:4 -> ../tty4
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:40 -> ../tty40
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:41 -> ../tty41
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:42
+T, [2012-01-01T18:48:09.006338 #14332] TRACE -- : GFS:  -> ../tty42
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:43 -> ../tty43
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:44 -> ../tty44
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:45 -> ../tty45
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:46 -> ../tty46
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:47 -> ../tty47
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:48 -> ../tty48
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:49 -> ../tty49
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 4:5 -> ../tty5
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:50 -> ../tty50
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:51 -> ../tty51
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:52 -> ../tty52
+lrwxrwxrwx 1 root root  8 Jan  
+T, [2012-01-01T18:48:09.024834 #14332] TRACE -- : GFS: 1 18:48 4:53 -> ../tty53
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:54 -> ../tty54
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:55 -> ../tty55
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:56 -> ../tty56
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:57 -> ../tty57
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:58 -> ../tty58
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:59 -> ../tty59
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 4:6 -> ../tty6
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:60 -> ../tty60
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:61 -> ../tty61
+T, [2012-01-01T18:48:09.044324 #14332] TRACE -- : GFS: lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:62 -> ../tty62
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 4:63 -> ../tty63
+lrwxrwxrwx 1 root root  8 Jan  1 18:47 4:64 -> ../ttyS0
+lrwxrwxrwx 1 root root  8 Jan  1 18:47 4:65 -> ../ttyS1
+lrwxrwxrwx 1 root root  8 Jan  1 18:47 4:66 -> ../ttyS2
+lrwxrwxrwx 1 root root  8 Jan  1 18:47 4:67 -> ../ttyS3
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 4:7 -> ../tty7
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 4:8 -> ../tty8
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 4:9 -> ../tty9
+lrwxrwxrwx 1 root root  6 Jan  1 18:48 5:0 -> ../tty
+lrwxrwxrwx 1 root root 10 Jan  1 18:48 5:1 -> ../
+T, [2012-01-01T18:48:09.059485 #14332] TRACE -- : GFS: console
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 5:2 -> ../ptmx
+lrwxrwxrwx 1 root root  6 Jan  1 18:48 7:0 -> ../vcs
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 7:1 -> ../vcs1
+lrwxrwxrwx 1 root root  7 Jan  1 18:48 7:128 -> ../vcsa
+lrwxrwxrwx 1 root root  8 Jan  1 18:48 7:129 -> ../vcsa1
+
+/dev/cpu:
+total 4
+drwxr-xr-x 2 root root    4096 Jan  1 18:48 0
+crw------- 1 root root 10, 184 Jan  1
+T, [2012-01-01T18:48:09.078971 #14332] TRACE -- : GFS:  18:47 microcode
+
+/dev/cpu/0:
+total 0
+cr--r--r-- 1 root root 203, 0 Jan  1 18:47 cpuid
+crw------- 1 root root 202, 0 Jan  1 18:48 msr
+
+/dev/disk:
+total 20
+drwxr-xr-x 2 root root 4096 Jan  1 18:48 by-label
+drwxr-xr-x 2 root root 4096 Jan  1 18:48 by-partlabel
+drwxr-xr-x 2 root r
+T, [2012-01-01T18:48:09.098577 #14332] TRACE -- : GFS: oot 4096 Jan  1 18:48 by-partuuid
+drwxr-xr-x 2 root root 4096 Jan  1 18:48 by-path
+drwxr-xr-x 2 root root 4096 Jan  1 18:48 by-uuid
+
+/dev/disk/by-label:
+total 0
+lrwxrwxrwx 1 root root 10 Jan  1 18:48 _\x2f -> ../../vda2
+
+/dev/disk/by-partlabel:
+total 0
+lrwxrwxrwx 1 root root 10 Jan  1 18:48 primary -> ../../vda2
+
+/dev/disk/by-partuuid:
+total 0
+lrwxrwxrwx 1 root root 10 Jan  1 18:48 32cb6c51-e227-4d1d-b812-ddd1c87108b3 -> ../../vda2
+lrwxrwxrwx 1 root root 10 Jan  1 18:48 4a0175a5-5919-4711-af05-ad2a17ae0e1e -> ../../vda1
+
+/dev/di
+T, [2012-01-01T18:48:09.115907 #14332] TRACE -- : GFS: sk/by-path:
+total 0
+lrwxrwxrwx 1 root root  9 Jan  1 18:48 pci-0000:00:04.0-virtio-pci-virtio2 -> ../../vda
+lrwxrwxrwx 1 root root 10 Jan  1 18:48 pci-0000:00:04.0-virtio-pci-virtio2-part1 -> ../../vda1
+lrwxrwxrwx 1 root root 10 Jan  1 18:48 pci-0000:00:04.0-virtio-pci-virtio2-part2 -> ../../vda2
+lrwxrwxrwx 1 root root  9 Jan  1 18:48 pci-0000:00:05.0-virtio-pci-virtio3 -> ../../vdb
+
+/dev/disk/by-uuid:
+T, [2012-01-01T18:48:09.134065 #14332] TRACE -- : GFS: total 0
+lrwxrwxrwx 1 root root  9 Jan  1 18:48 29e3d122-e7e6-4ac5-bf57-a1d871bf497b -> ../../vdb
+lrwxrwxrwx 1 root root 10 Jan  1 18:48 ff899369-59ec-4c2d-a2da-3f2896036198 -> ../../vda2
+
+/dev/input:
+total 4
+drwxr-xr-x 2 root root   4096 Jan  1 18:48 by-path
+crw-r----- 1 root root 13, 64 Jan  1 18:48 event0
+crw-r----- 1 root root 13, 65 Jan  1 18:48 event1
+crw-r----- 1 root root 13, 63 Jan  1 18:48 mice
+T, [2012-01-01T18:48:09.151488 #14332] TRACE -- : GFS: crw-r----- 1 root root 13, 32 Jan  1 18:48 mouse0
+
+/dev/input/by-path:
+total 0
+lrwxrwxrwx 1 root root 9 Jan  1 18:48 platform-i8042-serio-0-event-kbd -> ../event0
+lrwxrwxrwx 1 root root 9 Jan  1 18:48 platform-i8042-serio-1-event-mouse -> ../event1
+lrwxrwxrwx 1 root root 9 Jan  1 18:48 platform-i8042-serio-1-mouse -> ../mouse0
+
+/dev/mapper:
+total 0
+crw-------
+T, [2012-01-01T18:48:09.172475 #14332] TRACE -- : GFS:  1 root root 10, 236 Jan  1 18:48 control
+
+/dev/md:
+total 0
+-rw------- 1 root root 0 Jan  1 18:48 md-device-map
+
+/dev/net:
+total 0
+crw-rw-rw- 1 root root 10, 200 Jan  1 18:47 tun
+
+/dev/pts:
+total 0
+
+/dev/raw:
+total 0
+T, [2012-01-01T18:48:09.187918 #14332] TRACE -- : GFS: crw-rw---- 1 root disk 162, 0 Jan  1 18:48 rawctl
+
+/dev/shm:
+total 0
+
+/dev/snd:
+total 0
+crw-rw---- 1 root audio 116,  1 Jan  1 18:47 seq
+crw-rw---- 1 root audio 116, 33 Jan  1 18:47 timer
+
+/dev/virtio-ports:
+total 0
+T, [2012-01-01T18:48:09.207000 #14332] TRACE -- : GFS: lrwxrwxrwx 1 root root 11 Jan  1 18:47 org.libguestfs.channel.0 -> ../vport0p1
+T, [2012-01-01T18:48:09.238115 #14332] TRACE -- : GFS: rootfs / rootfs rw 0 0
+proc /proc proc rw,relatime 0 0
+T, [2012-01-01T18:48:09.256683 #14332] TRACE -- : GFS: 
+/dev/root / ext2 rw,noatime,user_xattr,acl,barrier=1 0 0
+/proc /proc proc rw,relatime 0 0
+/sys /sys sysfs rw,relatime 0 0
+T, [2012-01-01T18:48:09.544084 #14332] TRACE -- : GFS:   No volume groups found
+T, [2012-01-01T18:48:09.734423 #14332] TRACE -- : GFS:   No volume groups found
+T, [2012-01-01T18:48:09.783672 #14332] TRACE -- : GFS: eth0      Link encap:Ethernet  HWaddr 52:54:00:12:34:56  
+T, [2012-01-01T18:48:09.800916 #14332] TRACE -- : GFS:           inet addr:169.254.2.10  Bcast:169.254.255.255  Mask:255.255.0.0
+          inet6 addr: fe80::5054:ff:fe12:3456/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+T, [2012-01-01T18:48:09.818966 #14332] TRACE -- : GFS:           RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 b)  TX bytes:258 (258.0 b)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+ 
+T, [2012-01-01T18:48:09.836125 #14332] TRACE -- : GFS:          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
+
+T, [2012-01-01T18:48:09.894373 #14332] TRACE -- : GFS: Kernel IP routing table
+T, [2012-01-01T18:48:09.911567 #14332] TRACE -- : GFS: Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+0.0.0.0         169.254.2.2     0.0.0.0         UG        0 0          0 eth0
+169.254.0.0     0.0.0.0         255.255.0.0     U         0 0          0 eth0
+T, [2012-01-01T18:48:09.965504 #14332] TRACE -- : GFS: Module                  Size  Used by
+T, [2012-01-01T18:48:09.982349 #14332] TRACE -- : GFS: i2c_piix4              10982  0 
+i2c_core               28203  1 i2c_piix4
+virtio_net          
+T, [2012-01-01T18:48:10.000756 #14332] TRACE -- : GFS:    14834  0 
+virtio_blk              6342  1 
+virtio_rng              2259  0 
+virtio_balloon          4039  0 
+sparse_keymap           3854  0 
+rfkill                 17938  0 
+sym53c8xx              73669  
+T, [2012-01-01T18:48:10.017317 #14332] TRACE -- : GFS: 0 
+scsi_transport_spi     24946  1 sym53c8xx
+crc8                    1436  0 
+crc7                    1309  0 
+crc_ccitt               1557  0 
+crc_itu_t               1563  0 
+T, [2012-01-01T18:48:10.033580 #14332] TRACE -- : GFS: 
+libcrc32c               1179  0 
+T, [2012-01-01T18:48:10.109378 #14332] TRACE -- : GFS: Sun Jan  1 18:48:08 EST 2012
+T, [2012-01-01T18:48:10.124073 #14332] TRACE -- : GFS: 
+uptime: 
+T, [2012-01-01T18:48:10.180682 #14332] TRACE -- : GFS: 15.07 0.78
+T, [2012-01-01T18:48:10.444758 #14332] TRACE -- : GFS: verbose daemon enabled
+T, [2012-01-01T18:48:10.459608 #14332] TRACE -- : GFS: linux commmand line: panic=1 console=ttyS0 udevtimeout=300 no_timer_check acpi=off printk.time=1 cgroup_disable=memory selinux=1 enforcing=0 guestfs_verbose=1 TERM=xterm noapic
+
+T, [2012-01-01T18:48:10.597870 #14332] TRACE -- : GFS: [45181ms] appliance is up
+D, [2012-01-01T18:48:10.607184 #14332] DEBUG -- : GFS: launch = 0
+D, [2012-01-01T18:48:10.616680 #14332] DEBUG -- : GFS: list_devices
+T, [2012-01-01T18:48:10.638907 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+D, [2012-01-01T18:48:10.656867 #14332] DEBUG -- : GFS: list_devices = ["/dev/vda"]
+D, [2012-01-01T18:48:10.671990 #14332] DEBUG -- : GFS: list_partitions
+T, [2012-01-01T18:48:10.691435 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 7 (list_devices) took 0.01 seconds
+T, [2012-01-01T18:48:10.712492 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+T, [2012-01-01T18:48:10.730390 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 8 (list_partitions) took 0.00 seconds
+D, [2012-01-01T18:48:10.745789 #14332] DEBUG -- : GFS: list_partitions = ["/dev/vda1", "/dev/vda2"]
+T, [2012-01-01T18:48:10.754871 #14332] TRACE -- : Mounting partitions...
+D, [2012-01-01T18:48:10.768673 #14332] DEBUG -- : GFS: list_partitions
+T, [2012-01-01T18:48:10.787822 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+T, [2012-01-01T18:48:10.805250 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 8 (list_partitions) took 0.00 seconds
+D, [2012-01-01T18:48:10.819400 #14332] DEBUG -- : GFS: list_partitions = ["/dev/vda1", "/dev/vda2"]
+D, [2012-01-01T18:48:10.835480 #14332] DEBUG -- : GFS: vfs_type "/dev/vda1"
+T, [2012-01-01T18:48:10.854086 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x38
+T, [2012-01-01T18:48:10.867934 #14332] TRACE -- : GFS: blkid -c /dev/null -o value -s TYPE /dev/vda1
+D, [2012-01-01T18:48:10.942702 #14332] DEBUG -- : GFS: vfs_type = ""
+D, [2012-01-01T18:48:10.957242 #14332] DEBUG -- : GFS: vfs_type "/dev/vda2"
+T, [2012-01-01T18:48:10.977659 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 198 (vfs_type) took 0.07 seconds
+T, [2012-01-01T18:48:10.997264 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x38
+T, [2012-01-01T18:48:11.018376 #14332] TRACE -- : GFS: blkid -c /dev/null -o value -s TYPE /dev/vda2
+D, [2012-01-01T18:48:11.151311 #14332] DEBUG -- : GFS: vfs_type = "ext4"
+D, [2012-01-01T18:48:11.164645 #14332] DEBUG -- : GFS: vfs_type "/dev/vda2"
+T, [2012-01-01T18:48:11.183936 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 198 (vfs_type) took 0.14 seconds
+T, [2012-01-01T18:48:11.201542 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x38
+T, [2012-01-01T18:48:11.218447 #14332] TRACE -- : GFS: blkid -c /dev/null -o value -s TYPE /dev/vda2
+D, [2012-01-01T18:48:11.359704 #14332] DEBUG -- : GFS: vfs_type = "ext4"
+T, [2012-01-01T18:48:11.374591 #14332] TRACE -- : Mounting /dev/vda2 partition to /...
+D, [2012-01-01T18:48:11.386557 #14332] DEBUG -- : GFS: mount_options "" "/dev/vda2" "/"
+T, [2012-01-01T18:48:11.406618 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 198 (vfs_type) took 0.14 seconds
+T, [2012-01-01T18:48:11.419417 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x44
+T, [2012-01-01T18:48:11.439556 #14332] TRACE -- : GFS: mount -o  /dev/vda2 /sysroot/
+T, [2012-01-01T18:48:11.703087 #14332] TRACE -- : GFS: [   16.532479] EXT4-fs (vda2): mounted filesystem with ordered data mode. Opts: (null)
+D, [2012-01-01T18:48:11.748904 #14332] DEBUG -- : GFS: mount_options = 0
+D, [2012-01-01T18:48:11.762685 #14332] DEBUG -- : GFS: set_e2label "/dev/vda2" "79d3d2d4"
+T, [2012-01-01T18:48:11.781943 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 74 (mount_options) took 0.29 seconds
+T, [2012-01-01T18:48:11.796613 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x44
+T, [2012-01-01T18:48:11.813588 #14332] TRACE -- : GFS: e2label /dev/vda2 79d3d2d4
+D, [2012-01-01T18:48:11.971536 #14332] DEBUG -- : GFS: set_e2label = 0
+T, [2012-01-01T18:48:11.984073 #14332] TRACE -- : Partition mounted.
+D, [2012-01-01T18:48:11.996008 #14332] DEBUG -- : GFS: exists "/etc/sysconfig/selinux"
+T, [2012-01-01T18:48:12.016772 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 80 (set_e2label) took 0.15 seconds
+T, [2012-01-01T18:48:12.033720 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x44
+D, [2012-01-01T18:48:12.135844 #14332] DEBUG -- : GFS: exists = 1
+T, [2012-01-01T18:48:12.148733 #14332] TRACE -- : Loading SElinux policy...
+D, [2012-01-01T18:48:12.163972 #14332] DEBUG -- : GFS: aug_init "/" 32
+T, [2012-01-01T18:48:12.188559 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 36 (exists) took 0.08 seconds
+T, [2012-01-01T18:48:12.210368 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x34
+D, [2012-01-01T18:48:20.962602 #14332] DEBUG -- : GFS: aug_init = 0
+D, [2012-01-01T18:48:20.973776 #14332] DEBUG -- : GFS: aug_rm "/augeas/load//incl[. != '/etc/sysconfig/selinux']"
+T, [2012-01-01T18:48:20.989085 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 16 (aug_init) took 7.76 seconds
+T, [2012-01-01T18:48:21.003307 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x60
+D, [2012-01-01T18:48:21.026466 #14332] DEBUG -- : GFS: aug_rm = 192
+D, [2012-01-01T18:48:21.039690 #14332] DEBUG -- : GFS: aug_load
+T, [2012-01-01T18:48:21.064837 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 22 (aug_rm) took 0.01 seconds
+T, [2012-01-01T18:48:21.082273 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+D, [2012-01-01T18:48:21.484948 #14332] DEBUG -- : GFS: aug_load = 0
+D, [2012-01-01T18:48:21.497722 #14332] DEBUG -- : GFS: aug_get "/files/etc/sysconfig/selinux/SELINUX"
+T, [2012-01-01T18:48:21.515809 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 27 (aug_load) took 0.38 seconds
+T, [2012-01-01T18:48:21.532803 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x50
+T, [2012-01-01T18:48:21.549248 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 19 (aug_get) took 0.00 seconds
+D, [2012-01-01T18:48:21.567006 #14332] DEBUG -- : GFS: aug_get = "permissive"
+D, [2012-01-01T18:48:21.581955 #14332] DEBUG -- : GFS: sh "/usr/sbin/load_policy"
+T, [2012-01-01T18:48:21.603408 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x44
+T, [2012-01-01T18:48:21.623863 #14332] TRACE -- : GFS: mount --bind /dev /sysroot/dev
+T, [2012-01-01T18:48:21.806360 #14332] TRACE -- : GFS: mount --bind /dev/pts /sysroot/dev/pts
+T, [2012-01-01T18:48:21.957936 #14332] TRACE -- : GFS: mount --bind /proc /sysroot/proc
+T, [2012-01-01T18:48:22.128948 #14332] TRACE -- : GFS: mount --bind /selinux /sysroot/selinux
+T, [2012-01-01T18:48:22.239483 #14332] TRACE -- : GFS: mount: mount point /sysroot/selinux does not exist
+T, [2012-01-01T18:48:22.257269 #14332] TRACE -- : GFS: 
+T, [2012-01-01T18:48:22.277318 #14332] TRACE -- : GFS: mount --bind /sys /sysroot/sys
+T, [2012-01-01T18:48:22.457610 #14332] TRACE -- : GFS: /bin/sh -c /usr/sbin/load_policy
+T, [2012-01-01T18:48:24.710891 #14332] TRACE -- : GFS: SELinux:  Could not downgrade policy file /etc/selinux/targeted/policy/policy.26, searchi
+T, [2012-01-01T18:48:24.727799 #14332] TRACE -- : GFS: ng for an older version.
+T, [2012-01-01T18:48:25.045593 #14332] TRACE -- : GFS: SELinux:  Could not open policy file <= /etc/selinux/targeted/policy/policy.26:  No such file or directory
+T, [2012-01-01T18:48:25.060571 #14332] TRACE -- : GFS: /usr/sbin/load_policy:  Can't load policy:  No such file or directory
+T, [2012-01-01T18:48:25.077610 #14332] TRACE -- : GFS: umount /sysroot/sys
+T, [2012-01-01T18:48:25.255897 #14332] TRACE -- : GFS: umount /sysroot/proc
+T, [2012-01-01T18:48:25.400825 #14332] TRACE -- : GFS: umount /sysroot/dev/pts
+T, [2012-01-01T18:48:25.537503 #14332] TRACE -- : GFS: umount /sysroot/dev
+T, [2012-01-01T18:48:25.684359 #14332] TRACE -- : GFS: guestfsd: error: SELinux:  Could not downgrade policy file /etc/selinux/targeted/policy/policy.26, se
+T, [2012-01-01T18:48:25.697553 #14332] TRACE -- : GFS: arching for an older version.
+SELinux:  Could not open policy file <= /etc/selinux/targeted/policy/policy.26:  No such file or directory
+/usr/sbin/load_policy:  Can't load policy:  No such file or directory
+D, [2012-01-01T18:48:25.711713 #14332] DEBUG -- : GFS: sh = NULL (error)
+W, [2012-01-01T18:48:25.733601 #14332]  WARN -- : Loading SELinux policy failed. SELinux may be not fully initialized.
+D, [2012-01-01T18:48:25.743957 #14332] DEBUG -- : GFS: aug_close
+T, [2012-01-01T18:48:25.765279 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 111 (sh) took 3.47 seconds
+T, [2012-01-01T18:48:25.783514 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+D, [2012-01-01T18:48:26.093658 #14332] DEBUG -- : GFS: aug_close = 0
+T, [2012-01-01T18:48:26.111709 #14332] TRACE -- : Guestfs launched.
+D, [2012-01-01T18:48:26.131080 #14332] DEBUG -- : Uploading '/etc/resolv.conf'...
+D, [2012-01-01T18:48:26.144752 #14332] DEBUG -- : GFS: upload "/etc/resolv.conf" "/etc/resolv.conf"
+T, [2012-01-01T18:48:26.164509 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 26 (aug_close) took 0.21 seconds
+T, [2012-01-01T18:48:26.187494 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x3c
+T, [2012-01-01T18:48:26.223841 #14332] TRACE -- : GFS: guestfsd: receive_file: reading length word
+T, [2012-01-01T18:48:26.239855 #14332] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 293, buf = 0x5e7af60
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 0, buf = (nil)
+guestfsd: receive_file: end of file, leaving function
+T, [2012-01-01T18:48:26.261390 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 66 (upload) took 0.05 seconds
+D, [2012-01-01T18:48:26.278507 #14332] DEBUG -- : GFS: upload = 0
+D, [2012-01-01T18:48:26.291782 #14332] DEBUG -- : '/etc/resolv.conf' uploaded.
+D, [2012-01-01T18:48:26.305250 #14332] DEBUG -- : Changing configuration files using augeas...
+D, [2012-01-01T18:48:26.319988 #14332] DEBUG -- : GFS: exists "/etc/ssh/sshd_config"
+T, [2012-01-01T18:48:26.337343 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x40
+D, [2012-01-01T18:48:26.377409 #14332] DEBUG -- : GFS: exists = 1
+D, [2012-01-01T18:48:26.391492 #14332] DEBUG -- : GFS: exists "/etc/sysconfig/selinux"
+T, [2012-01-01T18:48:26.415231 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 36 (exists) took 0.03 seconds
+T, [2012-01-01T18:48:26.431373 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x44
+T, [2012-01-01T18:48:26.447573 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 36 (exists) took 0.00 seconds
+D, [2012-01-01T18:48:26.462565 #14332] DEBUG -- : GFS: exists = 1
+D, [2012-01-01T18:48:26.475809 #14332] DEBUG -- : GFS: debug "help" ""
+T, [2012-01-01T18:48:26.494793 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x34
+T, [2012-01-01T18:48:26.510325 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 76 (debug) took 0.00 seconds
+D, [2012-01-01T18:48:26.526201 #14332] DEBUG -- : GFS: debug = "Commands supported: help binaries core_pattern env fds ldd ls ll progress qtrace segv sh"
+T, [2012-01-01T18:48:26.539571 #14332] TRACE -- : Enabling coredump catching for augeas...
+D, [2012-01-01T18:48:26.552338 #14332] DEBUG -- : GFS: debug "core_pattern" "/sysroot/core"
+T, [2012-01-01T18:48:26.571151 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x50
+T, [2012-01-01T18:48:26.588403 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 76 (debug) took 0.00 seconds
+D, [2012-01-01T18:48:26.602167 #14332] DEBUG -- : GFS: debug = "ok"
+D, [2012-01-01T18:48:26.614376 #14332] DEBUG -- : GFS: aug_init "/" 32
+T, [2012-01-01T18:48:26.639593 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x34
+D, [2012-01-01T18:48:33.953318 #14332] DEBUG -- : GFS: aug_init = 0
+D, [2012-01-01T18:48:33.966947 #14332] DEBUG -- : GFS: aug_rm "/augeas/load//incl[. != '/etc/ssh/sshd_config' and . != '/etc/sysconfig/selinux']"
+T, [2012-01-01T18:48:33.985141 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 16 (aug_init) took 6.56 seconds
+T, [2012-01-01T18:48:34.002996 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x80
+D, [2012-01-01T18:48:34.030075 #14332] DEBUG -- : GFS: aug_rm = 191
+D, [2012-01-01T18:48:34.042677 #14332] DEBUG -- : GFS: aug_load
+T, [2012-01-01T18:48:34.064781 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 22 (aug_rm) took 0.02 seconds
+T, [2012-01-01T18:48:34.084126 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+D, [2012-01-01T18:48:34.699993 #14332] DEBUG -- : GFS: aug_load = 0
+D, [2012-01-01T18:48:34.712786 #14332] DEBUG -- : GFS: aug_set "/files/etc/ssh/sshd_config/UseDNS" "no"
+T, [2012-01-01T18:48:34.728111 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 27 (aug_load) took 0.60 seconds
+T, [2012-01-01T18:48:34.740374 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x58
+T, [2012-01-01T18:48:34.753902 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 20 (aug_set) took 0.00 seconds
+D, [2012-01-01T18:48:34.770408 #14332] DEBUG -- : GFS: aug_set = 0
+D, [2012-01-01T18:48:34.784448 #14332] DEBUG -- : GFS: aug_set "/files/etc/sysconfig/selinux/SELINUX" "permissive"
+T, [2012-01-01T18:48:34.804337 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x60
+T, [2012-01-01T18:48:34.820940 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 20 (aug_set) took 0.00 seconds
+D, [2012-01-01T18:48:34.836254 #14332] DEBUG -- : GFS: aug_set = 0
+D, [2012-01-01T18:48:34.850453 #14332] DEBUG -- : GFS: aug_save
+T, [2012-01-01T18:48:34.876222 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+D, [2012-01-01T18:48:35.447604 #14332] DEBUG -- : GFS: aug_save = 0
+D, [2012-01-01T18:48:35.462476 #14332] DEBUG -- : GFS: aug_close
+T, [2012-01-01T18:48:35.484002 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 25 (aug_save) took 0.55 seconds
+T, [2012-01-01T18:48:35.501475 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+D, [2012-01-01T18:48:35.730987 #14332] DEBUG -- : GFS: aug_close = 0
+D, [2012-01-01T18:48:35.743186 #14332] DEBUG -- : Augeas changes saved.
+D, [2012-01-01T18:48:35.757217 #14332] DEBUG -- : Applying root password...
+D, [2012-01-01T18:48:35.770801 #14332] DEBUG -- : GFS: sh "/usr/bin/passwd -d root"
+T, [2012-01-01T18:48:35.793020 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 26 (aug_close) took 0.22 seconds
+T, [2012-01-01T18:48:35.810108 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x44
+T, [2012-01-01T18:48:35.820399 #14332] TRACE -- : GFS: mount --bind /dev /sysroot/dev
+T, [2012-01-01T18:48:35.975716 #14332] TRACE -- : GFS: mount --bind /dev/pts /sysroot/dev/pts
+T, [2012-01-01T18:48:36.116759 #14332] TRACE -- : GFS: mount --bind /proc /sysroot/proc
+T, [2012-01-01T18:48:36.225779 #14332] TRACE -- : GFS: mount --bind /selinux /sysroot/selinux
+T, [2012-01-01T18:48:36.327113 #14332] TRACE -- : GFS: mount: mount point /sysroot/selinux does not exist
+T, [2012-01-01T18:48:36.337458 #14332] TRACE -- : GFS: 
+T, [2012-01-01T18:48:36.351844 #14332] TRACE -- : GFS: mount --bind /sys /sysroot/sys
+T, [2012-01-01T18:48:36.504628 #14332] TRACE -- : GFS: /bin/sh -c /usr/bin/passwd -d root
+T, [2012-01-01T18:48:37.278645 #14332] TRACE -- : GFS: umount /sysroot/sys
+T, [2012-01-01T18:48:37.405930 #14332] TRACE -- : GFS: umount /sysroot/proc
+T, [2012-01-01T18:48:37.526774 #14332] TRACE -- : GFS: umount /sysroot/dev/pts
+T, [2012-01-01T18:48:37.686282 #14332] TRACE -- : GFS: umount /sysroot/dev
+D, [2012-01-01T18:48:37.823195 #14332] DEBUG -- : GFS: sh = "Removing password for user root.
+passwd: Success
+"
+D, [2012-01-01T18:48:37.844481 #14332] DEBUG -- : GFS: sh "/usr/sbin/usermod -p 'VEDANixoWINPk' root"
+T, [2012-01-01T18:48:37.864306 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 111 (sh) took 1.72 seconds
+T, [2012-01-01T18:48:37.879867 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x58
+T, [2012-01-01T18:48:37.898426 #14332] TRACE -- : GFS: mount --bind /dev /sysroot/dev
+T, [2012-01-01T18:48:38.026599 #14332] TRACE -- : GFS: mount --bind /dev/pts /sysroot/dev/pts
+T, [2012-01-01T18:48:38.171942 #14332] TRACE -- : GFS: mount --bind /proc /sysroot/proc
+T, [2012-01-01T18:48:38.314546 #14332] TRACE -- : GFS: mount --bind /selinux /sysroot/selinux
+T, [2012-01-01T18:48:38.424542 #14332] TRACE -- : GFS: mount: mount point /sysroot/selinux does not exist
+T, [2012-01-01T18:48:38.442108 #14332] TRACE -- : GFS: 
+T, [2012-01-01T18:48:38.458700 #14332] TRACE -- : GFS: mount --bind /sys /sysroot/sys
+T, [2012-01-01T18:48:38.603184 #14332] TRACE -- : GFS: /bin/sh -c /usr/sbin/usermod -p 'VEDANixoWINPk' root
+T, [2012-01-01T18:48:39.038476 #14332] TRACE -- : GFS: umount /sysroot/sys
+T, [2012-01-01T18:48:39.213155 #14332] TRACE -- : GFS: umount /sysroot/proc
+T, [2012-01-01T18:48:39.381315 #14332] TRACE -- : GFS: umount /sysroot/dev/pts
+T, [2012-01-01T18:48:39.560256 #14332] TRACE -- : GFS: umount /sysroot/dev
+D, [2012-01-01T18:48:39.732823 #14332] DEBUG -- : GFS: sh = ""
+D, [2012-01-01T18:48:39.739313 #14332] DEBUG -- : Password applied.
+T, [2012-01-01T18:48:39.746254 #14332] TRACE -- : Searching for swap partition to set label...
+D, [2012-01-01T18:48:39.761968 #14332] DEBUG -- : GFS: list_devices
+T, [2012-01-01T18:48:39.774770 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 111 (sh) took 1.66 seconds
+T, [2012-01-01T18:48:39.783289 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+D, [2012-01-01T18:48:39.835490 #14332] DEBUG -- : GFS: list_devices = ["/dev/vda"]
+D, [2012-01-01T18:48:39.844434 #14332] DEBUG -- : GFS: list_partitions
+T, [2012-01-01T18:48:39.856217 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 7 (list_devices) took 0.03 seconds
+T, [2012-01-01T18:48:39.873333 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+T, [2012-01-01T18:48:39.889526 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 8 (list_partitions) took 0.00 seconds
+D, [2012-01-01T18:48:39.895193 #14332] DEBUG -- : GFS: list_partitions = ["/dev/vda1", "/dev/vda2"]
+D, [2012-01-01T18:48:39.904135 #14332] DEBUG -- : GFS: vfs_type "/dev/vda1"
+T, [2012-01-01T18:48:39.915821 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x38
+T, [2012-01-01T18:48:39.920083 #14332] TRACE -- : GFS: blkid -c /dev/null -o value -s TYPE /dev/vda1
+D, [2012-01-01T18:48:40.079607 #14332] DEBUG -- : GFS: vfs_type = ""
+D, [2012-01-01T18:48:40.088613 #14332] DEBUG -- : GFS: vfs_type "/dev/vda2"
+T, [2012-01-01T18:48:40.108451 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 198 (vfs_type) took 0.14 seconds
+T, [2012-01-01T18:48:40.126803 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x38
+T, [2012-01-01T18:48:40.143582 #14332] TRACE -- : GFS: blkid -c /dev/null -o value -s TYPE /dev/vda2
+D, [2012-01-01T18:48:40.205605 #14332] DEBUG -- : GFS: vfs_type = "ext4"
+D, [2012-01-01T18:48:40.220235 #14332] DEBUG -- : GFS: vfs_type "/dev/vda2"
+T, [2012-01-01T18:48:40.242289 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 198 (vfs_type) took 0.06 seconds
+T, [2012-01-01T18:48:40.261815 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x38
+blkid 
+T, [2012-01-01T18:48:40.279917 #14332] TRACE -- : GFS: -c /dev/null -o value -s TYPE /dev/vda2
+D, [2012-01-01T18:48:40.339373 #14332] DEBUG -- : GFS: vfs_type = "ext4"
+D, [2012-01-01T18:48:40.351694 #14332] DEBUG -- : GFS: vfs_type "/dev/vda2"
+T, [2012-01-01T18:48:40.375052 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 198 (vfs_type) took 0.06 seconds
+T, [2012-01-01T18:48:40.395455 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x38
+blk
+T, [2012-01-01T18:48:40.414819 #14332] TRACE -- : GFS: id -c /dev/null -o value -s TYPE /dev/vda2
+D, [2012-01-01T18:48:40.468248 #14332] DEBUG -- : GFS: vfs_type = "ext4"
+D, [2012-01-01T18:48:40.482268 #14332] DEBUG -- : Using labels for partitions...
+D, [2012-01-01T18:48:40.495337 #14332] DEBUG -- : GFS: list_devices
+T, [2012-01-01T18:48:40.519358 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 198 (vfs_type) took 0.06 seconds
+T, [2012-01-01T18:48:40.537685 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+T, [2012-01-01T18:48:40.556763 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 7 (list_devices) took 0.00 seconds
+D, [2012-01-01T18:48:40.572688 #14332] DEBUG -- : GFS: list_devices = ["/dev/vda"]
+D, [2012-01-01T18:48:40.587266 #14332] DEBUG -- : GFS: read_file "/etc/fstab"
+T, [2012-01-01T18:48:40.605478 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x38
+T, [2012-01-01T18:48:40.621403 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 150 (read_file) took 0.00 seconds
+D, [2012-01-01T18:48:40.639183 #14332] DEBUG -- : GFS: read_file = "/dev/sda2  / ext4    defaults,noatime 0 0\x0a/dev/sda1  biosboot biosboot    defaults,noatime 0 0\x0adevpts     /dev/pts  devpts  gid=5,mode=620   0 0\x0atmpfs      /dev/shm  tmpfs   defaults         0 0\x0aproc       /proc     proc    defaults         0 0\x0asysfs      "<truncated, original size 295 bytes>
+D, [2012-01-01T18:48:40.653136 #14332] DEBUG -- : GFS: vfs_label "/dev/vda2"
+T, [2012-01-01T18:48:40.675220 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x38
+T, [2012-01-01T18:48:40.690431 #14332] TRACE -- : GFS: blkid -c /dev/null -o value -s LABEL /dev/vda2
+D, [2012-01-01T18:48:40.742956 #14332] DEBUG -- : GFS: vfs_label = "79d3d2d4"
+D, [2012-01-01T18:48:40.756592 #14332] DEBUG -- : GFS: vfs_label "/dev/vda1"
+T, [2012-01-01T18:48:40.777821 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 253 (vfs_label) took 0.06 seconds
+T, [2012-01-01T18:48:40.795412 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x38
+T, [2012-01-01T18:48:40.812641 #14332] TRACE -- : GFS: blkid -c /dev/null -o value -s LABEL /dev/vda1
+D, [2012-01-01T18:48:40.892954 #14332] DEBUG -- : GFS: vfs_label = ""
+D, [2012-01-01T18:48:40.906130 #14332] DEBUG -- : GFS: write_file "/etc/fstab" "LABEL=79d3d2d4  / ext4    defaults,noatime 0 0
+LABEL=  biosboot biosboot    defaults,noatime 0 0
+devpts     /dev/pts  devpts  gid=5,mode=620   0 0
+tmpfs      /dev/shm  tmpfs   defaults         0 0
+proc       /proc     proc    defaults         0 0
+sysfs      /sys      sysfs   defaults         0 0
+" 0
+T, [2012-01-01T18:48:40.922690 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 253 (vfs_label) took 0.09 seconds
+T, [2012-01-01T18:48:40.941629 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x16c
+D, [2012-01-01T18:48:40.956825 #14332] DEBUG -- : GFS: write_file = 0
+D, [2012-01-01T18:48:40.968772 #14332] DEBUG -- : GFS: exists "/boot/grub/grub.conf"
+T, [2012-01-01T18:48:40.988818 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 44 (write_file) took 0.01 seconds
+T, [2012-01-01T18:48:41.009867 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x40
+T, [2012-01-01T18:48:41.025215 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 36 (exists) took 0.00 seconds
+D, [2012-01-01T18:48:41.041838 #14332] DEBUG -- : GFS: exists = 0
+D, [2012-01-01T18:48:41.055199 #14332] DEBUG -- : Done.
+D, [2012-01-01T18:48:41.067546 #14332] DEBUG -- : Disabling firewall...
+D, [2012-01-01T18:48:41.081482 #14332] DEBUG -- : GFS: sh "lokkit -q --disabled"
+T, [2012-01-01T18:48:41.104212 #14332] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x40
+T, [2012-01-01T18:48:41.124103 #14332] TRACE -- : GFS: mount --bind /dev /sysroot/dev
+T, [2012-01-01T18:48:41.269844 #14332] TRACE -- : GFS: mount --bind /dev/pts /sysroot/dev/pts
+T, [2012-01-01T18:48:41.419225 #14332] TRACE -- : GFS: mount --bind /proc /sysroot/proc
+T, [2012-01-01T18:48:41.570122 #14332] TRACE -- : GFS: mount --bind /selinux /sysroot/selinux
+T, [2012-01-01T18:48:41.691615 #14332] TRACE -- : GFS: mount: mount point /sysroot/selinux does not exist
+T, [2012-01-01T18:48:41.704731 #14332] TRACE -- : GFS: 
+T, [2012-01-01T18:48:41.720116 #14332] TRACE -- : GFS: mount --bind /sys /sysroot/sys
+T, [2012-01-01T18:48:41.860291 #14332] TRACE -- : GFS: /bin/sh -c lokkit -q --disabled
+T, [2012-01-01T18:48:45.943570 #14332] TRACE -- : GFS: umount /sysroot/sys
+T, [2012-01-01T18:48:46.098687 #14332] TRACE -- : GFS: umount /sysroot/proc
+T, [2012-01-01T18:48:46.264668 #14332] TRACE -- : GFS: umount /sysroot/dev/pts
+T, [2012-01-01T18:48:46.562278 #14332] TRACE -- : GFS: umount /sysroot/
+T, [2012-01-01T18:48:46.573956 #14332] TRACE -- : GFS: dev
+T, [2012-01-01T18:48:46.745710 #14332] TRACE -- : GFS: guestfsd: error: 
+T, [2012-01-01T18:48:46.762439 #14332] TRACE -- : GFS: guestfsd: main_loop: proc 111 (sh) took 5.10 seconds
+D, [2012-01-01T18:48:46.783909 #14332] DEBUG -- : GFS: sh = NULL (error)
+F, [2012-01-01T18:48:46.818411 #14332] FATAL -- : Guestfs::Error: sh: 
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:184:in `sh'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:184:in `disable_firewall'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:87:in `build_with_appliance_creator'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/image-helper.rb:130:in `customize'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/guestfs-helper.rb:176:in `customize'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/guestfs-helper.rb:123:in `initialize_guestfs'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/guestfs-helper.rb:169:in `prepare_guestfs'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/guestfs-helper.rb:123:in `initialize_guestfs'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/guestfs-helper.rb:77:in `log_callback'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/guestfs-helper.rb:123:in `initialize_guestfs'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/guestfs-helper.rb:173:in `customize'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/image-helper.rb:129:in `customize'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:76:in `build_with_appliance_creator'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:47:in `execute'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:174:in `execute_plugin'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `execute_plugin_chain'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `each'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `execute_plugin_chain'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:154:in `create'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/bin/boxgrinder-build:189
+/usr/bin/boxgrinder-build:19:in `load'
+/usr/bin/boxgrinder-build:19
