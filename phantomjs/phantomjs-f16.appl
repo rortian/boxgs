@@ -3,6 +3,10 @@ summary: phantomjs running on fedora 16
 os:
   name: fedora
   version: 16
+hardware:
+  partitions:
+    "/":
+      size: 3
 packages:
   - httpd
   - git
