@@ -1,5 +1,5 @@
-name: f16
-summary: f16
+name: phantomjs-f16
+summary: phantomjs running on fedora 16
 os:
   name: fedora
   version: 16
