@@ -32,3 +32,6 @@ packages:
 files:
   "/root":
     - "phantomjs-1.4.1-9.fc16.x86_64.rpm"
+post:
+  base:
+    - "rpm -i /root/phantomjs-1.4.1-9.fc16.x86_64.rpm"
