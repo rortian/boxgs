@@ -10,6 +10,12 @@ hardware:
 packages:
   - qt
   - qt-webkit
+  - xorg-x11-xauth
+  - xorg-x11-Xvfb
+  - xorg-x11-fonts-100dpi
+  - xorg-x11-fonts-75pi
+  - xorg-x11-fonts-Type1
+  - xorg-x11-fonts-base
 files:
   "/root":
     - "phantomjs-1.4.1-9.fc16.x86_64.rpm"
