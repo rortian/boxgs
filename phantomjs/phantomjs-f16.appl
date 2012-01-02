@@ -12,4 +12,4 @@ packages:
   - qt-webkit
 files:
   "/root":
-    - "phantomjs-1.3.0-9.fc16.x86_64.rpm"
+    - "phantomjs-1.4.1-9.fc16.x86_64.rpm"
