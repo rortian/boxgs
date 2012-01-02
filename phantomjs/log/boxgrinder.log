@@ -10369,3 +10369,837 @@ D, [2012-01-01T23:08:56.609767 #5822] DEBUG -- : VirtualBox image was built.
 I, [2012-01-01T23:08:56.609986 #5822]  INFO -- : Image converted to VirtualBox format.
 T, [2012-01-01T23:08:56.610101 #5822] TRACE -- : Moving 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/virtualbox-plugin/tmp/phantomjs-f16.vmdk' deliverable to target destination 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/virtualbox-plugin/phantomjs-f16.vmdk'...
 D, [2012-01-01T23:08:56.611183 #5822] DEBUG -- : Platform plugin executed.
+D, [2012-01-02T00:28:16.045799 #17176] DEBUG -- : Launching new build...
+T, [2012-01-02T00:28:16.047656 #17176] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:log_level: :info
+:additional_plugins: []
+
+:uid: 1000
+:gid: 1000
+:delivery: :none
+:backtrace: false
+:os_config: {}
+
+:dir: 
+  :cache: /var/cache/boxgrinder
+  :build: build
+  :tmp: /tmp
+  :root: /home/rortian/git/boxgs/phantomjs
+:name: BoxGrinder Build
+:platform_config: {}
+
+:platform: :virtualbox
+:force: false
+:delivery_config: {}
+
+
+D, [2012-01-02T00:28:16.047823 #17176] DEBUG -- : Loading os plugins...
+D, [2012-01-02T00:28:16.047895 #17176] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-01-02T00:28:16.047962 #17176] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-01-02T00:28:16.048024 #17176] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-01-02T00:28:16.048083 #17176] DEBUG -- : - centos plugin for CentOS.
+D, [2012-01-02T00:28:16.048139 #17176] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-01-02T00:28:16.048178 #17176] DEBUG -- : Plugins loaded.
+D, [2012-01-02T00:28:16.048241 #17176] DEBUG -- : Loading platform plugins...
+D, [2012-01-02T00:28:16.048303 #17176] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-01-02T00:28:16.048349 #17176] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-01-02T00:28:16.048389 #17176] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-01-02T00:28:16.048428 #17176] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-01-02T00:28:16.048469 #17176] DEBUG -- : - vmware plugin for VMware.
+D, [2012-01-02T00:28:16.048505 #17176] DEBUG -- : Plugins loaded.
+D, [2012-01-02T00:28:16.048542 #17176] DEBUG -- : Loading delivery plugins...
+D, [2012-01-02T00:28:16.048579 #17176] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-01-02T00:28:16.048621 #17176] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-01-02T00:28:16.048660 #17176] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-01-02T00:28:16.048702 #17176] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-01-02T00:28:16.048742 #17176] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-01-02T00:28:16.048810 #17176] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:28:16.048852 #17176] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-01-02T00:28:16.048890 #17176] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:28:16.048930 #17176] DEBUG -- : - local plugin for Local file system.
+D, [2012-01-02T00:28:16.048968 #17176] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:28:16.049004 #17176] DEBUG -- : Plugins loaded.
+I, [2012-01-02T00:28:16.051662 #17176]  INFO -- : Validating appliance definition from phantomjs-f16.appl file...
+I, [2012-01-02T00:28:16.054976 #17176]  INFO -- : Appliance definition is valid.
+D, [2012-01-02T00:28:16.055264 #17176] DEBUG -- : Adding packages to appliance...
+D, [2012-01-02T00:28:16.055318 #17176] DEBUG -- : 8 package(s) added to appliance.
+I, [2012-01-02T00:28:16.066275 #17176]  INFO -- : Building 'phantomjs-f16' appliance for x86_64 architecture.
+I, [2012-01-02T00:28:16.066531 #17176]  INFO -- : Deliverables for fedora os plugin exists, skipping.
+D, [2012-01-02T00:28:16.067540 #17176] DEBUG -- : Lowering from root to user.
+D, [2012-01-02T00:28:16.067679 #17176] DEBUG -- : Executing platform plugin...
+I, [2012-01-02T00:28:16.068231 #17176]  INFO -- : Converting image to VirtualBox format...
+D, [2012-01-02T00:28:16.068280 #17176] DEBUG -- : Building VirtualBox image.
+D, [2012-01-02T00:28:16.068318 #17176] DEBUG -- : Using qemu-img to convert the image...
+D, [2012-01-02T00:28:16.068399 #17176] DEBUG -- : Conveting 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/phantomjs-f16-sda.raw' disk to vmdk format and moving it to 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/virtualbox-plugin/tmp/phantomjs-f16.vmdk'...
+D, [2012-01-02T00:28:16.068473 #17176] DEBUG -- : Executing command: 'qemu-img info 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/phantomjs-f16-sda.raw''
+D, [2012-01-02T00:28:16.103162 #17176] DEBUG -- : image: build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/phantomjs-f16-sda.raw
+D, [2012-01-02T00:28:16.103352 #17176] DEBUG -- : file format: raw
+D, [2012-01-02T00:28:16.103417 #17176] DEBUG -- : virtual size: 3.0G (3226468352 bytes)
+D, [2012-01-02T00:28:16.103463 #17176] DEBUG -- : disk size: 976M
+D, [2012-01-02T00:28:16.129189 #17176] DEBUG -- : Executing command: 'qemu-img convert -f raw -O vmdk -o compat6 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/phantomjs-f16-sda.raw' 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/virtualbox-plugin/tmp/phantomjs-f16.vmdk''
+F, [2012-01-02T00:28:22.195563 #17176] FATAL -- : BoxGrinder::InterruptionError: Program was interrupted.
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-core-0.3.10/lib/boxgrinder-core/helpers/exec-helper.rb:89:in `execute'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/helpers/image-helper.rb:53:in `convert_disk'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/platform/virtualbox/virtualbox-plugin.rb:53:in `build_virtualbox'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/platform/virtualbox/virtualbox-plugin.rb:33:in `execute'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:174:in `execute_plugin'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `execute_plugin_chain'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `each'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `execute_plugin_chain'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:154:in `create'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/bin/boxgrinder-build:189
+/usr/bin/boxgrinder-build:19:in `load'
+/usr/bin/boxgrinder-build:19
+D, [2012-01-02T00:28:25.989617 #17185] DEBUG -- : Launching new build...
+T, [2012-01-02T00:28:25.990945 #17185] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:log_level: :info
+:additional_plugins: []
+
+:uid: 1000
+:gid: 1000
+:delivery: :none
+:backtrace: false
+:os_config: {}
+
+:dir: 
+  :cache: /var/cache/boxgrinder
+  :build: build
+  :tmp: /tmp
+  :root: /home/rortian/git/boxgs/phantomjs
+:name: BoxGrinder Build
+:platform_config: {}
+
+:platform: :virtualbox
+:force: true
+:delivery_config: {}
+
+
+D, [2012-01-02T00:28:25.991143 #17185] DEBUG -- : Loading os plugins...
+D, [2012-01-02T00:28:25.991196 #17185] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-01-02T00:28:25.991242 #17185] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-01-02T00:28:25.991286 #17185] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-01-02T00:28:25.991327 #17185] DEBUG -- : - centos plugin for CentOS.
+D, [2012-01-02T00:28:25.991369 #17185] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-01-02T00:28:25.991408 #17185] DEBUG -- : Plugins loaded.
+D, [2012-01-02T00:28:25.991447 #17185] DEBUG -- : Loading platform plugins...
+D, [2012-01-02T00:28:25.991487 #17185] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-01-02T00:28:25.991567 #17185] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-01-02T00:28:25.991618 #17185] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-01-02T00:28:25.991661 #17185] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-01-02T00:28:25.991703 #17185] DEBUG -- : - vmware plugin for VMware.
+D, [2012-01-02T00:28:25.991741 #17185] DEBUG -- : Plugins loaded.
+D, [2012-01-02T00:28:25.991780 #17185] DEBUG -- : Loading delivery plugins...
+D, [2012-01-02T00:28:25.991820 #17185] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-01-02T00:28:25.991862 #17185] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-01-02T00:28:25.991918 #17185] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-01-02T00:28:25.991962 #17185] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-01-02T00:28:25.992004 #17185] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-01-02T00:28:25.992082 #17185] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:28:25.992145 #17185] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-01-02T00:28:25.992185 #17185] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:28:25.992226 #17185] DEBUG -- : - local plugin for Local file system.
+D, [2012-01-02T00:28:25.992265 #17185] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:28:25.992302 #17185] DEBUG -- : Plugins loaded.
+I, [2012-01-02T00:28:25.994845 #17185]  INFO -- : Validating appliance definition from phantomjs-f16.appl file...
+I, [2012-01-02T00:28:25.998868 #17185]  INFO -- : Appliance definition is valid.
+D, [2012-01-02T00:28:25.999110 #17185] DEBUG -- : Adding packages to appliance...
+D, [2012-01-02T00:28:25.999175 #17185] DEBUG -- : 8 package(s) added to appliance.
+I, [2012-01-02T00:28:26.010784 #17185]  INFO -- : Removing previous builds for phantomjs-f16 appliance...
+D, [2012-01-02T00:28:26.246814 #17185] DEBUG -- : Previous builds removed.
+I, [2012-01-02T00:28:26.247142 #17185]  INFO -- : Building 'phantomjs-f16' appliance for x86_64 architecture.
+D, [2012-01-02T00:28:26.247241 #17185] DEBUG -- : Executing os plugin...
+I, [2012-01-02T00:28:26.250979 #17185]  INFO -- : Resolving packages added to phantomjs-f16 appliance definition file...
+D, [2012-01-02T00:28:26.251274 #17185] DEBUG -- : Querying package database...
+D, [2012-01-02T00:28:26.251428 #17185] DEBUG -- : Executing command: 'repoquery --quiet --disablerepo=* --enablerepo=boxgrinder-updates,boxgrinder-base -c '/home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/yum.conf' list available qt qt-webkit xorg-x11-xauth xorg-x11-Xvfb xorg-x11-fonts-100dpi xorg-x11-fonts-75pi xorg-x11-fonts-Type1 xorg-x11-fonts-base system-config-firewall-base dhclient kernel grub2 --nevra --archlist=x86_64,noarch'
+D, [2012-01-02T00:28:43.860739 #17185] DEBUG -- : dhclient-12:4.2.3-4.P1.fc16.x86_64
+D, [2012-01-02T00:28:43.860945 #17185] DEBUG -- : grub2-1:1.99-13.fc16.x86_64
+D, [2012-01-02T00:28:43.860996 #17185] DEBUG -- : kernel-0:3.1.6-1.fc16.x86_64
+D, [2012-01-02T00:28:43.861096 #17185] DEBUG -- : qt-1:4.8.0-0.29.rc1.fc16.x86_64
+D, [2012-01-02T00:28:43.861164 #17185] DEBUG -- : system-config-firewall-base-0:1.2.29-4.fc16.noarch
+D, [2012-01-02T00:28:43.861207 #17185] DEBUG -- : xorg-x11-fonts-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:28:43.861262 #17185] DEBUG -- : xorg-x11-fonts-Type1-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:28:43.861309 #17185] DEBUG -- : xorg-x11-xauth-1:1.0.6-1.fc16.x86_64
+F, [2012-01-02T00:28:43.894332 #17185] FATAL -- : RuntimeError: Packages xorg-x11-Xvfb, xorg-x11-fonts-75pi, xorg-x11-fonts-base for phantomjs-f16 appliance not found in repositories. Please check package names in appliance definition file.
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/rpm-based/rpm-dependency-validator.rb:62:in `resolve_packages'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:67:in `build_with_appliance_creator'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:47:in `execute'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:174:in `execute_plugin'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `execute_plugin_chain'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `each'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `execute_plugin_chain'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:154:in `create'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/bin/boxgrinder-build:189
+/usr/bin/boxgrinder-build:19:in `load'
+/usr/bin/boxgrinder-build:19
+D, [2012-01-02T00:35:59.816338 #17302] DEBUG -- : Launching new build...
+T, [2012-01-02T00:35:59.817648 #17302] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:log_level: :info
+:additional_plugins: []
+
+:uid: 1000
+:gid: 1000
+:delivery: :none
+:backtrace: false
+:os_config: {}
+
+:dir: 
+  :cache: /var/cache/boxgrinder
+  :build: build
+  :tmp: /tmp
+  :root: /home/rortian/git/boxgs/phantomjs
+:name: BoxGrinder Build
+:platform_config: {}
+
+:platform: :virtualbox
+:force: true
+:delivery_config: {}
+
+
+D, [2012-01-02T00:35:59.817768 #17302] DEBUG -- : Loading os plugins...
+D, [2012-01-02T00:35:59.817815 #17302] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-01-02T00:35:59.817860 #17302] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-01-02T00:35:59.817902 #17302] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-01-02T00:35:59.817942 #17302] DEBUG -- : - centos plugin for CentOS.
+D, [2012-01-02T00:35:59.817982 #17302] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-01-02T00:35:59.818019 #17302] DEBUG -- : Plugins loaded.
+D, [2012-01-02T00:35:59.818074 #17302] DEBUG -- : Loading platform plugins...
+D, [2012-01-02T00:35:59.818134 #17302] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-01-02T00:35:59.818177 #17302] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-01-02T00:35:59.818219 #17302] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-01-02T00:35:59.818260 #17302] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-01-02T00:35:59.818301 #17302] DEBUG -- : - vmware plugin for VMware.
+D, [2012-01-02T00:35:59.818338 #17302] DEBUG -- : Plugins loaded.
+D, [2012-01-02T00:35:59.818376 #17302] DEBUG -- : Loading delivery plugins...
+D, [2012-01-02T00:35:59.818415 #17302] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-01-02T00:35:59.818456 #17302] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-01-02T00:35:59.818498 #17302] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-01-02T00:35:59.818549 #17302] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-01-02T00:35:59.818628 #17302] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-01-02T00:35:59.818670 #17302] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:35:59.818710 #17302] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-01-02T00:35:59.818749 #17302] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:35:59.818789 #17302] DEBUG -- : - local plugin for Local file system.
+D, [2012-01-02T00:35:59.818828 #17302] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:35:59.818867 #17302] DEBUG -- : Plugins loaded.
+I, [2012-01-02T00:35:59.820769 #17302]  INFO -- : Validating appliance definition from phantomjs-f16.appl file...
+I, [2012-01-02T00:35:59.824849 #17302]  INFO -- : Appliance definition is valid.
+D, [2012-01-02T00:35:59.825087 #17302] DEBUG -- : Adding packages to appliance...
+D, [2012-01-02T00:35:59.825199 #17302] DEBUG -- : 22 package(s) added to appliance.
+I, [2012-01-02T00:35:59.836143 #17302]  INFO -- : Removing previous builds for phantomjs-f16 appliance...
+D, [2012-01-02T00:35:59.856436 #17302] DEBUG -- : Previous builds removed.
+I, [2012-01-02T00:35:59.856709 #17302]  INFO -- : Building 'phantomjs-f16' appliance for x86_64 architecture.
+D, [2012-01-02T00:35:59.856803 #17302] DEBUG -- : Executing os plugin...
+I, [2012-01-02T00:35:59.860871 #17302]  INFO -- : Resolving packages added to phantomjs-f16 appliance definition file...
+D, [2012-01-02T00:35:59.861218 #17302] DEBUG -- : Querying package database...
+D, [2012-01-02T00:35:59.861382 #17302] DEBUG -- : Executing command: 'repoquery --quiet --disablerepo=* --enablerepo=boxgrinder-updates,boxgrinder-base -c '/home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/yum.conf' list available qt qt-webkit xorg-x11-xauth xorg-x11-server-Xvfb xorg-x11-fonts-100dpi xorg-x11-fonts-75pi xorg-x11-fonts-Type1 xorg-x11-fonts-base xorg-x11-fonts-ISO8859-1-100dpi xorg-x11-fonts-ISO8859-1-75dpi xorg-x11-fonts-ISO8859-14-100dpi xorg-x11-fonts-ISO8859-14-75dpi xorg-x11-fonts-ISO8859-15-100dpi xorg-x11-fonts-ISO8859-15-75dpi xorg-x11-fonts-ISO8859-2-100dpi xorg-x11-fonts-ISO8859-2-75dpi xorg-x11-fonts-ISO8859-9-100dpi xorg-x11-fonts-ISO8859-9-75dpi xorg-x11-fonts-cyrillic xorg-x11-fonts-ethiopic xorg-x11-fonts-misc xorg-x11-server-Xorg system-config-firewall-base dhclient kernel grub2 --nevra --archlist=x86_64,noarch'
+D, [2012-01-02T00:36:17.121117 #17302] DEBUG -- : dhclient-12:4.2.3-4.P1.fc16.x86_64
+D, [2012-01-02T00:36:17.121330 #17302] DEBUG -- : grub2-1:1.99-13.fc16.x86_64
+D, [2012-01-02T00:36:17.121380 #17302] DEBUG -- : kernel-0:3.1.6-1.fc16.x86_64
+D, [2012-01-02T00:36:17.121435 #17302] DEBUG -- : qt-1:4.8.0-0.29.rc1.fc16.x86_64
+D, [2012-01-02T00:36:17.121488 #17302] DEBUG -- : system-config-firewall-base-0:1.2.29-4.fc16.noarch
+D, [2012-01-02T00:36:17.121530 #17302] DEBUG -- : xorg-x11-fonts-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.121581 #17302] DEBUG -- : xorg-x11-fonts-ISO8859-1-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.121768 #17302] DEBUG -- : xorg-x11-fonts-ISO8859-1-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.121868 #17302] DEBUG -- : xorg-x11-fonts-ISO8859-14-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.121913 #17302] DEBUG -- : xorg-x11-fonts-ISO8859-14-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.121972 #17302] DEBUG -- : xorg-x11-fonts-ISO8859-15-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.122019 #17302] DEBUG -- : xorg-x11-fonts-ISO8859-15-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.122099 #17302] DEBUG -- : xorg-x11-fonts-ISO8859-2-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.122164 #17302] DEBUG -- : xorg-x11-fonts-ISO8859-2-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.122207 #17302] DEBUG -- : xorg-x11-fonts-ISO8859-9-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.122250 #17302] DEBUG -- : xorg-x11-fonts-ISO8859-9-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.122292 #17302] DEBUG -- : xorg-x11-fonts-Type1-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.122334 #17302] DEBUG -- : xorg-x11-fonts-cyrillic-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.122395 #17302] DEBUG -- : xorg-x11-fonts-ethiopic-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.122439 #17302] DEBUG -- : xorg-x11-fonts-misc-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:36:17.122481 #17302] DEBUG -- : xorg-x11-server-Xorg-0:1.11.3-1.fc16.x86_64
+D, [2012-01-02T00:36:17.122530 #17302] DEBUG -- : xorg-x11-server-Xvfb-0:1.11.3-1.fc16.x86_64
+D, [2012-01-02T00:36:17.122680 #17302] DEBUG -- : xorg-x11-xauth-1:1.0.6-1.fc16.x86_64
+F, [2012-01-02T00:36:17.157266 #17302] FATAL -- : RuntimeError: Packages xorg-x11-fonts-75pi, xorg-x11-fonts-base for phantomjs-f16 appliance not found in repositories. Please check package names in appliance definition file.
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/rpm-based/rpm-dependency-validator.rb:62:in `resolve_packages'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:67:in `build_with_appliance_creator'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:47:in `execute'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:174:in `execute_plugin'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `execute_plugin_chain'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `each'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `execute_plugin_chain'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:154:in `create'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/bin/boxgrinder-build:189
+/usr/bin/boxgrinder-build:19:in `load'
+/usr/bin/boxgrinder-build:19
+D, [2012-01-02T00:42:53.695824 #17381] DEBUG -- : Launching new build...
+T, [2012-01-02T00:42:53.697219 #17381] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:log_level: :info
+:additional_plugins: []
+
+:uid: 1000
+:gid: 1000
+:delivery: :none
+:backtrace: false
+:os_config: {}
+
+:dir: 
+  :cache: /var/cache/boxgrinder
+  :build: build
+  :tmp: /tmp
+  :root: /home/rortian/git/boxgs/phantomjs
+:name: BoxGrinder Build
+:platform_config: {}
+
+:platform: :virtualbox
+:force: true
+:delivery_config: {}
+
+
+D, [2012-01-02T00:42:53.697334 #17381] DEBUG -- : Loading os plugins...
+D, [2012-01-02T00:42:53.697381 #17381] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-01-02T00:42:53.697426 #17381] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-01-02T00:42:53.697468 #17381] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-01-02T00:42:53.697516 #17381] DEBUG -- : - centos plugin for CentOS.
+D, [2012-01-02T00:42:53.697556 #17381] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-01-02T00:42:53.697592 #17381] DEBUG -- : Plugins loaded.
+D, [2012-01-02T00:42:53.697630 #17381] DEBUG -- : Loading platform plugins...
+D, [2012-01-02T00:42:53.697668 #17381] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-01-02T00:42:53.697709 #17381] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-01-02T00:42:53.697749 #17381] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-01-02T00:42:53.697789 #17381] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-01-02T00:42:53.697829 #17381] DEBUG -- : - vmware plugin for VMware.
+D, [2012-01-02T00:42:53.697865 #17381] DEBUG -- : Plugins loaded.
+D, [2012-01-02T00:42:53.697903 #17381] DEBUG -- : Loading delivery plugins...
+D, [2012-01-02T00:42:53.697941 #17381] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-01-02T00:42:53.697983 #17381] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-01-02T00:42:53.698101 #17381] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-01-02T00:42:53.698149 #17381] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-01-02T00:42:53.698190 #17381] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-01-02T00:42:53.698229 #17381] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:42:53.698269 #17381] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-01-02T00:42:53.698308 #17381] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:42:53.698347 #17381] DEBUG -- : - local plugin for Local file system.
+D, [2012-01-02T00:42:53.698385 #17381] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:42:53.698423 #17381] DEBUG -- : Plugins loaded.
+I, [2012-01-02T00:42:53.699927 #17381]  INFO -- : Validating appliance definition from phantomjs-f16.appl file...
+I, [2012-01-02T00:42:53.704834 #17381]  INFO -- : Appliance definition is valid.
+D, [2012-01-02T00:42:53.705025 #17381] DEBUG -- : Adding packages to appliance...
+D, [2012-01-02T00:42:53.705089 #17381] DEBUG -- : 22 package(s) added to appliance.
+I, [2012-01-02T00:42:53.715557 #17381]  INFO -- : Removing previous builds for phantomjs-f16 appliance...
+D, [2012-01-02T00:42:53.734030 #17381] DEBUG -- : Previous builds removed.
+I, [2012-01-02T00:42:53.734323 #17381]  INFO -- : Building 'phantomjs-f16' appliance for x86_64 architecture.
+D, [2012-01-02T00:42:53.734443 #17381] DEBUG -- : Executing os plugin...
+I, [2012-01-02T00:42:53.738256 #17381]  INFO -- : Resolving packages added to phantomjs-f16 appliance definition file...
+D, [2012-01-02T00:42:53.738546 #17381] DEBUG -- : Querying package database...
+D, [2012-01-02T00:42:53.738734 #17381] DEBUG -- : Executing command: 'repoquery --quiet --disablerepo=* --enablerepo=boxgrinder-updates,boxgrinder-base -c '/home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/yum.conf' list available qt qt-webkit xorg-x11-xauth xorg-x11-server-Xvfb xorg-x11-fonts-100dpi xorg-x11-fonts-75pi xorg-x11-fonts-Type1 xorg-x11-fonts-base xorg-x11-fonts-ISO8859-1-100dpi xorg-x11-fonts-ISO8859-1-75dpi xorg-x11-fonts-ISO8859-14-100dpi xorg-x11-fonts-ISO8859-14-75dpi xorg-x11-fonts-ISO8859-15-100dpi xorg-x11-fonts-ISO8859-15-75dpi xorg-x11-fonts-ISO8859-2-100dpi xorg-x11-fonts-ISO8859-2-75dpi xorg-x11-fonts-ISO8859-9-100dpi xorg-x11-fonts-ISO8859-9-75dpi xorg-x11-fonts-cyrillic xorg-x11-fonts-ethiopic xorg-x11-fonts-misc xorg-x11-server-Xorg system-config-firewall-base dhclient kernel grub2 --nevra --archlist=x86_64,noarch'
+D, [2012-01-02T00:43:10.511136 #17381] DEBUG -- : dhclient-12:4.2.3-4.P1.fc16.x86_64
+D, [2012-01-02T00:43:10.511339 #17381] DEBUG -- : grub2-1:1.99-13.fc16.x86_64
+D, [2012-01-02T00:43:10.511413 #17381] DEBUG -- : kernel-0:3.1.6-1.fc16.x86_64
+D, [2012-01-02T00:43:10.511458 #17381] DEBUG -- : qt-1:4.8.0-0.29.rc1.fc16.x86_64
+D, [2012-01-02T00:43:10.511500 #17381] DEBUG -- : system-config-firewall-base-0:1.2.29-4.fc16.noarch
+D, [2012-01-02T00:43:10.511581 #17381] DEBUG -- : xorg-x11-fonts-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.511632 #17381] DEBUG -- : xorg-x11-fonts-ISO8859-1-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.511673 #17381] DEBUG -- : xorg-x11-fonts-ISO8859-1-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.511721 #17381] DEBUG -- : xorg-x11-fonts-ISO8859-14-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.511773 #17381] DEBUG -- : xorg-x11-fonts-ISO8859-14-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.511813 #17381] DEBUG -- : xorg-x11-fonts-ISO8859-15-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.511863 #17381] DEBUG -- : xorg-x11-fonts-ISO8859-15-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.511914 #17381] DEBUG -- : xorg-x11-fonts-ISO8859-2-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.511955 #17381] DEBUG -- : xorg-x11-fonts-ISO8859-2-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.511995 #17381] DEBUG -- : xorg-x11-fonts-ISO8859-9-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.512080 #17381] DEBUG -- : xorg-x11-fonts-ISO8859-9-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.512144 #17381] DEBUG -- : xorg-x11-fonts-Type1-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.512186 #17381] DEBUG -- : xorg-x11-fonts-cyrillic-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.512227 #17381] DEBUG -- : xorg-x11-fonts-ethiopic-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.512286 #17381] DEBUG -- : xorg-x11-fonts-misc-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:43:10.512327 #17381] DEBUG -- : xorg-x11-server-Xorg-0:1.11.3-1.fc16.x86_64
+D, [2012-01-02T00:43:10.512368 #17381] DEBUG -- : xorg-x11-server-Xvfb-0:1.11.3-1.fc16.x86_64
+D, [2012-01-02T00:43:10.512409 #17381] DEBUG -- : xorg-x11-xauth-1:1.0.6-1.fc16.x86_64
+F, [2012-01-02T00:43:10.546297 #17381] FATAL -- : RuntimeError: Packages xorg-x11-fonts-75pi, xorg-x11-fonts-base for phantomjs-f16 appliance not found in repositories. Please check package names in appliance definition file.
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/rpm-based/rpm-dependency-validator.rb:62:in `resolve_packages'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:67:in `build_with_appliance_creator'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:47:in `execute'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:174:in `execute_plugin'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `execute_plugin_chain'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `each'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:121:in `execute_plugin_chain'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/lib/boxgrinder-build/appliance.rb:154:in `create'
+/usr/lib/ruby/gems/1.8/gems/boxgrinder-build-0.10.0/bin/boxgrinder-build:189
+/usr/bin/boxgrinder-build:19:in `load'
+/usr/bin/boxgrinder-build:19
+D, [2012-01-02T00:46:36.448732 #17494] DEBUG -- : Launching new build...
+T, [2012-01-02T00:46:36.450076 #17494] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:log_level: :info
+:additional_plugins: []
+
+:uid: 1000
+:gid: 1000
+:delivery: :none
+:backtrace: false
+:os_config: {}
+
+:dir: 
+  :cache: /var/cache/boxgrinder
+  :build: build
+  :tmp: /tmp
+  :root: /home/rortian/git/boxgs/phantomjs
+:name: BoxGrinder Build
+:platform_config: {}
+
+:platform: :virtualbox
+:force: true
+:delivery_config: {}
+
+
+D, [2012-01-02T00:46:36.450621 #17494] DEBUG -- : Loading os plugins...
+D, [2012-01-02T00:46:36.450693 #17494] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-01-02T00:46:36.450760 #17494] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-01-02T00:46:36.450822 #17494] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-01-02T00:46:36.450882 #17494] DEBUG -- : - centos plugin for CentOS.
+D, [2012-01-02T00:46:36.450940 #17494] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-01-02T00:46:36.450993 #17494] DEBUG -- : Plugins loaded.
+D, [2012-01-02T00:46:36.451086 #17494] DEBUG -- : Loading platform plugins...
+D, [2012-01-02T00:46:36.451146 #17494] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-01-02T00:46:36.451189 #17494] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-01-02T00:46:36.451230 #17494] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-01-02T00:46:36.451272 #17494] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-01-02T00:46:36.451315 #17494] DEBUG -- : - vmware plugin for VMware.
+D, [2012-01-02T00:46:36.451353 #17494] DEBUG -- : Plugins loaded.
+D, [2012-01-02T00:46:36.451392 #17494] DEBUG -- : Loading delivery plugins...
+D, [2012-01-02T00:46:36.451432 #17494] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-01-02T00:46:36.451474 #17494] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-01-02T00:46:36.451515 #17494] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-01-02T00:46:36.451680 #17494] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-01-02T00:46:36.451725 #17494] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-01-02T00:46:36.451768 #17494] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:46:36.451810 #17494] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-01-02T00:46:36.451849 #17494] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:46:36.451890 #17494] DEBUG -- : - local plugin for Local file system.
+D, [2012-01-02T00:46:36.451930 #17494] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-01-02T00:46:36.451970 #17494] DEBUG -- : Plugins loaded.
+I, [2012-01-02T00:46:36.453184 #17494]  INFO -- : Validating appliance definition from phantomjs-f16.appl file...
+I, [2012-01-02T00:46:36.457833 #17494]  INFO -- : Appliance definition is valid.
+D, [2012-01-02T00:46:36.458189 #17494] DEBUG -- : Adding packages to appliance...
+D, [2012-01-02T00:46:36.458251 #17494] DEBUG -- : 21 package(s) added to appliance.
+I, [2012-01-02T00:46:36.468829 #17494]  INFO -- : Removing previous builds for phantomjs-f16 appliance...
+D, [2012-01-02T00:46:36.487316 #17494] DEBUG -- : Previous builds removed.
+I, [2012-01-02T00:46:36.487594 #17494]  INFO -- : Building 'phantomjs-f16' appliance for x86_64 architecture.
+D, [2012-01-02T00:46:36.487686 #17494] DEBUG -- : Executing os plugin...
+I, [2012-01-02T00:46:36.490694 #17494]  INFO -- : Resolving packages added to phantomjs-f16 appliance definition file...
+D, [2012-01-02T00:46:36.491099 #17494] DEBUG -- : Querying package database...
+D, [2012-01-02T00:46:36.491250 #17494] DEBUG -- : Executing command: 'repoquery --quiet --disablerepo=* --enablerepo=boxgrinder-updates,boxgrinder-base -c '/home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/yum.conf' list available qt qt-webkit xorg-x11-xauth xorg-x11-server-Xvfb xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11-fonts-Type1 xorg-x11-fonts-ISO8859-1-100dpi xorg-x11-fonts-ISO8859-1-75dpi xorg-x11-fonts-ISO8859-14-100dpi xorg-x11-fonts-ISO8859-14-75dpi xorg-x11-fonts-ISO8859-15-100dpi xorg-x11-fonts-ISO8859-15-75dpi xorg-x11-fonts-ISO8859-2-100dpi xorg-x11-fonts-ISO8859-2-75dpi xorg-x11-fonts-ISO8859-9-100dpi xorg-x11-fonts-ISO8859-9-75dpi xorg-x11-fonts-cyrillic xorg-x11-fonts-ethiopic xorg-x11-fonts-misc xorg-x11-server-Xorg system-config-firewall-base dhclient kernel grub2 --nevra --archlist=x86_64,noarch'
+D, [2012-01-02T00:46:55.347948 #17494] DEBUG -- : dhclient-12:4.2.3-4.P1.fc16.x86_64
+D, [2012-01-02T00:46:55.348091 #17494] DEBUG -- : grub2-1:1.99-13.fc16.x86_64
+D, [2012-01-02T00:46:55.348171 #17494] DEBUG -- : kernel-0:3.1.6-1.fc16.x86_64
+D, [2012-01-02T00:46:55.348245 #17494] DEBUG -- : qt-1:4.8.0-0.29.rc1.fc16.x86_64
+D, [2012-01-02T00:46:55.348288 #17494] DEBUG -- : system-config-firewall-base-0:1.2.29-4.fc16.noarch
+D, [2012-01-02T00:46:55.348350 #17494] DEBUG -- : xorg-x11-fonts-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.348396 #17494] DEBUG -- : xorg-x11-fonts-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.348423 #17494] DEBUG -- : xorg-x11-fonts-ISO8859-1-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.348530 #17494] DEBUG -- : xorg-x11-fonts-ISO8859-1-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.348581 #17494] DEBUG -- : xorg-x11-fonts-ISO8859-14-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.348623 #17494] DEBUG -- : xorg-x11-fonts-ISO8859-14-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.348694 #17494] DEBUG -- : xorg-x11-fonts-ISO8859-15-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.348743 #17494] DEBUG -- : xorg-x11-fonts-ISO8859-15-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.348785 #17494] DEBUG -- : xorg-x11-fonts-ISO8859-2-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.348827 #17494] DEBUG -- : xorg-x11-fonts-ISO8859-2-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.348884 #17494] DEBUG -- : xorg-x11-fonts-ISO8859-9-100dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.348928 #17494] DEBUG -- : xorg-x11-fonts-ISO8859-9-75dpi-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.348969 #17494] DEBUG -- : xorg-x11-fonts-Type1-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.349020 #17494] DEBUG -- : xorg-x11-fonts-cyrillic-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.349070 #17494] DEBUG -- : xorg-x11-fonts-ethiopic-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.349151 #17494] DEBUG -- : xorg-x11-fonts-misc-0:7.5-4.fc15.noarch
+D, [2012-01-02T00:46:55.349198 #17494] DEBUG -- : xorg-x11-server-Xorg-0:1.11.3-1.fc16.x86_64
+D, [2012-01-02T00:46:55.349240 #17494] DEBUG -- : xorg-x11-server-Xvfb-0:1.11.3-1.fc16.x86_64
+D, [2012-01-02T00:46:55.349281 #17494] DEBUG -- : xorg-x11-xauth-1:1.0.6-1.fc16.x86_64
+I, [2012-01-02T00:46:55.383313 #17494]  INFO -- : All additional packages for phantomjs-f16 appliance successfully resolved.
+I, [2012-01-02T00:46:55.383483 #17494]  INFO -- : Building phantomjs-f16 appliance...
+D, [2012-01-02T00:46:55.383695 #17494] DEBUG -- : Executing command: 'appliance-creator -d -v -t 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp' --cache=/var/cache/boxgrinder/rpms-cache/x86_64/fedora/16 --config 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/phantomjs-f16.ks' -o 'build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp' --name 'phantomjs-f16' --vmem 256 --vcpu 1 --format raw'
+D, [2012-01-02T00:46:55.644265 #17494] DEBUG -- : Adding disk sda as /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-bZMpJ4/tmp-HOgCtV/phantomjs-f16-sda.raw
+D, [2012-01-02T00:46:55.644485 #17494] DEBUG -- : Extending sparse file /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-bZMpJ4/tmp-HOgCtV/phantomjs-f16-sda.raw to 3226468352
+D, [2012-01-02T00:46:55.649925 #17494] DEBUG -- : Losetup add /dev/loop0 mapping to /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-bZMpJ4/tmp-HOgCtV/phantomjs-f16-sda.raw
+D, [2012-01-02T00:46:55.654893 #17494] DEBUG -- : Formatting disks
+D, [2012-01-02T00:46:55.655027 #17494] DEBUG -- : Initializing partition table for /dev/loop0 with gpt layout
+D, [2012-01-02T00:46:55.736971 #17494] DEBUG -- : Assigning partitions to disks
+D, [2012-01-02T00:46:55.737212 #17494] DEBUG -- : Assigned biosboot to sda1 at 0 at size 5
+D, [2012-01-02T00:46:55.737303 #17494] DEBUG -- : Assigned / to sda2 at 5 at size 3072
+D, [2012-01-02T00:46:55.737487 #17494] DEBUG -- : Creating partitions
+D, [2012-01-02T00:46:55.737617 #17494] DEBUG -- : Add primary part at 0 of size 5
+D, [2012-01-02T00:46:55.759302 #17494] DEBUG -- : Add primary part at 5 of size 3072
+D, [2012-01-02T00:46:55.791368 #17494] DEBUG -- : Dev loop0p1: /dev/loop01 -> /dev/mapper/loop0p1
+D, [2012-01-02T00:46:55.792229 #17494] DEBUG -- : Dev loop0p2: /dev/loop02 -> /dev/mapper/loop0p2
+D, [2012-01-02T00:46:55.792593 #17494] DEBUG -- : Adding partx mapping for /dev/loop0
+D, [2012-01-02T00:46:55.860593 #17494] DEBUG -- : Formating ext4 filesystem on /dev/loop02
+D, [2012-01-02T00:46:56.601501 #17494] DEBUG -- : mke2fs 1.41.14 (22-Dec-2010)
+D, [2012-01-02T00:46:56.601970 #17494] DEBUG -- : Filesystem label=_/
+D, [2012-01-02T00:46:56.602250 #17494] DEBUG -- : OS type: Linux
+D, [2012-01-02T00:46:56.602491 #17494] DEBUG -- : Block size=4096 (log=2)
+D, [2012-01-02T00:46:56.602781 #17494] DEBUG -- : Fragment size=4096 (log=2)
+D, [2012-01-02T00:46:56.603140 #17494] DEBUG -- : Stride=0 blocks, Stripe width=0 blocks
+D, [2012-01-02T00:46:56.603410 #17494] DEBUG -- : 187680 inodes, 750000 blocks
+D, [2012-01-02T00:46:56.603498 #17494] DEBUG -- : 7500 blocks (1.00%) reserved for the super user
+D, [2012-01-02T00:46:56.603567 #17494] DEBUG -- : First data block=0
+D, [2012-01-02T00:46:56.603684 #17494] DEBUG -- : Maximum filesystem blocks=771751936
+D, [2012-01-02T00:46:56.603751 #17494] DEBUG -- : 23 block groups
+D, [2012-01-02T00:46:56.603825 #17494] DEBUG -- : 32768 blocks per group, 32768 fragments per group
+D, [2012-01-02T00:46:56.603893 #17494] DEBUG -- : 8160 inodes per group
+D, [2012-01-02T00:46:56.603961 #17494] DEBUG -- : Superblock backups stored on blocks:
+D, [2012-01-02T00:46:56.604029 #17494] DEBUG -- : 32768, 98304, 163840, 229376, 294912
+D, [2012-01-02T00:46:56.604188 #17494] DEBUG -- : 
+D, [2012-01-02T00:46:56.604271 #17494] DEBUG -- : Writing inode tables:  0/23 1/23 2/23 3/23 4/23 5/23 6/23 7/23 8/23 9/2310/2311/2312/2313/2314/2315/2316/2317/2318/2319/2320/2321/2322/23done
+D, [2012-01-02T00:46:56.604339 #17494] DEBUG -- : Creating journal (16384 blocks): done
+D, [2012-01-02T00:46:56.604413 #17494] DEBUG -- : Writing superblocks and filesystem accounting information: done
+D, [2012-01-02T00:46:56.604481 #17494] DEBUG -- : 
+D, [2012-01-02T00:46:56.604598 #17494] DEBUG -- : This filesystem will be automatically checked every 31 mounts or
+D, [2012-01-02T00:46:56.604665 #17494] DEBUG -- : 180 days, whichever comes first.  Use tune2fs -c or -i to override.
+D, [2012-01-02T00:46:56.604745 #17494] DEBUG -- : 
+D, [2012-01-02T00:46:56.604820 #17494] DEBUG -- : Tuning filesystem on /dev/loop02
+D, [2012-01-02T00:46:56.629572 #17494] DEBUG -- : tune2fs 1.41.14 (22-Dec-2010)
+D, [2012-01-02T00:46:56.630568 #17494] DEBUG -- : Setting maximal mount count to -1
+D, [2012-01-02T00:46:56.630590 #17494] DEBUG -- : Setting interval between checks to 0 seconds
+D, [2012-01-02T00:46:56.630673 #17494] DEBUG -- : 
+D, [2012-01-02T00:46:56.630728 #17494] DEBUG -- : Mounting /dev/loop02 at /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-bZMpJ4/install_root/
+D, [2012-01-02T00:46:56.666225 #17494] DEBUG -- : Writing mkinitrd config /home/rortian/git/boxgs/phantomjs/build/appliances/x86_64/fedora/16/phantomjs-f16/1.0/fedora-plugin/tmp/imgcreate-bZMpJ4/install_root/etc/sysconfig/mkinitrd
+D, [2012-01-02T00:46:57.467447 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/repodata/repomd.xml ...OK
+D, [2012-01-02T00:46:58.858860 #17494] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/updates/16/x86_64/repodata/repomd.xml ...OK
+D, [2012-01-02T00:47:07.676385 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXdmcp-1.1.0-2.fc15.x86_64.rpm ...OK
+D, [2012-01-02T00:47:08.204298 #17494] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/updates/16/x86_64/libXfont-1.4.4-1.fc16.x86_64.rpm ...OK
+D, [2012-01-02T00:47:08.504868 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXmu-1.1.0-2.fc15.x86_64.rpm ...OK
+D, [2012-01-02T00:47:08.814190 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/libXt-1.1.1-1.fc16.x86_64.rpm ...OK
+D, [2012-01-02T00:47:08.886344 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/libfontenc-1.1.0-1.fc16.x86_64.rpm ...OK
+D, [2012-01-02T00:47:09.007488 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/libxkbfile-1.0.7-2.fc15.x86_64.rpm ...OK
+D, [2012-01-02T00:47:09.078739 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/system-setup-keyboard-0.8.8-1.fc16.x86_64.rpm ...OK
+D, [2012-01-02T00:47:09.154653 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/ttmkfdir-3.0.9-33.fc15.x86_64.rpm ...OK
+D, [2012-01-02T00:47:09.606706 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xkeyboard-config-2.3-2.fc16.noarch.rpm ...OK
+D, [2012-01-02T00:47:09.698747 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-font-utils-7.5-6.fc15.x86_64.rpm ...OK
+D, [2012-01-02T00:47:11.065699 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-100dpi-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:12.419234 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-75dpi-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:13.048070 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-ISO8859-1-100dpi-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:13.613637 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-ISO8859-1-75dpi-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:14.102185 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-ISO8859-14-100dpi-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:14.552226 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-ISO8859-14-75dpi-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:15.038671 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-ISO8859-15-100dpi-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:15.492755 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-ISO8859-15-75dpi-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:15.973226 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-ISO8859-2-100dpi-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:16.375593 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-ISO8859-2-75dpi-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:16.848180 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-ISO8859-9-100dpi-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:17.254742 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-ISO8859-9-75dpi-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:17.513944 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-Type1-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:17.722294 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-cyrillic-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:17.841491 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-ethiopic-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:20.355153 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-fonts-misc-7.5-4.fc15.noarch.rpm ...OK
+D, [2012-01-02T00:47:21.834441 #17494] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/updates/16/x86_64/xorg-x11-server-Xorg-1.11.3-1.fc16.x86_64.rpm ...OK
+D, [2012-01-02T00:47:22.826724 #17494] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/updates/16/x86_64/xorg-x11-server-Xvfb-1.11.3-1.fc16.x86_64.rpm ...OK
+D, [2012-01-02T00:47:23.261207 #17494] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/updates/16/x86_64/xorg-x11-server-common-1.11.3-1.fc16.x86_64.rpm ...OK
+D, [2012-01-02T00:47:23.504926 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-xauth-1.0.6-1.fc16.x86_64.rpm ...OK
+D, [2012-01-02T00:47:23.725313 #17494] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/releases/16/Everything/x86_64/os/Packages/xorg-x11-xkb-utils-7.5-5.fc16.x86_64.rpm ...OK
+D, [2012-01-02T00:47:25.156723 #17494] DEBUG -- : warning: libgcc-4.6.2-1.fc16.x86_64: Header V3 RSA/SHA256 Signature, key ID a82ba4b7: NOKEY
+D, [2012-01-02T00:47:25.211986 #17494] DEBUG -- : ['/', 'biosboot']
+D, [2012-01-02T00:47:25.268411 #17494] DEBUG -- : Installing: libgcc                       ##################### [  1/335]
+D, [2012-01-02T00:47:25.810231 #17494] DEBUG -- : Installing: setup                        ##################### [  2/335]
+D, [2012-01-02T00:47:26.196192 #17494] DEBUG -- : Installing: filesystem                   ##################### [  3/335]
+D, [2012-01-02T00:47:26.198393 #17494] DEBUG -- : Installing: ca-certificates              ##################### [  4/335]
+D, [2012-01-02T00:47:26.443629 #17494] DEBUG -- : Installing: basesystem                   ##################### [  5/335]
+D, [2012-01-02T00:47:26.614545 #17494] DEBUG -- : Installing: libX11-common                ##################### [  6/335]
+D, [2012-01-02T00:47:26.908211 #17494] DEBUG -- : Installing: ncurses-base                 ##################### [  7/335]
+D, [2012-01-02T00:47:26.936846 #17494] DEBUG -- : Installing: kbd-misc                     ##################### [  8/335]
+D, [2012-01-02T00:47:26.943407 #17494] DEBUG -- : Installing: fedora-release               ##################### [  9/335]
+D, [2012-01-02T00:47:28.622382 #17494] DEBUG -- : Installing: bind-license                 ##################### [ 10/335]
+D, [2012-01-02T00:47:28.675605 #17494] DEBUG -- : Installing: tzdata                       ##################### [ 11/335]
+D, [2012-01-02T00:47:32.930289 #17494] DEBUG -- : Installing: nss-softokn-freebl           ##################### [ 12/335]
+D, [2012-01-02T00:47:33.900116 #17494] DEBUG -- : Installing: glibc-common                 ##################### [ 13/335]
+D, [2012-01-02T00:47:35.963090 #17494] DEBUG -- : Installing: glibc                        ##################### [ 14/335]
+D, [2012-01-02T00:47:36.243199 #17494] DEBUG -- : Installing: ncurses-libs                 ##################### [ 15/335]
+D, [2012-01-02T00:47:36.267087 #17494] DEBUG -- : Installing: bash                         ##################### [ 16/335]
+D, [2012-01-02T00:47:36.305882 #17494] DEBUG -- : Installing: libsepol                     ##################### [ 17/335]
+D, [2012-01-02T00:47:36.323218 #17494] DEBUG -- : Installing: libselinux                   ##################### [ 18/335]
+D, [2012-01-02T00:47:36.362447 #17494] DEBUG -- : Installing: libattr                      ##################### [ 19/335]
+D, [2012-01-02T00:47:36.398595 #17494] DEBUG -- : Installing: libcap                       ##################### [ 20/335]
+D, [2012-01-02T00:47:36.485226 #17494] DEBUG -- : Installing: zlib                         ##################### [ 21/335]
+D, [2012-01-02T00:47:36.554969 #17494] DEBUG -- : Installing: libstdc++                    ##################### [ 22/335]
+D, [2012-01-02T00:47:36.694482 #17494] DEBUG -- : Installing: info                         ##################### [ 23/335]
+D, [2012-01-02T00:47:37.002135 #17494] DEBUG -- : Installing: libxml2                      ##################### [ 24/335]
+D, [2012-01-02T00:47:37.072186 #17494] DEBUG -- : Installing: audit-libs                   ##################### [ 25/335]
+D, [2012-01-02T00:47:37.167555 #17494] DEBUG -- : Installing: popt                         ##################### [ 26/335]
+D, [2012-01-02T00:47:37.185480 #17494] DEBUG -- : Installing: freetype                     ##################### [ 27/335]
+D, [2012-01-02T00:47:37.232253 #17494] DEBUG -- : Installing: libacl                       ##################### [ 28/335]
+D, [2012-01-02T00:47:37.457085 #17494] DEBUG -- : Installing: libcom_err                   ##################### [ 29/335]
+D, [2012-01-02T00:47:37.473374 #17494] DEBUG -- : Installing: chkconfig                    ##################### [ 30/335]
+D, [2012-01-02T00:47:37.593669 #17494] DEBUG -- : Installing: bzip2-libs                   ##################### [ 31/335]
+D, [2012-01-02T00:47:37.705920 #17494] DEBUG -- : Installing: db4                          ##################### [ 32/335]
+D, [2012-01-02T00:47:37.853270 #17494] DEBUG -- : Installing: sed                          ##################### [ 33/335]
+D, [2012-01-02T00:47:37.919717 #17494] DEBUG -- : Installing: libudev                      ##################### [ 34/335]
+D, [2012-01-02T00:47:37.954483 #17494] DEBUG -- : Installing: libgpg-error                 ##################### [ 35/335]
+D, [2012-01-02T00:47:38.017484 #17494] DEBUG -- : Installing: dbus-libs                    ##################### [ 36/335]
+D, [2012-01-02T00:47:38.066641 #17494] DEBUG -- : Installing: libpng                       ##################### [ 37/335]
+D, [2012-01-02T00:47:38.097455 #17494] DEBUG -- : Installing: libjpeg-turbo                ##################### [ 38/335]
+D, [2012-01-02T00:47:38.127675 #17494] DEBUG -- : Installing: libogg                       ##################### [ 39/335]
+D, [2012-01-02T00:47:38.152364 #17494] DEBUG -- : Installing: nspr                         ##################### [ 40/335]
+D, [2012-01-02T00:47:38.186987 #17494] DEBUG -- : Installing: libuuid                      ##################### [ 41/335]
+D, [2012-01-02T00:47:38.219741 #17494] DEBUG -- : Installing: libblkid                     ##################### [ 42/335]
+D, [2012-01-02T00:47:38.281288 #17494] DEBUG -- : Installing: nss-util                     ##################### [ 43/335]
+D, [2012-01-02T00:47:38.339923 #17494] DEBUG -- : Installing: libgcrypt                    ##################### [ 44/335]
+D, [2012-01-02T00:47:38.416479 #17494] DEBUG -- : Installing: readline                     ##################### [ 45/335]
+D, [2012-01-02T00:47:38.458774 #17494] DEBUG -- : Installing: sqlite                       ##################### [ 46/335]
+D, [2012-01-02T00:47:38.500581 #17494] DEBUG -- : Installing: tcp_wrappers-libs            ##################### [ 47/335]
+D, [2012-01-02T00:47:38.543142 #17494] DEBUG -- : Installing: xz-libs                      ##################### [ 48/335]
+D, [2012-01-02T00:47:38.617173 #17494] DEBUG -- : Installing: libraw1394                   ##################### [ 49/335]
+D, [2012-01-02T00:47:38.651198 #17494] DEBUG -- : Installing: lua                          ##################### [ 50/335]
+D, [2012-01-02T00:47:38.818610 #17494] DEBUG -- : Installing: libtiff                      ##################### [ 51/335]
+D, [2012-01-02T00:47:38.868825 #17494] DEBUG -- : Installing: gawk                         ##################### [ 52/335]
+D, [2012-01-02T00:47:38.899159 #17494] DEBUG -- : Installing: libICE                       ##################### [ 53/335]
+D, [2012-01-02T00:47:38.946099 #17494] DEBUG -- : Installing: libXau                       ##################### [ 54/335]
+D, [2012-01-02T00:47:39.008465 #17494] DEBUG -- : Installing: pixman                       ##################### [ 55/335]
+D, [2012-01-02T00:47:39.037384 #17494] DEBUG -- : Installing: elfutils-libelf              ##################### [ 56/335]
+D, [2012-01-02T00:47:39.143162 #17494] DEBUG -- : Installing: libffi                       ##################### [ 57/335]
+D, [2012-01-02T00:47:39.281901 #17494] DEBUG -- : Installing: gamin                        ##################### [ 58/335]
+D, [2012-01-02T00:47:39.817960 #17494] DEBUG -- : Installing: pkgconfig                    ##################### [ 59/335]
+D, [2012-01-02T00:47:40.882916 #17494] DEBUG -- : Installing: glib2                        ##################### [ 60/335]
+D, [2012-01-02T00:47:41.288461 #17494] DEBUG -- : Installing: shared-mime-info             ##################### [ 61/335]
+D, [2012-01-02T00:47:41.334473 #17494] DEBUG -- : Installing: expat                        ##################### [ 62/335]
+D, [2012-01-02T00:47:41.366225 #17494] DEBUG -- : Installing: libcroco                     ##################### [ 63/335]
+D, [2012-01-02T00:47:41.453186 #17494] DEBUG -- : Installing: libSM                        ##################### [ 64/335]
+D, [2012-01-02T00:47:41.610452 #17494] DEBUG -- : Installing: cpio                         ##################### [ 65/335]
+D, [2012-01-02T00:47:41.654441 #17494] DEBUG -- : Installing: findutils                    ##################### [ 66/335]
+D, [2012-01-02T00:47:41.775193 #17494] DEBUG -- : Installing: libsigc++20                  ##################### [ 67/335]
+D, [2012-01-02T00:47:41.896479 #17494] DEBUG -- : Installing: file-libs                    ##################### [ 68/335]
+D, [2012-01-02T00:47:41.971893 #17494] DEBUG -- : Installing: libdb                        ##################### [ 69/335]
+D, [2012-01-02T00:47:42.027294 #17494] DEBUG -- : Installing: cyrus-sasl-lib               ##################### [ 70/335]
+D, [2012-01-02T00:47:42.141470 #17494] DEBUG -- : Installing: orc                          ##################### [ 71/335]
+D, [2012-01-02T00:47:42.310172 #17494] DEBUG -- : Installing: glibmm24                     ##################### [ 72/335]
+D, [2012-01-02T00:47:42.392240 #17494] DEBUG -- : Installing: atk                          ##################### [ 73/335]
+D, [2012-01-02T00:47:42.496589 #17494] DEBUG -- : Installing: libxcb                       ##################### [ 74/335]
+D, [2012-01-02T00:47:42.526740 #17494] DEBUG -- : Installing: libX11                       ##################### [ 75/335]
+D, [2012-01-02T00:47:42.557577 #17494] DEBUG -- : Installing: libXext                      ##################### [ 76/335]
+D, [2012-01-02T00:47:42.589744 #17494] DEBUG -- : Installing: libXrender                   ##################### [ 77/335]
+D, [2012-01-02T00:47:42.621165 #17494] DEBUG -- : Installing: libXfixes                    ##################### [ 78/335]
+D, [2012-01-02T00:47:42.650163 #17494] DEBUG -- : Installing: libXrandr                    ##################### [ 79/335]
+D, [2012-01-02T00:47:42.684250 #17494] DEBUG -- : Installing: libXi                        ##################### [ 80/335]
+D, [2012-01-02T00:47:42.714660 #17494] DEBUG -- : Installing: libXcursor                   ##################### [ 81/335]
+D, [2012-01-02T00:47:42.743750 #17494] DEBUG -- : Installing: libXdamage                   ##################### [ 82/335]
+D, [2012-01-02T00:47:42.773859 #17494] DEBUG -- : Installing: libXinerama                  ##################### [ 83/335]
+D, [2012-01-02T00:47:42.807985 #17494] DEBUG -- : Installing: libXv                        ##################### [ 84/335]
+D, [2012-01-02T00:47:42.919606 #17494] DEBUG -- : Installing: libiec61883                  ##################### [ 85/335]
+D, [2012-01-02T00:47:42.958912 #17494] DEBUG -- : Installing: libvorbis                    ##################### [ 86/335]
+D, [2012-01-02T00:47:43.008477 #17494] DEBUG -- : Installing: celt                         ##################### [ 87/335]
+D, [2012-01-02T00:47:43.268650 #17494] DEBUG -- : Installing: jasper-libs                  ##################### [ 88/335]
+D, [2012-01-02T00:47:43.323629 #17494] DEBUG -- : Installing: gdk-pixbuf2                  ##################### [ 89/335]
+D, [2012-01-02T00:47:43.367836 #17494] DEBUG -- : Installing: libassuan                    ##################### [ 90/335]
+D, [2012-01-02T00:47:43.379389 #17494] DEBUG -- : Installing: bzip2                        ##################### [ 91/335]
+D, [2012-01-02T00:47:43.445394 #17494] DEBUG -- : Installing: ttmkfdir                     ##################### [ 92/335]
+D, [2012-01-02T00:47:43.491641 #17494] DEBUG -- : Installing: libidn                       ##################### [ 93/335]
+D, [2012-01-02T00:47:43.570692 #17494] DEBUG -- : Installing: which                        ##################### [ 94/335]
+D, [2012-01-02T00:47:43.633177 #17494] DEBUG -- : Installing: libunistring                 ##################### [ 95/335]
+D, [2012-01-02T00:47:43.663776 #17494] DEBUG -- : Installing: gmp                          ##################### [ 96/335]
+D, [2012-01-02T00:47:43.709181 #17494] DEBUG -- : Installing: libfontenc                   ##################### [ 97/335]
+D, [2012-01-02T00:47:43.789190 #17494] DEBUG -- : Installing: libXfont                     ##################### [ 98/335]
+D, [2012-01-02T00:47:43.825936 #17494] DEBUG -- : Installing: xorg-x11-font-utils          ##################### [ 99/335]
+D, [2012-01-02T00:47:43.872949 #17494] DEBUG -- : Installing: libselinux-utils             ##################### [100/335]
+D, [2012-01-02T00:47:43.892735 #17494] DEBUG -- : Installing: checkpolicy                  ##################### [101/335]
+D, [2012-01-02T00:47:44.005843 #17494] DEBUG -- : Installing: libdvdread                   ##################### [102/335]
+D, [2012-01-02T00:47:44.057166 #17494] DEBUG -- : Installing: slang                        ##################### [103/335]
+D, [2012-01-02T00:47:44.084014 #17494] DEBUG -- : Installing: pth                          ##################### [104/335]
+D, [2012-01-02T00:47:44.310485 #17494] DEBUG -- : Installing: keyutils-libs                ##################### [105/335]
+D, [2012-01-02T00:47:44.345953 #17494] DEBUG -- : Installing: krb5-libs                    ##################### [106/335]
+D, [2012-01-02T00:47:44.372627 #17494] DEBUG -- : Installing: libXdmcp                     ##################### [107/335]
+D, [2012-01-02T00:47:44.483653 #17494] DEBUG -- : Installing: libcap-ng                    ##################### [108/335]
+D, [2012-01-02T00:47:44.528351 #17494] DEBUG -- : Installing: newt                         ##################### [109/335]
+D, [2012-01-02T00:47:44.581200 #17494] DEBUG -- : Installing: libdvdnav                    ##################### [110/335]
+D, [2012-01-02T00:47:44.645577 #17494] DEBUG -- : Installing: mpfr                         ##################### [111/335]
+D, [2012-01-02T00:47:44.676876 #17494] DEBUG -- : Installing: gettext-libs                 ##################### [112/335]
+D, [2012-01-02T00:47:44.910907 #17494] DEBUG -- : Installing: gstreamer-tools              ##################### [113/335]
+D, [2012-01-02T00:47:44.943531 #17494] DEBUG -- : Installing: gstreamer                    ##################### [114/335]
+D, [2012-01-02T00:47:44.973832 #17494] DEBUG -- : Installing: libXtst                      ##################### [115/335]
+D, [2012-01-02T00:47:45.010917 #17494] DEBUG -- : Installing: libXxf86vm                   ##################### [116/335]
+D, [2012-01-02T00:47:45.049848 #17494] DEBUG -- : Installing: libxkbfile                   ##################### [117/335]
+D, [2012-01-02T00:47:45.063029 #17494] DEBUG -- : Installing: xorg-x11-xkb-utils           ##################### [118/335]
+D, [2012-01-02T00:47:45.115882 #17494] DEBUG -- : Installing: libXcomposite                ##################### [119/335]
+D, [2012-01-02T00:47:45.154316 #17494] DEBUG -- : Installing: libXt                        ##################### [120/335]
+D, [2012-01-02T00:47:45.187509 #17494] DEBUG -- : Installing: libXmu                       ##################### [121/335]
+D, [2012-01-02T00:47:45.213110 #17494] DEBUG -- : Installing: xorg-x11-xauth               ##################### [122/335]
+D, [2012-01-02T00:47:45.287476 #17494] DEBUG -- : Installing: libxml++                     ##################### [123/335]
+D, [2012-01-02T00:47:45.323396 #17494] DEBUG -- : Installing: schroedinger                 ##################### [124/335]
+D, [2012-01-02T00:47:46.221219 #17494] DEBUG -- : Installing: grubby                       ##################### [125/335]
+D, [2012-01-02T00:47:46.269717 #17494] DEBUG -- : Installing: llvm-libs                    ##################### [126/335]
+D, [2012-01-02T00:47:46.322921 #17494] DEBUG -- : Installing: libavc1394                   ##################### [127/335]
+D, [2012-01-02T00:47:46.379873 #17494] DEBUG -- : Installing: libfreebob                   ##################### [128/335]
+D, [2012-01-02T00:47:46.448184 #17494] DEBUG -- : Installing: nss-softokn                  ##################### [129/335]
+D, [2012-01-02T00:47:46.484886 #17494] DEBUG -- : Installing: libxslt                      ##################### [130/335]
+D, [2012-01-02T00:47:46.538252 #17494] DEBUG -- : Installing: libmount                     ##################### [131/335]
+D, [2012-01-02T00:47:46.615385 #17494] DEBUG -- : Installing: libtheora                    ##################### [132/335]
+D, [2012-01-02T00:47:46.667647 #17494] DEBUG -- : Installing: flac                         ##################### [133/335]
+D, [2012-01-02T00:47:46.858172 #17494] DEBUG -- : Installing: libsndfile                   ##################### [134/335]
+D, [2012-01-02T00:47:46.891492 #17494] DEBUG -- : Installing: libsamplerate                ##################### [135/335]
+D, [2012-01-02T00:47:46.919198 #17494] DEBUG -- : Installing: avahi-libs                   ##################### [136/335]
+D, [2012-01-02T00:47:46.980177 #17494] DEBUG -- : Installing: nss-myhostname               ##################### [137/335]
+D, [2012-01-02T00:47:47.031183 #17494] DEBUG -- : Installing: db4-utils                    ##################### [138/335]
+D, [2012-01-02T00:47:47.072532 #17494] DEBUG -- : Installing: pinentry                     ##################### [139/335]
+D, [2012-01-02T00:47:47.101109 #17494] DEBUG -- : Installing: e2fsprogs-libs               ##################### [140/335]
+D, [2012-01-02T00:47:47.301295 #17494] DEBUG -- : Installing: libss                        ##################### [141/335]
+D, [2012-01-02T00:47:47.373946 #17494] DEBUG -- : Installing: tar                          ##################### [142/335]
+D, [2012-01-02T00:47:47.407389 #17494] DEBUG -- : Installing: vim-minimal                  ##################### [143/335]
+D, [2012-01-02T00:47:47.711674 #17494] DEBUG -- : Installing: libquadmath                  ##################### [144/335]
+D, [2012-01-02T00:47:47.749671 #17494] DEBUG -- : Installing: fftw-libs                    ##################### [145/335]
+D, [2012-01-02T00:47:47.814565 #17494] DEBUG -- : Installing: libofa                       ##################### [146/335]
+D, [2012-01-02T00:47:47.922479 #17494] DEBUG -- : Installing: m4                           ##################### [147/335]
+D, [2012-01-02T00:47:47.964225 #17494] DEBUG -- : Installing: diffutils                    ##################### [148/335]
+D, [2012-01-02T00:47:48.041394 #17494] DEBUG -- : Installing: libgomp                      ##################### [149/335]
+D, [2012-01-02T00:47:48.095748 #17494] DEBUG -- : Installing: dirac-libs                   ##################### [150/335]
+D, [2012-01-02T00:47:48.171481 #17494] DEBUG -- : Installing: libmodplug                   ##################### [151/335]
+D, [2012-01-02T00:47:48.305099 #17494] DEBUG -- : Installing: pcre                         ##################### [152/335]
+D, [2012-01-02T00:47:48.347924 #17494] DEBUG -- : Installing: grep                         ##################### [153/335]
+D, [2012-01-02T00:47:48.483491 #17494] DEBUG -- : Installing: libconfig                    ##################### [154/335]
+D, [2012-01-02T00:47:48.577749 #17494] DEBUG -- : Installing: libffado                     ##################### [155/335]
+D, [2012-01-02T00:47:48.661130 #17494] DEBUG -- : Installing: procps                       ##################### [156/335]
+D, [2012-01-02T00:47:48.681558 #17494] DEBUG -- : Installing: psmisc                       ##################### [157/335]
+D, [2012-01-02T00:47:48.766496 #17494] DEBUG -- : Installing: dash                         ##################### [158/335]
+D, [2012-01-02T00:47:48.824382 #17494] DEBUG -- : Installing: procmail                     ##################### [159/335]
+D, [2012-01-02T00:47:48.877419 #17494] DEBUG -- : Installing: ncurses                      ##################### [160/335]
+D, [2012-01-02T00:47:48.968482 #17494] DEBUG -- : Installing: gzip                         ##################### [161/335]
+D, [2012-01-02T00:47:49.527200 #17494] DEBUG -- : Installing: cracklib                     ##################### [162/335]
+D, [2012-01-02T00:47:49.535084 #17494] DEBUG -- : Installing: cracklib-dicts               ##################### [163/335]
+D, [2012-01-02T00:47:50.379588 #17494] DEBUG -- : Installing: coreutils-libs               ##################### [164/335]
+D, [2012-01-02T00:47:50.818547 #17494] DEBUG -- : Installing: coreutils                    ##################### [165/335]
+D, [2012-01-02T00:47:51.148182 #17494] DEBUG -- : Installing: pam                          ##################### [166/335]
+D, [2012-01-02T00:47:51.250234 #17494] DEBUG -- : Installing: openssl                      ##################### [167/335]
+D, [2012-01-02T00:47:52.416439 #17494] DEBUG -- : Installing: fontconfig                   ##################### [168/335]
+D, [2012-01-02T00:47:52.495113 #17494] DEBUG -- : Installing: module-init-tools            ##################### [169/335]
+D, [2012-01-02T00:47:52.684528 #17494] DEBUG -- : Installing: cairo                        ##################### [170/335]
+D, [2012-01-02T00:47:53.545201 #17494] DEBUG -- : Installing: alsa-lib                     ##################### [171/335]
+D, [2012-01-02T00:47:53.781030 #17494] DEBUG -- : Installing: qt                           ##################### [172/335]
+D, [2012-01-02T00:47:53.795563 #17494] DEBUG -- : Installing: hwdata                       ##################### [173/335]
+D, [2012-01-02T00:47:53.909226 #17494] DEBUG -- : Installing: libpciaccess                 ##################### [174/335]
+D, [2012-01-02T00:47:53.947996 #17494] DEBUG -- : Installing: bind-libs-lite               ##################### [175/335]
+D, [2012-01-02T00:47:53.975741 #17494] DEBUG -- : Installing: libXft                       ##################### [176/335]
+D, [2012-01-02T00:47:54.010881 #17494] DEBUG -- : Installing: fipscheck-lib                ##################### [177/335]
+D, [2012-01-02T00:47:54.035084 #17494] DEBUG -- : Installing: fipscheck                    ##################### [178/335]
+D, [2012-01-02T00:47:54.361734 #17494] DEBUG -- : Installing: libssh2                      ##################### [179/335]
+D, [2012-01-02T00:47:54.524461 #17494] DEBUG -- : Installing: fedora-logos                 ##################### [180/335]
+D, [2012-01-02T00:47:54.558132 #17494] DEBUG -- : Installing: nss                          ##################### [181/335]
+D, [2012-01-02T00:47:54.619099 #17494] DEBUG -- : Installing: nss-sysinit                  ##################### [182/335]
+D, [2012-01-02T00:47:54.669030 #17494] DEBUG -- : Installing: openldap                     ##################### [183/335]
+D, [2012-01-02T00:47:55.095539 #17494] DEBUG -- : Installing: libcurl                      ##################### [184/335]
+D, [2012-01-02T00:47:55.141219 #17494] DEBUG -- : Installing: gnupg2                       ##################### [185/335]
+D, [2012-01-02T00:47:55.210178 #17494] DEBUG -- : Installing: dhcp-libs                    ##################### [186/335]
+D, [2012-01-02T00:47:55.267363 #17494] DEBUG -- : Installing: dhcp-common                  ##################### [187/335]
+D, [2012-01-02T00:47:55.342848 #17494] DEBUG -- : Installing: gpgme                        ##################### [188/335]
+D, [2012-01-02T00:47:55.386264 #17494] DEBUG -- : Installing: curl                         ##################### [189/335]
+D, [2012-01-02T00:47:55.646607 #17494] DEBUG -- : Installing: rpm-libs                     ##################### [190/335]
+D, [2012-01-02T00:47:55.669200 #17494] DEBUG -- : Installing: rpm                          ##################### [191/335]
+D, [2012-01-02T00:47:55.879613 #17494] DEBUG -- : Installing: rpm-build-libs               ##################### [192/335]
+D, [2012-01-02T00:47:56.035549 #17494] DEBUG -- : Installing: libuser                      ##################### [193/335]
+D, [2012-01-02T00:47:56.086246 #17494] DEBUG -- : Installing: hicolor-icon-theme           ##################### [194/335]
+D, [2012-01-02T00:47:56.096276 #17494] DEBUG -- : Installing: logrotate                    ##################### [195/335]
+D, [2012-01-02T00:47:56.120856 #17494] DEBUG -- : Installing: sgpio                        ##################### [196/335]
+D, [2012-01-02T00:47:56.173200 #17494] DEBUG -- : Installing: libusb1                      ##################### [197/335]
+D, [2012-01-02T00:47:56.234304 #17494] DEBUG -- : Installing: libdc1394                    ##################### [198/335]
+D, [2012-01-02T00:47:56.274499 #17494] DEBUG -- : Installing: libvpx                       ##################### [199/335]
+D, [2012-01-02T00:47:56.305190 #17494] DEBUG -- : Installing: hostname                     ##################### [200/335]
+D, [2012-01-02T00:47:56.345411 #17494] DEBUG -- : Installing: ustr                         ##################### [201/335]
+D, [2012-01-02T00:47:56.854495 #17494] DEBUG -- : Installing: libsemanage                  ##################### [202/335]
+D, [2012-01-02T00:47:57.533028 #17494] DEBUG -- : Installing: shadow-utils                 ##################### [203/335]
+D, [2012-01-02T00:47:57.740792 #17494] DEBUG -- : Installing: jack-audio-connection-kit    ##################### [204/335]
+D, [2012-01-02T00:47:58.256002 #17494] DEBUG -- : Installing: libutempter                  ##################### [205/335]
+D, [2012-01-02T00:47:58.312735 #17494] DEBUG -- : Installing: util-linux                   ##################### [206/335]
+D, [2012-01-02T00:47:58.476670 #17494] DEBUG -- : Installing: libasyncns                   ##################### [207/335]
+D, [2012-01-02T00:47:58.528663 #17494] DEBUG -- : Installing: pulseaudio-libs              ##################### [208/335]
+D, [2012-01-02T00:47:58.607479 #17494] DEBUG -- : Installing: libtool-ltdl                 ##################### [209/335]
+D, [2012-01-02T00:47:58.719686 #17494] DEBUG -- : Installing: libtasn1                     ##################### [210/335]
+D, [2012-01-02T00:47:58.799970 #17494] DEBUG -- : Installing: gnutls                       ##################### [211/335]
+D, [2012-01-02T00:47:58.843622 #17494] DEBUG -- : Installing: cups-libs                    ##################### [212/335]
+D, [2012-01-02T00:47:58.918531 #17494] DEBUG -- : Installing: libkate                      ##################### [213/335]
+D, [2012-01-02T00:47:59.052204 #17494] DEBUG -- : Installing: libthai                      ##################### [214/335]
+D, [2012-01-02T00:47:59.827606 #17494] DEBUG -- : Installing: pango                        ##################### [215/335]
+D, [2012-01-02T00:47:59.909482 #17494] DEBUG -- : Installing: gtk2                         ##################### [216/335]
+D, [2012-01-02T00:48:00.043951 #17494] DEBUG -- : Installing: librsvg2                     ##################### [217/335]
+D, [2012-01-02T00:48:00.090673 #17494] DEBUG -- : Installing: pciutils-libs                ##################### [218/335]
+D, [2012-01-02T00:48:00.119214 #17494] DEBUG -- : Installing: fribidi                      ##################### [219/335]
+D, [2012-01-02T00:48:00.153611 #17494] DEBUG -- : Installing: linux-atm-libs               ##################### [220/335]
+D, [2012-01-02T00:48:00.190489 #17494] DEBUG -- : Installing: cdparanoia-libs              ##################### [221/335]
+D, [2012-01-02T00:48:03.960750 #17494] DEBUG -- : Installing: gdbm                         ##################### [222/335]
+D, [2012-01-02T00:48:04.040431 #17494] DEBUG -- : Installing: python-libs                  ##################### [223/335]
+D, [2012-01-02T00:48:04.123579 #17494] DEBUG -- : Installing: python                       ##################### [224/335]
+D, [2012-01-02T00:48:04.172244 #17494] DEBUG -- : Installing: python-pycurl                ##################### [225/335]
+D, [2012-01-02T00:48:05.012914 #17494] DEBUG -- : Installing: python-urlgrabber            ##################### [226/335]
+D, [2012-01-02T00:48:08.034398 #17494] DEBUG -- : Installing: gettext                      ##################### [227/335]
+D, [2012-01-02T00:48:08.372436 #17494] DEBUG -- : Installing: yum-metadata-parser          ##################### [228/335]
+D, [2012-01-02T00:48:08.392161 #17494] DEBUG -- : Installing: pygpgme                      ##################### [229/335]
+D, [2012-01-02T00:48:08.579205 #17494] DEBUG -- : Installing: newt-python                  ##################### [230/335]
+D, [2012-01-02T00:48:08.607384 #17494] DEBUG -- : Installing: authconfig                   ##################### [231/335]
+D, [2012-01-02T00:48:08.646956 #17494] DEBUG -- : Installing: rpm-python                   ##################### [232/335]
+D, [2012-01-02T00:48:08.661971 #17494] DEBUG -- : Installing: python-iniparse              ##################### [233/335]
+D, [2012-01-02T00:48:08.702501 #17494] DEBUG -- : Installing: libcdaudio                   ##################### [234/335]
+D, [2012-01-02T00:48:08.773476 #17494] DEBUG -- : Installing: yajl                         ##################### [235/335]
+D, [2012-01-02T00:48:08.866181 #17494] DEBUG -- : Installing: raptor2                      ##################### [236/335]
+D, [2012-01-02T00:48:08.948277 #17494] DEBUG -- : Installing: rasqal                       ##################### [237/335]
+D, [2012-01-02T00:48:08.998321 #17494] DEBUG -- : Installing: redland                      ##################### [238/335]
+D, [2012-01-02T00:48:09.054187 #17494] DEBUG -- : Installing: slv2                         ##################### [239/335]
+D, [2012-01-02T00:48:09.093476 #17494] DEBUG -- : Installing: enca                         ##################### [240/335]
+D, [2012-01-02T00:48:09.165206 #17494] DEBUG -- : Installing: libass                       ##################### [241/335]
+D, [2012-01-02T00:48:09.222209 #17494] DEBUG -- : Installing: libvisual                    ##################### [242/335]
+D, [2012-01-02T00:48:09.270545 #17494] DEBUG -- : Installing: gsm                          ##################### [243/335]
+D, [2012-01-02T00:48:09.319575 #17494] DEBUG -- : Installing: hesiod                       ##################### [244/335]
+D, [2012-01-02T00:48:09.361499 #17494] DEBUG -- : Installing: libmpcdec                    ##################### [245/335]
+D, [2012-01-02T00:48:09.379382 #17494] DEBUG -- : Installing: mingetty                     ##################### [246/335]
+D, [2012-01-02T00:48:09.439113 #17494] DEBUG -- : Installing: plymouth-core-libs           ##################### [247/335]
+D, [2012-01-02T00:48:09.467185 #17494] DEBUG -- : Installing: sysvinit-tools               ##################### [248/335]
+D, [2012-01-02T00:48:09.482316 #17494] DEBUG -- : Installing: device-mapper                ##################### [249/335]
+D, [2012-01-02T00:48:09.517974 #17494] DEBUG -- : Installing: device-mapper-libs           ##################### [250/335]
+D, [2012-01-02T00:48:09.689248 #17494] DEBUG -- : Installing: cryptsetup-luks-libs         ##################### [251/335]
+D, [2012-01-02T00:48:09.805385 #17494] DEBUG -- : Installing: netxen-firmware              ##################### [252/335]
+D, [2012-01-02T00:48:09.973941 #17494] DEBUG -- : Installing: iproute                      ##################### [253/335]
+D, [2012-01-02T00:48:10.252764 #17494] DEBUG -- : Installing: kbd                          ##################### [254/335]
+D, [2012-01-02T00:48:10.783499 #17494] DEBUG -- : Installing: systemd                      ##################### [255/335]
+D, [2012-01-02T00:48:11.215498 #17494] DEBUG -- : Installing: systemd-units                ##################### [256/335]
+D, [2012-01-02T00:48:11.247624 #17494] DEBUG -- : Installing: udev                         ##################### [257/335]
+D, [2012-01-02T00:48:11.352372 #17494] DEBUG -- : Installing: systemd-sysv                 ##################### [258/335]
+D, [2012-01-02T00:48:11.624185 #17494] DEBUG -- : Installing: iptables                     ##################### [259/335]
+D, [2012-01-02T00:48:18.841833 #17494] DEBUG -- : Installing: dbus                         ##################### [260/335]
+D, [2012-01-02T00:48:19.483912 #17494] DEBUG -- : Installing: linux-firmware               ##################### [261/335]
+D, [2012-01-02T00:48:19.580186 #17494] DEBUG -- : Installing: net-tools                    ##################### [262/335]
+D, [2012-01-02T00:48:19.998203 #17494] DEBUG -- : Installing: iputils                      ##################### [263/335]
+D, [2012-01-02T00:48:20.060597 #17494] DEBUG -- : Installing: initscripts                  ##################### [264/335]
+D, [2012-01-02T00:48:20.285352 #17494] DEBUG -- : Installing: plymouth-scripts             ##################### [265/335]
+D, [2012-01-02T00:48:25.644744 #17494] DEBUG -- : Installing: dracut                       ##################### [266/335]
+D, [2012-01-02T00:48:25.803557 #17494] DEBUG -- : Installing: kernel                       ##################### [267/335]
+D, [2012-01-02T00:48:25.880790 #17494] DEBUG -- : Installing: libdrm                       ##################### [268/335]
+D, [2012-01-02T00:48:25.905189 #17494] DEBUG -- : Installing: plymouth                     ##################### [269/335]
+D, [2012-01-02T00:48:25.944823 #17494] DEBUG -- : Installing: device-mapper-event-libs     ##################### [270/335]
+D, [2012-01-02T00:48:26.226625 #17494] DEBUG -- : Installing: device-mapper-event          ##################### [271/335]
+D, [2012-01-02T00:48:27.035839 #17494] DEBUG -- : Installing: policycoreutils              ##################### [272/335]
+D, [2012-01-02T00:48:27.135181 #17494] DEBUG -- : Installing: selinux-policy               ##################### [273/335]
+D, [2012-01-02T00:48:27.320394 #17494] DEBUG -- : Installing: lvm2-libs                    ##################### [274/335]
+D, [2012-01-02T00:48:27.632496 #17494] DEBUG -- : Installing: lvm2                         ##################### [275/335]
+D, [2012-01-02T00:48:27.933186 #17494] DEBUG -- : Installing: openssh                      ##################### [276/335]
+D, [2012-01-02T00:48:27.987394 #17494] DEBUG -- : Installing: rsyslog                      ##################### [277/335]
+D, [2012-01-02T00:48:28.055513 #17494] DEBUG -- : Installing: cronie-anacron               ##################### [278/335]
+D, [2012-01-02T00:48:28.108772 #17494] DEBUG -- : Installing: cronie                       ##################### [279/335]
+D, [2012-01-02T00:48:28.339377 #17494] DEBUG -- : Installing: crontabs                     ##################### [280/335]
+D, [2012-01-02T00:48:28.371833 #17494] DEBUG -- : Installing: cyrus-sasl                   ##################### [281/335]
+D, [2012-01-02T00:48:28.413396 #17494] DEBUG -- : Installing: kpartx                       ##################### [282/335]
+D, [2012-01-02T00:48:28.445651 #17494] DEBUG -- : Installing: dmraid                       ##################### [283/335]
+D, [2012-01-02T00:48:28.493912 #17494] DEBUG -- : Installing: dmraid-events                ##################### [284/335]
+D, [2012-01-02T00:48:28.518400 #17494] DEBUG -- : Installing: os-prober                    ##################### [285/335]
+D, [2012-01-02T00:48:28.592498 #17494] DEBUG -- : Installing: lcms-libs                    ##################### [286/335]
+D, [2012-01-02T00:48:29.235865 #17494] DEBUG -- : Installing: libmng                       ##################### [287/335]
+D, [2012-01-02T00:48:29.265200 #17494] DEBUG -- : Installing: xkeyboard-config             ##################### [288/335]
+D, [2012-01-02T00:48:29.522375 #17494] DEBUG -- : Installing: xorg-x11-server-common       ##################### [289/335]
+D, [2012-01-02T00:48:29.536484 #17494] DEBUG -- : Installing: xorg-x11-server-Xorg         ##################### [290/335]
+D, [2012-01-02T00:48:29.584355 #17494] DEBUG -- : Installing: system-setup-keyboard        ##################### [291/335]
+D, [2012-01-02T00:48:31.181084 #17494] DEBUG -- : Installing: mesa-dri-filesystem          ##################### [292/335]
+D, [2012-01-02T00:48:31.211766 #17494] DEBUG -- : Installing: mesa-dri-drivers             ##################### [293/335]
+D, [2012-01-02T00:48:33.473892 #17494] DEBUG -- : Installing: mesa-libGL                   ##################### [294/335]
+D, [2012-01-02T00:48:34.146242 #17494] DEBUG -- : Installing: qt-x11                       ##################### [295/335]
+D, [2012-01-02T00:48:35.084668 #17494] DEBUG -- : Installing: xml-common                   ##################### [296/335]
+D, [2012-01-02T00:48:35.381705 #17494] DEBUG -- : Installing: iso-codes                    ##################### [297/335]
+D, [2012-01-02T00:48:35.727332 #17494] DEBUG -- : Installing: gstreamer-plugins-base       ##################### [298/335]
+D, [2012-01-02T00:48:36.409650 #17494] DEBUG -- : Installing: gstreamer-plugins-bad-free   ##################### [299/335]
+D, [2012-01-02T00:48:37.702736 #17494] DEBUG -- : Installing: qt-mobility                  ##################### [300/335]
+D, [2012-01-02T00:48:38.817611 #17494] DEBUG -- : Installing: qtwebkit                     ##################### [301/335]
+D, [2012-01-02T00:48:39.876389 #17494] DEBUG -- : Installing: xorg-x11-server-Xvfb         ##################### [302/335]
+D, [2012-01-02T00:48:40.520252 #17494] DEBUG -- : Installing: grub2                        ##################### [303/335]
