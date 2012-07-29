@@ -1,0 +1,1013 @@
+# Logfile created on 2012-07-28 23:38:47 -0400 by logger.rb/31641
+D, [2012-07-28T23:38:47.634316 #4827] DEBUG -- : Launching new build...
+T, [2012-07-28T23:38:47.635588 #4827] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:name: BoxGrinder Build
+:platform: :none
+:delivery: :none
+:force: false
+:log_level: :info
+:backtrace: false
+:dir: 
+  :root: /home/rortian/git/boxgs/rawhide-go
+  :build: build
+  :cache: /var/cache/boxgrinder
+  :tmp: /tmp
+:os_config: {}
+
+:platform_config: {}
+
+:delivery_config: {}
+
+:additional_plugins: []
+
+:change_to_user: false
+:uid: 1000
+:gid: 1000
+
+D, [2012-07-28T23:38:47.635657 #4827] DEBUG -- : Loading os plugins...
+D, [2012-07-28T23:38:47.635692 #4827] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-07-28T23:38:47.635726 #4827] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-07-28T23:38:47.635759 #4827] DEBUG -- : - centos plugin for CentOS.
+D, [2012-07-28T23:38:47.635791 #4827] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-07-28T23:38:47.635822 #4827] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-07-28T23:38:47.635852 #4827] DEBUG -- : Plugins loaded.
+D, [2012-07-28T23:38:47.635882 #4827] DEBUG -- : Loading platform plugins...
+D, [2012-07-28T23:38:47.635913 #4827] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-07-28T23:38:47.635944 #4827] DEBUG -- : - vmware plugin for VMware.
+D, [2012-07-28T23:38:47.635976 #4827] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-07-28T23:38:47.636007 #4827] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-07-28T23:38:47.636039 #4827] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-07-28T23:38:47.636068 #4827] DEBUG -- : Plugins loaded.
+D, [2012-07-28T23:38:47.636097 #4827] DEBUG -- : Loading delivery plugins...
+D, [2012-07-28T23:38:47.636129 #4827] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-07-28T23:38:47.636173 #4827] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-07-28T23:38:47.636208 #4827] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-07-28T23:38:47.636241 #4827] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-07-28T23:38:47.636272 #4827] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-07-28T23:38:47.636303 #4827] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-07-28T23:38:47.636336 #4827] DEBUG -- : - local plugin for Local file system.
+D, [2012-07-28T23:38:47.636366 #4827] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-07-28T23:38:47.636397 #4827] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-07-28T23:38:47.636547 #4827] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-07-28T23:38:47.636581 #4827] DEBUG -- : Plugins loaded.
+I, [2012-07-28T23:38:47.639739 #4827]  INFO -- : Validating appliance definition from gccgo.appl file...
+D, [2012-07-28T23:38:47.639805 #4827] DEBUG -- : Parsing definition using schema version 0.9.6.
+I, [2012-07-28T23:38:47.641479 #4827]  INFO -- : Appliance definition is valid.
+I, [2012-07-28T23:38:47.648670 #4827]  INFO -- : Building 'gccgo' appliance for x86_64 architecture.
+D, [2012-07-28T23:38:47.648759 #4827] DEBUG -- : Executing os plugin...
+I, [2012-07-28T23:38:47.652389 #4827]  INFO -- : Resolving packages added to gccgo appliance definition file...
+D, [2012-07-28T23:38:47.652663 #4827] DEBUG -- : Querying package database...
+D, [2012-07-28T23:38:47.652763 #4827] DEBUG -- : Executing command: 'repoquery --quiet --disablerepo=* --enablerepo=boxgrinder-base -c '/home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/yum.conf' list available gcc-go system-config-firewall-base dhclient kernel grub2 --nevra --archlist=x86_64,noarch'
+D, [2012-07-28T23:39:07.398254 #4827] DEBUG -- : dhclient-12:4.2.4-10.P1.fc18.x86_64
+D, [2012-07-28T23:39:07.398458 #4827] DEBUG -- : gcc-go-0:4.7.1-5.fc18.x86_64
+D, [2012-07-28T23:39:07.398532 #4827] DEBUG -- : grub2-1:2.00-3.fc18.x86_64
+D, [2012-07-28T23:39:07.398618 #4827] DEBUG -- : kernel-0:3.6.0-0.rc0.git2.1.fc18.x86_64
+D, [2012-07-28T23:39:07.398703 #4827] DEBUG -- : system-config-firewall-base-0:1.2.29-8.fc18.noarch
+I, [2012-07-28T23:39:07.417762 #4827]  INFO -- : All additional packages for gccgo appliance successfully resolved.
+I, [2012-07-28T23:39:07.417962 #4827]  INFO -- : Building gccgo appliance...
+D, [2012-07-28T23:39:07.418268 #4827] DEBUG -- : Executing command: 'appliance-creator -d -v -t 'build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp' --cache=/var/cache/boxgrinder/rpms-cache/x86_64/fedora/rawhide --config 'build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/gccgo.ks' -o 'build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp' --name 'gccgo' --vmem 256 --vcpu 1 --format raw'
+D, [2012-07-28T23:39:07.696588 #4827] DEBUG -- : Adding disk sda as /home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-cgxAbX/tmp-AOCJGR/gccgo-sda.raw
+D, [2012-07-28T23:39:07.696718 #4827] DEBUG -- : Extending sparse file /home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-cgxAbX/tmp-AOCJGR/gccgo-sda.raw to 3226468352
+D, [2012-07-28T23:39:07.701991 #4827] DEBUG -- : Losetup add /dev/loop0 mapping to /home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-cgxAbX/tmp-AOCJGR/gccgo-sda.raw
+D, [2012-07-28T23:39:07.709004 #4827] DEBUG -- : Formatting disks
+D, [2012-07-28T23:39:07.709110 #4827] DEBUG -- : Initializing partition table for /dev/loop0 with gpt layout
+D, [2012-07-28T23:39:07.721316 #4827] DEBUG -- : Assigning partitions to disks
+D, [2012-07-28T23:39:07.721495 #4827] DEBUG -- : Assigned biosboot to sda1 at 0 at size 5
+D, [2012-07-28T23:39:07.721693 #4827] DEBUG -- : Assigned / to sda2 at 5 at size 3072
+D, [2012-07-28T23:39:07.721857 #4827] DEBUG -- : Creating partitions
+D, [2012-07-28T23:39:07.721995 #4827] DEBUG -- : Add primary part at 0 of size 5
+D, [2012-07-28T23:39:07.733318 #4827] DEBUG -- : Add primary part at 5 of size 3072
+D, [2012-07-28T23:39:07.758250 #4827] DEBUG -- : Dev loop0p1: /dev/loop01 -> /dev/mapper/loop0p1
+D, [2012-07-28T23:39:07.758357 #4827] DEBUG -- : Dev loop0p2: /dev/loop02 -> /dev/mapper/loop0p2
+D, [2012-07-28T23:39:07.758393 #4827] DEBUG -- : Adding partx mapping for /dev/loop0
+D, [2012-07-28T23:39:07.782856 #4827] DEBUG -- : Formating ext4 filesystem on /dev/loop02
+D, [2012-07-28T23:39:08.354718 #4827] DEBUG -- : mke2fs 1.42.3 (14-May-2012)
+D, [2012-07-28T23:39:08.354859 #4827] DEBUG -- : Discarding device blocks:   4096/750000528384/750000             done
+D, [2012-07-28T23:39:08.354919 #4827] DEBUG -- : Filesystem label=_/
+D, [2012-07-28T23:39:08.354975 #4827] DEBUG -- : OS type: Linux
+D, [2012-07-28T23:39:08.355016 #4827] DEBUG -- : Block size=4096 (log=2)
+D, [2012-07-28T23:39:08.355053 #4827] DEBUG -- : Fragment size=4096 (log=2)
+D, [2012-07-28T23:39:08.355089 #4827] DEBUG -- : Stride=0 blocks, Stripe width=0 blocks
+D, [2012-07-28T23:39:08.355127 #4827] DEBUG -- : 187680 inodes, 750000 blocks
+D, [2012-07-28T23:39:08.355180 #4827] DEBUG -- : 7500 blocks (1.00%) reserved for the super user
+D, [2012-07-28T23:39:08.355227 #4827] DEBUG -- : First data block=0
+D, [2012-07-28T23:39:08.355264 #4827] DEBUG -- : Maximum filesystem blocks=771751936
+D, [2012-07-28T23:39:08.355299 #4827] DEBUG -- : 23 block groups
+D, [2012-07-28T23:39:08.355337 #4827] DEBUG -- : 32768 blocks per group, 32768 fragments per group
+D, [2012-07-28T23:39:08.355372 #4827] DEBUG -- : 8160 inodes per group
+D, [2012-07-28T23:39:08.355408 #4827] DEBUG -- : Superblock backups stored on blocks:
+D, [2012-07-28T23:39:08.355445 #4827] DEBUG -- : 32768, 98304, 163840, 229376, 294912
+D, [2012-07-28T23:39:08.355485 #4827] DEBUG -- : 
+D, [2012-07-28T23:39:08.355528 #4827] DEBUG -- : Allocating group tables:  0/23 1/23 2/23 3/23 4/23 5/23 6/23 7/23 8/23 9/2310/2311/2312/2313/2314/2315/2316/2317/2318/2319/2320/2321/2322/23     done
+D, [2012-07-28T23:39:08.355576 #4827] DEBUG -- : Writing inode tables:  0/23 1/23 2/23 3/23 4/23 5/23 6/23 7/23 8/23 9/2310/2311/2312/2313/2314/2315/2316/2317/2318/2319/2320/2321/2322/23     done
+D, [2012-07-28T23:39:08.355611 #4827] DEBUG -- : Creating journal (16384 blocks): done
+D, [2012-07-28T23:39:08.355650 #4827] DEBUG -- : Writing superblocks and filesystem accounting information:  0/23 1/23 2/23 3/23 4/23 5/23 6/23 7/23 8/23 9/2310/2311/2312/2313/2314/2315/2316/2317/2318/2319/2320/2321/2322/23     done
+D, [2012-07-28T23:39:08.355692 #4827] DEBUG -- : 
+D, [2012-07-28T23:39:08.355741 #4827] DEBUG -- : 
+D, [2012-07-28T23:39:08.355801 #4827] DEBUG -- : Tuning filesystem on /dev/loop02
+D, [2012-07-28T23:39:08.365060 #4827] DEBUG -- : tune2fs 1.42.3 (14-May-2012)
+D, [2012-07-28T23:39:08.365200 #4827] DEBUG -- : Setting maximal mount count to -1
+D, [2012-07-28T23:39:08.365264 #4827] DEBUG -- : Setting interval between checks to 0 seconds
+D, [2012-07-28T23:39:08.365307 #4827] DEBUG -- : 
+D, [2012-07-28T23:39:08.365715 #4827] DEBUG -- : Mounting /dev/loop02 at /home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-cgxAbX/install_root/
+D, [2012-07-28T23:39:08.385341 #4827] DEBUG -- : Writing mkinitrd config /home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-cgxAbX/install_root/etc/sysconfig/mkinitrd
+D, [2012-07-28T23:39:08.387202 #4827] DEBUG -- : Skipping (/sys/fs/selinux,/sys/fs/selinux) because source doesn't exist.
+D, [2012-07-28T23:39:08.984324 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/repodata/repomd.xml ...OK
+D, [2012-07-28T23:39:14.696040 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/repodata/fc342625a2d8a1c077253c511d589dbcb743541612753ba270577159e9121c96-primary.sqlite.bz2 ...OK
+D, [2012-07-28T23:39:19.363171 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/repodata/d5e4666667552fb52639bde89385b2e04515afb2e5d7164873e8c4b6c608bea5-comps-rawhide.xml.gz ...OK
+D, [2012-07-28T23:39:22.296504 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/m/ModemManager-0.5.999-0.2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:23.229540 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/NetworkManager-0.9.5.96-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:23.814982 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/NetworkManager-glib-0.9.5.96-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:24.184070 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/a/acl-2.2.51-7.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:24.548402 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/a/attr-2.4.46-7.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:25.079211 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/a/audit-2.2.1-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:25.951429 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/a/audit-libs-2.2.1-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:26.675861 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/a/authconfig-6.2.3-1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:26.994940 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/a/avahi-autoipd-0.6.31-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:27.186679 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/b/basesystem-10.0-7.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:39:28.169110 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/b/bash-4.2.37-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:29.026264 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/b/bind-libs-lite-9.9.1-2.P1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:29.450464 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/b/bind-license-9.9.1-2.P1.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:39:31.351824 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/b/binutils-2.22.52.0.4-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:31.659000 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/b/biosdevname-0.4.1-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:31.969376 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/b/bzip2-libs-1.0.6-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:32.651112 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/ca-certificates-2012.85-2.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:39:33.253514 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/checkpolicy-2.1.10-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:33.784313 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/chkconfig-1.3.59-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:34.182806 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/cloog-ppl-0.15.11-4.fc18.1.x86_64.rpm ...OK
+D, [2012-07-28T23:39:35.956348 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/coreutils-8.17-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:36.476368 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/cpio-2.11-10.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:38.751443 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/cpp-4.7.1-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:39.119231 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/cracklib-2.8.19-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:40.966828 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/cracklib-dicts-2.8.19-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:41.346461 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/cronie-1.4.8-12.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:41.640681 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/cronie-anacron-1.4.8-12.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:41.849031 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/crontabs-1.11-4.20101115git.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:39:42.260329 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/cryptsetup-libs-1.5.0-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:42.834320 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/curl-7.27.0-1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:43.223263 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/cyrus-sasl-2.1.23-35.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:43.709687 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/c/cyrus-sasl-lib-2.1.23-35.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:44.296006 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/d/dbus-1.6.0-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:44.780787 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/d/dbus-glib-0.100-1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:45.213105 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/d/dbus-libs-1.6.0-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:45.700946 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/d/device-mapper-1.02.75-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:46.232060 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/d/device-mapper-libs-1.02.75-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:46.849327 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/d/dhclient-4.2.4-10.P1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:47.345838 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/d/dhcp-common-4.2.4-10.P1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:47.817319 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/d/dhcp-libs-4.2.4-10.P1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:48.386305 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/d/diffutils-3.2-9.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:48.876338 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/d/dnsmasq-2.59-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:49.428437 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/d/dracut-022-63.git20120727.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:50.279985 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/e/e2fsprogs-1.42.4-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:50.728864 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/e/e2fsprogs-libs-1.42.4-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:51.026001 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/e/eject-2.1.5-24.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:51.516592 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/e/elfutils-libelf-0.154-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:51.913566 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/e/expat-2.1.0-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:54.549582 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/f/fedora-logos-17.0.2-1.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:39:54.801099 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/f/fedora-release-18-0.5.noarch.rpm ...OK
+D, [2012-07-28T23:39:54.990662 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/f/fedora-release-rawhide-18-0.5.noarch.rpm ...OK
+D, [2012-07-28T23:39:55.299236 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/f/file-5.11-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:55.888043 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/f/file-libs-5.11-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:56.852321 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/f/filesystem-3.1-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:57.634972 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/f/findutils-4.5.10-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:57.884955 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/f/fipscheck-1.3.1-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:58.061303 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/f/fipscheck-lib-1.3.1-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:58.748841 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/f/freetype-2.4.10-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:39:59.186129 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/gamin-0.1.10-13.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:00.087602 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/gawk-4.0.1-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:05.828850 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/gcc-4.7.1-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:08.275074 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/gcc-go-4.7.1-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:08.672268 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/gdbm-1.10-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:09.738646 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/gettext-0.18.1.1-16.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:10.266866 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/gettext-libs-0.18.1.1-16.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:11.602702 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/glib2-2.33.6-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:13.670839 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/glibc-2.16-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:18.048114 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/glibc-common-2.16-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:18.986924 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/glibc-devel-2.16-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:19.779423 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/glibc-headers-2.16-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:20.386722 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/gmp-5.0.5-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:21.461986 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/gnupg2-2.0.19-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:21.928035 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/gpgme-1.3.0-9.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:22.600015 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/grep-2.13-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:23.695488 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/grub2-2.00-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:26.327782 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/grub2-tools-2.00-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:26.627414 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/grubby-8.15-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:27.072702 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/g/gzip-1.5-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:27.256590 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/h/hardlink-1.0-15.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:27.507208 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/h/hesiod-3.1.0-22.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:27.746859 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/h/hostname-3.11-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:28.729813 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/h/hwdata-0.234-3.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:40:29.235143 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/i/info-4.13a-17.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:30.214516 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/i/initscripts-9.39-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:30.899971 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/i/iproute-3.4.0-1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:31.563520 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/i/iptables-1.4.14-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:32.014675 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/i/iputils-20101006-17.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:33.599330 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/j/js-1.8.5-10.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:34.189529 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/k/kbd-1.15.3-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:35.107896 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/k/kbd-misc-1.15.3-6.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:40:46.669370 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/k/kernel-3.6.0-0.rc0.git2.1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:47.670263 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/k/kernel-headers-3.6.0-0.rc0.git2.1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:47.930254 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/k/keyutils-libs-1.5.5-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:48.271586 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/k/kmod-8-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:48.567545 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/k/kmod-libs-8-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:48.859628 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/k/kpartx-0.4.9-28.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:49.719564 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/k/krb5-libs-1.10.2-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:49.961326 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libacl-2.2.51-7.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:50.369281 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libassuan-2.0.3-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:50.593509 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libattr-2.4.46-7.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:51.018957 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libblkid-2.21.2-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:51.351641 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libcap-2.22-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:51.614775 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libcap-ng-0.7-1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:51.912537 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libcom_err-1.42.4-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:52.356503 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libcroco-0.6.5-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:52.933386 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libcurl-7.27.0-1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:53.191261 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libdaemon-0.14-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:54.091339 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libdb-5.3.21-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:54.471843 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libdb-utils-5.3.21-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:55.282227 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libdb4-4.8.30-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:55.698010 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libdrm-2.4.37-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:55.990135 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libffi-3.0.10-2.fc17.x86_64.rpm ...OK
+D, [2012-07-28T23:40:56.355599 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libgcc-4.7.1-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:56.922719 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libgcrypt-1.5.0-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:58.320372 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libgo-4.7.1-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:58.887586 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libgo-devel-4.7.1-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:59.277120 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libgomp-4.7.1-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:59.659977 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libgpg-error-1.10-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:40:59.961113 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libgudev1-187-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:00.511060 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libidn-1.25-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:00.943840 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libmount-2.21.2-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:01.245132 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libmpc-0.9-3.fc18.2.x86_64.rpm ...OK
+D, [2012-07-28T23:41:01.805547 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libnl3-3.2.7-1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:02.228020 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libpcap-1.3.0-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:02.463772 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libpciaccess-0.13.1-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:02.807826 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libpwquality-1.1.1-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:03.321110 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libselinux-2.1.11-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:03.753732 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libselinux-utils-2.1.11-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:04.174119 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libsemanage-2.1.8-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:04.618626 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libsepol-2.1.7-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:04.929365 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libss-1.42.4-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:05.368234 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libssh2-1.4.2-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:05.997030 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libstdc++-4.7.1-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:06.585518 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libunistring-0.9.3-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:07.267346 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libuser-0.57.6-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:07.526533 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libutempter-1.1.5-7.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:07.875601 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libuuid-2.21.2-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:09.002452 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/libxml2-2.8.0-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:09.265309 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/linux-atm-libs-2.5.1-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:14.795570 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/linux-firmware-20120720-0.1.git7560108.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:41:15.172977 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/logrotate-3.8.1-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:15.696407 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/l/lua-5.1.4-11.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:16.226757 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/m/m4-1.4.16-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:16.896764 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/m/make-3.82-12.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:17.389643 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/m/mpfr-3.1.1-1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:18.050345 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/ncurses-5.9-5.20120204.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:18.437593 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/ncurses-base-5.9-5.20120204.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:19.020489 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/ncurses-libs-5.9-5.20120204.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:20.050906 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/netxen-firmware-4.0.534-6.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:41:20.481632 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/newt-0.52.14-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:20.800966 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/newt-python-0.52.14-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:21.240907 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/nspr-4.9.1-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:22.223975 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/nss-3.13.5-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:22.447123 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/nss-myhostname-0.3-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:22.947666 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/nss-softokn-3.13.5-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:23.384155 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/nss-softokn-freebl-3.13.5-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:23.689478 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/nss-sysinit-3.13.5-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:24.585088 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/nss-tools-3.13.5-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:24.935470 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/n/nss-util-3.13.5-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:25.566765 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/o/openldap-2.4.31-7.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:26.166853 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/o/openssh-5.9p1-25.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:26.768517 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/o/openssh-server-5.9p1-25.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:27.622186 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/o/openssl-1.0.1c-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:28.554490 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/o/openssl-libs-1.0.1c-6.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:28.839431 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/o/os-prober-1.53-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:29.704788 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/pam-1.1.5-7.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:30.636473 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/parted-3.1-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:31.031700 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/passwd-0.78.99-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:31.368699 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/pciutils-libs-3.1.10-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:31.997231 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/pcre-8.31-1.fc18.1.x86_64.rpm ...OK
+D, [2012-07-28T23:41:32.356907 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/pinentry-0.8.1-7.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:32.692895 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/pkgconfig-0.26-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:33.103761 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/plymouth-0.8.6.2-0.2012.07.23.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:33.482704 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/plymouth-core-libs-0.8.6.2-0.2012.07.23.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:33.765870 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/plymouth-scripts-0.8.6.2-0.2012.07.23.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:34.498521 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/policycoreutils-2.1.12-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:34.988915 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/polkit-0.107-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:35.281626 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/popt-1.13-11.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:36.484115 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/ppl-0.11.2-10.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:36.774794 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/ppl-pwl-0.11.2-10.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:37.416946 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/ppp-2.4.5-23.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:37.896511 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/procmail-3.22-30.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:38.445541 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/procps-ng-3.3.2-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:38.872504 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/psmisc-22.19-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:39.229066 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/pth-2.0.7-17.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:39.668327 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/pygpgme-0.3-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:40.032719 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/python-2.7.3-12.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:40.321733 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/python-iniparse-0.4-5.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:41:43.147229 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/python-libs-2.7.3-12.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:43.565717 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/python-pycurl-7.19.0-11.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:43.988496 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/p/python-urlgrabber-3.9.1-15.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:41:44.490599 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/r/readline-6.2-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:44.703403 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/r/rootfiles-8.1-9.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:41:45.754435 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/r/rpm-4.10.0-5.fc18.1.x86_64.rpm ...OK
+D, [2012-07-28T23:41:46.153073 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/r/rpm-build-libs-4.10.0-5.fc18.1.x86_64.rpm ...OK
+D, [2012-07-28T23:41:46.703074 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/r/rpm-libs-4.10.0-5.fc18.1.x86_64.rpm ...OK
+D, [2012-07-28T23:41:47.070488 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/r/rpm-python-4.10.0-5.fc18.1.x86_64.rpm ...OK
+D, [2012-07-28T23:41:47.916461 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/r/rsyslog-5.8.11-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:48.445352 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/sed-4.2.1-10.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:48.983451 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/selinux-policy-3.11.0-13.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:41:51.005896 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/selinux-policy-targeted-3.11.0-13.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:41:51.839863 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/sendmail-8.14.5-15.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:52.095036 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/setserial-2.17-29.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:52.612411 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/setup-2.8.56-2.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:41:53.717972 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/shadow-utils-4.1.5-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:54.356852 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/shared-mime-info-1.0-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:55.108460 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/slang-2.2.4-5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:55.809250 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/sqlite-3.7.13-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:56.689640 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/sudo-1.8.5-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:57.401310 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/system-config-firewall-base-1.2.29-8.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:41:58.491617 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/systemd-187-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:58.875079 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/systemd-libs-187-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:59.121277 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/systemd-sysv-187-2.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:59.519651 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/s/sysvinit-tools-2.88-7.dsf.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:41:59.909731 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/t/tcp_wrappers-libs-7.6-70.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:42:00.644445 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/t/tzdata-2012d-1.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:42:01.016507 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/u/ustr-1.0.4-13.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:42:02.281674 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/u/util-linux-2.21.2-3.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:42:02.966714 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/v/vim-minimal-7.3.604-1.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:42:03.277040 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/w/which-2.20-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:42:04.038413 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/w/wpa_supplicant-1.0-0.5.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:42:04.546714 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/x/xz-5.1.2-2alpha.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:42:04.952681 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/x/xz-libs-5.1.2-2alpha.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:42:05.941667 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/y/yum-3.4.3-30.fc18.noarch.rpm ...OK
+D, [2012-07-28T23:42:06.177451 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/y/yum-metadata-parser-1.1.4-7.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:42:06.665025 #4827] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/Packages/z/zlib-1.2.7-4.fc18.x86_64.rpm ...OK
+D, [2012-07-28T23:42:07.018530 #4827] DEBUG -- : ['/', 'biosboot']
+D, [2012-07-28T23:42:07.049337 #4827] DEBUG -- : Installing: libgcc                       ##################### [  2/226]
+D, [2012-07-28T23:42:07.276072 #4827] DEBUG -- : Installing: setup                        ##################### [  3/226]
+D, [2012-07-28T23:42:07.462272 #4827] DEBUG -- : Installing: filesystem                   ##################### [  4/226]
+D, [2012-07-28T23:42:07.467231 #4827] DEBUG -- : Installing: fedora-release-rawhide       ##################### [  5/226]
+D, [2012-07-28T23:42:07.468210 #4827] DEBUG -- : Installing: fedora-release               ##################### [  6/226]
+D, [2012-07-28T23:42:07.470398 #4827] DEBUG -- : Installing: basesystem                   ##################### [  7/226]
+D, [2012-07-28T23:42:07.676810 #4827] DEBUG -- : Installing: bind-license                 ##################### [  8/226]
+D, [2012-07-28T23:42:07.917014 #4827] DEBUG -- : Installing: kernel-headers               ##################### [  9/226]
+D, [2012-07-28T23:42:08.112446 #4827] DEBUG -- : Installing: tzdata                       ##################### [ 10/226]
+D, [2012-07-28T23:42:08.140852 #4827] DEBUG -- : Installing: kbd-misc                     ##################### [ 11/226]
+D, [2012-07-28T23:42:08.166009 #4827] DEBUG -- : Installing: ncurses-base                 ##################### [ 12/226]
+D, [2012-07-28T23:42:12.071782 #4827] DEBUG -- : Installing: nss-softokn-freebl           ##################### [ 13/226]
+D, [2012-07-28T23:42:12.742645 #4827] DEBUG -- : Installing: glibc-common                 ##################### [ 14/226]
+D, [2012-07-28T23:42:15.166747 #4827] DEBUG -- : Installing: glibc                        ##################### [ 15/226]
+D, [2012-07-28T23:42:15.350208 #4827] DEBUG -- : Installing: ncurses-libs                 ##################### [ 16/226]
+D, [2012-07-28T23:42:15.369900 #4827] DEBUG -- : Installing: bash                         ##################### [ 17/226]
+D, [2012-07-28T23:42:15.397016 #4827] DEBUG -- : Installing: libsepol                     ##################### [ 18/226]
+D, [2012-07-28T23:42:15.413731 #4827] DEBUG -- : Installing: libselinux                   ##################### [ 19/226]
+D, [2012-07-28T23:42:15.436443 #4827] DEBUG -- : Installing: libattr                      ##################### [ 20/226]
+D, [2012-07-28T23:42:15.462832 #4827] DEBUG -- : Installing: libcap                       ##################### [ 21/226]
+D, [2012-07-28T23:42:15.499049 #4827] DEBUG -- : Installing: zlib                         ##################### [ 22/226]
+D, [2012-07-28T23:42:15.522514 #4827] DEBUG -- : Installing: info                         ##################### [ 23/226]
+D, [2012-07-28T23:42:15.555764 #4827] DEBUG -- : Installing: audit-libs                   ##################### [ 24/226]
+D, [2012-07-28T23:42:15.604762 #4827] DEBUG -- : Installing: popt                         ##################### [ 25/226]
+D, [2012-07-28T23:42:15.610688 #4827] DEBUG -- : Installing: chkconfig                    ##################### [ 26/226]
+D, [2012-07-28T23:42:15.624498 #4827] DEBUG -- : Installing: libcom_err                   ##################### [ 27/226]
+D, [2012-07-28T23:42:15.653039 #4827] DEBUG -- : Installing: libacl                       ##################### [ 28/226]
+D, [2012-07-28T23:42:15.694862 #4827] DEBUG -- : Installing: xz-libs                      ##################### [ 29/226]
+D, [2012-07-28T23:42:15.730332 #4827] DEBUG -- : Installing: nspr                         ##################### [ 30/226]
+D, [2012-07-28T23:42:15.751535 #4827] DEBUG -- : Installing: dbus-libs                    ##################### [ 31/226]
+D, [2012-07-28T23:42:15.873019 #4827] DEBUG -- : Installing: nss-util                     ##################### [ 32/226]
+D, [2012-07-28T23:42:15.885640 #4827] DEBUG -- : Installing: libdb                        ##################### [ 33/226]
+D, [2012-07-28T23:42:15.936609 #4827] DEBUG -- : Installing: libuuid                      ##################### [ 34/226]
+D, [2012-07-28T23:42:15.962079 #4827] DEBUG -- : Installing: sed                          ##################### [ 35/226]
+D, [2012-07-28T23:42:16.028421 #4827] DEBUG -- : Installing: bzip2-libs                   ##################### [ 36/226]
+D, [2012-07-28T23:42:16.091191 #4827] DEBUG -- : Installing: libstdc++                    ##################### [ 37/226]
+D, [2012-07-28T23:42:16.133082 #4827] DEBUG -- : Installing: gmp                          ##################### [ 38/226]
+D, [2012-07-28T23:42:16.386281 #4827] DEBUG -- : Installing: readline                     ##################### [ 39/226]
+D, [2012-07-28T23:42:16.418466 #4827] DEBUG -- : Installing: libxml2                      ##################### [ 40/226]
+D, [2012-07-28T23:42:16.481074 #4827] DEBUG -- : Installing: libgpg-error                 ##################### [ 41/226]
+D, [2012-07-28T23:42:16.532779 #4827] DEBUG -- : Installing: sqlite                       ##################### [ 42/226]
+D, [2012-07-28T23:42:16.565151 #4827] DEBUG -- : Installing: lua                          ##################### [ 43/226]
+D, [2012-07-28T23:42:16.684654 #4827] DEBUG -- : Installing: mpfr                         ##################### [ 44/226]
+D, [2012-07-28T23:42:16.721110 #4827] DEBUG -- : Installing: gawk                         ##################### [ 45/226]
+D, [2012-07-28T23:42:16.748783 #4827] DEBUG -- : Installing: tcp_wrappers-libs            ##################### [ 46/226]
+D, [2012-07-28T23:42:16.803052 #4827] DEBUG -- : Installing: expat                        ##################### [ 47/226]
+D, [2012-07-28T23:42:16.828343 #4827] DEBUG -- : Installing: elfutils-libelf              ##################### [ 48/226]
+D, [2012-07-28T23:42:16.946562 #4827] DEBUG -- : Installing: libmpc                       ##################### [ 49/226]
+D, [2012-07-28T23:42:17.002258 #4827] DEBUG -- : Installing: cyrus-sasl-lib               ##################### [ 50/226]
+D, [2012-07-28T23:42:17.101269 #4827] DEBUG -- : Installing: cpio                         ##################### [ 51/226]
+D, [2012-07-28T23:42:17.646399 #4827] DEBUG -- : Installing: findutils                    ##################### [ 52/226]
+D, [2012-07-28T23:42:17.667296 #4827] DEBUG -- : Installing: file-libs                    ##################### [ 53/226]
+D, [2012-07-28T23:42:17.754909 #4827] DEBUG -- : Installing: file                         ##################### [ 54/226]
+D, [2012-07-28T23:42:17.814563 #4827] DEBUG -- : Installing: libdb4                       ##################### [ 55/226]
+D, [2012-07-28T23:42:17.835319 #4827] DEBUG -- : Installing: libgcrypt                    ##################### [ 56/226]
+D, [2012-07-28T23:42:17.853341 #4827] DEBUG -- : Installing: libassuan                    ##################### [ 57/226]
+D, [2012-07-28T23:42:17.878465 #4827] DEBUG -- : Installing: kmod-libs                    ##################### [ 58/226]
+D, [2012-07-28T23:42:18.053480 #4827] DEBUG -- : Installing: kmod                         ##################### [ 59/226]
+D, [2012-07-28T23:42:18.060202 #4827] DEBUG -- : Installing: hwdata                       ##################### [ 60/226]
+D, [2012-07-28T23:42:18.137141 #4827] DEBUG -- : Installing: which                        ##################### [ 61/226]
+D, [2012-07-28T23:42:18.187195 #4827] DEBUG -- : Installing: libunistring                 ##################### [ 62/226]
+D, [2012-07-28T23:42:18.216005 #4827] DEBUG -- : Installing: libidn                       ##################### [ 63/226]
+D, [2012-07-28T23:42:18.254649 #4827] DEBUG -- : Installing: libgomp                      ##################### [ 64/226]
+D, [2012-07-28T23:42:18.259270 #4827] DEBUG -- : Installing: libselinux-utils             ##################### [ 65/226]
+D, [2012-07-28T23:42:18.385667 #4827] DEBUG -- : Installing: keyutils-libs                ##################### [ 66/226]
+D, [2012-07-28T23:42:18.426640 #4827] DEBUG -- : Installing: krb5-libs                    ##################### [ 67/226]
+D, [2012-07-28T23:42:18.443196 #4827] DEBUG -- : Installing: libnl3                       ##################### [ 68/226]
+D, [2012-07-28T23:42:18.914349 #4827] DEBUG -- : Installing: libcap-ng                    ##################### [ 69/226]
+D, [2012-07-28T23:42:19.015611 #4827] DEBUG -- : Installing: libgo                        ##################### [ 70/226]
+D, [2012-07-28T23:42:19.054183 #4827] DEBUG -- : Installing: slang                        ##################### [ 71/226]
+D, [2012-07-28T23:42:19.067224 #4827] DEBUG -- : warning: libffi-3.0.10-2.fc17.x86_64: Header V3 RSA/SHA256 Signature, key ID 1aca3465: NOKEY
+D, [2012-07-28T23:42:19.071179 #4827] DEBUG -- : Installing: pth                          ##################### [ 72/226]
+D, [2012-07-28T23:42:19.110345 #4827] DEBUG -- : Installing: libffi                       ##################### [ 73/226]
+D, [2012-07-28T23:42:19.183641 #4827] DEBUG -- : Installing: newt                         ##################### [ 74/226]
+D, [2012-07-28T23:42:19.189649 #4827] DEBUG -- : Installing: libgo-devel                  ##################### [ 75/226]
+D, [2012-07-28T23:42:19.935955 #4827] DEBUG -- : Installing: libpciaccess                 ##################### [ 76/226]
+D, [2012-07-28T23:42:19.984588 #4827] DEBUG -- : Installing: cpp                          ##################### [ 77/226]
+D, [2012-07-28T23:42:20.353194 #4827] DEBUG -- : Installing: nss-softokn                  ##################### [ 78/226]
+D, [2012-07-28T23:42:20.423272 #4827] DEBUG -- : Installing: js                           ##################### [ 79/226]
+D, [2012-07-28T23:42:20.510101 #4827] DEBUG -- : Installing: pcre                         ##################### [ 80/226]
+D, [2012-07-28T23:42:20.530141 #4827] DEBUG -- : Installing: grep                         ##################### [ 81/226]
+D, [2012-07-28T23:42:20.811285 #4827] DEBUG -- : Installing: ppl-pwl                      ##################### [ 82/226]
+D, [2012-07-28T23:42:20.843028 #4827] DEBUG -- : Installing: ppl                          ##################### [ 83/226]
+D, [2012-07-28T23:42:20.868965 #4827] DEBUG -- : Installing: cloog-ppl                    ##################### [ 84/226]
+D, [2012-07-28T23:42:20.903746 #4827] DEBUG -- : Installing: nss-myhostname               ##################### [ 85/226]
+D, [2012-07-28T23:42:20.941816 #4827] DEBUG -- : Installing: libdb-utils                  ##################### [ 86/226]
+D, [2012-07-28T23:42:20.998538 #4827] DEBUG -- : Installing: xz                           ##################### [ 87/226]
+D, [2012-07-28T23:42:21.020848 #4827] DEBUG -- : Installing: vim-minimal                  ##################### [ 88/226]
+D, [2012-07-28T23:42:21.038449 #4827] DEBUG -- : Installing: e2fsprogs-libs               ##################### [ 89/226]
+D, [2012-07-28T23:42:21.087348 #4827] DEBUG -- : Installing: libss                        ##################### [ 90/226]
+D, [2012-07-28T23:42:21.156278 #4827] DEBUG -- : Installing: pinentry                     ##################### [ 91/226]
+D, [2012-07-28T23:42:21.212041 #4827] DEBUG -- : Installing: diffutils                    ##################### [ 92/226]
+D, [2012-07-28T23:42:21.288662 #4827] DEBUG -- : Installing: m4                           ##################### [ 93/226]
+D, [2012-07-28T23:42:21.329847 #4827] DEBUG -- : Installing: make                         ##################### [ 94/226]
+D, [2012-07-28T23:42:21.375242 #4827] DEBUG -- : Installing: psmisc                       ##################### [ 95/226]
+D, [2012-07-28T23:42:21.402733 #4827] DEBUG -- : Installing: checkpolicy                  ##################### [ 96/226]
+D, [2012-07-28T23:42:21.550839 #4827] DEBUG -- : Installing: procmail                     ##################### [ 97/226]
+D, [2012-07-28T23:42:21.645469 #4827] DEBUG -- : Installing: glibc-headers                ##################### [ 98/226]
+D, [2012-07-28T23:42:21.727546 #4827] DEBUG -- : Installing: glibc-devel                  ##################### [ 99/226]
+D, [2012-07-28T23:42:21.772830 #4827] DEBUG -- : Installing: freetype                     ##################### [100/226]
+D, [2012-07-28T23:42:21.793251 #4827] DEBUG -- : Installing: ncurses                      ##################### [101/226]
+D, [2012-07-28T23:42:21.824194 #4827] DEBUG -- : Installing: gzip                         ##################### [102/226]
+D, [2012-07-28T23:42:22.398618 #4827] DEBUG -- : Installing: cracklib                     ##################### [103/226]
+D, [2012-07-28T23:42:22.415858 #4827] DEBUG -- : Installing: cracklib-dicts               ##################### [104/226]
+D, [2012-07-28T23:42:23.032846 #4827] DEBUG -- : Installing: libpwquality                 ##################### [105/226]
+D, [2012-07-28T23:42:23.230065 #4827] DEBUG -- : Installing: coreutils                    ##################### [106/226]
+D, [2012-07-28T23:42:23.276139 #4827] DEBUG -- : Installing: pam                          ##################### [107/226]
+D, [2012-07-28T23:42:23.302723 #4827] DEBUG -- : Installing: systemd-libs                 ##################### [108/226]
+D, [2012-07-28T23:42:23.509441 #4827] DEBUG -- : Installing: libblkid                     ##################### [109/226]
+D, [2012-07-28T23:42:23.546626 #4827] DEBUG -- : Installing: fedora-logos                 ##################### [110/226]
+D, [2012-07-28T23:42:23.559918 #4827] DEBUG -- : Installing: logrotate                    ##################### [111/226]
+D, [2012-07-28T23:42:23.584080 #4827] DEBUG -- : Installing: libmount                     ##################### [112/226]
+D, [2012-07-28T23:42:24.247598 #4827] DEBUG -- : Installing: grubby                       ##################### [113/226]
+D, [2012-07-28T23:42:25.854880 #4827] DEBUG -- : Installing: binutils                     ##################### [114/226]
+D, [2012-07-28T23:42:26.024928 #4827] DEBUG -- : Installing: gcc                          ##################### [115/226]
+D, [2012-07-28T23:42:26.045868 #4827] DEBUG -- : Installing: nss                          ##################### [116/226]
+D, [2012-07-28T23:42:26.183056 #4827] DEBUG -- : Installing: nss-sysinit                  ##################### [117/226]
+D, [2012-07-28T23:42:26.232473 #4827] DEBUG -- : Installing: nss-tools                    ##################### [118/226]
+D, [2012-07-28T23:42:26.272208 #4827] DEBUG -- : Installing: openldap                     ##################### [119/226]
+D, [2012-07-28T23:42:26.306984 #4827] DEBUG -- : Installing: dhcp-libs                    ##################### [120/226]
+D, [2012-07-28T23:42:26.327922 #4827] DEBUG -- : Installing: dhcp-common                  ##################### [121/226]
+D, [2012-07-28T23:42:26.356751 #4827] DEBUG -- : Installing: libpcap                      ##################### [122/226]
+D, [2012-07-28T23:42:26.371247 #4827] DEBUG -- : Installing: pciutils-libs                ##################### [123/226]
+D, [2012-07-28T23:42:26.386835 #4827] DEBUG -- : Installing: hardlink                     ##################### [124/226]
+D, [2012-07-28T23:42:26.420262 #4827] DEBUG -- : Installing: ustr                         ##################### [125/226]
+D, [2012-07-28T23:42:26.655801 #4827] DEBUG -- : Installing: libsemanage                  ##################### [126/226]
+D, [2012-07-28T23:42:27.587247 #4827] DEBUG -- : Installing: shadow-utils                 ##################### [127/226]
+D, [2012-07-28T23:42:27.616012 #4827] DEBUG -- : Installing: libutempter                  ##################### [128/226]
+D, [2012-07-28T23:42:27.626592 #4827] DEBUG -- : Installing: sysvinit-tools               ##################### [129/226]
+D, [2012-07-28T23:42:27.650901 #4827] DEBUG -- : Installing: eject                        ##################### [130/226]
+D, [2012-07-28T23:42:27.672102 #4827] DEBUG -- : Installing: gamin                        ##################### [131/226]
+D, [2012-07-28T23:42:28.085930 #4827] DEBUG -- : Installing: pkgconfig                    ##################### [132/226]
+D, [2012-07-28T23:42:28.173230 #4827] DEBUG -- : Installing: glib2                        ##################### [133/226]
+D, [2012-07-28T23:42:28.597743 #4827] DEBUG -- : Installing: shared-mime-info             ##################### [134/226]
+D, [2012-07-28T23:42:28.651434 #4827] DEBUG -- : Installing: libgudev1                    ##################### [135/226]
+D, [2012-07-28T23:42:28.689612 #4827] DEBUG -- : Installing: dbus-glib                    ##################### [136/226]
+D, [2012-07-28T23:42:28.741661 #4827] DEBUG -- : Installing: libcroco                     ##################### [137/226]
+D, [2012-07-28T23:42:28.813883 #4827] DEBUG -- : Installing: gettext-libs                 ##################### [138/226]
+D, [2012-07-28T23:42:28.936634 #4827] DEBUG -- : Installing: ModemManager                 ##################### [139/226]
+D, [2012-07-28T23:42:28.994348 #4827] DEBUG -- : Installing: libuser                      ##################### [140/226]
+D, [2012-07-28T23:42:29.014036 #4827] DEBUG -- : Installing: procps-ng                    ##################### [141/226]
+D, [2012-07-28T23:42:29.050557 #4827] DEBUG -- : Installing: hesiod                       ##################### [142/226]
+D, [2012-07-28T23:42:29.074510 #4827] DEBUG -- : Installing: gdbm                         ##################### [143/226]
+D, [2012-07-28T23:42:29.098519 #4827] DEBUG -- : Installing: linux-atm-libs               ##################### [144/226]
+D, [2012-07-28T23:42:29.115699 #4827] DEBUG -- : Installing: plymouth-core-libs           ##################### [145/226]
+D, [2012-07-28T23:42:29.206443 #4827] DEBUG -- : Installing: libdaemon                    ##################### [146/226]
+D, [2012-07-28T23:42:29.282880 #4827] DEBUG -- : Installing: avahi-autoipd                ##################### [147/226]
+D, [2012-07-28T23:42:29.415639 #4827] DEBUG -- : Installing: ca-certificates              ##################### [148/226]
+D, [2012-07-28T23:42:30.668965 #4827] DEBUG -- : Installing: openssl-libs                 ##################### [149/226]
+D, [2012-07-28T23:42:30.709999 #4827] DEBUG -- : Installing: python-libs                  ##################### [150/226]
+D, [2012-07-28T23:42:30.933741 #4827] DEBUG -- : Installing: python                       ##################### [151/226]
+D, [2012-07-28T23:42:30.975117 #4827] DEBUG -- : Installing: gettext                      ##################### [152/226]
+D, [2012-07-28T23:42:30.980455 #4827] DEBUG -- : Installing: python-iniparse              ##################### [153/226]
+D, [2012-07-28T23:42:30.987928 #4827] DEBUG -- : Installing: yum-metadata-parser          ##################### [154/226]
+D, [2012-07-28T23:42:31.008670 #4827] DEBUG -- : Installing: newt-python                  ##################### [155/226]
+D, [2012-07-28T23:42:31.048106 #4827] DEBUG -- : Installing: libssh2                      ##################### [156/226]
+D, [2012-07-28T23:42:31.341956 #4827] DEBUG -- : Installing: libcurl                      ##################### [157/226]
+D, [2012-07-28T23:42:31.397462 #4827] DEBUG -- : Installing: gnupg2                       ##################### [158/226]
+D, [2012-07-28T23:42:31.436499 #4827] DEBUG -- : Installing: gpgme                        ##################### [159/226]
+D, [2012-07-28T23:42:31.469653 #4827] DEBUG -- : Installing: pygpgme                      ##################### [160/226]
+D, [2012-07-28T23:42:31.504746 #4827] DEBUG -- : Installing: curl                         ##################### [161/226]
+D, [2012-07-28T23:42:31.644108 #4827] DEBUG -- : Installing: rpm-libs                     ##################### [162/226]
+D, [2012-07-28T23:42:31.659056 #4827] DEBUG -- : Installing: rpm                          ##################### [163/226]
+D, [2012-07-28T23:42:31.687707 #4827] DEBUG -- : Installing: rpm-build-libs               ##################### [164/226]
+D, [2012-07-28T23:42:31.705980 #4827] DEBUG -- : Installing: rpm-python                   ##################### [165/226]
+D, [2012-07-28T23:42:31.727362 #4827] DEBUG -- : Installing: python-pycurl                ##################### [166/226]
+D, [2012-07-28T23:42:31.813833 #4827] DEBUG -- : Installing: python-urlgrabber            ##################### [167/226]
+D, [2012-07-28T23:42:31.828740 #4827] DEBUG -- : Installing: bind-libs-lite               ##################### [168/226]
+D, [2012-07-28T23:42:31.845422 #4827] DEBUG -- : Installing: fipscheck-lib                ##################### [169/226]
+D, [2012-07-28T23:42:32.161347 #4827] DEBUG -- : Installing: fipscheck                    ##################### [170/226]
+D, [2012-07-28T23:42:32.203964 #4827] DEBUG -- : Installing: util-linux                   ##################### [171/226]
+D, [2012-07-28T23:42:32.221061 #4827] DEBUG -- : Installing: device-mapper                ##################### [172/226]
+D, [2012-07-28T23:42:32.266011 #4827] DEBUG -- : Installing: device-mapper-libs           ##################### [173/226]
+D, [2012-07-28T23:42:32.281494 #4827] DEBUG -- : Installing: cryptsetup-libs              ##################### [174/226]
+D, [2012-07-28T23:42:33.008708 #4827] DEBUG -- : Installing: systemd-sysv                 ##################### [175/226]
+D, [2012-07-28T23:42:33.164760 #4827] DEBUG -- : Installing: systemd                      ##################### [176/226]
+D, [2012-07-28T23:42:33.244757 #4827] DEBUG -- : Installing: dbus                         ##################### [177/226]
+D, [2012-07-28T23:42:33.338484 #4827] DEBUG -- : Installing: iptables                     ##################### [178/226]
+D, [2012-07-28T23:42:33.425879 #4827] DEBUG -- : Installing: iproute                      ##################### [179/226]
+D, [2012-07-28T23:42:33.436571 #4827] DEBUG -- : Installing: policycoreutils              ##################### [180/226]
+D, [2012-07-28T23:42:34.215745 #4827] DEBUG -- : Installing: os-prober                    ##################### [181/226]
+D, [2012-07-28T23:42:34.221119 #4827] DEBUG -- : Installing: grub2-tools                  ##################### [182/226]
+D, [2012-07-28T23:42:34.281778 #4827] DEBUG -- : Installing: selinux-policy               ##################### [183/226]
+D, [2012-07-28T23:42:34.428324 #4827] DEBUG -- : Installing: NetworkManager-glib          ##################### [184/226]
+D, [2012-07-28T23:42:34.459061 #4827] DEBUG -- : Installing: polkit                       ##################### [185/226]
+D, [2012-07-28T23:42:34.497112 #4827] DEBUG -- : Installing: libdrm                       ##################### [186/226]
+D, [2012-07-28T23:42:34.585332 #4827] DEBUG -- : Installing: dnsmasq                      ##################### [187/226]
+D, [2012-07-28T23:42:34.656569 #4827] DEBUG -- : Installing: wpa_supplicant               ##################### [188/226]
+D, [2012-07-28T23:42:34.804474 #4827] DEBUG -- : Installing: ppp                          ##################### [189/226]
+D, [2012-07-28T23:42:36.645187 #4827] DEBUG -- : Installing: netxen-firmware              ##################### [190/226]
+D, [2012-07-28T23:42:36.672822 #4827] DEBUG -- : Installing: linux-firmware               ##################### [191/226]
+D, [2012-07-28T23:42:36.928218 #4827] DEBUG -- : Installing: iputils                      ##################### [192/226]
+D, [2012-07-28T23:42:37.088973 #4827] DEBUG -- : Installing: initscripts                  ##################### [193/226]
+D, [2012-07-28T23:42:37.128348 #4827] DEBUG -- : Installing: rsyslog                      ##################### [194/226]
+D, [2012-07-28T23:42:37.155666 #4827] DEBUG -- : Installing: crontabs                     ##################### [195/226]
+D, [2012-07-28T23:42:37.195650 #4827] DEBUG -- : Installing: cronie                       ##################### [196/226]
+D, [2012-07-28T23:42:37.261516 #4827] DEBUG -- : Installing: cronie-anacron               ##################### [197/226]
+D, [2012-07-28T23:42:37.692265 #4827] DEBUG -- : Installing: dhclient                     ##################### [198/226]
+D, [2012-07-28T23:42:37.718494 #4827] DEBUG -- : Installing: cyrus-sasl                   ##################### [199/226]
+D, [2012-07-28T23:42:37.780012 #4827] DEBUG -- : Installing: kpartx                       ##################### [200/226]
+D, [2012-07-28T23:42:37.786289 #4827] DEBUG -- : Installing: dracut                       ##################### [201/226]
+D, [2012-07-28T23:42:37.803204 #4827] DEBUG -- : Installing: plymouth-scripts             ##################### [202/226]
+D, [2012-07-28T23:42:37.910221 #4827] DEBUG -- : Installing: plymouth                     ##################### [203/226]
+D, [2012-07-28T23:42:38.012087 #4827] DEBUG -- : Installing: openssh                      ##################### [204/226]
+D, [2012-07-28T23:42:38.104977 #4827] DEBUG -- : Installing: openssl                      ##################### [205/226]
+D, [2012-07-28T23:42:38.219656 #4827] DEBUG -- : Installing: authconfig                   ##################### [206/226]
+D, [2012-07-28T23:42:38.535329 #4827] DEBUG -- : Installing: openssh-server               ##################### [207/226]
+D, [2012-07-28T23:42:38.780301 #4827] DEBUG -- : Installing: grub2                        ##################### [208/226]
+D, [2012-07-28T23:43:39.062183 #4827] DEBUG -- : Installing: sendmail                     ##################### [209/226]
+D, [2012-07-28T23:43:39.150299 #4827] DEBUG -- : Installing: NetworkManager               ##################### [210/226]
+D, [2012-07-28T23:43:39.867882 #4827] DEBUG -- : Installing: kbd                          ##################### [211/226]
+D, [2012-07-28T23:43:39.988840 #4827] DEBUG -- : Installing: selinux-policy-targeted      ##################### [212/226]
+D, [2012-07-28T23:43:40.029503 #4827] DEBUG -- : Installing: system-config-firewall-base  ##################### [213/226]
+D, [2012-07-28T23:43:40.052463 #4827] DEBUG -- : Installing: audit                        ##################### [214/226]
+D, [2012-07-28T23:43:40.159732 #4827] DEBUG -- : Installing: biosdevname                  ##################### [215/226]
+D, [2012-07-28T23:43:40.418785 #4827] DEBUG -- : Installing: parted                       ##################### [216/226]
+D, [2012-07-28T23:43:40.446485 #4827] DEBUG -- : Installing: yum                          ##################### [217/226]
+D, [2012-07-28T23:43:40.562105 #4827] DEBUG -- : Installing: passwd                       ##################### [218/226]
+D, [2012-07-28T23:43:41.336568 #4827] DEBUG -- : Installing: sudo                         ##################### [219/226]
+D, [2012-07-28T23:43:41.454407 #4827] DEBUG -- : Installing: gcc-go                       ##################### [220/226]
+D, [2012-07-28T23:43:41.469083 #4827] DEBUG -- : Installing: e2fsprogs                    ##################### [221/226]
+D, [2012-07-28T23:43:41.481855 #4827] DEBUG -- : Installing: acl                          ##################### [222/226]
+D, [2012-07-28T23:43:41.486118 #4827] DEBUG -- : Installing: attr                         ##################### [223/226]
+D, [2012-07-28T23:43:41.491258 #4827] DEBUG -- : Installing: setserial                    ##################### [224/226]
+D, [2012-07-28T23:43:41.493109 #4827] DEBUG -- : Installing: hostname                     ##################### [225/226]
+D, [2012-07-28T23:43:46.166269 #4827] DEBUG -- : Installing: rootfiles                    ##################### [226/226]
+D, [2012-07-28T23:43:47.481735 #4827] DEBUG -- : 993 blocks
+D, [2012-07-28T23:43:48.199469 #4827] DEBUG -- : E: No '/dev/log' or 'logger' included for syslog logging
+D, [2012-07-28T23:44:18.049450 #4827] DEBUG -- : Installing: kernel                       ##################### [227/226]
+D, [2012-07-28T23:44:18.049697 #4827] DEBUG -- : Traceback (most recent call last):
+D, [2012-07-28T23:44:18.049846 #4827] DEBUG -- : 
+D, [2012-07-28T23:44:18.050034 #4827] DEBUG -- : File "/usr/bin/appliance-creator", line 164, in <module>
+D, [2012-07-28T23:44:18.050229 #4827] DEBUG -- : sys.exit(main())
+D, [2012-07-28T23:44:18.050341 #4827] DEBUG -- : File "/usr/bin/appliance-creator", line 150, in main
+D, [2012-07-28T23:44:18.050425 #4827] DEBUG -- : creator.configure()
+D, [2012-07-28T23:44:18.050532 #4827] DEBUG -- : File "/usr/lib/python2.7/site-packages/imgcreate/creator.py", line 719, in configure
+D, [2012-07-28T23:44:18.050609 #4827] DEBUG -- : kickstart.TimezoneConfig(self._instroot).apply(ksh.timezone)
+D, [2012-07-28T23:44:18.050678 #4827] DEBUG -- : File "/usr/lib/python2.7/site-packages/imgcreate/kickstart.py", line 158, in apply
+D, [2012-07-28T23:44:18.050765 #4827] DEBUG -- : self.path("/etc/localtime"))
+D, [2012-07-28T23:44:18.050853 #4827] DEBUG -- : File "/usr/lib64/python2.7/shutil.py", line 69, in copyfile
+D, [2012-07-28T23:44:18.050924 #4827] DEBUG -- : raise Error("`%s` and `%s` are the same file" % (src, dst))
+D, [2012-07-28T23:44:18.051090 #4827] DEBUG -- : shutil.Error: `/home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-cgxAbX/install_root/usr/share/zoneinfo/US/Eastern` and `/home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-cgxAbX/install_root/etc/localtime` are the same file
+D, [2012-07-28T23:44:18.134942 #4827] DEBUG -- : Unmounting directory /home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-cgxAbX/install_root/
+D, [2012-07-28T23:44:18.685137 #4827] DEBUG -- : Removing compat symlinks
+D, [2012-07-28T23:44:18.685329 #4827] DEBUG -- : Unmapping /dev/loop0
+D, [2012-07-28T23:44:18.702550 #4827] DEBUG -- : Losetup remove /dev/loop0
+E, [2012-07-28T23:44:18.976968 #4827] ERROR -- : /usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:85:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:107:in `execute_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:71:in `build_with_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:53:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:184:in `execute_plugin'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:207:in `execute_without_userchange'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:129:in `block in execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `each'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:164:in `create'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/bin/boxgrinder-build:203:in `<top (required)>'
+/usr/bin/boxgrinder-build:23:in `load'
+/usr/bin/boxgrinder-build:23:in `<main>'
+F, [2012-07-28T23:44:18.977249 #4827] FATAL -- : RuntimeError: An error occurred while executing command: 'appliance-creator -d -v -t 'build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp' --cache=/var/cache/boxgrinder/rpms-cache/x86_64/fedora/rawhide --config 'build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/gccgo.ks' -o 'build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp' --name 'gccgo' --vmem 256 --vcpu 1 --format raw', process exited with wrong exit status: 1
+/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:92:in `rescue in execute'
+/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:51:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:107:in `execute_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:71:in `build_with_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:53:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:184:in `execute_plugin'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:207:in `execute_without_userchange'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:129:in `block in execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `each'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:164:in `create'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/bin/boxgrinder-build:203:in `<top (required)>'
+/usr/bin/boxgrinder-build:23:in `load'
+/usr/bin/boxgrinder-build:23:in `<main>'
+D, [2012-07-28T23:47:37.444730 #10087] DEBUG -- : Launching new build...
+T, [2012-07-28T23:47:37.446074 #10087] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:name: BoxGrinder Build
+:platform: :none
+:delivery: :none
+:force: false
+:log_level: :info
+:backtrace: false
+:dir: 
+  :root: /home/rortian/git/boxgs/rawhide-go
+  :build: build
+  :cache: /var/cache/boxgrinder
+  :tmp: /tmp
+:os_config: {}
+
+:platform_config: {}
+
+:delivery_config: {}
+
+:additional_plugins: []
+
+:change_to_user: false
+:uid: 1000
+:gid: 1000
+
+D, [2012-07-28T23:47:37.446154 #10087] DEBUG -- : Loading os plugins...
+D, [2012-07-28T23:47:37.446217 #10087] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-07-28T23:47:37.446253 #10087] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-07-28T23:47:37.446285 #10087] DEBUG -- : - centos plugin for CentOS.
+D, [2012-07-28T23:47:37.446317 #10087] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-07-28T23:47:37.446348 #10087] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-07-28T23:47:37.446377 #10087] DEBUG -- : Plugins loaded.
+D, [2012-07-28T23:47:37.446407 #10087] DEBUG -- : Loading platform plugins...
+D, [2012-07-28T23:47:37.446438 #10087] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-07-28T23:47:37.446469 #10087] DEBUG -- : - vmware plugin for VMware.
+D, [2012-07-28T23:47:37.446502 #10087] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-07-28T23:47:37.446534 #10087] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-07-28T23:47:37.446564 #10087] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-07-28T23:47:37.446593 #10087] DEBUG -- : Plugins loaded.
+D, [2012-07-28T23:47:37.446622 #10087] DEBUG -- : Loading delivery plugins...
+D, [2012-07-28T23:47:37.446651 #10087] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-07-28T23:47:37.446684 #10087] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-07-28T23:47:37.446716 #10087] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-07-28T23:47:37.446749 #10087] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-07-28T23:47:37.446780 #10087] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-07-28T23:47:37.446811 #10087] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-07-28T23:47:37.446842 #10087] DEBUG -- : - local plugin for Local file system.
+D, [2012-07-28T23:47:37.446873 #10087] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-07-28T23:47:37.446904 #10087] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-07-28T23:47:37.446935 #10087] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-07-28T23:47:37.446964 #10087] DEBUG -- : Plugins loaded.
+I, [2012-07-28T23:47:37.449258 #10087]  INFO -- : Validating appliance definition from gccgo.appl file...
+D, [2012-07-28T23:47:37.449325 #10087] DEBUG -- : Parsing definition using schema version 0.9.6.
+I, [2012-07-28T23:47:37.451054 #10087]  INFO -- : Appliance definition is valid.
+I, [2012-07-28T23:47:37.457086 #10087]  INFO -- : Building 'gccgo' appliance for x86_64 architecture.
+D, [2012-07-28T23:47:37.457209 #10087] DEBUG -- : Executing os plugin...
+I, [2012-07-28T23:47:37.493102 #10087]  INFO -- : Resolving packages added to gccgo appliance definition file...
+D, [2012-07-28T23:47:37.493351 #10087] DEBUG -- : Querying package database...
+D, [2012-07-28T23:47:37.493446 #10087] DEBUG -- : Executing command: 'repoquery --quiet --disablerepo=* --enablerepo=boxgrinder-base -c '/home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/yum.conf' list available gcc-go system-config-firewall-base dhclient kernel grub2 --nevra --archlist=x86_64,noarch'
+D, [2012-07-28T23:47:49.109521 #10087] DEBUG -- : dhclient-12:4.2.4-10.P1.fc18.x86_64
+D, [2012-07-28T23:47:49.109667 #10087] DEBUG -- : gcc-go-0:4.7.1-5.fc18.x86_64
+D, [2012-07-28T23:47:49.109714 #10087] DEBUG -- : grub2-1:2.00-3.fc18.x86_64
+D, [2012-07-28T23:47:49.109763 #10087] DEBUG -- : kernel-0:3.6.0-0.rc0.git2.1.fc18.x86_64
+D, [2012-07-28T23:47:49.109809 #10087] DEBUG -- : system-config-firewall-base-0:1.2.29-8.fc18.noarch
+I, [2012-07-28T23:47:49.130192 #10087]  INFO -- : All additional packages for gccgo appliance successfully resolved.
+I, [2012-07-28T23:47:49.130354 #10087]  INFO -- : Building gccgo appliance...
+D, [2012-07-28T23:47:49.130611 #10087] DEBUG -- : Executing command: 'appliance-creator -d -v -t 'build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp' --cache=/var/cache/boxgrinder/rpms-cache/x86_64/fedora/rawhide --config 'build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/gccgo.ks' -o 'build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp' --name 'gccgo' --vmem 256 --vcpu 1 --format raw'
+D, [2012-07-28T23:47:49.340262 #10087] DEBUG -- : Adding disk sda as /home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-k_GBQ8/tmp-BY4MxY/gccgo-sda.raw
+D, [2012-07-28T23:47:49.340465 #10087] DEBUG -- : Extending sparse file /home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-k_GBQ8/tmp-BY4MxY/gccgo-sda.raw to 3226468352
+D, [2012-07-28T23:47:49.347630 #10087] DEBUG -- : Losetup add /dev/loop0 mapping to /home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-k_GBQ8/tmp-BY4MxY/gccgo-sda.raw
+D, [2012-07-28T23:47:49.356164 #10087] DEBUG -- : Formatting disks
+D, [2012-07-28T23:47:49.356300 #10087] DEBUG -- : Initializing partition table for /dev/loop0 with gpt layout
+D, [2012-07-28T23:47:49.366836 #10087] DEBUG -- : Assigning partitions to disks
+D, [2012-07-28T23:47:49.367106 #10087] DEBUG -- : Assigned biosboot to sda1 at 0 at size 5
+D, [2012-07-28T23:47:49.367280 #10087] DEBUG -- : Assigned / to sda2 at 5 at size 3072
+D, [2012-07-28T23:47:49.367425 #10087] DEBUG -- : Creating partitions
+D, [2012-07-28T23:47:49.367572 #10087] DEBUG -- : Add primary part at 0 of size 5
+D, [2012-07-28T23:47:49.379627 #10087] DEBUG -- : Add primary part at 5 of size 3072
+D, [2012-07-28T23:47:49.399621 #10087] DEBUG -- : Dev loop0p1: /dev/loop01 -> /dev/mapper/loop0p1
+D, [2012-07-28T23:47:49.399743 #10087] DEBUG -- : Dev loop0p2: /dev/loop02 -> /dev/mapper/loop0p2
+D, [2012-07-28T23:47:49.399797 #10087] DEBUG -- : Adding partx mapping for /dev/loop0
+D, [2012-07-28T23:47:49.427881 #10087] DEBUG -- : Formating ext4 filesystem on /dev/loop02
+D, [2012-07-28T23:47:50.049907 #10087] DEBUG -- : mke2fs 1.42.3 (14-May-2012)
+D, [2012-07-28T23:47:50.050133 #10087] DEBUG -- : Discarding device blocks:   4096/750000528384/750000             done
+D, [2012-07-28T23:47:50.050266 #10087] DEBUG -- : Filesystem label=_/
+D, [2012-07-28T23:47:50.050376 #10087] DEBUG -- : OS type: Linux
+D, [2012-07-28T23:47:50.050508 #10087] DEBUG -- : Block size=4096 (log=2)
+D, [2012-07-28T23:47:50.050642 #10087] DEBUG -- : Fragment size=4096 (log=2)
+D, [2012-07-28T23:47:50.050753 #10087] DEBUG -- : Stride=0 blocks, Stripe width=0 blocks
+D, [2012-07-28T23:47:50.050856 #10087] DEBUG -- : 187680 inodes, 750000 blocks
+D, [2012-07-28T23:47:50.050969 #10087] DEBUG -- : 7500 blocks (1.00%) reserved for the super user
+D, [2012-07-28T23:47:50.051071 #10087] DEBUG -- : First data block=0
+D, [2012-07-28T23:47:50.051209 #10087] DEBUG -- : Maximum filesystem blocks=771751936
+D, [2012-07-28T23:47:50.051327 #10087] DEBUG -- : 23 block groups
+D, [2012-07-28T23:47:50.051658 #10087] DEBUG -- : 32768 blocks per group, 32768 fragments per group
+D, [2012-07-28T23:47:50.051748 #10087] DEBUG -- : 8160 inodes per group
+D, [2012-07-28T23:47:50.051822 #10087] DEBUG -- : Superblock backups stored on blocks:
+D, [2012-07-28T23:47:50.051892 #10087] DEBUG -- : 32768, 98304, 163840, 229376, 294912
+D, [2012-07-28T23:47:50.051960 #10087] DEBUG -- : 
+D, [2012-07-28T23:47:50.052037 #10087] DEBUG -- : Allocating group tables:  0/23 1/23 2/23 3/23 4/23 5/23 6/23 7/23 8/23 9/2310/2311/2312/2313/2314/2315/2316/2317/2318/2319/2320/2321/2322/23     done
+D, [2012-07-28T23:47:50.052117 #10087] DEBUG -- : Writing inode tables:  0/23 1/23 2/23 3/23 4/23 5/23 6/23 7/23 8/23 9/2310/2311/2312/2313/2314/2315/2316/2317/2318/2319/2320/2321/2322/23     done
+D, [2012-07-28T23:47:50.052201 #10087] DEBUG -- : Creating journal (16384 blocks): done
+D, [2012-07-28T23:47:50.052335 #10087] DEBUG -- : Writing superblocks and filesystem accounting information:  0/23 1/23 2/23 3/23 4/23 5/23 6/23 7/23 8/23 9/2310/2311/2312/2313/2314/2315/2316/2317/2318/2319/2320/2321/2322/23     done
+D, [2012-07-28T23:47:50.052439 #10087] DEBUG -- : 
+D, [2012-07-28T23:47:50.052532 #10087] DEBUG -- : 
+D, [2012-07-28T23:47:50.052649 #10087] DEBUG -- : Tuning filesystem on /dev/loop02
+D, [2012-07-28T23:47:50.060559 #10087] DEBUG -- : tune2fs 1.42.3 (14-May-2012)
+D, [2012-07-28T23:47:50.060767 #10087] DEBUG -- : Setting maximal mount count to -1
+D, [2012-07-28T23:47:50.060882 #10087] DEBUG -- : Setting interval between checks to 0 seconds
+D, [2012-07-28T23:47:50.060983 #10087] DEBUG -- : 
+D, [2012-07-28T23:47:50.061092 #10087] DEBUG -- : Mounting /dev/loop02 at /home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-k_GBQ8/install_root/
+D, [2012-07-28T23:47:50.118054 #10087] DEBUG -- : Writing mkinitrd config /home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-k_GBQ8/install_root/etc/sysconfig/mkinitrd
+D, [2012-07-28T23:47:50.121296 #10087] DEBUG -- : Skipping (/sys/fs/selinux,/sys/fs/selinux) because source doesn't exist.
+D, [2012-07-28T23:47:50.597289 #10087] DEBUG -- : Retrieving http://mirror.metrocast.net/fedora/linux/development/rawhide/x86_64/os/repodata/repomd.xml ...OK
+D, [2012-07-28T23:47:56.185997 #10087] DEBUG -- : ['/', 'biosboot']
+D, [2012-07-28T23:47:56.215859 #10087] DEBUG -- : Installing: libgcc                       ##################### [  2/226]
+D, [2012-07-28T23:47:56.446025 #10087] DEBUG -- : Installing: setup                        ##################### [  3/226]
+D, [2012-07-28T23:47:56.676762 #10087] DEBUG -- : Installing: filesystem                   ##################### [  4/226]
+D, [2012-07-28T23:47:56.681959 #10087] DEBUG -- : Installing: fedora-release-rawhide       ##################### [  5/226]
+D, [2012-07-28T23:47:56.683065 #10087] DEBUG -- : Installing: fedora-release               ##################### [  6/226]
+D, [2012-07-28T23:47:56.685482 #10087] DEBUG -- : Installing: basesystem                   ##################### [  7/226]
+D, [2012-07-28T23:47:56.901601 #10087] DEBUG -- : Installing: bind-license                 ##################### [  8/226]
+D, [2012-07-28T23:47:57.152255 #10087] DEBUG -- : Installing: kernel-headers               ##################### [  9/226]
+D, [2012-07-28T23:47:57.353921 #10087] DEBUG -- : Installing: tzdata                       ##################### [ 10/226]
+D, [2012-07-28T23:47:57.382698 #10087] DEBUG -- : Installing: kbd-misc                     ##################### [ 11/226]
+D, [2012-07-28T23:47:57.407575 #10087] DEBUG -- : Installing: ncurses-base                 ##################### [ 12/226]
+D, [2012-07-28T23:48:01.391231 #10087] DEBUG -- : Installing: nss-softokn-freebl           ##################### [ 13/226]
+D, [2012-07-28T23:48:02.078617 #10087] DEBUG -- : Installing: glibc-common                 ##################### [ 14/226]
+D, [2012-07-28T23:48:04.568291 #10087] DEBUG -- : Installing: glibc                        ##################### [ 15/226]
+D, [2012-07-28T23:48:04.767321 #10087] DEBUG -- : Installing: ncurses-libs                 ##################### [ 16/226]
+D, [2012-07-28T23:48:04.786646 #10087] DEBUG -- : Installing: bash                         ##################### [ 17/226]
+D, [2012-07-28T23:48:04.811602 #10087] DEBUG -- : Installing: libsepol                     ##################### [ 18/226]
+D, [2012-07-28T23:48:04.823585 #10087] DEBUG -- : Installing: libselinux                   ##################### [ 19/226]
+D, [2012-07-28T23:48:04.845814 #10087] DEBUG -- : Installing: libattr                      ##################### [ 20/226]
+D, [2012-07-28T23:48:04.877304 #10087] DEBUG -- : Installing: libcap                       ##################### [ 21/226]
+D, [2012-07-28T23:48:04.914074 #10087] DEBUG -- : Installing: zlib                         ##################### [ 22/226]
+D, [2012-07-28T23:48:04.935096 #10087] DEBUG -- : Installing: info                         ##################### [ 23/226]
+D, [2012-07-28T23:48:04.957413 #10087] DEBUG -- : Installing: audit-libs                   ##################### [ 24/226]
+D, [2012-07-28T23:48:05.009295 #10087] DEBUG -- : Installing: popt                         ##################### [ 25/226]
+D, [2012-07-28T23:48:05.015366 #10087] DEBUG -- : Installing: chkconfig                    ##################### [ 26/226]
+D, [2012-07-28T23:48:05.029133 #10087] DEBUG -- : Installing: libcom_err                   ##################### [ 27/226]
+D, [2012-07-28T23:48:05.064799 #10087] DEBUG -- : Installing: libacl                       ##################### [ 28/226]
+D, [2012-07-28T23:48:05.092883 #10087] DEBUG -- : Installing: xz-libs                      ##################### [ 29/226]
+D, [2012-07-28T23:48:05.124461 #10087] DEBUG -- : Installing: nspr                         ##################### [ 30/226]
+D, [2012-07-28T23:48:05.147434 #10087] DEBUG -- : Installing: dbus-libs                    ##################### [ 31/226]
+D, [2012-07-28T23:48:05.266700 #10087] DEBUG -- : Installing: nss-util                     ##################### [ 32/226]
+D, [2012-07-28T23:48:05.279590 #10087] DEBUG -- : Installing: libdb                        ##################### [ 33/226]
+D, [2012-07-28T23:48:05.322237 #10087] DEBUG -- : Installing: libuuid                      ##################### [ 34/226]
+D, [2012-07-28T23:48:05.341628 #10087] DEBUG -- : Installing: sed                          ##################### [ 35/226]
+D, [2012-07-28T23:48:05.410982 #10087] DEBUG -- : Installing: bzip2-libs                   ##################### [ 36/226]
+D, [2012-07-28T23:48:05.470963 #10087] DEBUG -- : Installing: libstdc++                    ##################### [ 37/226]
+D, [2012-07-28T23:48:05.514114 #10087] DEBUG -- : Installing: gmp                          ##################### [ 38/226]
+D, [2012-07-28T23:48:05.761900 #10087] DEBUG -- : Installing: readline                     ##################### [ 39/226]
+D, [2012-07-28T23:48:05.796966 #10087] DEBUG -- : Installing: libxml2                      ##################### [ 40/226]
+D, [2012-07-28T23:48:05.863821 #10087] DEBUG -- : Installing: libgpg-error                 ##################### [ 41/226]
+D, [2012-07-28T23:48:05.915501 #10087] DEBUG -- : Installing: sqlite                       ##################### [ 42/226]
+D, [2012-07-28T23:48:05.950472 #10087] DEBUG -- : Installing: lua                          ##################### [ 43/226]
+D, [2012-07-28T23:48:06.076536 #10087] DEBUG -- : Installing: mpfr                         ##################### [ 44/226]
+D, [2012-07-28T23:48:06.113623 #10087] DEBUG -- : Installing: gawk                         ##################### [ 45/226]
+D, [2012-07-28T23:48:06.150148 #10087] DEBUG -- : Installing: tcp_wrappers-libs            ##################### [ 46/226]
+D, [2012-07-28T23:48:06.489289 #10087] DEBUG -- : Installing: expat                        ##################### [ 47/226]
+D, [2012-07-28T23:48:06.507451 #10087] DEBUG -- : Installing: elfutils-libelf              ##################### [ 48/226]
+D, [2012-07-28T23:48:06.551482 #10087] DEBUG -- : Installing: libmpc                       ##################### [ 49/226]
+D, [2012-07-28T23:48:06.604202 #10087] DEBUG -- : Installing: cyrus-sasl-lib               ##################### [ 50/226]
+D, [2012-07-28T23:48:06.703106 #10087] DEBUG -- : Installing: cpio                         ##################### [ 51/226]
+D, [2012-07-28T23:48:06.813320 #10087] DEBUG -- : Installing: findutils                    ##################### [ 52/226]
+D, [2012-07-28T23:48:06.836670 #10087] DEBUG -- : Installing: file-libs                    ##################### [ 53/226]
+D, [2012-07-28T23:48:06.928206 #10087] DEBUG -- : Installing: file                         ##################### [ 54/226]
+D, [2012-07-28T23:48:06.980151 #10087] DEBUG -- : Installing: libdb4                       ##################### [ 55/226]
+D, [2012-07-28T23:48:07.003336 #10087] DEBUG -- : Installing: libgcrypt                    ##################### [ 56/226]
+D, [2012-07-28T23:48:07.020330 #10087] DEBUG -- : Installing: libassuan                    ##################### [ 57/226]
+D, [2012-07-28T23:48:07.046740 #10087] DEBUG -- : Installing: kmod-libs                    ##################### [ 58/226]
+D, [2012-07-28T23:48:07.221641 #10087] DEBUG -- : Installing: kmod                         ##################### [ 59/226]
+D, [2012-07-28T23:48:07.228667 #10087] DEBUG -- : Installing: hwdata                       ##################### [ 60/226]
+D, [2012-07-28T23:48:07.304067 #10087] DEBUG -- : Installing: which                        ##################### [ 61/226]
+D, [2012-07-28T23:48:07.355115 #10087] DEBUG -- : Installing: libunistring                 ##################### [ 62/226]
+D, [2012-07-28T23:48:07.386507 #10087] DEBUG -- : Installing: libidn                       ##################### [ 63/226]
+D, [2012-07-28T23:48:07.428658 #10087] DEBUG -- : Installing: libgomp                      ##################### [ 64/226]
+D, [2012-07-28T23:48:07.433127 #10087] DEBUG -- : Installing: libselinux-utils             ##################### [ 65/226]
+D, [2012-07-28T23:48:07.561269 #10087] DEBUG -- : Installing: keyutils-libs                ##################### [ 66/226]
+D, [2012-07-28T23:48:07.601156 #10087] DEBUG -- : Installing: krb5-libs                    ##################### [ 67/226]
+D, [2012-07-28T23:48:07.615431 #10087] DEBUG -- : Installing: libnl3                       ##################### [ 68/226]
+D, [2012-07-28T23:48:08.095183 #10087] DEBUG -- : Installing: libcap-ng                    ##################### [ 69/226]
+D, [2012-07-28T23:48:08.200240 #10087] DEBUG -- : Installing: libgo                        ##################### [ 70/226]
+D, [2012-07-28T23:48:08.235845 #10087] DEBUG -- : Installing: slang                        ##################### [ 71/226]
+D, [2012-07-28T23:48:08.247313 #10087] DEBUG -- : warning: libffi-3.0.10-2.fc17.x86_64: Header V3 RSA/SHA256 Signature, key ID 1aca3465: NOKEY
+D, [2012-07-28T23:48:08.251255 #10087] DEBUG -- : Installing: pth                          ##################### [ 72/226]
+D, [2012-07-28T23:48:08.282081 #10087] DEBUG -- : Installing: libffi                       ##################### [ 73/226]
+D, [2012-07-28T23:48:08.364915 #10087] DEBUG -- : Installing: newt                         ##################### [ 74/226]
+D, [2012-07-28T23:48:08.371688 #10087] DEBUG -- : Installing: libgo-devel                  ##################### [ 75/226]
+D, [2012-07-28T23:48:09.136586 #10087] DEBUG -- : Installing: libpciaccess                 ##################### [ 76/226]
+D, [2012-07-28T23:48:09.195049 #10087] DEBUG -- : Installing: cpp                          ##################### [ 77/226]
+D, [2012-07-28T23:48:09.560142 #10087] DEBUG -- : Installing: nss-softokn                  ##################### [ 78/226]
+D, [2012-07-28T23:48:09.632351 #10087] DEBUG -- : Installing: js                           ##################### [ 79/226]
+D, [2012-07-28T23:48:09.709450 #10087] DEBUG -- : Installing: pcre                         ##################### [ 80/226]
+D, [2012-07-28T23:48:09.730189 #10087] DEBUG -- : Installing: grep                         ##################### [ 81/226]
+D, [2012-07-28T23:48:10.030806 #10087] DEBUG -- : Installing: ppl-pwl                      ##################### [ 82/226]
+D, [2012-07-28T23:48:10.070564 #10087] DEBUG -- : Installing: ppl                          ##################### [ 83/226]
+D, [2012-07-28T23:48:10.087246 #10087] DEBUG -- : Installing: cloog-ppl                    ##################### [ 84/226]
+D, [2012-07-28T23:48:10.134929 #10087] DEBUG -- : Installing: nss-myhostname               ##################### [ 85/226]
+D, [2012-07-28T23:48:10.170930 #10087] DEBUG -- : Installing: libdb-utils                  ##################### [ 86/226]
+D, [2012-07-28T23:48:10.225875 #10087] DEBUG -- : Installing: xz                           ##################### [ 87/226]
+D, [2012-07-28T23:48:10.248675 #10087] DEBUG -- : Installing: vim-minimal                  ##################### [ 88/226]
+D, [2012-07-28T23:48:10.264167 #10087] DEBUG -- : Installing: e2fsprogs-libs               ##################### [ 89/226]
+D, [2012-07-28T23:48:10.311296 #10087] DEBUG -- : Installing: libss                        ##################### [ 90/226]
+D, [2012-07-28T23:48:10.375192 #10087] DEBUG -- : Installing: pinentry                     ##################### [ 91/226]
+D, [2012-07-28T23:48:10.432062 #10087] DEBUG -- : Installing: diffutils                    ##################### [ 92/226]
+D, [2012-07-28T23:48:10.510276 #10087] DEBUG -- : Installing: m4                           ##################### [ 93/226]
+D, [2012-07-28T23:48:10.551442 #10087] DEBUG -- : Installing: make                         ##################### [ 94/226]
+D, [2012-07-28T23:48:10.597669 #10087] DEBUG -- : Installing: psmisc                       ##################### [ 95/226]
+D, [2012-07-28T23:48:10.625380 #10087] DEBUG -- : Installing: checkpolicy                  ##################### [ 96/226]
+D, [2012-07-28T23:48:10.776909 #10087] DEBUG -- : Installing: procmail                     ##################### [ 97/226]
+D, [2012-07-28T23:48:10.871903 #10087] DEBUG -- : Installing: glibc-headers                ##################### [ 98/226]
+D, [2012-07-28T23:48:10.948240 #10087] DEBUG -- : Installing: glibc-devel                  ##################### [ 99/226]
+D, [2012-07-28T23:48:10.990594 #10087] DEBUG -- : Installing: freetype                     ##################### [100/226]
+D, [2012-07-28T23:48:11.011839 #10087] DEBUG -- : Installing: ncurses                      ##################### [101/226]
+D, [2012-07-28T23:48:11.054049 #10087] DEBUG -- : Installing: gzip                         ##################### [102/226]
+D, [2012-07-28T23:48:11.612443 #10087] DEBUG -- : Installing: cracklib                     ##################### [103/226]
+D, [2012-07-28T23:48:11.630484 #10087] DEBUG -- : Installing: cracklib-dicts               ##################### [104/226]
+D, [2012-07-28T23:48:12.265546 #10087] DEBUG -- : Installing: libpwquality                 ##################### [105/226]
+D, [2012-07-28T23:48:12.442669 #10087] DEBUG -- : Installing: coreutils                    ##################### [106/226]
+D, [2012-07-28T23:48:12.482679 #10087] DEBUG -- : Installing: pam                          ##################### [107/226]
+D, [2012-07-28T23:48:12.512217 #10087] DEBUG -- : Installing: systemd-libs                 ##################### [108/226]
+D, [2012-07-28T23:48:12.722629 #10087] DEBUG -- : Installing: libblkid                     ##################### [109/226]
+D, [2012-07-28T23:48:12.757820 #10087] DEBUG -- : Installing: fedora-logos                 ##################### [110/226]
+D, [2012-07-28T23:48:12.771419 #10087] DEBUG -- : Installing: logrotate                    ##################### [111/226]
+D, [2012-07-28T23:48:12.790068 #10087] DEBUG -- : Installing: libmount                     ##################### [112/226]
+D, [2012-07-28T23:48:13.522101 #10087] DEBUG -- : Installing: grubby                       ##################### [113/226]
+D, [2012-07-28T23:48:15.189539 #10087] DEBUG -- : Installing: binutils                     ##################### [114/226]
+D, [2012-07-28T23:48:15.360010 #10087] DEBUG -- : Installing: gcc                          ##################### [115/226]
+D, [2012-07-28T23:48:15.380677 #10087] DEBUG -- : Installing: nss                          ##################### [116/226]
+D, [2012-07-28T23:48:15.523699 #10087] DEBUG -- : Installing: nss-sysinit                  ##################### [117/226]
+D, [2012-07-28T23:48:15.574425 #10087] DEBUG -- : Installing: nss-tools                    ##################### [118/226]
+D, [2012-07-28T23:48:15.620973 #10087] DEBUG -- : Installing: openldap                     ##################### [119/226]
+D, [2012-07-28T23:48:15.648386 #10087] DEBUG -- : Installing: dhcp-libs                    ##################### [120/226]
+D, [2012-07-28T23:48:15.669696 #10087] DEBUG -- : Installing: dhcp-common                  ##################### [121/226]
+D, [2012-07-28T23:48:15.693664 #10087] DEBUG -- : Installing: libpcap                      ##################### [122/226]
+D, [2012-07-28T23:48:15.714592 #10087] DEBUG -- : Installing: pciutils-libs                ##################### [123/226]
+D, [2012-07-28T23:48:15.735840 #10087] DEBUG -- : Installing: hardlink                     ##################### [124/226]
+D, [2012-07-28T23:48:15.762262 #10087] DEBUG -- : Installing: ustr                         ##################### [125/226]
+D, [2012-07-28T23:48:15.991863 #10087] DEBUG -- : Installing: libsemanage                  ##################### [126/226]
+D, [2012-07-28T23:48:16.425241 #10087] DEBUG -- : Installing: shadow-utils                 ##################### [127/226]
+D, [2012-07-28T23:48:16.462173 #10087] DEBUG -- : Installing: libutempter                  ##################### [128/226]
+D, [2012-07-28T23:48:16.473038 #10087] DEBUG -- : Installing: sysvinit-tools               ##################### [129/226]
+D, [2012-07-28T23:48:16.498210 #10087] DEBUG -- : Installing: eject                        ##################### [130/226]
+D, [2012-07-28T23:48:16.520546 #10087] DEBUG -- : Installing: gamin                        ##################### [131/226]
+D, [2012-07-28T23:48:16.943440 #10087] DEBUG -- : Installing: pkgconfig                    ##################### [132/226]
+D, [2012-07-28T23:48:17.034914 #10087] DEBUG -- : Installing: glib2                        ##################### [133/226]
+D, [2012-07-28T23:48:17.472687 #10087] DEBUG -- : Installing: shared-mime-info             ##################### [134/226]
+D, [2012-07-28T23:48:17.533980 #10087] DEBUG -- : Installing: libgudev1                    ##################### [135/226]
+D, [2012-07-28T23:48:17.574635 #10087] DEBUG -- : Installing: dbus-glib                    ##################### [136/226]
+D, [2012-07-28T23:48:17.627118 #10087] DEBUG -- : Installing: libcroco                     ##################### [137/226]
+D, [2012-07-28T23:48:17.700801 #10087] DEBUG -- : Installing: gettext-libs                 ##################### [138/226]
+D, [2012-07-28T23:48:17.824350 #10087] DEBUG -- : Installing: ModemManager                 ##################### [139/226]
+D, [2012-07-28T23:48:17.895856 #10087] DEBUG -- : Installing: libuser                      ##################### [140/226]
+D, [2012-07-28T23:48:17.913948 #10087] DEBUG -- : Installing: procps-ng                    ##################### [141/226]
+D, [2012-07-28T23:48:17.942466 #10087] DEBUG -- : Installing: hesiod                       ##################### [142/226]
+D, [2012-07-28T23:48:17.963363 #10087] DEBUG -- : Installing: gdbm                         ##################### [143/226]
+D, [2012-07-28T23:48:17.988425 #10087] DEBUG -- : Installing: linux-atm-libs               ##################### [144/226]
+D, [2012-07-28T23:48:18.012352 #10087] DEBUG -- : Installing: plymouth-core-libs           ##################### [145/226]
+D, [2012-07-28T23:48:18.098105 #10087] DEBUG -- : Installing: libdaemon                    ##################### [146/226]
+D, [2012-07-28T23:48:18.174596 #10087] DEBUG -- : Installing: avahi-autoipd                ##################### [147/226]
+D, [2012-07-28T23:48:18.312946 #10087] DEBUG -- : Installing: ca-certificates              ##################### [148/226]
+D, [2012-07-28T23:48:19.624203 #10087] DEBUG -- : Installing: openssl-libs                 ##################### [149/226]
+D, [2012-07-28T23:48:19.667173 #10087] DEBUG -- : Installing: python-libs                  ##################### [150/226]
+D, [2012-07-28T23:48:19.985051 #10087] DEBUG -- : Installing: python                       ##################### [151/226]
+D, [2012-07-28T23:48:20.023481 #10087] DEBUG -- : Installing: gettext                      ##################### [152/226]
+D, [2012-07-28T23:48:20.028998 #10087] DEBUG -- : Installing: python-iniparse              ##################### [153/226]
+D, [2012-07-28T23:48:20.036364 #10087] DEBUG -- : Installing: yum-metadata-parser          ##################### [154/226]
+D, [2012-07-28T23:48:20.056573 #10087] DEBUG -- : Installing: newt-python                  ##################### [155/226]
+D, [2012-07-28T23:48:20.095231 #10087] DEBUG -- : Installing: libssh2                      ##################### [156/226]
+D, [2012-07-28T23:48:20.381149 #10087] DEBUG -- : Installing: libcurl                      ##################### [157/226]
+D, [2012-07-28T23:48:20.429107 #10087] DEBUG -- : Installing: gnupg2                       ##################### [158/226]
+D, [2012-07-28T23:48:20.459841 #10087] DEBUG -- : Installing: gpgme                        ##################### [159/226]
+D, [2012-07-28T23:48:20.494691 #10087] DEBUG -- : Installing: pygpgme                      ##################### [160/226]
+D, [2012-07-28T23:48:20.531188 #10087] DEBUG -- : Installing: curl                         ##################### [161/226]
+D, [2012-07-28T23:48:20.681560 #10087] DEBUG -- : Installing: rpm-libs                     ##################### [162/226]
+D, [2012-07-28T23:48:20.698311 #10087] DEBUG -- : Installing: rpm                          ##################### [163/226]
+D, [2012-07-28T23:48:20.726761 #10087] DEBUG -- : Installing: rpm-build-libs               ##################### [164/226]
+D, [2012-07-28T23:48:20.747056 #10087] DEBUG -- : Installing: rpm-python                   ##################### [165/226]
+D, [2012-07-28T23:48:20.769848 #10087] DEBUG -- : Installing: python-pycurl                ##################### [166/226]
+D, [2012-07-28T23:48:20.863717 #10087] DEBUG -- : Installing: python-urlgrabber            ##################### [167/226]
+D, [2012-07-28T23:48:20.877761 #10087] DEBUG -- : Installing: bind-libs-lite               ##################### [168/226]
+D, [2012-07-28T23:48:20.893697 #10087] DEBUG -- : Installing: fipscheck-lib                ##################### [169/226]
+D, [2012-07-28T23:48:21.191797 #10087] DEBUG -- : Installing: fipscheck                    ##################### [170/226]
+D, [2012-07-28T23:48:21.235624 #10087] DEBUG -- : Installing: util-linux                   ##################### [171/226]
+D, [2012-07-28T23:48:21.252194 #10087] DEBUG -- : Installing: device-mapper                ##################### [172/226]
+D, [2012-07-28T23:48:21.296927 #10087] DEBUG -- : Installing: device-mapper-libs           ##################### [173/226]
+D, [2012-07-28T23:48:21.318118 #10087] DEBUG -- : Installing: cryptsetup-libs              ##################### [174/226]
+D, [2012-07-28T23:48:21.716123 #10087] DEBUG -- : Installing: systemd-sysv                 ##################### [175/226]
+D, [2012-07-28T23:48:21.874831 #10087] DEBUG -- : Installing: systemd                      ##################### [176/226]
+D, [2012-07-28T23:48:21.957221 #10087] DEBUG -- : Installing: dbus                         ##################### [177/226]
+D, [2012-07-28T23:48:22.055726 #10087] DEBUG -- : Installing: iptables                     ##################### [178/226]
+D, [2012-07-28T23:48:22.147129 #10087] DEBUG -- : Installing: iproute                      ##################### [179/226]
+D, [2012-07-28T23:48:22.158814 #10087] DEBUG -- : Installing: policycoreutils              ##################### [180/226]
+D, [2012-07-28T23:48:22.968138 #10087] DEBUG -- : Installing: os-prober                    ##################### [181/226]
+D, [2012-07-28T23:48:22.973852 #10087] DEBUG -- : Installing: grub2-tools                  ##################### [182/226]
+D, [2012-07-28T23:48:23.034509 #10087] DEBUG -- : Installing: selinux-policy               ##################### [183/226]
+D, [2012-07-28T23:48:23.164983 #10087] DEBUG -- : Installing: NetworkManager-glib          ##################### [184/226]
+D, [2012-07-28T23:48:23.197570 #10087] DEBUG -- : Installing: polkit                       ##################### [185/226]
+D, [2012-07-28T23:48:23.241795 #10087] DEBUG -- : Installing: libdrm                       ##################### [186/226]
+D, [2012-07-28T23:48:23.330712 #10087] DEBUG -- : Installing: dnsmasq                      ##################### [187/226]
+D, [2012-07-28T23:48:23.414759 #10087] DEBUG -- : Installing: wpa_supplicant               ##################### [188/226]
+D, [2012-07-28T23:48:23.564561 #10087] DEBUG -- : Installing: ppp                          ##################### [189/226]
+D, [2012-07-28T23:48:25.400275 #10087] DEBUG -- : Installing: netxen-firmware              ##################### [190/226]
+D, [2012-07-28T23:48:25.428413 #10087] DEBUG -- : Installing: linux-firmware               ##################### [191/226]
+D, [2012-07-28T23:48:25.691461 #10087] DEBUG -- : Installing: iputils                      ##################### [192/226]
+D, [2012-07-28T23:48:25.853333 #10087] DEBUG -- : Installing: initscripts                  ##################### [193/226]
+D, [2012-07-28T23:48:25.881467 #10087] DEBUG -- : Installing: rsyslog                      ##################### [194/226]
+D, [2012-07-28T23:48:25.902487 #10087] DEBUG -- : Installing: crontabs                     ##################### [195/226]
+D, [2012-07-28T23:48:25.945430 #10087] DEBUG -- : Installing: cronie                       ##################### [196/226]
+D, [2012-07-28T23:48:26.005297 #10087] DEBUG -- : Installing: cronie-anacron               ##################### [197/226]
+D, [2012-07-28T23:48:26.460641 #10087] DEBUG -- : Installing: dhclient                     ##################### [198/226]
+D, [2012-07-28T23:48:26.481250 #10087] DEBUG -- : Installing: cyrus-sasl                   ##################### [199/226]
+D, [2012-07-28T23:48:26.538699 #10087] DEBUG -- : Installing: kpartx                       ##################### [200/226]
+D, [2012-07-28T23:48:26.545354 #10087] DEBUG -- : Installing: dracut                       ##################### [201/226]
+D, [2012-07-28T23:48:26.563626 #10087] DEBUG -- : Installing: plymouth-scripts             ##################### [202/226]
+D, [2012-07-28T23:48:26.680837 #10087] DEBUG -- : Installing: plymouth                     ##################### [203/226]
+D, [2012-07-28T23:48:26.780968 #10087] DEBUG -- : Installing: openssh                      ##################### [204/226]
+D, [2012-07-28T23:48:26.872626 #10087] DEBUG -- : Installing: openssl                      ##################### [205/226]
+D, [2012-07-28T23:48:26.980745 #10087] DEBUG -- : Installing: authconfig                   ##################### [206/226]
+D, [2012-07-28T23:48:27.292232 #10087] DEBUG -- : Installing: openssh-server               ##################### [207/226]
+D, [2012-07-28T23:48:27.551574 #10087] DEBUG -- : Installing: grub2                        ##################### [208/226]
+D, [2012-07-28T23:49:27.854606 #10087] DEBUG -- : Installing: sendmail                     ##################### [209/226]
+D, [2012-07-28T23:49:27.950775 #10087] DEBUG -- : Installing: NetworkManager               ##################### [210/226]
+D, [2012-07-28T23:49:28.661912 #10087] DEBUG -- : Installing: kbd                          ##################### [211/226]
+D, [2012-07-28T23:49:28.784886 #10087] DEBUG -- : Installing: selinux-policy-targeted      ##################### [212/226]
+D, [2012-07-28T23:49:28.827006 #10087] DEBUG -- : Installing: system-config-firewall-base  ##################### [213/226]
+D, [2012-07-28T23:49:28.853354 #10087] DEBUG -- : Installing: audit                        ##################### [214/226]
+D, [2012-07-28T23:49:28.965654 #10087] DEBUG -- : Installing: biosdevname                  ##################### [215/226]
+D, [2012-07-28T23:49:29.228779 #10087] DEBUG -- : Installing: parted                       ##################### [216/226]
+D, [2012-07-28T23:49:29.257241 #10087] DEBUG -- : Installing: yum                          ##################### [217/226]
+D, [2012-07-28T23:49:29.372789 #10087] DEBUG -- : Installing: passwd                       ##################### [218/226]
+D, [2012-07-28T23:49:30.152637 #10087] DEBUG -- : Installing: sudo                         ##################### [219/226]
+D, [2012-07-28T23:49:30.273688 #10087] DEBUG -- : Installing: gcc-go                       ##################### [220/226]
+D, [2012-07-28T23:49:30.288973 #10087] DEBUG -- : Installing: e2fsprogs                    ##################### [221/226]
+D, [2012-07-28T23:49:30.301718 #10087] DEBUG -- : Installing: acl                          ##################### [222/226]
+D, [2012-07-28T23:49:30.306241 #10087] DEBUG -- : Installing: attr                         ##################### [223/226]
+D, [2012-07-28T23:49:30.311295 #10087] DEBUG -- : Installing: setserial                    ##################### [224/226]
+D, [2012-07-28T23:49:30.313129 #10087] DEBUG -- : Installing: hostname                     ##################### [225/226]
+D, [2012-07-28T23:49:34.993499 #10087] DEBUG -- : Installing: rootfiles                    ##################### [226/226]
+D, [2012-07-28T23:49:36.317628 #10087] DEBUG -- : 993 blocks
+D, [2012-07-28T23:49:37.032448 #10087] DEBUG -- : E: No '/dev/log' or 'logger' included for syslog logging
+D, [2012-07-28T23:50:07.667359 #10087] DEBUG -- : Installing: kernel                       ##################### [227/226]
+D, [2012-07-28T23:50:07.667467 #10087] DEBUG -- : Traceback (most recent call last):
+D, [2012-07-28T23:50:07.667543 #10087] DEBUG -- : 
+D, [2012-07-28T23:50:07.667653 #10087] DEBUG -- : File "/usr/bin/appliance-creator", line 164, in <module>
+D, [2012-07-28T23:50:07.667736 #10087] DEBUG -- : sys.exit(main())
+D, [2012-07-28T23:50:07.667784 #10087] DEBUG -- : File "/usr/bin/appliance-creator", line 150, in main
+D, [2012-07-28T23:50:07.667819 #10087] DEBUG -- : creator.configure()
+D, [2012-07-28T23:50:07.667855 #10087] DEBUG -- : File "/usr/lib/python2.7/site-packages/imgcreate/creator.py", line 719, in configure
+D, [2012-07-28T23:50:07.668107 #10087] DEBUG -- : kickstart.TimezoneConfig(self._instroot).apply(ksh.timezone)
+D, [2012-07-28T23:50:07.668300 #10087] DEBUG -- : File "/usr/lib/python2.7/site-packages/imgcreate/kickstart.py", line 158, in apply
+D, [2012-07-28T23:50:07.668395 #10087] DEBUG -- : self.path("/etc/localtime"))
+D, [2012-07-28T23:50:07.668474 #10087] DEBUG -- : File "/usr/lib64/python2.7/shutil.py", line 69, in copyfile
+D, [2012-07-28T23:50:07.668546 #10087] DEBUG -- : raise Error("`%s` and `%s` are the same file" % (src, dst))
+D, [2012-07-28T23:50:07.668625 #10087] DEBUG -- : shutil.Error: `/home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-k_GBQ8/install_root/usr/share/zoneinfo/US/Eastern` and `/home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-k_GBQ8/install_root/etc/localtime` are the same file
+D, [2012-07-28T23:50:07.759602 #10087] DEBUG -- : Unmounting directory /home/rortian/git/boxgs/rawhide-go/build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/imgcreate-k_GBQ8/install_root/
+D, [2012-07-28T23:50:08.344773 #10087] DEBUG -- : Removing compat symlinks
+D, [2012-07-28T23:50:08.344961 #10087] DEBUG -- : Unmapping /dev/loop0
+D, [2012-07-28T23:50:08.364332 #10087] DEBUG -- : Losetup remove /dev/loop0
+E, [2012-07-28T23:50:08.646411 #10087] ERROR -- : /usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:85:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:107:in `execute_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:71:in `build_with_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:53:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:184:in `execute_plugin'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:207:in `execute_without_userchange'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:129:in `block in execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `each'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:164:in `create'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/bin/boxgrinder-build:203:in `<top (required)>'
+/usr/bin/boxgrinder-build:23:in `load'
+/usr/bin/boxgrinder-build:23:in `<main>'
+F, [2012-07-28T23:50:08.646848 #10087] FATAL -- : RuntimeError: An error occurred while executing command: 'appliance-creator -d -v -t 'build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp' --cache=/var/cache/boxgrinder/rpms-cache/x86_64/fedora/rawhide --config 'build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp/gccgo.ks' -o 'build/appliances/x86_64/fedora/rawhide/gccgo/1.0/fedora-plugin/tmp' --name 'gccgo' --vmem 256 --vcpu 1 --format raw', process exited with wrong exit status: 1
+/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:92:in `rescue in execute'
+/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:51:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:107:in `execute_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:71:in `build_with_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:53:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:184:in `execute_plugin'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:207:in `execute_without_userchange'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:129:in `block in execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `each'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:164:in `create'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/bin/boxgrinder-build:203:in `<top (required)>'
+/usr/bin/boxgrinder-build:23:in `load'
+/usr/bin/boxgrinder-build:23:in `<main>'
