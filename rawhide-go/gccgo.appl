@@ -2,7 +2,7 @@ name: gccgo
 summary: fedora rawhide to test out the latest gccgo
 os:
   name: fedora
-  version: rawhide
+  version: 17
 hardware:
   partitions:
     "/":
