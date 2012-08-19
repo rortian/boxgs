@@ -1,0 +1,210 @@
+# Logfile created on 2012-08-19 12:59:27 -0400 by logger.rb/31641
+D, [2012-08-19T12:59:27.406672 #4968] DEBUG -- : Launching new build...
+T, [2012-08-19T12:59:27.407830 #4968] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:name: BoxGrinder Build
+:platform: :none
+:delivery: :none
+:force: false
+:log_level: :info
+:backtrace: false
+:dir: 
+  :root: /home/rortian/git/boxgs/xmonad-dev-env
+  :build: build
+  :cache: /var/cache/boxgrinder
+  :tmp: /tmp
+:os_config: {}
+
+:platform_config: {}
+
+:delivery_config: {}
+
+:additional_plugins: []
+
+:change_to_user: false
+:uid: 1000
+:gid: 1000
+
+D, [2012-08-19T12:59:27.407886 #4968] DEBUG -- : Loading os plugins...
+D, [2012-08-19T12:59:27.407918 #4968] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-08-19T12:59:27.407948 #4968] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-08-19T12:59:27.407977 #4968] DEBUG -- : - centos plugin for CentOS.
+D, [2012-08-19T12:59:27.408004 #4968] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-08-19T12:59:27.408032 #4968] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-08-19T12:59:27.408058 #4968] DEBUG -- : Plugins loaded.
+D, [2012-08-19T12:59:27.408084 #4968] DEBUG -- : Loading platform plugins...
+D, [2012-08-19T12:59:27.408112 #4968] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-08-19T12:59:27.408140 #4968] DEBUG -- : - vmware plugin for VMware.
+D, [2012-08-19T12:59:27.408169 #4968] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-08-19T12:59:27.408197 #4968] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-08-19T12:59:27.408224 #4968] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-08-19T12:59:27.408250 #4968] DEBUG -- : Plugins loaded.
+D, [2012-08-19T12:59:27.408277 #4968] DEBUG -- : Loading delivery plugins...
+D, [2012-08-19T12:59:27.408304 #4968] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-08-19T12:59:27.408333 #4968] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-08-19T12:59:27.408361 #4968] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-08-19T12:59:27.408389 #4968] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-08-19T12:59:27.408417 #4968] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-08-19T12:59:27.408445 #4968] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-08-19T12:59:27.408473 #4968] DEBUG -- : - local plugin for Local file system.
+D, [2012-08-19T12:59:27.408500 #4968] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-08-19T12:59:27.408528 #4968] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-08-19T12:59:27.408555 #4968] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-08-19T12:59:27.408581 #4968] DEBUG -- : Plugins loaded.
+I, [2012-08-19T12:59:27.411546 #4968]  INFO -- : Validating appliance definition from xmonad.appl file...
+D, [2012-08-19T12:59:27.411620 #4968] DEBUG -- : Parsing definition using schema version 0.9.6.
+D, [2012-08-19T12:59:27.425117 #4968] DEBUG -- : Parsing definition using schema version 0.9.0.
+D, [2012-08-19T12:59:27.445609 #4968] DEBUG -- : Parsing definition using schema version 0.8.0.
+E, [2012-08-19T12:59:27.456028 #4968] ERROR -- : Error: [line 13, col 5] [/repos/1/name] 'RPM Fusion for Fedora $releasever - Nonfree': not matched to pattern /^[\w\-+.#]+$/.
+E, [2012-08-19T12:59:27.456169 #4968] ERROR -- : Error: [line 15, col 5] [/repos/2/name] 'RPM Fusion for Fedora $releasever - Free': not matched to pattern /^[\w\-+.#]+$/.
+F, [2012-08-19T12:59:27.456370 #4968] FATAL -- : BoxGrinder::ApplianceValidationError: The appliance definition was invalid according to schema 0.9.6. See log for details.
+/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/appliance-parser.rb:70:in `parse_definition'
+/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/appliance-definition-helper.rb:45:in `read_definitions'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:45:in `read_definition'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:158:in `create'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/bin/boxgrinder-build:203:in `<top (required)>'
+/usr/bin/boxgrinder-build:23:in `load'
+/usr/bin/boxgrinder-build:23:in `<main>'
+D, [2012-08-19T13:03:49.986753 #5061] DEBUG -- : Launching new build...
+T, [2012-08-19T13:03:49.987995 #5061] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:name: BoxGrinder Build
+:platform: :none
+:delivery: :none
+:force: false
+:log_level: :info
+:backtrace: false
+:dir: 
+  :root: /home/rortian/git/boxgs/xmonad-dev-env
+  :build: build
+  :cache: /var/cache/boxgrinder
+  :tmp: /tmp
+:os_config: {}
+
+:platform_config: {}
+
+:delivery_config: {}
+
+:additional_plugins: []
+
+:change_to_user: false
+:uid: 1000
+:gid: 1000
+
+D, [2012-08-19T13:03:49.988055 #5061] DEBUG -- : Loading os plugins...
+D, [2012-08-19T13:03:49.988090 #5061] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-08-19T13:03:49.988124 #5061] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-08-19T13:03:49.988157 #5061] DEBUG -- : - centos plugin for CentOS.
+D, [2012-08-19T13:03:49.988199 #5061] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-08-19T13:03:49.988228 #5061] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-08-19T13:03:49.988256 #5061] DEBUG -- : Plugins loaded.
+D, [2012-08-19T13:03:49.988285 #5061] DEBUG -- : Loading platform plugins...
+D, [2012-08-19T13:03:49.988314 #5061] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-08-19T13:03:49.988344 #5061] DEBUG -- : - vmware plugin for VMware.
+D, [2012-08-19T13:03:49.988373 #5061] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-08-19T13:03:49.988402 #5061] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-08-19T13:03:49.988431 #5061] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-08-19T13:03:49.988459 #5061] DEBUG -- : Plugins loaded.
+D, [2012-08-19T13:03:49.988487 #5061] DEBUG -- : Loading delivery plugins...
+D, [2012-08-19T13:03:49.988515 #5061] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-08-19T13:03:49.988545 #5061] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-08-19T13:03:49.988575 #5061] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-08-19T13:03:49.988617 #5061] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-08-19T13:03:49.988648 #5061] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-08-19T13:03:49.988678 #5061] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-08-19T13:03:49.988708 #5061] DEBUG -- : - local plugin for Local file system.
+D, [2012-08-19T13:03:49.988737 #5061] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-08-19T13:03:49.988767 #5061] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-08-19T13:03:49.988797 #5061] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-08-19T13:03:49.988826 #5061] DEBUG -- : Plugins loaded.
+I, [2012-08-19T13:03:49.990814 #5061]  INFO -- : Validating appliance definition from xmonad.appl file...
+D, [2012-08-19T13:03:49.990880 #5061] DEBUG -- : Parsing definition using schema version 0.9.6.
+D, [2012-08-19T13:03:50.004131 #5061] DEBUG -- : Parsing definition using schema version 0.9.0.
+D, [2012-08-19T13:03:50.025448 #5061] DEBUG -- : Parsing definition using schema version 0.8.0.
+E, [2012-08-19T13:03:50.035810 #5061] ERROR -- : Error: [line 13, col 5] [/repos/1/name] 'RPM Fusion for Fedora - Nonfree': not matched to pattern /^[\w\-+.#]+$/.
+E, [2012-08-19T13:03:50.035903 #5061] ERROR -- : Error: [line 15, col 5] [/repos/2/name] 'RPM Fusion for Fedora - Free': not matched to pattern /^[\w\-+.#]+$/.
+F, [2012-08-19T13:03:50.036130 #5061] FATAL -- : BoxGrinder::ApplianceValidationError: The appliance definition was invalid according to schema 0.9.6. See log for details.
+/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/appliance-parser.rb:70:in `parse_definition'
+/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/appliance-definition-helper.rb:45:in `read_definitions'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:45:in `read_definition'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:158:in `create'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/bin/boxgrinder-build:203:in `<top (required)>'
+/usr/bin/boxgrinder-build:23:in `load'
+/usr/bin/boxgrinder-build:23:in `<main>'
+D, [2012-08-19T13:04:20.244026 #5067] DEBUG -- : Launching new build...
+T, [2012-08-19T13:04:20.245170 #5067] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:name: BoxGrinder Build
+:platform: :none
+:delivery: :none
+:force: false
+:log_level: :info
+:backtrace: false
+:dir: 
+  :root: /home/rortian/git/boxgs/xmonad-dev-env
+  :build: build
+  :cache: /var/cache/boxgrinder
+  :tmp: /tmp
+:os_config: {}
+
+:platform_config: {}
+
+:delivery_config: {}
+
+:additional_plugins: []
+
+:change_to_user: false
+:uid: 1000
+:gid: 1000
+
+D, [2012-08-19T13:04:20.245225 #5067] DEBUG -- : Loading os plugins...
+D, [2012-08-19T13:04:20.245257 #5067] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-08-19T13:04:20.245287 #5067] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-08-19T13:04:20.245316 #5067] DEBUG -- : - centos plugin for CentOS.
+D, [2012-08-19T13:04:20.245345 #5067] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-08-19T13:04:20.245373 #5067] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-08-19T13:04:20.245400 #5067] DEBUG -- : Plugins loaded.
+D, [2012-08-19T13:04:20.245427 #5067] DEBUG -- : Loading platform plugins...
+D, [2012-08-19T13:04:20.245455 #5067] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-08-19T13:04:20.245482 #5067] DEBUG -- : - vmware plugin for VMware.
+D, [2012-08-19T13:04:20.245511 #5067] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-08-19T13:04:20.245539 #5067] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-08-19T13:04:20.245566 #5067] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-08-19T13:04:20.245644 #5067] DEBUG -- : Plugins loaded.
+D, [2012-08-19T13:04:20.245674 #5067] DEBUG -- : Loading delivery plugins...
+D, [2012-08-19T13:04:20.245702 #5067] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-08-19T13:04:20.245730 #5067] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-08-19T13:04:20.245759 #5067] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-08-19T13:04:20.245787 #5067] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-08-19T13:04:20.245815 #5067] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-08-19T13:04:20.245843 #5067] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-08-19T13:04:20.245871 #5067] DEBUG -- : - local plugin for Local file system.
+D, [2012-08-19T13:04:20.245899 #5067] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-08-19T13:04:20.245927 #5067] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-08-19T13:04:20.245955 #5067] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-08-19T13:04:20.245983 #5067] DEBUG -- : Plugins loaded.
+I, [2012-08-19T13:04:20.247948 #5067]  INFO -- : Validating appliance definition from xmonad.appl file...
+D, [2012-08-19T13:04:20.248021 #5067] DEBUG -- : Parsing definition using schema version 0.9.6.
+I, [2012-08-19T13:04:20.261193 #5067]  INFO -- : Appliance definition is valid.
+I, [2012-08-19T13:04:20.277690 #5067]  INFO -- : Building 'xmonad' appliance for x86_64 architecture.
+D, [2012-08-19T13:04:20.277791 #5067] DEBUG -- : Executing os plugin...
+I, [2012-08-19T13:04:20.282377 #5067]  INFO -- : Resolving packages added to xmonad appliance definition file...
+D, [2012-08-19T13:04:20.283250 #5067] DEBUG -- : Querying package database...
+D, [2012-08-19T13:04:20.283414 #5067] DEBUG -- : Executing command: 'repoquery --quiet --disablerepo=* --enablerepo=boxgrinder-google-chrome,boxgrinder-RPMFusionNonfree,boxgrinder-RPMFusionFree,boxgrinder-base,boxgrinder-updates -c '/home/rortian/git/boxgs/xmonad-dev-env/build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/yum.conf' list available NetworkManager-gnome NetworkManager-openconnect NetworkManager-openvpn NetworkManager-pptp NetworkManager-vpnc PackageKit-command-not-found PackageKit-gstreamer-plugin PackageKit-gtk3-module PackageKit-yum-plugin SDL-devel Xaw3d-devel abrt-desktop acpid aic94xx-firmware aisleriot alsa-plugins-pulseaudio ar9170-firmware at-spi2-core-devel atmel-firmware attr audit automake14 automake17 b43-fwcutter b43-openfwwf baobab bash-completion bind-utils binutils-devel biosdevname bison boost-devel brasero-nautilus bridge-utils btrfs-progs byacc bzip2-devel cadaver ccache cheese chrony cifs-utils cjkuni-uming-fonts clutter-gtk-devel coolkey-devel cscope cvs deja-dup dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts desktop-backgrounds-basic devhelp diffstat dos2unix doxygen dump empathy eog etckeeper ethtool evince-nautilus evolution-NetworkManager evolution-data-server-devel evolution-help expat-devel fedora-release-notes fetchmail file-roller-nautilus finger firefox firstboot flex fpaste fprintd-pam ftp gcalctool gcc-c++ gcc-gfortran gd-devel gdbm-devel gedit geoclue-devel giflib-devel gimp-data-extras gimp-help gimp-help-browser glade glx-utils gnome-backgrounds gnome-color-manager gnome-common gnome-contacts gnome-desktop3-devel gnome-devel-docs gnome-dictionary gnome-disk-utility gnome-documents gnome-games gnome-media gnome-packagekit gnome-panel gnome-power-manager gnome-screensaver gnome-screenshot gnome-search-tool gnome-shell gnome-system-log gnome-system-monitor gnome-terminal google-chrome-stable gpg-pubkey gpm-devel grub2 gstreamer-devel gtk2-devel-docs gtk2-immodule-xim gtk3-devel-docs gtk3-immodule-xim gucharmap gupnp-devel gvfs-archive gvfs-gphoto2 gvfs-smb gypsy-devel hesiod-devel ibus-anthy ibus-chewing ibus-hangul ibus-m17n ibus-pinyin ibus-qt ibus-rawcode ibus-typing-booster icedtea-web imsettings-qt indent intltool iptstate ipw2100-firmware ipw2200-firmware irda-utils irqbalance ivtv-firmware iwl100-firmware iwl1000-firmware iwl3945-firmware iwl4965-firmware iwl5000-firmware iwl5150-firmware iwl6000-firmware iwl6000g2a-firmware iwl6000g2b-firmware iwl6050-firmware jdk jomolhari-fonts jwhois khmeros-base-fonts krb5-workstation lftp libXScrnSaver-devel libXaw-devel libXdmcp-devel libXevie-devel libXfont-devel libXres-devel libXtst-devel libXvMC-devel libXxf86dga-devel libXxf86misc-devel libacl-devel libcanberra-devel libcap-devel libdmx-devel liberation-mono-fonts liberation-sans-fonts liberation-serif-fonts libertas-usb8388-firmware libgda-devel libmng-devel libnotify-devel libproxy-mozjs libsane-hpaio libtiff-devel libuser-devel libvorbis-devel libxkbfile-devel lklug-fonts lockdev-devel lohit-assamese-fonts lohit-bengali-fonts lohit-devanagari-fonts lohit-gujarati-fonts lohit-kannada-fonts lohit-oriya-fonts lohit-punjabi-fonts lohit-tamil-fonts lohit-telugu-fonts lsof ltrace lvm2 m17n-contrib man-pages mcelog mesa-dri-drivers microcode_ctl mlocate mousetweaks mtr mutt nano nautilus-sendto nc netpbm-devel newt-devel nfs-utils nhn-nanum-gothic-fonts ntsysv numactl openldap-devel openssh-server openssl-devel oprofile-gui orca paktype-naqsh-fonts pam-devel pam_krb5 pam_pkcs11 paratype-pt-sans-fonts passwdqc patchutils pciutils-devel pcmciautils pcsc-lite-devel pinfo plymouth-system-theme policycoreutils-restorecond policycoreutils-sandbox prelink psacct pulseaudio-module-x11 python-devel python-ldap ql2100-firmware ql2200-firmware ql23xx-firmware ql2400-firmware ql2500-firmware quota rcs rdate rdist readline-devel redhat-rpm-config rhythmbox rng-tools rootfiles rpm-build rpm-devel rpmfusion-nonfree-release rpmorphan rsh rt61pci-firmware rt73usb-firmware ruby-devel sane-backends-drivers-scanners seahorse selinux-policy-targeted setserial shotwell sil-abyssinica-fonts sil-padauk-fonts simple-scan slrn smartmontools smc-meera-fonts smolt-firstboot sos sound-juicer spice-vdagent sssd stix-fonts strace stunnel subversion sudo sushi swig symlinks sysprof system-config-date-docs system-config-firewall system-config-network-tui system-config-users-docs systemtap talk tcpdump telnet texinfo thai-scalable-waree-fonts tmux totem-mozplugin totem-nautilus traceroute transmission-gtk tree uboot-tools usbutils valgrind vconfig vim-enhanced vinagre vino vlgothic-fonts vym webkitgtk3-devel words wqy-zenhei-fonts xdg-user-dirs-gtk xmonad xorg-x11-docs xorg-x11-drv-ast xorg-x11-drv-ati xorg-x11-drv-cirrus xorg-x11-drv-dummy xorg-x11-drv-evdev xorg-x11-drv-fbdev xorg-x11-drv-intel xorg-x11-drv-mga xorg-x11-drv-nouveau xorg-x11-drv-openchrome xorg-x11-drv-qxl xorg-x11-drv-synaptics xorg-x11-drv-vesa xorg-x11-drv-vmmouse xorg-x11-drv-vmware xorg-x11-drv-void xorg-x11-drv-wacom xorg-x11-utils xorg-x11-xtrans-devel xrestop xsane-gimp yum-langpacks yum-plugin-show-leaves yum-presto yum-utils zd1211-firmware system-config-firewall-base dhclient kernel grub2 --nevra --archlist=x86_64,noarch'
+F, [2012-08-19T13:04:25.293095 #5067] FATAL -- : BoxGrinder::InterruptionError: Program was interrupted.
+/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:89:in `rescue in execute'
+/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:51:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-dependency-validator.rb:76:in `invalid_names'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-dependency-validator.rb:57:in `resolve_packages'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:67:in `build_with_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:53:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:184:in `execute_plugin'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:207:in `execute_without_userchange'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:129:in `block in execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `each'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:164:in `create'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/bin/boxgrinder-build:203:in `<top (required)>'
+/usr/bin/boxgrinder-build:23:in `load'
+/usr/bin/boxgrinder-build:23:in `<main>'
