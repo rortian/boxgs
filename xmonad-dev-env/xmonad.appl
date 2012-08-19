@@ -84,6 +84,7 @@ packages:
   - ftp
   - gcc-c++
   - gcc-gfortran
+  - gcc-go
   - gd-devel
   - gdbm-devel
   - geoclue-devel
@@ -316,3 +317,10 @@ packages:
   - yum-presto
   - yum-utils
   - zd1211-firmware
+  - java-1.7.0-openjdk-javadoc
+  - java-1.7.0-openjdk-devel
+  - ant
+  - maven
+  - rubygem-bundler
+  - konsole
+  - kdm
