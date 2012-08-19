@@ -1,0 +1,11 @@
+name: gccgo
+summary: fedora rawhide to test out the latest gccgo
+os:
+  name: fedora
+  version: rawhide
+hardware:
+  partitions:
+    "/":
+      size: 3
+packages:
+  - gcc-go
