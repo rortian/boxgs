@@ -7,6 +7,13 @@ hardware:
   partitions:
     "/":
       size: 30
+repos:
+  - name: google-chrome
+    baseurl: http://dl.google.com/linux/chrome/rpm/stable/x86_64
+  - name: RPM Fusion for Fedora $releasever - Nonfree
+    mirrorlist: http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
+  - name: RPM Fusion for Fedora $releasever - Free
+    mirrorlist: http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-source-$releasever&arch=$basearch
 packages:
   - NetworkManager-gnome
   - NetworkManager-openconnect
