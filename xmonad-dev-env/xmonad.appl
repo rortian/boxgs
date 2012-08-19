@@ -1,11 +1,10 @@
-name: gccgo
-summary: fedora rawhide to test out the latest gccgo
+name: xmonad
+summary: xmonad dev env
 os:
   name: fedora
-  version: rawhide
+  version: 17
 hardware:
   partitions:
     "/":
-      size: 3
+      size: 30
 packages:
-  - gcc-go
