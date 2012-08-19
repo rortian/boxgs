@@ -126,7 +126,6 @@ packages:
   - gnome-system-monitor
   - gnome-terminal
   - google-chrome-stable
-  - gpg-pubkey
   - gpm-devel
   - grub2
   - gstreamer-devel
