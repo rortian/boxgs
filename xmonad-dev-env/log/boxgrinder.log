@@ -2064,3 +2064,505 @@ F, [2012-08-19T13:14:53.003577 #5860] FATAL -- : RuntimeError: An error occurred
 /usr/share/gems/gems/boxgrinder-build-0.10.2/bin/boxgrinder-build:203:in `<top (required)>'
 /usr/bin/boxgrinder-build:23:in `load'
 /usr/bin/boxgrinder-build:23:in `<main>'
+D, [2012-08-19T13:20:13.884809 #6270] DEBUG -- : Launching new build...
+T, [2012-08-19T13:20:13.885957 #6270] TRACE -- : Used configuration: --- !map:BoxGrinder::Config 
+:file: /root/.boxgrinder/config
+:name: BoxGrinder Build
+:platform: :none
+:delivery: :none
+:force: false
+:log_level: :info
+:backtrace: false
+:dir: 
+  :root: /home/rortian/git/boxgs/xmonad-dev-env
+  :build: build
+  :cache: /var/cache/boxgrinder
+  :tmp: /tmp
+:os_config: {}
+
+:platform_config: {}
+
+:delivery_config: {}
+
+:additional_plugins: []
+
+:change_to_user: false
+:uid: 1000
+:gid: 1000
+
+D, [2012-08-19T13:20:13.886015 #6270] DEBUG -- : Loading os plugins...
+D, [2012-08-19T13:20:13.886046 #6270] DEBUG -- : We have 4 os plugin(s) registered
+D, [2012-08-19T13:20:13.886078 #6270] DEBUG -- : - rhel plugin for Red Hat Enterprise Linux.
+D, [2012-08-19T13:20:13.886107 #6270] DEBUG -- : - centos plugin for CentOS.
+D, [2012-08-19T13:20:13.886136 #6270] DEBUG -- : - fedora plugin for Fedora.
+D, [2012-08-19T13:20:13.886165 #6270] DEBUG -- : - sl plugin for Scientific Linux.
+D, [2012-08-19T13:20:13.886192 #6270] DEBUG -- : Plugins loaded.
+D, [2012-08-19T13:20:13.886220 #6270] DEBUG -- : Loading platform plugins...
+D, [2012-08-19T13:20:13.886249 #6270] DEBUG -- : We have 4 platform plugin(s) registered
+D, [2012-08-19T13:20:13.886278 #6270] DEBUG -- : - vmware plugin for VMware.
+D, [2012-08-19T13:20:13.886307 #6270] DEBUG -- : - ec2 plugin for Amazon Elastic Compute Cloud (Amazon EC2).
+D, [2012-08-19T13:20:13.886335 #6270] DEBUG -- : - virtualbox plugin for VirtualBox.
+D, [2012-08-19T13:20:13.886363 #6270] DEBUG -- : - virtualpc plugin for VirtualPC.
+D, [2012-08-19T13:20:13.886389 #6270] DEBUG -- : Plugins loaded.
+D, [2012-08-19T13:20:13.886417 #6270] DEBUG -- : Loading delivery plugins...
+D, [2012-08-19T13:20:13.886444 #6270] DEBUG -- : We have 9 delivery plugin(s) registered
+D, [2012-08-19T13:20:13.886474 #6270] DEBUG -- : - s3 plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-08-19T13:20:13.886503 #6270] DEBUG -- : - cloudfront plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-08-19T13:20:13.886532 #6270] DEBUG -- : - ami plugin for Amazon Simple Storage Service (Amazon S3).
+D, [2012-08-19T13:20:13.886560 #6270] DEBUG -- : - sftp plugin for SSH File Transfer Protocol.
+D, [2012-08-19T13:20:13.886588 #6270] DEBUG -- : - ebs plugin for Elastic Block Storage.
+D, [2012-08-19T13:20:13.886632 #6270] DEBUG -- : - local plugin for Local file system.
+D, [2012-08-19T13:20:13.886673 #6270] DEBUG -- : - elastichosts plugin for ElasticHosts.
+D, [2012-08-19T13:20:13.886702 #6270] DEBUG -- : - openstack plugin for OpenStack.
+D, [2012-08-19T13:20:13.886731 #6270] DEBUG -- : - libvirt plugin for libvirt Virtualisation API.
+D, [2012-08-19T13:20:13.886757 #6270] DEBUG -- : Plugins loaded.
+I, [2012-08-19T13:20:13.888736 #6270]  INFO -- : Validating appliance definition from xmonad.appl file...
+D, [2012-08-19T13:20:13.888799 #6270] DEBUG -- : Parsing definition using schema version 0.9.6.
+I, [2012-08-19T13:20:13.901798 #6270]  INFO -- : Appliance definition is valid.
+I, [2012-08-19T13:20:13.921790 #6270]  INFO -- : Building 'xmonad' appliance for x86_64 architecture.
+D, [2012-08-19T13:20:13.921904 #6270] DEBUG -- : Executing os plugin...
+I, [2012-08-19T13:20:13.961413 #6270]  INFO -- : Resolving packages added to xmonad appliance definition file...
+D, [2012-08-19T13:20:13.962300 #6270] DEBUG -- : Querying package database...
+D, [2012-08-19T13:20:13.962449 #6270] DEBUG -- : Executing command: 'repoquery --quiet --disablerepo=* --enablerepo=boxgrinder-google-chrome,boxgrinder-RPMFusionNonfree,boxgrinder-RPMFusionFree,boxgrinder-base,boxgrinder-updates -c '/home/rortian/git/boxgs/xmonad-dev-env/build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/yum.conf' list available NetworkManager-gnome NetworkManager-openconnect NetworkManager-openvpn NetworkManager-pptp NetworkManager-vpnc PackageKit-command-not-found PackageKit-gstreamer-plugin PackageKit-gtk3-module PackageKit-yum-plugin SDL-devel Xaw3d-devel abrt-desktop acpid aic94xx-firmware aisleriot alsa-plugins-pulseaudio ar9170-firmware at-spi2-core-devel atmel-firmware attr audit automake14 automake17 b43-fwcutter b43-openfwwf baobab bash-completion bind-utils binutils-devel biosdevname bison boost-devel brasero-nautilus bridge-utils btrfs-progs byacc bzip2-devel cadaver ccache cheese chrony cifs-utils cjkuni-uming-fonts clutter-gtk-devel coolkey-devel cscope cvs deja-dup dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts desktop-backgrounds-basic devhelp diffstat dos2unix doxygen dump empathy eog etckeeper ethtool evince-nautilus evolution-NetworkManager evolution-data-server-devel evolution-help expat-devel fedora-release-notes fetchmail file-roller-nautilus finger firefox firstboot flex fpaste fprintd-pam ftp gcalctool gcc-c++ gcc-gfortran gd-devel gdbm-devel gedit geoclue-devel giflib-devel gimp-data-extras gimp-help gimp-help-browser glade glx-utils gnome-backgrounds gnome-color-manager gnome-common gnome-contacts gnome-desktop3-devel gnome-devel-docs gnome-dictionary gnome-disk-utility gnome-documents gnome-games gnome-media gnome-packagekit gnome-panel gnome-power-manager gnome-screensaver gnome-screenshot gnome-search-tool gnome-shell gnome-system-log gnome-system-monitor gnome-terminal google-chrome-stable gpm-devel grub2 gstreamer-devel gtk2-devel-docs gtk2-immodule-xim gtk3-devel-docs gtk3-immodule-xim gucharmap gupnp-devel gvfs-archive gvfs-gphoto2 gvfs-smb gypsy-devel hesiod-devel ibus-anthy ibus-chewing ibus-hangul ibus-m17n ibus-pinyin ibus-qt ibus-rawcode ibus-typing-booster icedtea-web imsettings-qt indent intltool iptstate ipw2100-firmware ipw2200-firmware irda-utils irqbalance ivtv-firmware iwl100-firmware iwl1000-firmware iwl3945-firmware iwl4965-firmware iwl5000-firmware iwl5150-firmware iwl6000-firmware iwl6000g2a-firmware iwl6000g2b-firmware iwl6050-firmware jomolhari-fonts jwhois khmeros-base-fonts krb5-workstation lftp libXScrnSaver-devel libXaw-devel libXdmcp-devel libXevie-devel libXfont-devel libXres-devel libXtst-devel libXvMC-devel libXxf86dga-devel libXxf86misc-devel libacl-devel libcanberra-devel libcap-devel libdmx-devel liberation-mono-fonts liberation-sans-fonts liberation-serif-fonts libertas-usb8388-firmware libgda-devel libmng-devel libnotify-devel libproxy-mozjs libsane-hpaio libtiff-devel libuser-devel libvorbis-devel libxkbfile-devel lklug-fonts lockdev-devel lohit-assamese-fonts lohit-bengali-fonts lohit-devanagari-fonts lohit-gujarati-fonts lohit-kannada-fonts lohit-oriya-fonts lohit-punjabi-fonts lohit-tamil-fonts lohit-telugu-fonts lsof ltrace lvm2 m17n-contrib man-pages mcelog mesa-dri-drivers microcode_ctl mlocate mousetweaks mtr mutt nano nautilus-sendto nc netpbm-devel newt-devel nfs-utils nhn-nanum-gothic-fonts ntsysv numactl openldap-devel openssh-server openssl-devel oprofile-gui orca paktype-naqsh-fonts pam-devel pam_krb5 pam_pkcs11 paratype-pt-sans-fonts passwdqc patchutils pciutils-devel pcmciautils pcsc-lite-devel pinfo plymouth-system-theme policycoreutils-restorecond policycoreutils-sandbox prelink psacct pulseaudio-module-x11 python-devel python-ldap ql2100-firmware ql2200-firmware ql23xx-firmware ql2400-firmware ql2500-firmware quota rcs rdate rdist readline-devel redhat-rpm-config rhythmbox rng-tools rootfiles rpm-build rpm-devel rpmorphan rsh rt61pci-firmware rt73usb-firmware ruby-devel sane-backends-drivers-scanners seahorse selinux-policy-targeted setserial shotwell sil-abyssinica-fonts sil-padauk-fonts simple-scan slrn smartmontools smc-meera-fonts smolt-firstboot sos sound-juicer spice-vdagent sssd stix-fonts strace stunnel subversion sudo sushi swig symlinks sysprof system-config-date-docs system-config-firewall system-config-network-tui system-config-users-docs systemtap talk tcpdump telnet texinfo thai-scalable-waree-fonts tmux totem-mozplugin totem-nautilus traceroute transmission-gtk tree uboot-tools usbutils valgrind vconfig vim-enhanced vinagre vino vlgothic-fonts vym webkitgtk3-devel words wqy-zenhei-fonts xdg-user-dirs-gtk xmonad xorg-x11-docs xorg-x11-drv-ast xorg-x11-drv-ati xorg-x11-drv-cirrus xorg-x11-drv-dummy xorg-x11-drv-evdev xorg-x11-drv-fbdev xorg-x11-drv-intel xorg-x11-drv-mga xorg-x11-drv-nouveau xorg-x11-drv-openchrome xorg-x11-drv-qxl xorg-x11-drv-synaptics xorg-x11-drv-vesa xorg-x11-drv-vmmouse xorg-x11-drv-vmware xorg-x11-drv-void xorg-x11-drv-wacom xorg-x11-utils xorg-x11-xtrans-devel xrestop xsane-gimp yum-langpacks yum-plugin-show-leaves yum-presto yum-utils zd1211-firmware system-config-firewall-base dhclient kernel grub2 --nevra --archlist=x86_64,noarch'
+D, [2012-08-19T13:20:36.075668 #6270] DEBUG -- : NetworkManager-gnome-1:0.9.4.0-9.git20120521.fc17.x86_64
+D, [2012-08-19T13:20:36.075873 #6270] DEBUG -- : NetworkManager-openconnect-0:0.9.4.0-7.git20120612.fc17.x86_64
+D, [2012-08-19T13:20:36.075955 #6270] DEBUG -- : NetworkManager-openvpn-1:0.9.3.997-1.fc17.x86_64
+D, [2012-08-19T13:20:36.076027 #6270] DEBUG -- : NetworkManager-pptp-1:0.9.3.997-1.fc17.x86_64
+D, [2012-08-19T13:20:36.076097 #6270] DEBUG -- : NetworkManager-vpnc-1:0.9.3.997-1.fc17.x86_64
+D, [2012-08-19T13:20:36.076166 #6270] DEBUG -- : PackageKit-command-not-found-0:0.7.5-1.fc17.x86_64
+D, [2012-08-19T13:20:36.076234 #6270] DEBUG -- : PackageKit-gstreamer-plugin-0:0.7.5-1.fc17.x86_64
+D, [2012-08-19T13:20:36.076307 #6270] DEBUG -- : PackageKit-gtk3-module-0:0.7.5-1.fc17.x86_64
+D, [2012-08-19T13:20:36.076375 #6270] DEBUG -- : PackageKit-yum-plugin-0:0.7.5-1.fc17.x86_64
+D, [2012-08-19T13:20:36.076439 #6270] DEBUG -- : SDL-devel-0:1.2.14-16.fc17.x86_64
+D, [2012-08-19T13:20:36.076503 #6270] DEBUG -- : Xaw3d-devel-0:1.5E-21.fc17.x86_64
+D, [2012-08-19T13:20:36.076566 #6270] DEBUG -- : abrt-desktop-0:2.0.10-4.fc17.x86_64
+D, [2012-08-19T13:20:36.076644 #6270] DEBUG -- : acpid-0:2.0.16-4.fc17.x86_64
+D, [2012-08-19T13:20:36.076734 #6270] DEBUG -- : aic94xx-firmware-0:30-3.fc17.noarch
+D, [2012-08-19T13:20:36.076818 #6270] DEBUG -- : aisleriot-1:3.2.3.2-2.fc17.x86_64
+D, [2012-08-19T13:20:36.076883 #6270] DEBUG -- : alsa-plugins-pulseaudio-0:1.0.25-3.fc17.x86_64
+D, [2012-08-19T13:20:36.076948 #6270] DEBUG -- : ar9170-firmware-0:2009.05.28-4.fc17.noarch
+D, [2012-08-19T13:20:36.077012 #6270] DEBUG -- : at-spi2-core-devel-0:2.4.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.077086 #6270] DEBUG -- : atmel-firmware-0:1.3-9.fc17.noarch
+D, [2012-08-19T13:20:36.077153 #6270] DEBUG -- : attr-0:2.4.46-5.fc17.x86_64
+D, [2012-08-19T13:20:36.077226 #6270] DEBUG -- : audit-0:2.2.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.077291 #6270] DEBUG -- : automake14-0:1.4p6-22.fc17.noarch
+D, [2012-08-19T13:20:36.077373 #6270] DEBUG -- : automake17-0:1.7.9-15.fc17.1.noarch
+D, [2012-08-19T13:20:36.077438 #6270] DEBUG -- : b43-fwcutter-0:015-2.fc17.x86_64
+D, [2012-08-19T13:20:36.077499 #6270] DEBUG -- : b43-openfwwf-0:5.2-7.fc17.noarch
+D, [2012-08-19T13:20:36.077568 #6270] DEBUG -- : baobab-0:3.4.1-2.fc17.x86_64
+D, [2012-08-19T13:20:36.077643 #6270] DEBUG -- : bash-completion-1:2.0-1.fc17.noarch
+D, [2012-08-19T13:20:36.077706 #6270] DEBUG -- : bind-utils-32:9.9.1-5.P2.fc17.x86_64
+D, [2012-08-19T13:20:36.077767 #6270] DEBUG -- : binutils-devel-0:2.22.52.0.1-10.fc17.x86_64
+D, [2012-08-19T13:20:36.077830 #6270] DEBUG -- : biosdevname-0:0.4.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.077893 #6270] DEBUG -- : bison-0:2.5-3.fc17.x86_64
+D, [2012-08-19T13:20:36.077957 #6270] DEBUG -- : boost-devel-0:1.48.0-13.fc17.x86_64
+D, [2012-08-19T13:20:36.078033 #6270] DEBUG -- : brasero-nautilus-0:3.4.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.078096 #6270] DEBUG -- : bridge-utils-0:1.5-3.fc17.x86_64
+D, [2012-08-19T13:20:36.078157 #6270] DEBUG -- : btrfs-progs-0:0.19-18.fc17.x86_64
+D, [2012-08-19T13:20:36.078219 #6270] DEBUG -- : byacc-0:1.9.20111219-1.fc17.x86_64
+D, [2012-08-19T13:20:36.078281 #6270] DEBUG -- : bzip2-devel-0:1.0.6-4.fc17.x86_64
+D, [2012-08-19T13:20:36.078344 #6270] DEBUG -- : cadaver-0:0.23.3-3.fc17.x86_64
+D, [2012-08-19T13:20:36.078413 #6270] DEBUG -- : ccache-0:3.1.7-1.fc17.x86_64
+D, [2012-08-19T13:20:36.078475 #6270] DEBUG -- : cheese-2:3.4.2-3.fc17.x86_64
+D, [2012-08-19T13:20:36.078537 #6270] DEBUG -- : chrony-0:1.27-0.3.pre1.fc17.x86_64
+D, [2012-08-19T13:20:36.078621 #6270] DEBUG -- : cifs-utils-0:5.6-1.fc17.x86_64
+D, [2012-08-19T13:20:36.078701 #6270] DEBUG -- : cjkuni-uming-fonts-0:0.2.20080216.1-49.fc17.noarch
+D, [2012-08-19T13:20:36.078775 #6270] DEBUG -- : clutter-gtk-devel-0:1.2.0-1.fc17.x86_64
+D, [2012-08-19T13:20:36.078852 #6270] DEBUG -- : coolkey-devel-0:1.1.0-20.fc17.x86_64
+D, [2012-08-19T13:20:36.078916 #6270] DEBUG -- : cscope-0:15.8-2.fc17.x86_64
+D, [2012-08-19T13:20:36.078978 #6270] DEBUG -- : cvs-0:1.11.23-25.fc17.x86_64
+D, [2012-08-19T13:20:36.079041 #6270] DEBUG -- : deja-dup-0:20.2-2.fc17.x86_64
+D, [2012-08-19T13:20:36.079109 #6270] DEBUG -- : dejavu-sans-fonts-0:2.33-3.fc17.noarch
+D, [2012-08-19T13:20:36.079174 #6270] DEBUG -- : dejavu-sans-mono-fonts-0:2.33-3.fc17.noarch
+D, [2012-08-19T13:20:36.079237 #6270] DEBUG -- : dejavu-serif-fonts-0:2.33-3.fc17.noarch
+D, [2012-08-19T13:20:36.079298 #6270] DEBUG -- : desktop-backgrounds-basic-0:17.0.0-1.fc17.noarch
+D, [2012-08-19T13:20:36.079367 #6270] DEBUG -- : devhelp-1:3.4.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.079432 #6270] DEBUG -- : dhclient-12:4.2.4-9.P1.fc17.x86_64
+D, [2012-08-19T13:20:36.079495 #6270] DEBUG -- : diffstat-0:1.55-1.fc17.x86_64
+D, [2012-08-19T13:20:36.079566 #6270] DEBUG -- : dos2unix-0:5.3.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.079654 #6270] DEBUG -- : doxygen-1:1.8.1.1-3.fc17.x86_64
+D, [2012-08-19T13:20:36.079722 #6270] DEBUG -- : dump-1:0.4-0.12.b44.fc17.x86_64
+D, [2012-08-19T13:20:36.079786 #6270] DEBUG -- : empathy-0:3.4.2.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.079851 #6270] DEBUG -- : eog-0:3.4.3-2.fc17.x86_64
+D, [2012-08-19T13:20:36.079915 #6270] DEBUG -- : etckeeper-0:0.63-1.fc17.noarch
+D, [2012-08-19T13:20:36.079985 #6270] DEBUG -- : ethtool-2:3.2-2.fc17.x86_64
+D, [2012-08-19T13:20:36.080048 #6270] DEBUG -- : evince-nautilus-0:3.4.0-2.fc17.x86_64
+D, [2012-08-19T13:20:36.080110 #6270] DEBUG -- : evolution-NetworkManager-0:3.4.3-2.fc17.x86_64
+D, [2012-08-19T13:20:36.080175 #6270] DEBUG -- : evolution-data-server-devel-0:3.4.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.080240 #6270] DEBUG -- : evolution-help-0:3.4.3-2.fc17.noarch
+D, [2012-08-19T13:20:36.080301 #6270] DEBUG -- : expat-devel-0:2.1.0-1.fc17.x86_64
+D, [2012-08-19T13:20:36.080375 #6270] DEBUG -- : fedora-release-notes-0:17.1.0-1.fc17.noarch
+D, [2012-08-19T13:20:36.080437 #6270] DEBUG -- : fetchmail-0:6.3.21-2.fc17.x86_64
+D, [2012-08-19T13:20:36.080498 #6270] DEBUG -- : file-roller-nautilus-0:3.4.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.080561 #6270] DEBUG -- : finger-0:0.17-44.fc17.x86_64
+D, [2012-08-19T13:20:36.080648 #6270] DEBUG -- : firefox-0:14.0.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.080714 #6270] DEBUG -- : firstboot-0:17.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.080777 #6270] DEBUG -- : flex-0:2.5.35-14.fc17.x86_64
+D, [2012-08-19T13:20:36.080847 #6270] DEBUG -- : fpaste-0:0.3.7.1-2.fc17.noarch
+D, [2012-08-19T13:20:36.080911 #6270] DEBUG -- : fprintd-pam-0:0.4.1-2.fc17.x86_64
+D, [2012-08-19T13:20:36.080975 #6270] DEBUG -- : ftp-0:0.17-55.fc17.x86_64
+D, [2012-08-19T13:20:36.081039 #6270] DEBUG -- : gcalctool-0:6.4.2.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.081104 #6270] DEBUG -- : gcc-c++-0:4.7.0-5.fc17.x86_64
+D, [2012-08-19T13:20:36.081167 #6270] DEBUG -- : gcc-gfortran-0:4.7.0-5.fc17.x86_64
+D, [2012-08-19T13:20:36.081235 #6270] DEBUG -- : gd-devel-0:2.0.35-17.fc17.x86_64
+D, [2012-08-19T13:20:36.081298 #6270] DEBUG -- : gdbm-devel-0:1.10-2.fc17.x86_64
+D, [2012-08-19T13:20:36.081360 #6270] DEBUG -- : gedit-2:3.4.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.081422 #6270] DEBUG -- : geoclue-devel-0:0.12.0-10.fc17.x86_64
+D, [2012-08-19T13:20:36.081484 #6270] DEBUG -- : giflib-devel-0:4.1.6-5.fc17.x86_64
+D, [2012-08-19T13:20:36.081547 #6270] DEBUG -- : gimp-data-extras-0:2.0.2-5.fc17.noarch
+D, [2012-08-19T13:20:36.081633 #6270] DEBUG -- : gimp-help-0:2.8.0-2.fc17.noarch
+D, [2012-08-19T13:20:36.081710 #6270] DEBUG -- : gimp-help-browser-2:2.8.0-1.fc17.x86_64
+D, [2012-08-19T13:20:36.081780 #6270] DEBUG -- : glade-0:3.12.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.081843 #6270] DEBUG -- : glx-utils-0:7.10-6.20101028.fc17.x86_64
+D, [2012-08-19T13:20:36.081906 #6270] DEBUG -- : gnome-backgrounds-0:3.4.2-1.fc17.noarch
+D, [2012-08-19T13:20:36.081969 #6270] DEBUG -- : gnome-color-manager-0:3.4.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.082032 #6270] DEBUG -- : gnome-common-0:3.4.0.1-1.fc17.noarch
+D, [2012-08-19T13:20:36.082096 #6270] DEBUG -- : gnome-contacts-0:3.4.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.082166 #6270] DEBUG -- : gnome-desktop3-devel-0:3.4.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.082234 #6270] DEBUG -- : gnome-devel-docs-0:3.4.1-2.fc17.noarch
+D, [2012-08-19T13:20:36.082297 #6270] DEBUG -- : gnome-dictionary-0:3.4.0-2.fc17.x86_64
+D, [2012-08-19T13:20:36.082361 #6270] DEBUG -- : gnome-disk-utility-0:3.4.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.082425 #6270] DEBUG -- : gnome-documents-0:0.4.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.082488 #6270] DEBUG -- : gnome-games-1:3.4.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.082555 #6270] DEBUG -- : gnome-media-0:3.4.0-1.fc17.x86_64
+D, [2012-08-19T13:20:36.082628 #6270] DEBUG -- : gnome-packagekit-0:3.4.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.082691 #6270] DEBUG -- : gnome-panel-0:3.4.2.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.082753 #6270] DEBUG -- : gnome-power-manager-0:3.4.0-1.fc17.x86_64
+D, [2012-08-19T13:20:36.082816 #6270] DEBUG -- : gnome-screensaver-0:3.4.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.082879 #6270] DEBUG -- : gnome-screenshot-0:3.4.1-2.fc17.x86_64
+D, [2012-08-19T13:20:36.082950 #6270] DEBUG -- : gnome-search-tool-0:3.4.0-1.fc17.x86_64
+D, [2012-08-19T13:20:36.083018 #6270] DEBUG -- : gnome-shell-0:3.4.1-5.fc17.x86_64
+D, [2012-08-19T13:20:36.083080 #6270] DEBUG -- : gnome-system-log-1:3.4.1-2.fc17.x86_64
+D, [2012-08-19T13:20:36.083142 #6270] DEBUG -- : gnome-system-monitor-0:3.4.1-2.fc17.x86_64
+D, [2012-08-19T13:20:36.083203 #6270] DEBUG -- : gnome-terminal-0:3.4.1.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.083272 #6270] DEBUG -- : google-chrome-stable-0:21.0.1180.79-151411.x86_64
+D, [2012-08-19T13:20:36.083335 #6270] DEBUG -- : gpm-devel-0:1.20.6-22.fc17.x86_64
+D, [2012-08-19T13:20:36.083405 #6270] DEBUG -- : grub2-1:2.0-0.37.beta6.fc17.x86_64
+D, [2012-08-19T13:20:36.083469 #6270] DEBUG -- : gstreamer-devel-0:0.10.36-1.fc17.x86_64
+D, [2012-08-19T13:20:36.083530 #6270] DEBUG -- : gtk2-devel-docs-0:2.24.11-1.fc17.x86_64
+D, [2012-08-19T13:20:36.083599 #6270] DEBUG -- : gtk2-immodule-xim-0:2.24.11-1.fc17.x86_64
+D, [2012-08-19T13:20:36.083664 #6270] DEBUG -- : gtk3-devel-docs-0:3.4.4-1.fc17.x86_64
+D, [2012-08-19T13:20:36.083761 #6270] DEBUG -- : gtk3-immodule-xim-0:3.4.4-1.fc17.x86_64
+D, [2012-08-19T13:20:36.083833 #6270] DEBUG -- : gucharmap-0:3.4.1.1-2.fc17.x86_64
+D, [2012-08-19T13:20:36.083896 #6270] DEBUG -- : gupnp-devel-0:0.18.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.083959 #6270] DEBUG -- : gvfs-archive-0:1.12.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.084020 #6270] DEBUG -- : gvfs-gphoto2-0:1.12.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.084082 #6270] DEBUG -- : gvfs-smb-0:1.12.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.084143 #6270] DEBUG -- : gypsy-devel-0:0.8-6.fc17.x86_64
+D, [2012-08-19T13:20:36.084204 #6270] DEBUG -- : hesiod-devel-0:3.1.0-21.fc17.x86_64
+D, [2012-08-19T13:20:36.084273 #6270] DEBUG -- : ibus-anthy-0:1.4.99.20120327-1.fc17.x86_64
+D, [2012-08-19T13:20:36.084334 #6270] DEBUG -- : ibus-chewing-0:1.4.0-1.fc17.x86_64
+D, [2012-08-19T13:20:36.084395 #6270] DEBUG -- : ibus-hangul-0:1.4.1-4.fc17.x86_64
+D, [2012-08-19T13:20:36.084457 #6270] DEBUG -- : ibus-m17n-0:1.3.4-3.fc17.x86_64
+D, [2012-08-19T13:20:36.084519 #6270] DEBUG -- : ibus-pinyin-0:1.4.99.20120620-2.fc17.x86_64
+D, [2012-08-19T13:20:36.084581 #6270] DEBUG -- : ibus-qt-0:1.3.1-8.fc17.x86_64
+D, [2012-08-19T13:20:36.084660 #6270] DEBUG -- : ibus-rawcode-0:1.3.1.20100707-7.fc17.x86_64
+D, [2012-08-19T13:20:36.084722 #6270] DEBUG -- : ibus-typing-booster-0:0.0.7-1.fc17.noarch
+D, [2012-08-19T13:20:36.084783 #6270] DEBUG -- : icedtea-web-0:1.2-2.fc17.x86_64
+D, [2012-08-19T13:20:36.084845 #6270] DEBUG -- : imsettings-qt-0:1.2.9-1.fc17.x86_64
+D, [2012-08-19T13:20:36.084906 #6270] DEBUG -- : indent-0:2.2.11-6.fc17.x86_64
+D, [2012-08-19T13:20:36.084967 #6270] DEBUG -- : intltool-0:0.50.2-1.fc17.noarch
+D, [2012-08-19T13:20:36.085045 #6270] DEBUG -- : iptstate-0:2.2.2-7.fc17.x86_64
+D, [2012-08-19T13:20:36.085110 #6270] DEBUG -- : ipw2100-firmware-0:1.3-13.fc17.noarch
+D, [2012-08-19T13:20:36.085175 #6270] DEBUG -- : ipw2200-firmware-0:3.1-6.fc17.noarch
+D, [2012-08-19T13:20:36.085238 #6270] DEBUG -- : irda-utils-0:0.9.18-14.fc17.x86_64
+D, [2012-08-19T13:20:36.085302 #6270] DEBUG -- : irqbalance-2:1.0.3-4.fc17.x86_64
+D, [2012-08-19T13:20:36.085366 #6270] DEBUG -- : ivtv-firmware-2:20080701-22.noarch
+D, [2012-08-19T13:20:36.085429 #6270] DEBUG -- : iwl100-firmware-0:39.31.5.1-9.fc17.noarch
+D, [2012-08-19T13:20:36.085501 #6270] DEBUG -- : iwl1000-firmware-1:39.31.5.1-2.fc17.noarch
+D, [2012-08-19T13:20:36.085565 #6270] DEBUG -- : iwl3945-firmware-0:15.32.2.9-9.fc17.noarch
+D, [2012-08-19T13:20:36.085643 #6270] DEBUG -- : iwl4965-firmware-0:228.61.2.24-9.fc17.noarch
+D, [2012-08-19T13:20:36.085708 #6270] DEBUG -- : iwl5000-firmware-0:8.83.5.1_1-9.fc17.noarch
+D, [2012-08-19T13:20:36.085771 #6270] DEBUG -- : iwl5150-firmware-0:8.24.2.2-9.fc17.noarch
+D, [2012-08-19T13:20:36.085836 #6270] DEBUG -- : iwl6000-firmware-0:9.221.4.1-9.fc17.noarch
+D, [2012-08-19T13:20:36.085912 #6270] DEBUG -- : iwl6000g2a-firmware-0:17.168.5.3-9.fc17.noarch
+D, [2012-08-19T13:20:36.085977 #6270] DEBUG -- : iwl6000g2b-firmware-0:17.168.5.2-9.fc17.noarch
+D, [2012-08-19T13:20:36.086040 #6270] DEBUG -- : iwl6050-firmware-0:41.28.5.1-9.fc17.noarch
+D, [2012-08-19T13:20:36.086104 #6270] DEBUG -- : jomolhari-fonts-0:0.003-11.fc17.noarch
+D, [2012-08-19T13:20:36.086179 #6270] DEBUG -- : jwhois-0:4.0-29.fc17.x86_64
+D, [2012-08-19T13:20:36.086248 #6270] DEBUG -- : kernel-0:3.5.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.086319 #6270] DEBUG -- : khmeros-base-fonts-0:5.0-12.fc17.noarch
+D, [2012-08-19T13:20:36.086383 #6270] DEBUG -- : krb5-workstation-0:1.10.2-6.fc17.x86_64
+D, [2012-08-19T13:20:36.086446 #6270] DEBUG -- : lftp-0:4.3.8-1.fc17.x86_64
+D, [2012-08-19T13:20:36.086508 #6270] DEBUG -- : libXScrnSaver-devel-0:1.2.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.086571 #6270] DEBUG -- : libXaw-devel-0:1.0.9-3.fc17.x86_64
+D, [2012-08-19T13:20:36.086647 #6270] DEBUG -- : libXdmcp-devel-0:1.1.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.086711 #6270] DEBUG -- : libXevie-devel-0:1.0.3-3.fc17.x86_64
+D, [2012-08-19T13:20:36.086781 #6270] DEBUG -- : libXfont-devel-0:1.4.5-1.fc17.x86_64
+D, [2012-08-19T13:20:36.086845 #6270] DEBUG -- : libXres-devel-0:1.0.6-1.fc17.x86_64
+D, [2012-08-19T13:20:36.086917 #6270] DEBUG -- : libXtst-devel-0:1.2.0-3.fc17.x86_64
+D, [2012-08-19T13:20:36.086980 #6270] DEBUG -- : libXvMC-devel-0:1.0.7-1.fc17.x86_64
+D, [2012-08-19T13:20:36.087041 #6270] DEBUG -- : libXxf86dga-devel-0:1.1.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.087103 #6270] DEBUG -- : libXxf86misc-devel-0:1.0.3-3.fc17.x86_64
+D, [2012-08-19T13:20:36.087172 #6270] DEBUG -- : libacl-devel-0:2.2.51-5.fc17.x86_64
+D, [2012-08-19T13:20:36.087234 #6270] DEBUG -- : libcanberra-devel-0:0.28-6.fc17.x86_64
+D, [2012-08-19T13:20:36.087325 #6270] DEBUG -- : libcap-devel-0:2.22-2.fc17.x86_64
+D, [2012-08-19T13:20:36.087394 #6270] DEBUG -- : libdmx-devel-0:1.1.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.087460 #6270] DEBUG -- : liberation-mono-fonts-0:1.07.2-6.fc17.noarch
+D, [2012-08-19T13:20:36.087525 #6270] DEBUG -- : liberation-sans-fonts-0:1.07.2-6.fc17.noarch
+D, [2012-08-19T13:20:36.087599 #6270] DEBUG -- : liberation-serif-fonts-0:1.07.2-6.fc17.noarch
+D, [2012-08-19T13:20:36.087667 #6270] DEBUG -- : libertas-usb8388-firmware-2:5.110.22.p23-6.fc17.noarch
+D, [2012-08-19T13:20:36.087732 #6270] DEBUG -- : libgda-devel-1:4.2.12-2.fc17.1.x86_64
+D, [2012-08-19T13:20:36.087803 #6270] DEBUG -- : libmng-devel-0:1.0.10-6.fc17.x86_64
+D, [2012-08-19T13:20:36.087869 #6270] DEBUG -- : libnotify-devel-0:0.7.5-1.fc17.x86_64
+D, [2012-08-19T13:20:36.087932 #6270] DEBUG -- : libproxy-mozjs-0:0.4.7-4.fc17.x86_64
+D, [2012-08-19T13:20:36.087996 #6270] DEBUG -- : libsane-hpaio-0:3.12.6-1.fc17.x86_64
+D, [2012-08-19T13:20:36.088061 #6270] DEBUG -- : libtiff-devel-0:3.9.6-2.fc17.x86_64
+D, [2012-08-19T13:20:36.088124 #6270] DEBUG -- : libuser-devel-0:0.57.6-1.fc17.x86_64
+D, [2012-08-19T13:20:36.088200 #6270] DEBUG -- : libvorbis-devel-1:1.3.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.088272 #6270] DEBUG -- : libxkbfile-devel-0:1.0.8-1.fc17.x86_64
+D, [2012-08-19T13:20:36.088335 #6270] DEBUG -- : lklug-fonts-0:0.6-6.20090803cvs.fc17.noarch
+D, [2012-08-19T13:20:36.088398 #6270] DEBUG -- : lockdev-devel-0:1.0.4-0.4.20111007git.fc17.x86_64
+D, [2012-08-19T13:20:36.088462 #6270] DEBUG -- : lohit-assamese-fonts-0:2.5.1-2.fc17.noarch
+D, [2012-08-19T13:20:36.088525 #6270] DEBUG -- : lohit-bengali-fonts-0:2.5.1-1.fc17.noarch
+D, [2012-08-19T13:20:36.088588 #6270] DEBUG -- : lohit-devanagari-fonts-0:2.5.1-3.fc17.noarch
+D, [2012-08-19T13:20:36.088666 #6270] DEBUG -- : lohit-gujarati-fonts-0:2.5.1-2.fc17.noarch
+D, [2012-08-19T13:20:36.088695 #6270] DEBUG -- : lohit-kannada-fonts-0:2.5.1-1.fc17.noarch
+D, [2012-08-19T13:20:36.088726 #6270] DEBUG -- : lohit-oriya-fonts-0:2.5.1-1.fc17.noarch
+D, [2012-08-19T13:20:36.088754 #6270] DEBUG -- : lohit-punjabi-fonts-0:2.5.1-2.fc17.noarch
+D, [2012-08-19T13:20:36.088783 #6270] DEBUG -- : lohit-tamil-fonts-0:2.5.1-2.fc17.noarch
+D, [2012-08-19T13:20:36.088812 #6270] DEBUG -- : lohit-telugu-fonts-0:2.5.1-2.fc17.noarch
+D, [2012-08-19T13:20:36.088849 #6270] DEBUG -- : lsof-0:4.85-2.fc17.x86_64
+D, [2012-08-19T13:20:36.088879 #6270] DEBUG -- : ltrace-0:0.6.0-12.fc17.x86_64
+D, [2012-08-19T13:20:36.088908 #6270] DEBUG -- : lvm2-0:2.02.95-6.fc17.x86_64
+D, [2012-08-19T13:20:36.088937 #6270] DEBUG -- : m17n-contrib-0:1.1.13-5.fc17.noarch
+D, [2012-08-19T13:20:36.088967 #6270] DEBUG -- : man-pages-0:3.35-2.fc17.noarch
+D, [2012-08-19T13:20:36.088996 #6270] DEBUG -- : mcelog-2:1.0-0.4.6e4e2a00.fc17.x86_64
+D, [2012-08-19T13:20:36.089032 #6270] DEBUG -- : mesa-dri-drivers-0:8.0.3-3.fc17.x86_64
+D, [2012-08-19T13:20:36.089062 #6270] DEBUG -- : microcode_ctl-1:1.17-25.fc17.x86_64
+D, [2012-08-19T13:20:36.089091 #6270] DEBUG -- : mlocate-0:0.25-1.fc17.x86_64
+D, [2012-08-19T13:20:36.089121 #6270] DEBUG -- : mousetweaks-0:3.4.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.089150 #6270] DEBUG -- : mtr-2:0.82-2.fc17.x86_64
+D, [2012-08-19T13:20:36.089179 #6270] DEBUG -- : mutt-5:1.5.21-12.fc17.x86_64
+D, [2012-08-19T13:20:36.089207 #6270] DEBUG -- : nano-0:2.3.1-3.fc17.x86_64
+D, [2012-08-19T13:20:36.089244 #6270] DEBUG -- : nautilus-sendto-1:3.0.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.089274 #6270] DEBUG -- : nc-0:1.109.20120711-1.fc17.x86_64
+D, [2012-08-19T13:20:36.089307 #6270] DEBUG -- : netpbm-devel-0:10.58.03-1.fc17.x86_64
+D, [2012-08-19T13:20:36.089335 #6270] DEBUG -- : newt-devel-0:0.52.14-2.fc17.x86_64
+D, [2012-08-19T13:20:36.089363 #6270] DEBUG -- : nfs-utils-1:1.2.6-3.fc17.x86_64
+D, [2012-08-19T13:20:36.089391 #6270] DEBUG -- : nhn-nanum-gothic-fonts-0:3.020-1.fc17.noarch
+D, [2012-08-19T13:20:36.089427 #6270] DEBUG -- : ntsysv-0:1.3.59-1.fc17.x86_64
+D, [2012-08-19T13:20:36.089456 #6270] DEBUG -- : numactl-0:2.0.7-6.fc17.x86_64
+D, [2012-08-19T13:20:36.089484 #6270] DEBUG -- : openldap-devel-0:2.4.31-7.fc17.x86_64
+D, [2012-08-19T13:20:36.089515 #6270] DEBUG -- : openssh-server-0:5.9p1-22.fc17.x86_64
+D, [2012-08-19T13:20:36.089543 #6270] DEBUG -- : openssl-devel-1:1.0.0j-2.fc17.x86_64
+D, [2012-08-19T13:20:36.089572 #6270] DEBUG -- : oprofile-gui-0:0.9.7-2.fc17.x86_64
+D, [2012-08-19T13:20:36.089611 #6270] DEBUG -- : orca-0:3.4.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.089643 #6270] DEBUG -- : paktype-naqsh-fonts-0:3.0-6.fc17.noarch
+D, [2012-08-19T13:20:36.089672 #6270] DEBUG -- : pam-devel-0:1.1.5-7.fc17.x86_64
+D, [2012-08-19T13:20:36.089700 #6270] DEBUG -- : pam_krb5-0:2.3.14-1.fc17.x86_64
+D, [2012-08-19T13:20:36.089728 #6270] DEBUG -- : pam_pkcs11-0:0.6.2-8.fc17.x86_64
+D, [2012-08-19T13:20:36.089756 #6270] DEBUG -- : paratype-pt-sans-fonts-0:20100408-3.fc17.noarch
+D, [2012-08-19T13:20:36.089785 #6270] DEBUG -- : passwdqc-0:1.2.2-3.fc17.x86_64
+D, [2012-08-19T13:20:36.089824 #6270] DEBUG -- : patchutils-0:0.3.2-2.fc17.x86_64
+D, [2012-08-19T13:20:36.089853 #6270] DEBUG -- : pciutils-devel-0:3.1.9-1.fc17.x86_64
+D, [2012-08-19T13:20:36.089881 #6270] DEBUG -- : pcmciautils-0:018-2.fc17.x86_64
+D, [2012-08-19T13:20:36.089909 #6270] DEBUG -- : pcsc-lite-devel-0:1.8.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.089938 #6270] DEBUG -- : pinfo-0:0.6.10-4.fc17.x86_64
+D, [2012-08-19T13:20:36.089965 #6270] DEBUG -- : plymouth-system-theme-0:0.8.5-0.2012.04.27.2.fc17.x86_64
+D, [2012-08-19T13:20:36.090001 #6270] DEBUG -- : policycoreutils-restorecond-0:2.1.11-18.fc17.x86_64
+D, [2012-08-19T13:20:36.090031 #6270] DEBUG -- : policycoreutils-sandbox-0:2.1.11-18.fc17.x86_64
+D, [2012-08-19T13:20:36.090059 #6270] DEBUG -- : prelink-0:0.4.6-5.fc17.x86_64
+D, [2012-08-19T13:20:36.090087 #6270] DEBUG -- : psacct-0:6.5.5-5.fc17.x86_64
+D, [2012-08-19T13:20:36.090115 #6270] DEBUG -- : pulseaudio-module-x11-0:1.1-9.fc17.x86_64
+D, [2012-08-19T13:20:36.090144 #6270] DEBUG -- : python-devel-0:2.7.3-7.2.fc17.x86_64
+D, [2012-08-19T13:20:36.090179 #6270] DEBUG -- : python-ldap-0:2.4.6-2.fc17.x86_64
+D, [2012-08-19T13:20:36.090210 #6270] DEBUG -- : ql2100-firmware-0:1.19.38-5.fc17.noarch
+D, [2012-08-19T13:20:36.090238 #6270] DEBUG -- : ql2200-firmware-0:2.02.08-5.fc17.noarch
+D, [2012-08-19T13:20:36.090267 #6270] DEBUG -- : ql23xx-firmware-0:3.03.28-3.fc17.noarch
+D, [2012-08-19T13:20:36.090295 #6270] DEBUG -- : ql2400-firmware-0:5.06.05-1.fc17.noarch
+D, [2012-08-19T13:20:36.090323 #6270] DEBUG -- : ql2500-firmware-0:5.06.05-1.fc17.noarch
+D, [2012-08-19T13:20:36.090351 #6270] DEBUG -- : quota-1:4.00-4.fc17.x86_64
+D, [2012-08-19T13:20:36.090388 #6270] DEBUG -- : rcs-0:5.8.1-2.fc17.x86_64
+D, [2012-08-19T13:20:36.090417 #6270] DEBUG -- : rdate-0:1.4-19.fc17.x86_64
+D, [2012-08-19T13:20:36.090446 #6270] DEBUG -- : rdist-1:6.1.5-53.fc17.x86_64
+D, [2012-08-19T13:20:36.090475 #6270] DEBUG -- : readline-devel-0:6.2-4.fc17.x86_64
+D, [2012-08-19T13:20:36.090504 #6270] DEBUG -- : redhat-rpm-config-0:9.1.0-28.fc17.noarch
+D, [2012-08-19T13:20:36.090533 #6270] DEBUG -- : rhythmbox-0:2.97-1.fc17.x86_64
+D, [2012-08-19T13:20:36.090570 #6270] DEBUG -- : rng-tools-0:3-4.fc17.x86_64
+D, [2012-08-19T13:20:36.090605 #6270] DEBUG -- : rootfiles-0:8.1-8.fc17.noarch
+D, [2012-08-19T13:20:36.090634 #6270] DEBUG -- : rpm-build-0:4.9.1.3-7.fc17.x86_64
+D, [2012-08-19T13:20:36.090662 #6270] DEBUG -- : rpm-devel-0:4.9.1.3-7.fc17.x86_64
+D, [2012-08-19T13:20:36.090690 #6270] DEBUG -- : rpmorphan-0:1.10-2.fc17.noarch
+D, [2012-08-19T13:20:36.090718 #6270] DEBUG -- : rsh-0:0.17-68.fc17.x86_64
+D, [2012-08-19T13:20:36.090753 #6270] DEBUG -- : rt61pci-firmware-0:1.2-9.fc17.noarch
+D, [2012-08-19T13:20:36.090790 #6270] DEBUG -- : rt73usb-firmware-0:1.8-9.fc17.noarch
+D, [2012-08-19T13:20:36.090818 #6270] DEBUG -- : ruby-devel-0:1.9.3.194-14.fc17.x86_64
+D, [2012-08-19T13:20:36.090846 #6270] DEBUG -- : sane-backends-drivers-scanners-0:1.0.22-11.fc17.x86_64
+D, [2012-08-19T13:20:36.090874 #6270] DEBUG -- : seahorse-0:3.4.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.090903 #6270] DEBUG -- : selinux-policy-targeted-0:3.10.0-145.fc17.noarch
+D, [2012-08-19T13:20:36.090931 #6270] DEBUG -- : setserial-0:2.17-28.fc17.x86_64
+D, [2012-08-19T13:20:36.090968 #6270] DEBUG -- : shotwell-0:0.12.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.090996 #6270] DEBUG -- : sil-abyssinica-fonts-0:1.200-2.fc17.noarch
+D, [2012-08-19T13:20:36.091024 #6270] DEBUG -- : sil-padauk-fonts-0:2.4-8.fc17.noarch
+D, [2012-08-19T13:20:36.091052 #6270] DEBUG -- : simple-scan-0:3.4.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.091080 #6270] DEBUG -- : slrn-0:0.9.9p1-5.fc17.x86_64
+D, [2012-08-19T13:20:36.091107 #6270] DEBUG -- : smartmontools-1:5.43-1.fc17.x86_64
+D, [2012-08-19T13:20:36.091143 #6270] DEBUG -- : smc-meera-fonts-0:5.0.1-2.fc17.noarch
+D, [2012-08-19T13:20:36.091172 #6270] DEBUG -- : smolt-firstboot-0:1.4.3-6.fc17.noarch
+D, [2012-08-19T13:20:36.091200 #6270] DEBUG -- : sos-0:2.2-3.fc17.noarch
+D, [2012-08-19T13:20:36.091227 #6270] DEBUG -- : sound-juicer-0:3.4.0-1.fc17.x86_64
+D, [2012-08-19T13:20:36.091255 #6270] DEBUG -- : spice-vdagent-0:0.10.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.091284 #6270] DEBUG -- : sssd-0:1.8.4-14.fc17.x86_64
+D, [2012-08-19T13:20:36.091319 #6270] DEBUG -- : stix-fonts-0:1.0.0-3.fc17.noarch
+D, [2012-08-19T13:20:36.091349 #6270] DEBUG -- : strace-0:4.7-1.fc17.x86_64
+D, [2012-08-19T13:20:36.091377 #6270] DEBUG -- : stunnel-0:4.50-2.fc17.x86_64
+D, [2012-08-19T13:20:36.091406 #6270] DEBUG -- : subversion-0:1.7.5-1.fc17.x86_64
+D, [2012-08-19T13:20:36.091433 #6270] DEBUG -- : sudo-0:1.8.3p1-7.fc17.x86_64
+D, [2012-08-19T13:20:36.091462 #6270] DEBUG -- : sushi-0:0.4.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.091490 #6270] DEBUG -- : swig-0:2.0.7-3.fc17.x86_64
+D, [2012-08-19T13:20:36.091527 #6270] DEBUG -- : symlinks-0:1.4-5.fc17.x86_64
+D, [2012-08-19T13:20:36.091557 #6270] DEBUG -- : sysprof-0:1.1.8-3.fc17.x86_64
+D, [2012-08-19T13:20:36.091585 #6270] DEBUG -- : system-config-date-docs-0:1.0.10-3.fc17.noarch
+D, [2012-08-19T13:20:36.091619 #6270] DEBUG -- : system-config-firewall-0:1.2.29-7.fc17.noarch
+D, [2012-08-19T13:20:36.091648 #6270] DEBUG -- : system-config-firewall-base-0:1.2.29-7.fc17.noarch
+D, [2012-08-19T13:20:36.091676 #6270] DEBUG -- : system-config-network-tui-0:1.6.3-2.fc17.noarch
+D, [2012-08-19T13:20:36.091713 #6270] DEBUG -- : system-config-users-docs-0:1.0.9-3.fc17.noarch
+D, [2012-08-19T13:20:36.091742 #6270] DEBUG -- : systemtap-0:1.8-4.fc17.x86_64
+D, [2012-08-19T13:20:36.091770 #6270] DEBUG -- : talk-0:0.17-38.fc17.x86_64
+D, [2012-08-19T13:20:36.091798 #6270] DEBUG -- : tcpdump-14:4.2.1-3.fc17.x86_64
+D, [2012-08-19T13:20:36.091825 #6270] DEBUG -- : telnet-1:0.17-53.fc17.x86_64
+D, [2012-08-19T13:20:36.091853 #6270] DEBUG -- : texinfo-0:4.13a-16.fc17.x86_64
+D, [2012-08-19T13:20:36.091888 #6270] DEBUG -- : thai-scalable-waree-fonts-0:0.5.0-1.fc17.noarch
+D, [2012-08-19T13:20:36.091918 #6270] DEBUG -- : tmux-0:1.6-1.fc17.x86_64
+D, [2012-08-19T13:20:36.091946 #6270] DEBUG -- : totem-mozplugin-1:3.4.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.091974 #6270] DEBUG -- : totem-nautilus-1:3.4.3-1.fc17.x86_64
+D, [2012-08-19T13:20:36.092002 #6270] DEBUG -- : traceroute-3:2.0.18-3.fc17.x86_64
+D, [2012-08-19T13:20:36.092030 #6270] DEBUG -- : transmission-gtk-0:2.50-3.fc17.x86_64
+D, [2012-08-19T13:20:36.092059 #6270] DEBUG -- : tree-0:1.6.0-4.fc17.x86_64
+D, [2012-08-19T13:20:36.092095 #6270] DEBUG -- : uboot-tools-0:2012.04.01-1.fc17.x86_64
+D, [2012-08-19T13:20:36.092124 #6270] DEBUG -- : usbutils-0:004-4.fc17.x86_64
+D, [2012-08-19T13:20:36.092152 #6270] DEBUG -- : valgrind-1:3.7.0-4.fc17.x86_64
+D, [2012-08-19T13:20:36.092180 #6270] DEBUG -- : vconfig-0:1.9-10.fc17.x86_64
+D, [2012-08-19T13:20:36.092215 #6270] DEBUG -- : vim-enhanced-2:7.3.556-1.fc17.x86_64
+D, [2012-08-19T13:20:36.092243 #6270] DEBUG -- : vinagre-0:3.4.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.092279 #6270] DEBUG -- : vino-0:3.4.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.092308 #6270] DEBUG -- : vlgothic-fonts-0:20120629-1.fc17.noarch
+D, [2012-08-19T13:20:36.092336 #6270] DEBUG -- : vym-0:2.0.12-1.fc17.x86_64
+D, [2012-08-19T13:20:36.092364 #6270] DEBUG -- : webkitgtk3-devel-0:1.8.1-3.fc17.x86_64
+D, [2012-08-19T13:20:36.092392 #6270] DEBUG -- : words-0:3.0-18.fc17.noarch
+D, [2012-08-19T13:20:36.092421 #6270] DEBUG -- : wqy-zenhei-fonts-0:0.9.46-4.fc17.noarch
+D, [2012-08-19T13:20:36.092456 #6270] DEBUG -- : xdg-user-dirs-gtk-0:0.9-1.fc17.x86_64
+D, [2012-08-19T13:20:36.092488 #6270] DEBUG -- : xmonad-0:0.10-11.fc17.x86_64
+D, [2012-08-19T13:20:36.092517 #6270] DEBUG -- : xorg-x11-docs-0:1.6-4.fc17.noarch
+D, [2012-08-19T13:20:36.092545 #6270] DEBUG -- : xorg-x11-drv-ast-0:0.93.9-6.fc17.x86_64
+D, [2012-08-19T13:20:36.092573 #6270] DEBUG -- : xorg-x11-drv-ati-0:6.14.4-6.20120602git930760942.fc17.x86_64
+D, [2012-08-19T13:20:36.092606 #6270] DEBUG -- : xorg-x11-drv-cirrus-0:1.3.2-19.fc17.x86_64
+D, [2012-08-19T13:20:36.092634 #6270] DEBUG -- : xorg-x11-drv-dummy-0:0.3.5-4.fc17.x86_64
+D, [2012-08-19T13:20:36.092671 #6270] DEBUG -- : xorg-x11-drv-evdev-0:2.7.0-2.fc17.x86_64
+D, [2012-08-19T13:20:36.092700 #6270] DEBUG -- : xorg-x11-drv-fbdev-0:0.4.2-8.fc17.x86_64
+D, [2012-08-19T13:20:36.092728 #6270] DEBUG -- : xorg-x11-drv-intel-0:2.20.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.092756 #6270] DEBUG -- : xorg-x11-drv-mga-0:1.4.13-19.20120104git9223c44a7.fc17.x86_64
+D, [2012-08-19T13:20:36.092784 #6270] DEBUG -- : xorg-x11-drv-nouveau-1:0.0.16-37.20120306gitf5d1cd2.fc17.x86_64
+D, [2012-08-19T13:20:36.092812 #6270] DEBUG -- : xorg-x11-drv-openchrome-0:0.2.906-1.fc17.x86_64
+D, [2012-08-19T13:20:36.092848 #6270] DEBUG -- : xorg-x11-drv-qxl-0:0.0.22-0.fc17.x86_64
+D, [2012-08-19T13:20:36.092877 #6270] DEBUG -- : xorg-x11-drv-synaptics-0:1.6.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.158990 #6270] DEBUG -- : xorg-x11-drv-vesa-0:2.3.1-1.fc17.x86_64
+D, [2012-08-19T13:20:36.159114 #6270] DEBUG -- : xorg-x11-drv-vmmouse-0:12.8.0-1.fc17.x86_64
+D, [2012-08-19T13:20:36.159148 #6270] DEBUG -- : xorg-x11-drv-vmware-0:12.0.2-1.fc17.x86_64
+D, [2012-08-19T13:20:36.159180 #6270] DEBUG -- : xorg-x11-drv-void-0:1.4.0-8.fc17.x86_64
+D, [2012-08-19T13:20:36.159235 #6270] DEBUG -- : xorg-x11-drv-wacom-0:0.14.0-2.fc17.x86_64
+D, [2012-08-19T13:20:36.159268 #6270] DEBUG -- : xorg-x11-utils-0:7.5-6.fc17.x86_64
+D, [2012-08-19T13:20:36.159298 #6270] DEBUG -- : xorg-x11-xtrans-devel-0:1.2.7-1.fc17.noarch
+D, [2012-08-19T13:20:36.159327 #6270] DEBUG -- : xrestop-0:0.4-9.fc17.x86_64
+D, [2012-08-19T13:20:36.159356 #6270] DEBUG -- : xsane-gimp-0:0.998-10.fc17.x86_64
+D, [2012-08-19T13:20:36.159386 #6270] DEBUG -- : yum-langpacks-0:0.2.5-1.fc17.noarch
+D, [2012-08-19T13:20:36.159422 #6270] DEBUG -- : yum-plugin-show-leaves-0:1.1.31-4.fc17.noarch
+D, [2012-08-19T13:20:36.159454 #6270] DEBUG -- : yum-presto-0:0.7.3-1.fc17.noarch
+D, [2012-08-19T13:20:36.159483 #6270] DEBUG -- : yum-utils-0:1.1.31-4.fc17.noarch
+D, [2012-08-19T13:20:36.159532 #6270] DEBUG -- : zd1211-firmware-0:1.4-6.fc17.noarch
+I, [2012-08-19T13:20:38.682126 #6270]  INFO -- : All additional packages for xmonad appliance successfully resolved.
+I, [2012-08-19T13:20:38.682211 #6270]  INFO -- : Building xmonad appliance...
+D, [2012-08-19T13:20:38.682320 #6270] DEBUG -- : Executing command: 'appliance-creator -d -v -t 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp' --cache=/var/cache/boxgrinder/rpms-cache/x86_64/fedora/17 --config 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/xmonad.ks' -o 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp' --name 'xmonad' --vmem 256 --vcpu 1 --format raw'
+D, [2012-08-19T13:20:38.906124 #6270] DEBUG -- : Adding disk sda as /home/rortian/git/boxgs/xmonad-dev-env/build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/imgcreate-Wi7Xdz/tmp-tTm_4K/xmonad-sda.raw
+D, [2012-08-19T13:20:38.906342 #6270] DEBUG -- : Extending sparse file /home/rortian/git/boxgs/xmonad-dev-env/build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/imgcreate-Wi7Xdz/tmp-tTm_4K/xmonad-sda.raw to 32217497600
+D, [2012-08-19T13:20:38.913412 #6270] DEBUG -- : Losetup add /dev/loop0 mapping to /home/rortian/git/boxgs/xmonad-dev-env/build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/imgcreate-Wi7Xdz/tmp-tTm_4K/xmonad-sda.raw
+D, [2012-08-19T13:20:38.920994 #6270] DEBUG -- : Formatting disks
+D, [2012-08-19T13:20:38.921122 #6270] DEBUG -- : Initializing partition table for /dev/loop0 with gpt layout
+D, [2012-08-19T13:20:38.937865 #6270] DEBUG -- : Assigning partitions to disks
+D, [2012-08-19T13:20:38.938241 #6270] DEBUG -- : Assigned biosboot to sda1 at 0 at size 5
+D, [2012-08-19T13:20:38.938313 #6270] DEBUG -- : Assigned / to sda2 at 5 at size 30720
+D, [2012-08-19T13:20:38.938384 #6270] DEBUG -- : Creating partitions
+D, [2012-08-19T13:20:38.938448 #6270] DEBUG -- : Add primary part at 0 of size 5
+D, [2012-08-19T13:20:38.952988 #6270] DEBUG -- : Add primary part at 5 of size 30720
+D, [2012-08-19T13:20:38.970820 #6270] DEBUG -- : Dev loop0p1: /dev/loop01 -> /dev/mapper/loop0p1
+D, [2012-08-19T13:20:38.971264 #6270] DEBUG -- : Creating symlink from /dev/loop01 to /dev/mapper/loop0p1
+D, [2012-08-19T13:20:38.972034 #6270] DEBUG -- : Dev loop0p2: /dev/loop02 -> /dev/mapper/loop0p2
+D, [2012-08-19T13:20:38.972380 #6270] DEBUG -- : Creating symlink from /dev/loop02 to /dev/mapper/loop0p2
+D, [2012-08-19T13:20:38.972771 #6270] DEBUG -- : Adding partx mapping for /dev/loop0
+D, [2012-08-19T13:20:38.999219 #6270] DEBUG -- : Formating ext4 filesystem on /dev/loop02
+D, [2012-08-19T13:20:40.105907 #6270] DEBUG -- : mke2fs 1.42.3 (14-May-2012)
+D, [2012-08-19T13:20:40.106058 #6270] DEBUG -- : Discarding device blocks:    4096/7500000 528384/75000001052672/75000001576960/75000002101248/75000002625536/75000003149824/75000003674112/75000004198400/75000004722688/75000005246976/75000005771264/75000006295552/75000006819840/75000007344128/7500000               done
+D, [2012-08-19T13:20:40.106101 #6270] DEBUG -- : Filesystem label=_/
+D, [2012-08-19T13:20:40.106317 #6270] DEBUG -- : OS type: Linux
+D, [2012-08-19T13:20:40.106358 #6270] DEBUG -- : Block size=4096 (log=2)
+D, [2012-08-19T13:20:40.106399 #6270] DEBUG -- : Fragment size=4096 (log=2)
+D, [2012-08-19T13:20:40.106440 #6270] DEBUG -- : Stride=0 blocks, Stripe width=0 blocks
+D, [2012-08-19T13:20:40.106480 #6270] DEBUG -- : 1875968 inodes, 7500000 blocks
+D, [2012-08-19T13:20:40.106527 #6270] DEBUG -- : 75000 blocks (1.00%) reserved for the super user
+D, [2012-08-19T13:20:40.106687 #6270] DEBUG -- : First data block=0
+D, [2012-08-19T13:20:40.106727 #6270] DEBUG -- : Maximum filesystem blocks=4294967296
+D, [2012-08-19T13:20:40.106768 #6270] DEBUG -- : 229 block groups
+D, [2012-08-19T13:20:40.106809 #6270] DEBUG -- : 32768 blocks per group, 32768 fragments per group
+D, [2012-08-19T13:20:40.106848 #6270] DEBUG -- : 8192 inodes per group
+D, [2012-08-19T13:20:40.106887 #6270] DEBUG -- : Superblock backups stored on blocks:
+D, [2012-08-19T13:20:40.106935 #6270] DEBUG -- : 32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
+D, [2012-08-19T13:20:40.107087 #6270] DEBUG -- : 4096000
+D, [2012-08-19T13:20:40.107127 #6270] DEBUG -- : 
+D, [2012-08-19T13:20:40.107183 #6270] DEBUG -- : Allocating group tables:   0/229  1/229  2/229  3/229  4/229  5/229  6/229  7/229  8/229  9/229 10/229 11/229 12/229 13/229 14/229 15/229 16/229 17/229 18/229 19/229 20/229 21/229 22/229 23/229 24/229 25/229 26/229 27/229 28/229 29/229 30/229 31/229 32/229 33/229 34/229 35/229 36/229 37/229 38/229 39/229 40/229 41/229 42/229 43/229 44/229 45/229 46/229 47/229 48/229 49/229 50/229 51/229 52/229 53/229 54/229 55/229 56/229 57/229 58/229 59/229 60/229 61/229 62/229 63/229 64/229 65/229 66/229 67/229 68/229 69/229 70/229 71/229 72/229 73/229 74/229 75/229 76/229 77/229 78/229 79/229 80/229 81/229 82/229 83/229 84/229 85/229 86/229 87/229 88/229 89/229 90/229 91/229 92/229 93/229 94/229 95/229 96/229 97/229 98/229 99/229100/229101/229102/229103/229104/229105/229106/229107/229108/229109/229110/229111/229112/229113/229114/229115/229116/229117/229118/229119/229120/229121/229122/229123/229124/229125/229126/229127/229128/229129/229130/229131/229132/229133/229134/229135/229136/229137/229138/229139/229140/229141/229142/229143/229144/229145/229146/229147/229148/229149/229150/229151/229152/229153/229154/229155/229156/229157/229158/229159/229160/229161/229162/229163/229164/229165/229166/229167/229168/229169/229170/229171/229172/229173/229174/229175/229176/229177/229178/229179/229180/229181/229182/229183/229184/229185/229186/229187/229188/229189/229190/229191/229192/229193/229194/229195/229196/229197/229198/229199/229200/229201/229202/229203/229204/229205/229206/229207/229208/229209/229210/229211/229212/229213/229214/229215/229216/229
+D, [2012-08-19T13:20:40.107254 #6270] DEBUG -- : 217/229218/229219/229220/229221/229222/229223/229224/229225/229226/229227/229228/229       done
+D, [2012-08-19T13:20:40.107322 #6270] DEBUG -- : Writing inode tables:   0/229  1/229  2/229  3/229  4/229  5/229  6/229  7/229  8/229  9/229 10/229 11/229 12/229 13/229 14/229 15/229 16/229 17/229 18/229 19/229 20/229 21/229 22/229 23/229 24/229 25/229 26/229 27/229 28/229 29/229 30/229 31/229 32/229 33/229 34/229 35/229 36/229 37/229 38/229 39/229 40/229 41/229 42/229 43/229 44/229 45/229 46/229 47/229 48/229 49/229 50/229 51/229 52/229 53/229 54/229 55/229 56/229 57/229 58/229 59/229 60/229 61/229 62/229 63/229 64/229 65/229 66/229 67/229 68/229 69/229 70/229 71/229 72/229 73/229 74/229 75/229 76/229 77/229 78/229 79/229 80/229 81/229 82/229 83/229 84/229 85/229 86/229 87/229 88/229 89/229 90/229 91/229 92/229 93/229 94/229 95/229 96/229 97/229 98/229 99/229100/229101/229102/229103/229104/229105/229106/229107/229108/229109/229110/229111/229112/229113/229114/229115/229116/229117/229118/229119/229120/229121/229122/229123/229124/229125/229126/229127/229128/229129/229130/229131/229132/229133/229134/229135/229136/229137/229138/229139/229140/229141/229142/229143/229144/229145/229146/229147/229148/229149/229150/229151/229152/229153/229154/229155/229156/229157/229158/229159/229160/229161/229162/229163/229164/229165/229166/229167/229168/229169/229170/229171/229172/229173/229174/229175/229176/229177/229178/229179/229180/229181/229182/229183/229184/229185/229186/229187/229188/229189/229190/229191/229192/229193/229194/229195/229196/229197/229198/229199/229200/229201/229202/229203/229204/229205/229206/229207/229208/229209/229210/229211/229212/229213/229214/229215/229216/229217/229218/229219/229220/229221/229222/229223/229224/229225/229226/229227/229228/229       done
+D, [2012-08-19T13:20:40.107373 #6270] DEBUG -- : Creating journal (32768 blocks): done
+D, [2012-08-19T13:20:40.107512 #6270] DEBUG -- : Writing superblocks and filesystem accounting information:   0/229  1/229  2/229  3/229  4/229  5/229  6/229  7/229  8/229  9/229 10/229 11/229 12/229 13/229 14/229 15/229 16/229 17/229 18/229 19/229 20/229 21/229 22/229 23/229 24/229 25/229 26/229 27/229 28/229 29/229 30/229 31/229 32/229 33/229 34/229 35/229
+D, [2012-08-19T13:20:40.107560 #6270] DEBUG -- :  36/229 37/229 38/229 39/229 40/229 41/229 42/229 43/229 44/229 45/229 46/229 47/229 48/229 49/229 50/229 51/229 52/229 53/229 54/229 55/229 56/229 57/229 58/229 59/229 60/229 61/229 62/229 63/229 64/229 65/229 66/229 67/229 68/229 69/229 70/229 71/229 72/229 73/229 74/229 75/229 76/229 77/229 78/229 79/229 80/229 81/229 82/229 83/229 84/229 85/229 86/229 87/229 88/229 89/229 90/229 91/229 92/229 93/229 94/229 95/229 96/229 97/229 98/229 99/229100/229101/229102/229103/229104/229105/229106/229107/229108/229109/229110/229111/229112/229113/229114/229115/229116/229117/229118/229119/229120/229121/229122/229123/229124/229125/229126/229127/229128/229129/229130/229131/229132/229133/229134/229135/229136/229137/229138/229139/229140/229141/229142/229143/229144/229145/229146/229147/229148/229149/229150/229151/229152/229153/229154/229155/229156/229157/229158/229159/229160/229161/229162/229163/229164/229165/229166/229167/229168/229169/229170/229171/229172/229173/229174/229175/229176/229177/229178/229179/229180/229181/229182/229183/229184/229185/229186/229187/229188/229189/229190/229191/229192/229193/229194/229195/229196/229197/229198/229199/229200/229201/229202/229203/229204/229205/229206/229207/229208/229209/229210/229211/229212/229213/229214/229215/229216/229217/229218/229219/229220/229221/229222/229223/229224/229225/229226/229227/229228/229       done
+D, [2012-08-19T13:20:40.107636 #6270] DEBUG -- : 
+D, [2012-08-19T13:20:40.107681 #6270] DEBUG -- : 
+D, [2012-08-19T13:20:40.107716 #6270] DEBUG -- : Tuning filesystem on /dev/loop02
+D, [2012-08-19T13:20:40.122389 #6270] DEBUG -- : tune2fs 1.42.3 (14-May-2012)
+D, [2012-08-19T13:20:40.123473 #6270] DEBUG -- : Setting maximal mount count to -1
+D, [2012-08-19T13:20:40.124874 #6270] DEBUG -- : Setting interval between checks to 0 seconds
+D, [2012-08-19T13:20:40.124939 #6270] DEBUG -- : 
+D, [2012-08-19T13:20:40.125051 #6270] DEBUG -- : Mounting /dev/loop02 at /home/rortian/git/boxgs/xmonad-dev-env/build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/imgcreate-Wi7Xdz/install_root/
+D, [2012-08-19T13:20:40.156483 #6270] DEBUG -- : Writing mkinitrd config /home/rortian/git/boxgs/xmonad-dev-env/build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/imgcreate-Wi7Xdz/install_root/etc/sysconfig/mkinitrd
+D, [2012-08-19T13:20:40.159521 #6270] DEBUG -- : Skipping (/sys/fs/selinux,/sys/fs/selinux) because source doesn't exist.
+D, [2012-08-19T13:20:40.344574 #6270] DEBUG -- : Retrieving http://dl.google.com/linux/chrome/rpm/stable/x86_64/repodata/repomd.xml ...OK
+D, [2012-08-19T13:20:40.778981 #6270] DEBUG -- : Retrieving http://mirror.liberty.edu/pub/rpmfusion/nonfree/fedora/releases/17/Everything/x86_64/os/repodata/repomd.xml ...OK
+D, [2012-08-19T13:20:41.170282 #6270] DEBUG -- : Retrieving http://mirror.us.leaseweb.net/rpmfusion/free/fedora/releases/17/Everything/source/SRPMS/repodata/repomd.xml ...OK
+D, [2012-08-19T13:20:41.764388 #6270] DEBUG -- : Retrieving http://fedora.osuosl.org/linux/releases/17/Everything/x86_64/os/repodata/repomd.xml ...OK
+D, [2012-08-19T13:20:42.795046 #6270] DEBUG -- : Retrieving http://fedora.mirror.lstn.net/updates/17/x86_64/repodata/repomd.xml ...OK
+D, [2012-08-19T13:21:31.514909 #6270] DEBUG -- : Unable to create appliance : Failed to build transaction : rpmfusion-nonfree-release-17.0.3-1.noarch requires rpmfusion-free-release >= 17.0.3
+D, [2012-08-19T13:21:31.587702 #6270] DEBUG -- : Unmounting directory /home/rortian/git/boxgs/xmonad-dev-env/build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/imgcreate-Wi7Xdz/install_root/
+D, [2012-08-19T13:21:31.622005 #6270] DEBUG -- : Removing compat symlinks
+D, [2012-08-19T13:21:31.622330 #6270] DEBUG -- : Unmapping /dev/loop0
+D, [2012-08-19T13:21:31.641872 #6270] DEBUG -- : Losetup remove /dev/loop0
+D, [2012-08-19T13:21:31.716908 #6270] DEBUG -- : ['/', 'biosboot']
+E, [2012-08-19T13:21:31.763298 #6270] ERROR -- : /usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:85:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:107:in `execute_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:71:in `build_with_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:53:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:184:in `execute_plugin'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:207:in `execute_without_userchange'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:129:in `block in execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `each'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:164:in `create'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/bin/boxgrinder-build:203:in `<top (required)>'
+/usr/bin/boxgrinder-build:23:in `load'
+/usr/bin/boxgrinder-build:23:in `<main>'
+F, [2012-08-19T13:21:31.763570 #6270] FATAL -- : RuntimeError: An error occurred while executing command: 'appliance-creator -d -v -t 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp' --cache=/var/cache/boxgrinder/rpms-cache/x86_64/fedora/17 --config 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/xmonad.ks' -o 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp' --name 'xmonad' --vmem 256 --vcpu 1 --format raw', process exited with wrong exit status: 1
+/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:92:in `rescue in execute'
+/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:51:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:107:in `execute_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:71:in `build_with_appliance_creator'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:53:in `execute'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:184:in `execute_plugin'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:207:in `execute_without_userchange'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:129:in `block in execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `each'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `execute_plugin_chain'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:164:in `create'
+/usr/share/gems/gems/boxgrinder-build-0.10.2/bin/boxgrinder-build:203:in `<top (required)>'
+/usr/bin/boxgrinder-build:23:in `load'
+/usr/bin/boxgrinder-build:23:in `<main>'

@@ -272,7 +272,6 @@ packages:
   - rootfiles
   - rpm-build
   - rpm-devel
-  - rpmfusion-nonfree-release
   - rpmorphan
   - rsh
   - rt61pci-firmware
