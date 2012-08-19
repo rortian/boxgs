@@ -169,7 +169,6 @@ packages:
   - iwl6000g2a-firmware
   - iwl6000g2b-firmware
   - iwl6050-firmware
-  - jdk
   - jomolhari-fonts
   - jwhois
   - khmeros-base-fonts
