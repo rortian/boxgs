@@ -324,3 +324,16 @@ packages:
   - rubygem-bundler
   - konsole
   - kdm
+  - TeXmacs
+  - postgres
+  - postgres-devel
+  - postgres-docs
+  - postgres-contrib
+  - postgres-jbdc
+  - postgres-server
+  - pg_top
+  - sqlite-devel
+  - sqlite-doc
+  - memcached
+  - libmemcached
+  - libmemcached-devel
