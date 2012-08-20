@@ -329,7 +329,7 @@ packages:
   - postgresql-devel
   - postgresql-docs
   - postgresql-contrib
-  - postgresql-jbdc
+  - postgresql-jdbc
   - postgresql-server
   - pg_top
   - sqlite-devel
