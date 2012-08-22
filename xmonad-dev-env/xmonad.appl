@@ -335,7 +335,7 @@ packages:
   - mysql
   - mysql-devel
   - mysql-server
-  - mysql-utilies
+  - mysql-utilities
   - mysql-connector-java
   - mongodb
   - mongodb-devel
