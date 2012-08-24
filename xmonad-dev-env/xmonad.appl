@@ -6,7 +6,7 @@ os:
 hardware:
   partitions:
     "/":
-      size: 30
+      size: 80
 repos:
   - name: google-chrome
     baseurl: http://dl.google.com/linux/chrome/rpm/stable/x86_64
@@ -50,11 +50,9 @@ packages:
   - bzip2-devel
   - cadaver
   - ccache
-  - cheese
   - chrony
   - cifs-utils
   - cjkuni-uming-fonts
-  - clutter-gtk-devel
   - coolkey-devel
   - cscope
   - cvs
@@ -68,7 +66,6 @@ packages:
   - dos2unix
   - doxygen
   - dump
-  - empathy
   - eog
   - etckeeper
   - ethtool
@@ -76,7 +73,6 @@ packages:
   - fedora-release-notes
   - fetchmail
   - finger
-  - firefox
   - firstboot
   - flex
   - fpaste
@@ -340,3 +336,8 @@ packages:
   - mongodb
   - mongodb-devel
   - mongodb-server
+  - libyaml-devel
+  - VirtualBox-guest
+  - slock
+  - inkscape
+  - octave

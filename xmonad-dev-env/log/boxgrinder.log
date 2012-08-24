@@ -1,94 +1,978 @@
-# Logfile created on 2012-08-22 01:07:56 -0400 by logger.rb/31641
-D, [2012-08-22T01:07:56.274864 #881] DEBUG -- : Formatting disks
-D, [2012-08-22T01:07:56.276194 #881] DEBUG -- : Initializing partition table for /dev/loop0 with gpt layout
-D, [2012-08-22T01:07:56.292309 #881] DEBUG -- : Assigning partitions to disks
-D, [2012-08-22T01:07:56.292546 #881] DEBUG -- : Assigned biosboot to sda1 at 0 at size 5
-D, [2012-08-22T01:07:56.292960 #881] DEBUG -- : Assigned / to sda2 at 5 at size 30720
-D, [2012-08-22T01:07:56.293062 #881] DEBUG -- : Creating partitions
-D, [2012-08-22T01:07:56.293168 #881] DEBUG -- : Add primary part at 0 of size 5
-D, [2012-08-22T01:07:56.308916 #881] DEBUG -- : Add primary part at 5 of size 30720
-D, [2012-08-22T01:07:56.336389 #881] DEBUG -- : Dev loop0p1: /dev/loop01 -> /dev/mapper/loop0p1
-D, [2012-08-22T01:07:56.336610 #881] DEBUG -- : Creating symlink from /dev/loop01 to /dev/mapper/loop0p1
-D, [2012-08-22T01:07:56.336906 #881] DEBUG -- : Dev loop0p2: /dev/loop02 -> /dev/mapper/loop0p2
-D, [2012-08-22T01:07:56.337017 #881] DEBUG -- : Creating symlink from /dev/loop02 to /dev/mapper/loop0p2
-D, [2012-08-22T01:07:56.337055 #881] DEBUG -- : Adding partx mapping for /dev/loop0
-D, [2012-08-22T01:07:56.367729 #881] DEBUG -- : Formating ext4 filesystem on /dev/loop02
-D, [2012-08-22T01:07:57.486011 #881] DEBUG -- : mke2fs 1.42.3 (14-May-2012)
-D, [2012-08-22T01:07:57.486123 #881] DEBUG -- : Discarding device blocks:    4096/7500000 528384/75000001052672/75000001576960/75000002101248/75000002625536/75000003149824/75000003674112/75000004198400/75000004722688/75000005246976/75000005771264/75000006295552/75000006819840/75000007344128/7500000               done
-D, [2012-08-22T01:07:57.486160 #881] DEBUG -- : Filesystem label=_/
-D, [2012-08-22T01:07:57.486307 #881] DEBUG -- : OS type: Linux
-D, [2012-08-22T01:07:57.486340 #881] DEBUG -- : Block size=4096 (log=2)
-D, [2012-08-22T01:07:57.486372 #881] DEBUG -- : Fragment size=4096 (log=2)
-D, [2012-08-22T01:07:57.486404 #881] DEBUG -- : Stride=0 blocks, Stripe width=0 blocks
-D, [2012-08-22T01:07:57.486435 #881] DEBUG -- : 1875968 inodes, 7500000 blocks
-D, [2012-08-22T01:07:57.486466 #881] DEBUG -- : 75000 blocks (1.00%) reserved for the super user
-D, [2012-08-22T01:07:57.486568 #881] DEBUG -- : First data block=0
-D, [2012-08-22T01:07:57.486627 #881] DEBUG -- : Maximum filesystem blocks=4294967296
-D, [2012-08-22T01:07:57.486671 #881] DEBUG -- : 229 block groups
-D, [2012-08-22T01:07:57.486723 #881] DEBUG -- : 32768 blocks per group, 32768 fragments per group
-D, [2012-08-22T01:07:57.486884 #881] DEBUG -- : 8192 inodes per group
-D, [2012-08-22T01:07:57.486923 #881] DEBUG -- : Superblock backups stored on blocks:
-D, [2012-08-22T01:07:57.486968 #881] DEBUG -- : 32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
-D, [2012-08-22T01:07:57.487008 #881] DEBUG -- : 4096000
-D, [2012-08-22T01:07:57.487042 #881] DEBUG -- : 
-D, [2012-08-22T01:07:57.487164 #881] DEBUG -- : Allocating group tables:   0/229  1/229  2/229  3/229  4/229  5/229  6/229  7/229  8/229  9/229 10/229 11/229 12/229 13/229 14/229 15/229 16/229 17/229 18/229 19/229 20/229 21/229 22/229 23/229 24/229 25/229 26/229 27/229 28/229 29/229 30/229 31/229 32/229 33/229 34/229 35/229 36/229 37/229 38/229 39/229 40/229 41/229 42/229 43/229 44/229 45/229 46/229 47/229 48/229 49/229 50/229 51/229 52/229 53/229 54/229 55/229 56/229 57/229 58/229 59/229 60/229 61/229 62/229 63/229 64/229 65/229 66/229 67/229 68/229 69/229 70/229 71/229 72/229 73/229 74/229 75/229 76/229 77/229 78/229 79/229 80/229 81/229 82/229 83/229 84/229 85/229 86/229 87/229 88/229 89/229 90/229 91/229 92/229 93/229 94/229 95/229 96/229 97/229 98/229 99/229100/229101/229102/229103/229104/229105/229106/229107/229108/229109/229110/229111/229112/229113/229114/229115/229116/229117/229118/229119/229120/229121/229122/229123/229124/229125/229126/229127/229128/229129/229130/229131/229132/229133/229134/229135/229136/229137/229138/229139/229140/229141/229142/229143/229144/229145/229146/229147/229148/229149/229150/229151/229152/229153/229154/229155/229156/229157/229158/229159/229160/229161/229162/229163/229164/229165/229166/229167/229168/229169/229170/229171/229172/229173/229174/229175/229176/229177/229178/229179/229180/229181/229182/229183/229184/229185/229186/229187/229188/229189/229190/229191/229192/229193/229194/229195/229196/229197/229198/229199/229200/229201/229202/229203/229204/229205/229206/229207/229208/229209/229210/229211/229212/229213/229214/229215/229216/229
-D, [2012-08-22T01:07:57.487227 #881] DEBUG -- : 217/229218/229219/229220/229221/229222/229223/229224/229225/229226/229227/229228/229       done
-D, [2012-08-22T01:07:57.487275 #881] DEBUG -- : Writing inode tables:   0/229  1/229  2/229  3/229  4/229  5/229  6/229  7/229  8/229  9/229 10/229 11/229 12/229 13/229 14/229 15/229 16/229 17/229 18/229 19/229 20/229 21/229 22/229 23/229 24/229 25/229 26/229 27/229 28/229 29/229 30/229 31/229 32/229 33/229 34/229 35/229 36/229 37/229 38/229 39/229 40/229 41/229 42/229 43/229 44/229 45/229 46/229 47/229 48/229 49/229 50/229 51/229 52/229 53/229 54/229 55/229 56/229 57/229 58/229 59/229 60/229 61/229 62/229 63/229 64/229 65/229 66/229 67/229 68/229 69/229 70/229 71/229 72/229 73/229 74/229 75/229 76/229 77/229 78/229 79/229 80/229 81/229 82/229 83/229 84/229 85/229 86/229 87/229 88/229 89/229 90/229 91/229 92/229 93/229 94/229 95/229 96/229 97/229 98/229 99/229100/229101/229102/229103/229104/229105/229106/229107/229108/229109/229110/229111/229112/229113/229114/229115/229116/229117/229118/229119/229120/229121/229122/229123/229124/229125/229126/229127/229128/229129/229130/229131/229132/229133/229134/229135/229136/229137/229138/229139/229140/229141/229142/229143/229144/229145/229146/229147/229148/229149/229150/229151/229152/229153/229154/229155/229156/229157/229158/229159/229160/229161/229162/229163/229164/229165/229166/229167/229168/229169/229170/229171/229172/229173/229174/229175/229176/229177/229178/229179/229180/229181/229182/229183/229184/229185/229186/229187/229188/229189/229190/229191/229192/229193/229194/229195/229196/229197/229198/229199/229200/229201/229202/229203/229204/229205/229206/229207/229208/229209/229210/229211/229212/229213/229214/229215/229216/229217/229218/229219/229220/229221/229222/229223/229224/229225/229226/229227/229228/229       done
-D, [2012-08-22T01:07:57.487324 #881] DEBUG -- : Creating journal (32768 blocks): done
-D, [2012-08-22T01:07:57.487436 #881] DEBUG -- : Writing superblocks and filesystem accounting information:   0/229  1/229  2/229  3/229  4/229  5/229  6/229  7/229  8/229  9/229 10/229 11/229 12/229 13/229 14/229 15/229 16/229 17/229 18/229 19/229 20/229 21/229 22/229 23/229 24/229 25/229 26/229 27/229 28/229 29/229 30/229 31/229 32/229 33/229 34/229 35/229
-D, [2012-08-22T01:07:57.487479 #881] DEBUG -- :  36/229 37/229 38/229 39/229 40/229 41/229 42/229 43/229 44/229 45/229 46/229 47/229 48/229 49/229 50/229 51/229 52/229 53/229 54/229 55/229 56/229 57/229 58/229 59/229 60/229 61/229 62/229 63/229 64/229 65/229 66/229 67/229 68/229 69/229 70/229 71/229 72/229 73/229 74/229 75/229 76/229 77/229 78/229 79/229 80/229 81/229 82/229 83/229 84/229 85/229 86/229 87/229 88/229 89/229 90/229 91/229 92/229 93/229 94/229 95/229 96/229 97/229 98/229 99/229100/229101/229102/229103/229104/229105/229106/229107/229108/229109/229110/229111/229112/229113/229114/229115/229116/229117/229118/229119/229120/229121/229122/229123/229124/229125/229126/229127/229128/229129/229130/229131/229132/229133/229134/229135/229136/229137/229138/229139/229140/229141/229142/229143/229144/229145/229146/229147/229148/229149/229150/229151/229152/229153/229154/229155/229156/229157/229158/229159/229160/229161/229162/229163/229164/229165/229166/229167/229168/229169/229170/229171/229172/229173/229174/229175/229176/229177/229178/229179/229180/229181/229182/229183/229184/229185/229186/229187/229188/229189/229190/229191/229192/229193/229194/229195/229196/229197/229198/229199/229200/229201/229202/229203/229204/229205/229206/229207/229208/229209/229210/229211/229212/229213/229214/229215/229216/229217/229218/229219/229220/229221/229222/229223/229224/229225/229226/229227/229228/229       done
-D, [2012-08-22T01:07:57.487530 #881] DEBUG -- : 
-D, [2012-08-22T01:07:57.487568 #881] DEBUG -- : 
-D, [2012-08-22T01:07:57.487615 #881] DEBUG -- : Tuning filesystem on /dev/loop02
-D, [2012-08-22T01:07:57.509232 #881] DEBUG -- : tune2fs 1.42.3 (14-May-2012)
-D, [2012-08-22T01:07:57.509429 #881] DEBUG -- : Setting maximal mount count to -1
-D, [2012-08-22T01:07:57.509535 #881] DEBUG -- : Setting interval between checks to 0 seconds
-D, [2012-08-22T01:07:57.509658 #881] DEBUG -- : 
-D, [2012-08-22T01:07:57.510448 #881] DEBUG -- : Mounting /dev/loop02 at /home/rortian/git/boxgs/xmonad-dev-env/build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/imgcreate-iXPdcy/install_root/
-D, [2012-08-22T01:07:57.551262 #881] DEBUG -- : Writing mkinitrd config /home/rortian/git/boxgs/xmonad-dev-env/build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/imgcreate-iXPdcy/install_root/etc/sysconfig/mkinitrd
-D, [2012-08-22T01:07:57.554453 #881] DEBUG -- : Skipping (/sys/fs/selinux,/sys/fs/selinux) because source doesn't exist.
-D, [2012-08-22T01:07:57.734533 #881] DEBUG -- : Retrieving http://dl.google.com/linux/chrome/rpm/stable/x86_64/repodata/repomd.xml ...OK
-D, [2012-08-22T01:07:57.755415 #881] DEBUG -- : Retrieving http://dl.google.com/linux/chrome/rpm/stable/x86_64/repodata/primary.xml.gz ...OK
-D, [2012-08-22T01:07:58.170744 #881] DEBUG -- : Retrieving http://mirror.us.leaseweb.net/rpmfusion/free/fedora/releases/17/Everything/x86_64/os/repodata/repomd.xml ...OK
-D, [2012-08-22T01:07:58.515178 #881] DEBUG -- : Retrieving http://mirror.us.leaseweb.net/rpmfusion/free/fedora/updates/17/x86_64/repodata/repomd.xml ...OK
-D, [2012-08-22T01:07:58.846565 #881] DEBUG -- : Retrieving http://mirror.us.leaseweb.net/rpmfusion/nonfree/fedora/releases/17/Everything/x86_64/os/repodata/repomd.xml ...OK
-D, [2012-08-22T01:07:59.180148 #881] DEBUG -- : Retrieving http://mirror.us.leaseweb.net/rpmfusion/nonfree/fedora/updates/17/x86_64/repodata/repomd.xml ...OK
-D, [2012-08-22T01:07:59.699547 #881] DEBUG -- : Retrieving http://mirrors.servercentral.net/fedora/releases/17/Everything/x86_64/os/repodata/repomd.xml ...OK
-D, [2012-08-22T01:08:00.962092 #881] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/updates/17/x86_64/repodata/repomd.xml ...OK
-D, [2012-08-22T01:08:06.786163 #881] DEBUG -- : Retrieving http://mirror.anl.gov/pub/fedora/linux/updates/17/x86_64/repodata/962bc2d14aced6a00a95de18dd2995b9c59fcd0d37be2f0480c2c7934e9b4d81-primary.sqlite.bz2 ...OK
-D, [2012-08-22T01:08:09.056132 #881] DEBUG -- : Unable to create appliance : Failed to find package 'mysql-utilies' : No package(s) available to install
-D, [2012-08-22T01:08:09.118856 #881] DEBUG -- : Unmounting directory /home/rortian/git/boxgs/xmonad-dev-env/build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/imgcreate-iXPdcy/install_root/
-D, [2012-08-22T01:08:09.156784 #881] DEBUG -- : Removing compat symlinks
-D, [2012-08-22T01:08:09.156981 #881] DEBUG -- : Unmapping /dev/loop0
-D, [2012-08-22T01:08:09.169886 #881] DEBUG -- : Losetup remove /dev/loop0
-D, [2012-08-22T01:08:09.252284 #881] DEBUG -- : ['/', 'biosboot']
-E, [2012-08-22T01:08:09.282821 #881] ERROR -- : /usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:85:in `execute'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:107:in `execute_appliance_creator'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:71:in `build_with_appliance_creator'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:53:in `execute'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:184:in `execute_plugin'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:207:in `execute_without_userchange'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:129:in `block in execute_plugin_chain'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `each'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `execute_plugin_chain'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:164:in `create'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/bin/boxgrinder-build:203:in `<top (required)>'
-/usr/bin/boxgrinder-build:23:in `load'
-/usr/bin/boxgrinder-build:23:in `<main>'
-F, [2012-08-22T01:08:09.283181 #881] FATAL -- : RuntimeError: An error occurred while executing command: 'appliance-creator -d -v -t 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp' --cache=/var/cache/boxgrinder/rpms-cache/x86_64/fedora/17 --config 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/xmonad.ks' -o 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp' --name 'xmonad' --vmem 256 --vcpu 1 --format raw', process exited with wrong exit status: 1
-/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:92:in `rescue in execute'
-/usr/share/gems/gems/boxgrinder-core-0.3.12/lib/boxgrinder-core/helpers/exec-helper.rb:51:in `execute'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:107:in `execute_appliance_creator'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/rpm-based/rpm-based-os-plugin.rb:71:in `build_with_appliance_creator'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/os/fedora/fedora-plugin.rb:53:in `execute'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/plugins/base-plugin.rb:172:in `run'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:184:in `execute_plugin'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:207:in `execute_without_userchange'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:129:in `block in execute_plugin_chain'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `each'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:125:in `execute_plugin_chain'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/lib/boxgrinder-build/appliance.rb:164:in `create'
-/usr/share/gems/gems/boxgrinder-build-0.10.2/bin/boxgrinder-build:203:in `<top (required)>'
-/usr/bin/boxgrinder-build:23:in `load'
-/usr/bin/boxgrinder-build:23:in `<main>'
+# Logfile created on 2012-08-23 21:48:00 -0400 by logger.rb/31641
+T, [2012-08-23T21:48:00.595808 #27254] TRACE -- : GFS: rd
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receiv
+T, [2012-08-23T21:48:00.599066 #27254] TRACE -- : GFS: e_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive
+T, [2012-08-23T21:48:00.600434 #27254] TRACE -- : GFS: _file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.601686 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0
+T, [2012-08-23T21:48:00.602963 #27254] TRACE -- : GFS: , len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.604336 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading 
+T, [2012-08-23T21:48:00.605719 #27254] TRACE -- : GFS: length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: rece
+T, [2012-08-23T21:48:00.606984 #27254] TRACE -- : GFS: ive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912
+T, [2012-08-23T21:48:00.608220 #27254] TRACE -- : GFS: cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chun
+T, [2012-08-23T21:48:00.609422 #27254] TRACE -- : GFS: k: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+gu
+T, [2012-08-23T21:48:00.610725 #27254] TRACE -- : GFS: estfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading 
+T, [2012-08-23T21:48:00.612018 #27254] TRACE -- : GFS: length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.613331 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf
+T, [2012-08-23T21:48:00.614619 #27254] TRACE -- : GFS:  = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got ch
+T, [2012-08-23T21:48:00.615849 #27254] TRACE -- : GFS: unk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.617213 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading leng
+T, [2012-08-23T21:48:00.618582 #27254] TRACE -- : GFS: th word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: r
+T, [2012-08-23T21:48:00.619852 #27254] TRACE -- : GFS: eceive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x49
+T, [2012-08-23T21:48:00.621140 #27254] TRACE -- : GFS: 12cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk
+T, [2012-08-23T21:48:00.622509 #27254] TRACE -- : GFS: : cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: re
+T, [2012-08-23T21:48:00.623842 #27254] TRACE -- : GFS: ceive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.625210 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading len
+T, [2012-08-23T21:48:00.626612 #27254] TRACE -- : GFS: gth word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receiv
+T, [2012-08-23T21:48:00.627848 #27254] TRACE -- : GFS: e_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf =
+T, [2012-08-23T21:48:00.629237 #27254] TRACE -- : GFS:  0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: ca
+T, [2012-08-23T21:48:00.630639 #27254] TRACE -- : GFS: ncel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: rece
+T, [2012-08-23T21:48:00.631943 #27254] TRACE -- : GFS: ive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.633345 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: r
+T, [2012-08-23T21:48:00.634659 #27254] TRACE -- : GFS: eading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.635936 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192
+T, [2012-08-23T21:48:00.637246 #27254] TRACE -- : GFS: , buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: go
+T, [2012-08-23T21:48:00.638642 #27254] TRACE -- : GFS: t chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd
+T, [2012-08-23T21:48:00.639929 #27254] TRACE -- : GFS: : receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length wor
+T, [2012-08-23T21:48:00.641290 #27254] TRACE -- : GFS: d
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receiv
+T, [2012-08-23T21:48:00.642575 #27254] TRACE -- : GFS: e_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb
+T, [2012-08-23T21:48:00.643842 #27254] TRACE -- : GFS: 0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel 
+T, [2012-08-23T21:48:00.645174 #27254] TRACE -- : GFS: = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: re
+T, [2012-08-23T21:48:00.646547 #27254] TRACE -- : GFS: ceive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.647842 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: rece
+T, [2012-08-23T21:48:00.649207 #27254] TRACE -- : GFS: ive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.650431 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0,
+T, [2012-08-23T21:48:00.651763 #27254] TRACE -- : GFS:  len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receiv
+T, [2012-08-23T21:48:00.653171 #27254] TRACE -- : GFS: e_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfs
+T, [2012-08-23T21:48:00.654536 #27254] TRACE -- : GFS: d: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length wo
+T, [2012-08-23T21:48:00.655858 #27254] TRACE -- : GFS: rd
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd
+T, [2012-08-23T21:48:00.657175 #27254] TRACE -- : GFS: : receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf
+T, [2012-08-23T21:48:00.658539 #27254] TRACE -- : GFS:  = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel
+T, [2012-08-23T21:48:00.659881 #27254] TRACE -- : GFS:  = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receiv
+T, [2012-08-23T21:48:00.661255 #27254] TRACE -- : GFS: e_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+gu
+T, [2012-08-23T21:48:00.662637 #27254] TRACE -- : GFS: estfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length
+T, [2012-08-23T21:48:00.663940 #27254] TRACE -- : GFS:  word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: r
+T, [2012-08-23T21:48:00.665250 #27254] TRACE -- : GFS: eceive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x49
+T, [2012-08-23T21:48:00.666520 #27254] TRACE -- : GFS: 12cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: ca
+T, [2012-08-23T21:48:00.667787 #27254] TRACE -- : GFS: ncel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfs
+T, [2012-08-23T21:48:00.669150 #27254] TRACE -- : GFS: d: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.670522 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file
+T, [2012-08-23T21:48:00.671787 #27254] TRACE -- : GFS: : reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.673148 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8
+T, [2012-08-23T21:48:00.674431 #27254] TRACE -- : GFS: 192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_fi
+T, [2012-08-23T21:48:00.675760 #27254] TRACE -- : GFS: le: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.677123 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading len
+T, [2012-08-23T21:48:00.678388 #27254] TRACE -- : GFS: gth word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.679688 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, bu
+T, [2012-08-23T21:48:00.680945 #27254] TRACE -- : GFS: f = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: go
+T, [2012-08-23T21:48:00.682176 #27254] TRACE -- : GFS: t chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.683501 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: readi
+T, [2012-08-23T21:48:00.684769 #27254] TRACE -- : GFS: ng length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.686025 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 819
+T, [2012-08-23T21:48:00.687223 #27254] TRACE -- : GFS: 2, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: rece
+T, [2012-08-23T21:48:00.688521 #27254] TRACE -- : GFS: ive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.689888 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: 
+T, [2012-08-23T21:48:00.691170 #27254] TRACE -- : GFS: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.692375 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0,
+T, [2012-08-23T21:48:00.693724 #27254] TRACE -- : GFS:  len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receiv
+T, [2012-08-23T21:48:00.695092 #27254] TRACE -- : GFS: e_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+g
+T, [2012-08-23T21:48:00.696485 #27254] TRACE -- : GFS: uestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading lengt
+T, [2012-08-23T21:48:00.697806 #27254] TRACE -- : GFS: h word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guest
+T, [2012-08-23T21:48:00.699119 #27254] TRACE -- : GFS: fsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4
+T, [2012-08-23T21:48:00.700403 #27254] TRACE -- : GFS: 912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel =
+T, [2012-08-23T21:48:00.701727 #27254] TRACE -- : GFS:  0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd
+T, [2012-08-23T21:48:00.703131 #27254] TRACE -- : GFS: : receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.704493 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading le
+T, [2012-08-23T21:48:00.705848 #27254] TRACE -- : GFS: ngth word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: rec
+T, [2012-08-23T21:48:00.707093 #27254] TRACE -- : GFS: eive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.708456 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb
+T, [2012-08-23T21:48:00.709779 #27254] TRACE -- : GFS: 0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, 
+T, [2012-08-23T21:48:00.711170 #27254] TRACE -- : GFS: buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 
+T, [2012-08-23T21:48:00.712533 #27254] TRACE -- : GFS: 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0,
+T, [2012-08-23T21:48:00.713832 #27254] TRACE -- : GFS:  len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got ch
+T, [2012-08-23T21:48:00.715196 #27254] TRACE -- : GFS: unk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_
+T, [2012-08-23T21:48:00.716560 #27254] TRACE -- : GFS: file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd:
+T, [2012-08-23T21:48:00.717884 #27254] TRACE -- : GFS:  receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.719259 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.720647 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading 
+T, [2012-08-23T21:48:00.721935 #27254] TRACE -- : GFS: length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_
+T, [2012-08-23T21:48:00.723156 #27254] TRACE -- : GFS: file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.724489 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.725814 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf
+T, [2012-08-23T21:48:00.727178 #27254] TRACE -- : GFS:  = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 81
+T, [2012-08-23T21:48:00.728540 #27254] TRACE -- : GFS: 92, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, 
+T, [2012-08-23T21:48:00.729860 #27254] TRACE -- : GFS: len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chun
+T, [2012-08-23T21:48:00.731223 #27254] TRACE -- : GFS: k: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd:
+T, [2012-08-23T21:48:00.732620 #27254] TRACE -- : GFS:  receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.733925 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.735288 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.736653 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading leng
+T, [2012-08-23T21:48:00.737918 #27254] TRACE -- : GFS: th word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_f
+T, [2012-08-23T21:48:00.739216 #27254] TRACE -- : GFS: ile: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.740585 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.741901 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x491
+T, [2012-08-23T21:48:00.743299 #27254] TRACE -- : GFS: 2cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 
+T, [2012-08-23T21:48:00.744574 #27254] TRACE -- : GFS: 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file
+T, [2012-08-23T21:48:00.745851 #27254] TRACE -- : GFS: : got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.747117 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: 
+T, [2012-08-23T21:48:00.748370 #27254] TRACE -- : GFS: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.749632 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 
+T, [2012-08-23T21:48:00.750901 #27254] TRACE -- : GFS: 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receiv
+T, [2012-08-23T21:48:00.752202 #27254] TRACE -- : GFS: e_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.753581 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading 
+T, [2012-08-23T21:48:00.754858 #27254] TRACE -- : GFS: length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+gue
+T, [2012-08-23T21:48:00.756058 #27254] TRACE -- : GFS: stfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, b
+T, [2012-08-23T21:48:00.757314 #27254] TRACE -- : GFS: uf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chu
+T, [2012-08-23T21:48:00.758640 #27254] TRACE -- : GFS: nk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guest
+T, [2012-08-23T21:48:00.759789 #27254] TRACE -- : GFS: fsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading 
+T, [2012-08-23T21:48:00.760943 #27254] TRACE -- : GFS: length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.762102 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel 
+T, [2012-08-23T21:48:00.763287 #27254] TRACE -- : GFS: = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.764551 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file:
+T, [2012-08-23T21:48:00.765848 #27254] TRACE -- : GFS:  reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.767049 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8
+T, [2012-08-23T21:48:00.768319 #27254] TRACE -- : GFS: 192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got c
+T, [2012-08-23T21:48:00.769660 #27254] TRACE -- : GFS: hunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+gue
+T, [2012-08-23T21:48:00.770956 #27254] TRACE -- : GFS: stfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.772121 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: 
+T, [2012-08-23T21:48:00.773248 #27254] TRACE -- : GFS: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, bu
+T, [2012-08-23T21:48:00.774506 #27254] TRACE -- : GFS: f = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got
+T, [2012-08-23T21:48:00.775741 #27254] TRACE -- : GFS:  chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.776907 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_fi
+T, [2012-08-23T21:48:00.778123 #27254] TRACE -- : GFS: le: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.779446 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8
+T, [2012-08-23T21:48:00.780886 #27254] TRACE -- : GFS: 192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk
+T, [2012-08-23T21:48:00.782179 #27254] TRACE -- : GFS: : cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receiv
+T, [2012-08-23T21:48:00.783427 #27254] TRACE -- : GFS: e_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.784675 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive
+T, [2012-08-23T21:48:00.785929 #27254] TRACE -- : GFS: _file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.787160 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0,
+T, [2012-08-23T21:48:00.788411 #27254] TRACE -- : GFS:  len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receiv
+T, [2012-08-23T21:48:00.789646 #27254] TRACE -- : GFS: e_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.790795 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfs
+T, [2012-08-23T21:48:00.791952 #27254] TRACE -- : GFS: d: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192
+T, [2012-08-23T21:48:00.793188 #27254] TRACE -- : GFS: , buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: go
+T, [2012-08-23T21:48:00.794524 #27254] TRACE -- : GFS: t chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.795752 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading len
+T, [2012-08-23T21:48:00.797057 #27254] TRACE -- : GFS: gth word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfs
+T, [2012-08-23T21:48:00.798378 #27254] TRACE -- : GFS: d: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912
+T, [2012-08-23T21:48:00.799759 #27254] TRACE -- : GFS: cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len
+T, [2012-08-23T21:48:00.801165 #27254] TRACE -- : GFS:  = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: c
+T, [2012-08-23T21:48:00.802528 #27254] TRACE -- : GFS: ancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_f
+T, [2012-08-23T21:48:00.803829 #27254] TRACE -- : GFS: ile: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+gues
+T, [2012-08-23T21:48:00.805185 #27254] TRACE -- : GFS: tfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.806415 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading 
+T, [2012-08-23T21:48:00.807701 #27254] TRACE -- : GFS: length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+g
+T, [2012-08-23T21:48:00.809018 #27254] TRACE -- : GFS: uestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x491
+T, [2012-08-23T21:48:00.810409 #27254] TRACE -- : GFS: 2cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 819
+T, [2012-08-23T21:48:00.811779 #27254] TRACE -- : GFS: 2, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x
+T, [2012-08-23T21:48:00.813144 #27254] TRACE -- : GFS: 0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file
+T, [2012-08-23T21:48:00.814468 #27254] TRACE -- : GFS: : got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.815663 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: re
+T, [2012-08-23T21:48:00.817016 #27254] TRACE -- : GFS: ading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+gues
+T, [2012-08-23T21:48:00.818355 #27254] TRACE -- : GFS: tfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.819716 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 81
+T, [2012-08-23T21:48:00.821108 #27254] TRACE -- : GFS: 92, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0,
+T, [2012-08-23T21:48:00.822473 #27254] TRACE -- : GFS:  len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got c
+T, [2012-08-23T21:48:00.823869 #27254] TRACE -- : GFS: hunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: rec
+T, [2012-08-23T21:48:00.825258 #27254] TRACE -- : GFS: eive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.826663 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.828028 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading
+T, [2012-08-23T21:48:00.829392 #27254] TRACE -- : GFS:  length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: rec
+T, [2012-08-23T21:48:00.830623 #27254] TRACE -- : GFS: eive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.831954 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, le
+T, [2012-08-23T21:48:00.833343 #27254] TRACE -- : GFS: n = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: 
+T, [2012-08-23T21:48:00.834712 #27254] TRACE -- : GFS: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receiv
+T, [2012-08-23T21:48:00.836107 #27254] TRACE -- : GFS: e_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+g
+T, [2012-08-23T21:48:00.837479 #27254] TRACE -- : GFS: uestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.838890 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length w
+T, [2012-08-23T21:48:00.840265 #27254] TRACE -- : GFS: ord
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file:
+T, [2012-08-23T21:48:00.841658 #27254] TRACE -- : GFS:  reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+gue
+T, [2012-08-23T21:48:00.842993 #27254] TRACE -- : GFS: stfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.844358 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 
+T, [2012-08-23T21:48:00.845719 #27254] TRACE -- : GFS: 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: ca
+T, [2012-08-23T21:48:00.847081 #27254] TRACE -- : GFS: ncel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_fi
+T, [2012-08-23T21:48:00.848366 #27254] TRACE -- : GFS: le: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.849699 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading l
+T, [2012-08-23T21:48:00.850956 #27254] TRACE -- : GFS: ength word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd
+T, [2012-08-23T21:48:00.852227 #27254] TRACE -- : GFS: : receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x491
+T, [2012-08-23T21:48:00.853586 #27254] TRACE -- : GFS: 2cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0,
+T, [2012-08-23T21:48:00.854993 #27254] TRACE -- : GFS:  len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got ch
+T, [2012-08-23T21:48:00.855166 #27254] TRACE -- : GFS: check_for_daemon_cancellation_or_eof: ff ff 55 55 | 
+T, [2012-08-23T21:48:00.856481 #27254] TRACE -- : GFS: unk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got 
+T, [2012-08-23T21:48:00.857876 #27254] TRACE -- : GFS: chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: rec
+T, [2012-08-23T21:48:00.859246 #27254] TRACE -- : GFS: eive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.860660 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.862026 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading l
+T, [2012-08-23T21:48:00.863408 #27254] TRACE -- : GFS: ength word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_
+T, [2012-08-23T21:48:00.864748 #27254] TRACE -- : GFS: file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.866136 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x
+T, [2012-08-23T21:48:00.867500 #27254] TRACE -- : GFS: 4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, le
+T, [2012-08-23T21:48:00.868919 #27254] TRACE -- : GFS: n = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: c
+T, [2012-08-23T21:48:00.870204 #27254] TRACE -- : GFS: ancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receiv
+T, [2012-08-23T21:48:00.871528 #27254] TRACE -- : GFS: e_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.872959 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length wo
+T, [2012-08-23T21:48:00.874331 #27254] TRACE -- : GFS: rd
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: 
+T, [2012-08-23T21:48:00.875696 #27254] TRACE -- : GFS: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+gue
+T, [2012-08-23T21:48:00.877009 #27254] TRACE -- : GFS: stfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.878401 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, bu
+T, [2012-08-23T21:48:00.879699 #27254] TRACE -- : GFS: f = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chun
+T, [2012-08-23T21:48:00.881073 #27254] TRACE -- : GFS: k: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd:
+T, [2012-08-23T21:48:00.882385 #27254] TRACE -- : GFS:  receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.883712 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: read
+T, [2012-08-23T21:48:00.885099 #27254] TRACE -- : GFS: ing length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receiv
+T, [2012-08-23T21:48:00.886421 #27254] TRACE -- : GFS: e_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.887744 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf
+T, [2012-08-23T21:48:00.889193 #27254] TRACE -- : GFS:  = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, l
+T, [2012-08-23T21:48:00.890557 #27254] TRACE -- : GFS: en = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk
+T, [2012-08-23T21:48:00.891975 #27254] TRACE -- : GFS: : cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_f
+T, [2012-08-23T21:48:00.893260 #27254] TRACE -- : GFS: ile: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.894572 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading 
+T, [2012-08-23T21:48:00.895843 #27254] TRACE -- : GFS: length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+g
+T, [2012-08-23T21:48:00.897088 #27254] TRACE -- : GFS: uestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 
+T, [2012-08-23T21:48:00.898322 #27254] TRACE -- : GFS: 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cance
+T, [2012-08-23T21:48:00.899582 #27254] TRACE -- : GFS: l = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: rec
+T, [2012-08-23T21:48:00.900955 #27254] TRACE -- : GFS: eive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.902278 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length 
+T, [2012-08-23T21:48:00.903588 #27254] TRACE -- : GFS: word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_fi
+T, [2012-08-23T21:48:00.904943 #27254] TRACE -- : GFS: le: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receiv
+T, [2012-08-23T21:48:00.906184 #27254] TRACE -- : GFS: e_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.907505 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4
+T, [2012-08-23T21:48:00.908838 #27254] TRACE -- : GFS: 912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, 
+T, [2012-08-23T21:48:00.910170 #27254] TRACE -- : GFS: len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chun
+T, [2012-08-23T21:48:00.911482 #27254] TRACE -- : GFS: k: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive
+T, [2012-08-23T21:48:00.912830 #27254] TRACE -- : GFS: _file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd:
+T, [2012-08-23T21:48:00.914154 #27254] TRACE -- : GFS:  receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.915483 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading le
+T, [2012-08-23T21:48:00.916814 #27254] TRACE -- : GFS: ngth word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file:
+T, [2012-08-23T21:48:00.918143 #27254] TRACE -- : GFS:  reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestf
+T, [2012-08-23T21:48:00.919457 #27254] TRACE -- : GFS: sd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.920820 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912
+T, [2012-08-23T21:48:00.922144 #27254] TRACE -- : GFS: cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8
+T, [2012-08-23T21:48:00.923473 #27254] TRACE -- : GFS: 192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel =
+T, [2012-08-23T21:48:00.924815 #27254] TRACE -- : GFS:  0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got 
+T, [2012-08-23T21:48:00.926146 #27254] TRACE -- : GFS: chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: rec
+T, [2012-08-23T21:48:00.927459 #27254] TRACE -- : GFS: eive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.928802 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.930142 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: read
+T, [2012-08-23T21:48:00.931474 #27254] TRACE -- : GFS: ing length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guest
+T, [2012-08-23T21:48:00.932750 #27254] TRACE -- : GFS: fsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.934034 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf =
+T, [2012-08-23T21:48:00.935371 #27254] TRACE -- : GFS:  0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, b
+T, [2012-08-23T21:48:00.936706 #27254] TRACE -- : GFS: uf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8
+T, [2012-08-23T21:48:00.938033 #27254] TRACE -- : GFS: 192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, l
+T, [2012-08-23T21:48:00.939347 #27254] TRACE -- : GFS: en = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 
+T, [2012-08-23T21:48:00.940683 #27254] TRACE -- : GFS: 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: c
+T, [2012-08-23T21:48:00.942012 #27254] TRACE -- : GFS: ancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receiv
+T, [2012-08-23T21:48:00.943335 #27254] TRACE -- : GFS: e_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestf
+T, [2012-08-23T21:48:00.944666 #27254] TRACE -- : GFS: sd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.945982 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length wor
+T, [2012-08-23T21:48:00.947315 #27254] TRACE -- : GFS: d
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading
+T, [2012-08-23T21:48:00.948656 #27254] TRACE -- : GFS:  length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive
+T, [2012-08-23T21:48:00.949985 #27254] TRACE -- : GFS: _file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd
+T, [2012-08-23T21:48:00.951233 #27254] TRACE -- : GFS: : receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.952528 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf 
+T, [2012-08-23T21:48:00.953792 #27254] TRACE -- : GFS: = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel
+T, [2012-08-23T21:48:00.955036 #27254] TRACE -- : GFS:  = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receiv
+T, [2012-08-23T21:48:00.956325 #27254] TRACE -- : GFS: e_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+g
+T, [2012-08-23T21:48:00.957674 #27254] TRACE -- : GFS: uestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.959001 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading leng
+T, [2012-08-23T21:48:00.960315 #27254] TRACE -- : GFS: th word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_f
+T, [2012-08-23T21:48:00.961651 #27254] TRACE -- : GFS: ile: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+gues
+T, [2012-08-23T21:48:00.962974 #27254] TRACE -- : GFS: tfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.964287 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, b
+T, [2012-08-23T21:48:00.965656 #27254] TRACE -- : GFS: uf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0,
+T, [2012-08-23T21:48:00.966979 #27254] TRACE -- : GFS:  len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: can
+T, [2012-08-23T21:48:00.968323 #27254] TRACE -- : GFS: cel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: g
+T, [2012-08-23T21:48:00.969652 #27254] TRACE -- : GFS: ot chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestf
+T, [2012-08-23T21:48:00.970992 #27254] TRACE -- : GFS: sd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.972307 #27254] TRACE -- : GFS: guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length wo
+T, [2012-08-23T21:48:00.973665 #27254] TRACE -- : GFS: rd
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: r
+T, [2012-08-23T21:48:00.974985 #27254] TRACE -- : GFS: eading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_
+T, [2012-08-23T21:48:00.976298 #27254] TRACE -- : GFS: file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.977663 #27254] TRACE -- : GFS: guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.978977 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf 
+T, [2012-08-23T21:48:00.980315 #27254] TRACE -- : GFS: = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, le
+T, [2012-08-23T21:48:00.981670 #27254] TRACE -- : GFS: n = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: go
+T, [2012-08-23T21:48:00.983002 #27254] TRACE -- : GFS: t chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+guestfsd: recei
+T, [2012-08-23T21:48:00.984244 #27254] TRACE -- : GFS: ve_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading length word
+T, [2012-08-23T21:48:00.985537 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_file: reading 
+T, [2012-08-23T21:48:00.986897 #27254] TRACE -- : GFS: length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+guestfsd: receive_
+T, [2012-08-23T21:48:00.988242 #27254] TRACE -- : GFS: file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+g
+T, [2012-08-23T21:48:00.989567 #27254] TRACE -- : GFS: uestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 8192, buf = 0x4912cb0
+T, [2012-08-23T21:48:00.990943 #27254] TRACE -- : GFS: 
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: cancel = 0x0, len = 1127, bu
+T, [2012-08-23T21:48:00.992258 #27254] TRACE -- : GFS: f = 0x6302a50
+guestfsd: receive_file: reading length word
+guestfsd: receive_file: got chunk: c
+T, [2012-08-23T21:48:00.993494 #27254] TRACE -- : GFS: ancel = 0x0, len = 0, buf = (nil)
+guestfsd: receive_file: end of file, leaving function
+gu
+T, [2012-08-23T21:48:00.994755 #27254] TRACE -- : GFS: estfsd: main_loop: proc 66 (upload) took 23.58 seconds
+D, [2012-08-23T21:48:00.994923 #27254] DEBUG -- : GFS: upload = 0
+D, [2012-08-23T21:48:00.995027 #27254] DEBUG -- : GFS: sh "rm -rf /var/lib/rpm/*"
+T, [2012-08-23T21:48:00.996665 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x44
+mount --bind /dev /sysroot/dev
+T, [2012-08-23T21:48:01.003287 #27254] TRACE -- : GFS: mount --bind /dev/pts /sysroot/dev/pts
+T, [2012-08-23T21:48:01.006411 #27254] TRACE -- : GFS: mount: mount point /sysroot/dev/pts does not exist
+mount --bind /proc /sysroot/proc
+T, [2012-08-23T21:48:01.007732 #27254] TRACE -- : GFS: 
+T, [2012-08-23T21:48:01.010537 #27254] TRACE -- : GFS: mount --bind /selinux /sysroot/selinux
+T, [2012-08-23T21:48:01.013425 #27254] TRACE -- : GFS: mount: mount point /sysroot/selinux does not exist
+mount --bind /sys /sysroot/sys
+T, [2012-08-23T21:48:01.014741 #27254] TRACE -- : GFS: 
+T, [2012-08-23T21:48:01.017436 #27254] TRACE -- : GFS: /bin/sh -c rm -rf /var/lib/rpm/*
+T, [2012-08-23T21:48:01.054299 #27254] TRACE -- : GFS: umount /sysroot/sys
+T, [2012-08-23T21:48:01.057527 #27254] TRACE -- : GFS: umount /sysroot/proc
+T, [2012-08-23T21:48:01.060661 #27254] TRACE -- : GFS: umount /sysroot/dev
+D, [2012-08-23T21:48:01.062514 #27254] DEBUG -- : GFS: sh = ""
+D, [2012-08-23T21:48:01.070141 #27254] DEBUG -- : Executing 'cd /var/lib/rpm/ && cat /tmp/Packages.dump | /usr/lib/rpm/rpmdb_load Packages' command...
+D, [2012-08-23T21:48:01.070328 #27254] DEBUG -- : GFS: sh "setarch x86_64 << 'SETARCH_EOF'
+cd /var/lib/rpm/ && cat /tmp/Packages.dump | /usr/lib/rpm/rpmdb_load Packages
+SETARCH_EOF"
+T, [2012-08-23T21:48:01.072234 #27254] TRACE -- : GFS: guestfsd: main_loop: proc 111 (sh) took 0.06 seconds
+T, [2012-08-23T21:48:01.074023 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0xa8
+T, [2012-08-23T21:48:01.075295 #27254] TRACE -- : GFS: mount --bind /dev /sysroot/dev
+T, [2012-08-23T21:48:01.080263 #27254] TRACE -- : GFS: mount --bind /dev/pts /sysroot/dev/pts
+T, [2012-08-23T21:48:01.083542 #27254] TRACE -- : GFS: mount: mount point /sysroot/dev/pts does not exist
+mount --bind /proc /sysroot/proc
+T, [2012-08-23T21:48:01.084904 #27254] TRACE -- : GFS: 
+T, [2012-08-23T21:48:01.087531 #27254] TRACE -- : GFS: mount --bind /selinux /sysroot/selinux
+T, [2012-08-23T21:48:01.090429 #27254] TRACE -- : GFS: mount: mount point /sysroot/selinux does not exist
+mount --bind /sys /sysroot/sys
+T, [2012-08-23T21:48:01.091863 #27254] TRACE -- : GFS: 
+T, [2012-08-23T21:48:01.094418 #27254] TRACE -- : GFS: /bin/sh -c setarch x86_64 << 'SETARCH_EOF'
+cd /var/lib/rpm/ && cat /tmp/Packages.dump | /usr/
+T, [2012-08-23T21:48:01.095742 #27254] TRACE -- : GFS: lib/rpm/rpmdb_load Packages
+SETARCH_EOF
+T, [2012-08-23T21:48:04.035496 #27254] TRACE -- : GFS: umount /sysroot/sys
+T, [2012-08-23T21:48:04.041184 #27254] TRACE -- : GFS: umount /sysroot/proc
+T, [2012-08-23T21:48:04.044311 #27254] TRACE -- : GFS: umount /sysroot/dev
+D, [2012-08-23T21:48:04.046294 #27254] DEBUG -- : GFS: sh = ""
+D, [2012-08-23T21:48:04.046472 #27254] DEBUG -- : Command 'cd /var/lib/rpm/ && cat /tmp/Packages.dump | /usr/lib/rpm/rpmdb_load Packages' executed.
+D, [2012-08-23T21:48:04.052382 #27254] DEBUG -- : Executing 'rpm --rebuilddb' command...
+D, [2012-08-23T21:48:04.052702 #27254] DEBUG -- : GFS: sh "setarch x86_64 << 'SETARCH_EOF'
+rpm --rebuilddb
+SETARCH_EOF"
+T, [2012-08-23T21:48:04.053981 #27254] TRACE -- : GFS: guestfsd: main_loop: proc 111 (sh) took 2.97 seconds
+T, [2012-08-23T21:48:04.055527 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x68
+mount --bind /
+T, [2012-08-23T21:48:04.056804 #27254] TRACE -- : GFS: dev /sysroot/dev
+T, [2012-08-23T21:48:04.060944 #27254] TRACE -- : GFS: mount --bind /dev/pts /sysroot/dev/pts
+T, [2012-08-23T21:48:04.063835 #27254] TRACE -- : GFS: mount: mount point /sysroot/dev/pts does not exist
+mount --bind /proc /sysroot/
+T, [2012-08-23T21:48:04.065100 #27254] TRACE -- : GFS: proc
+T, [2012-08-23T21:48:04.067739 #27254] TRACE -- : GFS: mount --bind /selinux /sysroot/selinux
+T, [2012-08-23T21:48:04.070767 #27254] TRACE -- : GFS: mount: mount point /sysroot/selinux does not exist
+mount --bind /sys /sysr
+T, [2012-08-23T21:48:04.072050 #27254] TRACE -- : GFS: oot/sys
+T, [2012-08-23T21:48:04.074919 #27254] TRACE -- : GFS: /bin/sh -c setarch x86_64 << 'SETARCH_EOF'
+rpm --rebuilddb
+SETARCH_EOF
+T, [2012-08-23T21:48:04.276025 #27254] TRACE -- : GFS: warning: Generating 12 missing index(
+T, [2012-08-23T21:48:04.277393 #27254] TRACE -- : GFS: es), please wait...
+T, [2012-08-23T21:48:53.274916 #27254] TRACE -- : GFS: umount /sysroot/sys
+T, [2012-08-23T21:48:53.288836 #27254] TRACE -- : GFS: umount /sysroot/proc
+T, [2012-08-23T21:48:53.295481 #27254] TRACE -- : GFS: umount /sysroot/dev
+D, [2012-08-23T21:48:53.299921 #27254] DEBUG -- : GFS: sh = ""
+D, [2012-08-23T21:48:53.300061 #27254] DEBUG -- : Command 'rpm --rebuilddb' executed.
+D, [2012-08-23T21:48:53.300183 #27254] DEBUG -- : RPM database recreated...
+I, [2012-08-23T21:48:53.300455 #27254]  INFO -- : Executing post operations after build...
+D, [2012-08-23T21:48:53.300533 #27254] DEBUG -- : No commands specified, skipping.
+D, [2012-08-23T21:48:53.300748 #27254] DEBUG -- : Disabling biosdevname...
+D, [2012-08-23T21:48:53.300893 #27254] DEBUG -- : GFS: exists "/boot/grub2/grub.cfg"
+T, [2012-08-23T21:48:53.302316 #27254] TRACE -- : GFS: guestfsd: main_loop: proc 111 (sh) took 49.24 seconds
+T, [2012-08-23T21:48:53.303761 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x40
+D, [2012-08-23T21:48:53.307648 #27254] DEBUG -- : GFS: exists = 1
+D, [2012-08-23T21:48:53.307771 #27254] DEBUG -- : GFS: write "/etc/default/grub" "GRUB_CMDLINE_LINUX="quiet rhgb biosdevname=0"\x0a"
+T, [2012-08-23T21:48:53.308995 #27254] TRACE -- : GFS: guestfsd: main_loop: proc 36 (exists) took 0.00 seconds
+T, [2012-08-23T21:48:53.310652 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x74
+D, [2012-08-23T21:48:53.316023 #27254] DEBUG -- : GFS: write = 0
+D, [2012-08-23T21:48:53.316192 #27254] DEBUG -- : GFS: sh "cd / && grub2-mkconfig -o /boot/grub2/grub.cfg"
+T, [2012-08-23T21:48:53.317559 #27254] TRACE -- : GFS: guestfsd: main_loop: proc 246 (write) took 0.00 seconds
+T, [2012-08-23T21:48:53.319135 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x5c
+T, [2012-08-23T21:48:53.320658 #27254] TRACE -- : GFS: mount --bind /dev /sysroot/dev
+T, [2012-08-23T21:48:53.327889 #27254] TRACE -- : GFS: mount --bind /dev/pts /sysroot/dev/pts
+T, [2012-08-23T21:48:53.331862 #27254] TRACE -- : GFS: mount: mount point /sysroot/dev/pts does not exist
+mount --bind /pro
+T, [2012-08-23T21:48:53.333022 #27254] TRACE -- : GFS: c /sysroot/proc
+T, [2012-08-23T21:48:53.336011 #27254] TRACE -- : GFS: mount --bind /selinux /sysroot/selinux
+T, [2012-08-23T21:48:53.339004 #27254] TRACE -- : GFS: mount: mount point /sysroot/selinux does not exist
+mount --bind /sy
+T, [2012-08-23T21:48:53.340212 #27254] TRACE -- : GFS: s /sysroot/sys
+T, [2012-08-23T21:48:53.343202 #27254] TRACE -- : GFS: /bin/sh -c cd / && grub2-mkconfig -o /boot/grub2/grub.cfg
+T, [2012-08-23T21:48:53.626198 #27254] TRACE -- : GFS: Generating grub.cfg ...
+T, [2012-08-23T21:48:53.627749 #27254] TRACE -- : GFS: 
+T, [2012-08-23T21:48:53.946202 #27254] TRACE -- : GFS: Found linux image: /boot/vmlinuz-3.5.2-3.fc17.x86_64
+T, [2012-08-23T21:48:53.947551 #27254] TRACE -- : GFS: 
+T, [2012-08-23T21:48:53.991695 #27254] TRACE -- : GFS: Found initrd image: /boot/initramfs-3.5.2-3.fc17.x86_64.img
+T, [2012-08-23T21:48:53.992964 #27254] TRACE -- : GFS: 
+T, [2012-08-23T21:48:54.493559 #27254] TRACE -- : GFS: [   97.201058] SGI XFS with ACLs, security attributes, large block/inode nu
+T, [2012-08-23T21:48:54.495066 #27254] TRACE -- : GFS: mbers, no debug enabled
+T, [2012-08-23T21:48:54.507903 #27254] TRACE -- : GFS: [   97.215516] JFS: nTxBlock = 2256, nTxLock = 18048
+T, [2012-08-23T21:48:54.607776 #27254] TRACE -- : GFS: [   97.315202] Btrfs loaded
+T, [2012-08-23T21:48:54.617419 #27254] TRACE -- : GFS: [   97.324944] fuse init (API version 7.19)
+T, [2012-08-23T21:48:54.715966 #27254] TRACE -- : GFS:   No volume groups found
+T, [2012-08-23T21:48:54.806214 #27254] TRACE -- : GFS: done
+umount /sysroot/sys
+T, [2012-08-23T21:48:54.810937 #27254] TRACE -- : GFS: umount /sysroot/proc
+T, [2012-08-23T21:48:54.814912 #27254] TRACE -- : GFS: umount /sysroot/dev
+T, [2012-08-23T21:48:54.818741 #27254] TRACE -- : GFS: guestfsd: main_loop: proc 111 (sh) took 1.49 seconds
+D, [2012-08-23T21:48:54.819022 #27254] DEBUG -- : GFS: sh = ""
+D, [2012-08-23T21:48:54.819114 #27254] DEBUG -- : GFS: exists "/boot/grub/grub.conf"
+T, [2012-08-23T21:48:54.820770 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x40
+guestfsd: main_lo
+T, [2012-08-23T21:48:54.822082 #27254] TRACE -- : GFS: op: proc 36 (exists) took 0.00 seconds
+D, [2012-08-23T21:48:54.822311 #27254] DEBUG -- : GFS: exists = 1
+D, [2012-08-23T21:48:54.822427 #27254] DEBUG -- : GFS: sh "sed -i "s/kernel\(.*\)/kernel\1 biosdevname=0/g" /boot/grub/grub.conf"
+T, [2012-08-23T21:48:54.824060 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x74
+mount --bind /dev /sysr
+T, [2012-08-23T21:48:54.825369 #27254] TRACE -- : GFS: oot/dev
+T, [2012-08-23T21:48:54.828802 #27254] TRACE -- : GFS: mount --bind /dev/pts /sysroot/dev/pts
+T, [2012-08-23T21:48:54.832276 #27254] TRACE -- : GFS: mount: mount point /sysroot/dev/pts does not exist
+mount -
+T, [2012-08-23T21:48:54.833628 #27254] TRACE -- : GFS: -bind /proc /sysroot/proc
+T, [2012-08-23T21:48:54.837098 #27254] TRACE -- : GFS: mount --bind /selinux /sysroot/selinux
+T, [2012-08-23T21:48:54.840575 #27254] TRACE -- : GFS: mount: mount point /sysroot/selinux does not exist
+mount --bind /sys /sysroot/sys
+T, [2012-08-23T21:48:54.841948 #27254] TRACE -- : GFS: 
+T, [2012-08-23T21:48:54.844528 #27254] TRACE -- : GFS: /bin/sh -c sed -i "s/kernel\(.*\)/kernel\1 biosdevname=0/g" /boot/grub/grub.conf
+T, [2012-08-23T21:48:54.851053 #27254] TRACE -- : GFS: umount /sysroot/sys
+T, [2012-08-23T21:48:54.867220 #27254] TRACE -- : GFS: umount /sysroot/proc
+umount /sysroot/dev
+guestfsd: main_loop: proc 111 (sh) took 0.03 seconds
+D, [2012-08-23T21:48:54.867422 #27254] DEBUG -- : GFS: sh = ""
+D, [2012-08-23T21:48:54.867495 #27254] DEBUG -- : Biosdevname disabled.
+D, [2012-08-23T21:48:54.867573 #27254] DEBUG -- : Changing runlevel to multi-user non-graphical...
+D, [2012-08-23T21:48:54.867692 #27254] DEBUG -- : GFS: rm "/etc/systemd/system/default.target"
+T, [2012-08-23T21:48:54.869513 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x50
+D, [2012-08-23T21:48:54.871788 #27254] DEBUG -- : GFS: rm = 0
+D, [2012-08-23T21:48:54.871928 #27254] DEBUG -- : GFS: ln_sf "/lib/systemd/system/multi-user.target" "/etc/systemd/system/default.target"
+T, [2012-08-23T21:48:54.873257 #27254] TRACE -- : GFS: guestfsd: main_loop: proc 29 (rm) took 0.00 seconds
+T, [2012-08-23T21:48:54.874872 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x7c
+T, [2012-08-23T21:48:54.876508 #27254] TRACE -- : GFS: ln -sf -- /lib/systemd/system/multi-user.target /sysroot/etc
+T, [2012-08-23T21:48:54.877743 #27254] TRACE -- : GFS: /systemd/system/default.target
+D, [2012-08-23T21:48:54.884725 #27254] DEBUG -- : GFS: ln_sf = 0
+D, [2012-08-23T21:48:54.884847 #27254] DEBUG -- : Runlevel changed.
+D, [2012-08-23T21:48:54.884959 #27254] DEBUG -- : Linking /etc/mtab to /proc/self/mounts...
+D, [2012-08-23T21:48:54.885039 #27254] DEBUG -- : GFS: ln_sf "/proc/self/mounts" "/etc/mtab"
+T, [2012-08-23T21:48:54.886402 #27254] TRACE -- : GFS: guestfsd: main_loop: proc 167 (ln_sf) took 0.00 seconds
+T, [2012-08-23T21:48:54.887962 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x50
+T, [2012-08-23T21:48:54.889505 #27254] TRACE -- : GFS: ln -sf -- /proc/self/mounts /sysroot/etc/mtab
+D, [2012-08-23T21:48:54.893559 #27254] DEBUG -- : GFS: ln_sf = 0
+D, [2012-08-23T21:48:54.893750 #27254] DEBUG -- : /etc/mtab linked.
+T, [2012-08-23T21:48:54.893834 #27254] TRACE -- : Closing guestfs...
+D, [2012-08-23T21:48:54.893929 #27254] DEBUG -- : GFS: sync
+T, [2012-08-23T21:48:54.895133 #27254] TRACE -- : GFS: guestfsd: main_loop: proc 167 (ln_sf) took 0.00 seconds
+T, [2012-08-23T21:48:54.896748 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+T, [2012-08-23T21:48:54.921685 #27254] TRACE -- : GFS: fsync /dev/vda
+D, [2012-08-23T21:48:54.922351 #27254] DEBUG -- : GFS: sync = 0
+D, [2012-08-23T21:48:54.922458 #27254] DEBUG -- : GFS: umount_all
+T, [2012-08-23T21:48:54.923675 #27254] TRACE -- : GFS: guestfsd: main_loop: proc 2 (sync) took 0.02 seconds
+T, [2012-08-23T21:48:54.925276 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+T, [2012-08-23T21:48:54.926701 #27254] TRACE -- : GFS: umount /sysroot
+D, [2012-08-23T21:48:54.981951 #27254] DEBUG -- : GFS: umount_all = 0
+D, [2012-08-23T21:48:54.982186 #27254] DEBUG -- : GFS: close
+T, [2012-08-23T21:48:54.982291 #27254] TRACE -- : GFS: closing guestfs handle 0x36926e0 (state 2)
+D, [2012-08-23T21:48:54.982452 #27254] DEBUG -- : GFS: shutdown
+D, [2012-08-23T21:48:54.982567 #27254] DEBUG -- : GFS: internal_autosync
+T, [2012-08-23T21:48:54.983863 #27254] TRACE -- : GFS: guestfsd: main_loop: proc 47 (umount_all) took 0.05 seconds
+T, [2012-08-23T21:48:54.985310 #27254] TRACE -- : GFS: guestfsd: main_loop: new request, len 0x28
+T, [2012-08-23T21:48:54.987366 #27254] TRACE -- : GFS: fsync /dev/vda
+T, [2012-08-23T21:48:54.988626 #27254] TRACE -- : GFS: guestfsd: main_loop: proc 282 (internal_autosync) took 0.
+D, [2012-08-23T21:48:54.988801 #27254] DEBUG -- : GFS: internal_autosync = 0
+T, [2012-08-23T21:48:54.988915 #27254] TRACE -- : GFS: sending SIGTERM to process 10878
+D, [2012-08-23T21:48:55.145243 #27254] DEBUG -- : GFS: shutdown = 0
+T, [2012-08-23T21:48:55.152881 #27254] TRACE -- : Guestfs closed.
+I, [2012-08-23T21:48:55.153254 #27254]  INFO -- : Base image for xmonad appliance was built successfully.
+T, [2012-08-23T21:48:55.153361 #27254] TRACE -- : Moving 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/xmonad-sda.raw' deliverable to target destination 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/xmonad-sda.raw'...
+T, [2012-08-23T21:48:55.154092 #27254] TRACE -- : Moving 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/tmp/xmonad.xml' deliverable to target destination 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/xmonad.xml'...
+D, [2012-08-23T21:48:55.272960 #27254] DEBUG -- : Os plugin executed.
+D, [2012-08-23T21:48:55.273135 #27254] DEBUG -- : Executing platform plugin...
+I, [2012-08-23T21:48:55.273988 #27254]  INFO -- : Converting image to VirtualBox format...
+D, [2012-08-23T21:48:55.274030 #27254] DEBUG -- : Building VirtualBox image.
+D, [2012-08-23T21:48:55.274093 #27254] DEBUG -- : Using qemu-img to convert the image...
+D, [2012-08-23T21:48:55.274163 #27254] DEBUG -- : Conveting 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/xmonad-sda.raw' disk to vmdk format and moving it to 'build/appliances/x86_64/fedora/17/xmonad/1.0/virtualbox-plugin/tmp/xmonad.vmdk'...
+D, [2012-08-23T21:48:55.274223 #27254] DEBUG -- : Executing command: 'qemu-img info 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/xmonad-sda.raw''
+D, [2012-08-23T21:48:55.308863 #27254] DEBUG -- : image: build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/xmonad-sda.raw
+D, [2012-08-23T21:48:55.309045 #27254] DEBUG -- : file format: raw
+D, [2012-08-23T21:48:55.309117 #27254] DEBUG -- : virtual size: 80G (85904588800 bytes)
+D, [2012-08-23T21:48:55.309161 #27254] DEBUG -- : disk size: 5.5G
+D, [2012-08-23T21:48:55.340457 #27254] DEBUG -- : Executing command: 'qemu-img convert -f raw -O vmdk -o compat6 'build/appliances/x86_64/fedora/17/xmonad/1.0/fedora-plugin/xmonad-sda.raw' 'build/appliances/x86_64/fedora/17/xmonad/1.0/virtualbox-plugin/tmp/xmonad.vmdk''
+D, [2012-08-23T21:51:58.682106 #27254] DEBUG -- : Conversion done.
+D, [2012-08-23T21:51:58.682290 #27254] DEBUG -- : VirtualBox image was built.
+I, [2012-08-23T21:51:58.682527 #27254]  INFO -- : Image converted to VirtualBox format.
+T, [2012-08-23T21:51:58.682599 #27254] TRACE -- : Moving 'build/appliances/x86_64/fedora/17/xmonad/1.0/virtualbox-plugin/tmp/xmonad.vmdk' deliverable to target destination 'build/appliances/x86_64/fedora/17/xmonad/1.0/virtualbox-plugin/xmonad.vmdk'...
+D, [2012-08-23T21:51:58.683205 #27254] DEBUG -- : Platform plugin executed.
